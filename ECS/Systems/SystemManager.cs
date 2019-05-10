@@ -46,12 +46,12 @@ namespace Hel.ECS.Systems
         public override void Update(GameTime gameTime)
         {
             DeltaTime = (float) gameTime.ElapsedGameTime.TotalSeconds * 30;
-            JobMutator.ApplyMutations(World.EntityManager);
 
             foreach (ISystem sys in systems)
                 sys.Update(gameTime);
 
             jobManager.RunJobs();
+            JobMutator.ApplyMutations(World.EntityManager);
 
             base.Update(gameTime);
         }

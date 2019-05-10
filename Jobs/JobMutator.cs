@@ -29,17 +29,17 @@ namespace Hel.Jobs
 
         public static void ApplyMutations(EntityManager manager)
         {
+            lock (stagedEntities) {
+                List<IEntity> stagedEntitiesSafe  = new List<IEntity>(stagedEntities);
+                List<IEntity> removedEntitiesSafe = new List<IEntity>(removedEntities);
+                removedEntities.Clear();
+                stagedEntities.Clear();
 
-            List<IEntity> stagedEntitiesSafe = new List<IEntity>(stagedEntities);
-            List<IEntity> removedEntitiesSafe = new List<IEntity>(removedEntities);
-            removedEntities.Clear();
-            stagedEntities.Clear();
+                manager.RemoveEntities(removedEntitiesSafe);
 
-            manager.RemoveEntities(removedEntitiesSafe);
-            
-            foreach (IEntity entity in stagedEntitiesSafe)
-                manager.ReplaceEntity(entity);
-
+                foreach (IEntity entity in stagedEntitiesSafe)
+                    manager.ReplaceEntity(entity);
+            }
         }
 
     }

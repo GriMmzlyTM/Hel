@@ -22,23 +22,24 @@ namespace Hel.ECS.Systems
 
         public override void Update(GameTime gameTime)
         {
-            Job job = new Job(world.EntityManager.GetEntityType<IMovement>(), JobLogic, "MoveLogic");
-                        /*foreach (IEntity component in world.EntityManager.GetEntityType<IMovement>())
-                        {
-                            if (component is IMovement moveComponent)
-                            {
-                                Vector2 moveDir = (MoveDirection.KeyboardDirection() * 5);
-                                moveComponent.X += (moveDir.X * ((float) gameTime.ElapsedGameTime.TotalSeconds * 30));
-                                moveComponent.Y += (moveDir.Y * (float) gameTime.ElapsedGameTime.TotalSeconds * 30);
-                                world.EntityManager.ReplaceEntity((IEntity) moveComponent);
-                            }
-
-                        }*/
+            ThreadPool.QueueUserWorkItem(new WaitCallback(JobLogic), world.EntityManager.GetEntityType<IMovement>());
+            //Job job = new Job(world.EntityManager.GetEntityType<IMovement>(), JobLogic, "MoveLogic");
+            //                        foreach (IEntity component in world.EntityManager.GetEntityType<IMovement>())
+            //                        {
+            //                            if (component is IMovement moveComponent)
+            //                            {
+            //                                Vector2 moveDir = (MoveDirection.KeyboardDirection() * 5);
+            //                                moveComponent.X += (moveDir.X * ((float) gameTime.ElapsedGameTime.TotalSeconds * 30));
+            //                                moveComponent.Y += (moveDir.Y * (float) gameTime.ElapsedGameTime.TotalSeconds * 30);
+            //                                world.EntityManager.ReplaceEntity((IEntity) moveComponent);
+            //                            }
+            //
+            //                        }
 
         }
-
         public override void JobLogic(object obj)
         {
+            
             foreach (IEntity entity in (obj as IEnumerable<IEntity>))
             {
                 if (entity is IMovement moveComponent)

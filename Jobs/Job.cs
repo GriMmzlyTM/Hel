@@ -31,10 +31,12 @@ namespace Hel.Jobs
         public JobResponse Run()
         {
 
-            JobResponse res = new JobResponse();
+            //ThreadPool.QueueUserWorkItem(new WaitCallback(jobThreadMethod), entities);
 
-            Thread jobThread = new Thread(jobThreadMethod);
-            jobThread.Start(entities);
+            //JobResponse res = new JobResponse();
+
+            //Thread jobThread = new Thread(jobThreadMethod);
+            //jobThread.Start(entities);
 
 
 
