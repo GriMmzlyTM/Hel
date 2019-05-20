@@ -8,17 +8,42 @@ namespace Hel.Jobs
 {
     class JobManager
     {
+
+        private static List<string> _jobsRunning = new List<string>();
+
         public JobManager()
         {
 
         }
 
-        public void RunJobs()
+        public static void SignalJobCompletion(string key)
+        {
+            if (!(_jobsRunning.FirstOrDefault(x => x.Equals(key)) is null))
+                _jobsRunning.Remove(key);
+            else
+                throw new JobAlreadyQueuedException($"{key} job is not running!");
+        }
+
+        private static void AddRunningJob(string key) {
+            if (_jobsRunning.FirstOrDefault(x => x.Equals(key)) is null)
+                _jobsRunning.Add(key);
+            else
+                throw new JobAlreadyQueuedException($"{key} job is already running!");
+        }
+
+        public static List<string> GetRunningJobs() => _jobsRunning;
+
+        public static void RunJobs()
         {
 
-            while (JobScheduler.GetQueue().Count != 0)
+            Queue<IJob> jobQueue = JobScheduler.GetJobs();
+
+            while (jobQueue.Count != 0)
             {
-                JobScheduler.GetQueue().Dequeue().Run();
+                IJob job = jobQueue.Dequeue();
+                AddRunningJob(job.Key);
+                job.QueueJobThread();
+                
             }
         }
 

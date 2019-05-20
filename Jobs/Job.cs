@@ -8,40 +8,63 @@ using Hel.ECS.Entities;
 
 namespace Hel.Jobs
 {
+
+    public delegate void EntityJobCallback (IEnumerable<IEntity> entityList);
     internal interface IJob
     {
         string Key { get; }
-        JobResponse Run();
+        void QueueJobThread();
     }
 
-    internal class Job : IJob
+    internal class EntityJob : IJob
     {
-        private readonly ParameterizedThreadStart jobThreadMethod;
-        private readonly IEnumerable<IEntity> entities;
+        private readonly IEnumerable<IEntity> _entities;
+        //public readonly JobManager manager;
+
+        private readonly EntityJobCallback _jobCallback;
         public string Key { get; private set; }
 
-        public Job(IEnumerable<IEntity> entities, ParameterizedThreadStart job, string Key)
-        {
-            this.Key = Key;
-            jobThreadMethod = job;
-            this.entities = entities;
-            JobScheduler.ScheduleJob(this);
-        }
-
-        public JobResponse Run()
+        public EntityJob(
+            IEnumerable<IEntity> entities, 
+            EntityJobCallback jobCallback, 
+            string key)
         {
 
-            //ThreadPool.QueueUserWorkItem(new WaitCallback(jobThreadMethod), entities);
-
-            //JobResponse res = new JobResponse();
-
-            //Thread jobThread = new Thread(jobThreadMethod);
-            //jobThread.Start(entities);
-
-
-
-            return new JobResponse();
+            _entities = entities;
+            //this.manager = manager;
+            _jobCallback = jobCallback;
+            Key = key;
 
         }
+
+        public void QueueJobThread()
+        {
+
+            ThreadPool.QueueUserWorkItem(new WaitCallback(jobLogic), this);
+
+        }
+
+        public void Run(IEnumerable<IEntity> entity) => _jobCallback(entity);
+
+        public IEnumerable<IEntity> GetEntities() => _entities;
+
+        private void jobLogic(object obj)
+        {
+            EntityJob job = (EntityJob) obj;
+
+            job.Run(job.GetEntities());
+
+            JobManager.SignalJobCompletion(job.Key);
+
+        }
+
+    }
+
+    public class JobAlreadyQueuedException : Exception
+    {
+        public JobAlreadyQueuedException() { }
+
+        public JobAlreadyQueuedException(string message) : base(message) { }
+
     }
 }

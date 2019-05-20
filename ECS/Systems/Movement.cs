@@ -22,35 +22,27 @@ namespace Hel.ECS.Systems
 
         public override void Update(GameTime gameTime)
         {
-            ThreadPool.QueueUserWorkItem(new WaitCallback(JobLogic), world.EntityManager.GetEntityType<IMovement>());
-            //Job job = new Job(world.EntityManager.GetEntityType<IMovement>(), JobLogic, "MoveLogic");
-            //                        foreach (IEntity component in world.EntityManager.GetEntityType<IMovement>())
-            //                        {
-            //                            if (component is IMovement moveComponent)
-            //                            {
-            //                                Vector2 moveDir = (MoveDirection.KeyboardDirection() * 5);
-            //                                moveComponent.X += (moveDir.X * ((float) gameTime.ElapsedGameTime.TotalSeconds * 30));
-            //                                moveComponent.Y += (moveDir.Y * (float) gameTime.ElapsedGameTime.TotalSeconds * 30);
-            //                                world.EntityManager.ReplaceEntity((IEntity) moveComponent);
-            //                            }
-            //
-            //                        }
 
+            JobScheduler.ScheduleJob(
+                new EntityJob(
+                    world.EntityManager.GetEntityType<IMovement>(),
+                    JobLogic,
+                    "MovementJob"
+                    ));
         }
-        public override void JobLogic(object obj)
+        public override void JobLogic(IEnumerable<IEntity> entityList)
         {
             
-            foreach (IEntity entity in (obj as IEnumerable<IEntity>))
+            foreach (IEntity entity in entityList)
             {
                 if (entity is IMovement moveComponent)
                 {
                     Vector2 moveDir = (MoveDirection.KeyboardDirection() * 5);
-                    Console.WriteLine(MoveDirection.KeyboardDirection());
+                    //Console.WriteLine(MoveDirection.KeyboardDirection());
                     moveComponent.X += (moveDir.X * SystemManager.DeltaTime);
                     moveComponent.Y += (moveDir.Y * SystemManager.DeltaTime);
 
                     JobMutator.StageEntityMutation(entity);
-
                 }
 
             }
