@@ -13,12 +13,6 @@ namespace Hel.ECS.Systems
     public class SystemManager : DrawableGameComponent
     {
 
-
-        int frameRate = 0;
-        int frameCounter = 0;
-        TimeSpan elapsedTime = TimeSpan.Zero;
-
-
         private readonly List<ISystem> systems = new List<ISystem>();
         public World World { get; private set; }
         //public readonly JobManager jobManager;
@@ -43,13 +37,6 @@ namespace Hel.ECS.Systems
         public override void Draw(GameTime gameTime)
         {
 
-            frameCounter++;
-
-            Console.WriteLine(frameRate);
-
-            //float frameRate = 1 / (float)gameTime.ElapsedGameTime.TotalSeconds;
-            //Console.WriteLine($" Draw: {frameRate}");
-
             foreach (ISystem sys in systems)
                 sys.Draw(gameTime, World.SpriteBatch);
 
@@ -59,22 +46,6 @@ namespace Hel.ECS.Systems
         public override void Update(GameTime gameTime)
         {
             DeltaTime = (float) gameTime.ElapsedGameTime.TotalSeconds * 30;
-
-            //float frameRate = 1 / (float)gameTime.ElapsedGameTime.TotalSeconds;
-            //Console.WriteLine($" Update: {frameRate}");
-
-            //TEST FRAMERATE
-
-            elapsedTime += gameTime.ElapsedGameTime;
-
-            if (elapsedTime > TimeSpan.FromSeconds(1))
-            {
-                elapsedTime -= TimeSpan.FromSeconds(1);
-                frameRate = frameCounter;
-                frameCounter = 0;
-            }
-
-            //TEST FRAMERATE END
 
             foreach (ISystem sys in systems)
                 sys.Update(gameTime);
