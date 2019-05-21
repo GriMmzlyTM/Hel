@@ -61,7 +61,6 @@
     <Compile Include="Jobs\Job.cs" />
     <Compile Include="Jobs\JobManager.cs" />
     <Compile Include="Jobs\JobMutator.cs" />
-    <Compile Include="Jobs\JobResponse.cs" />
     <Compile Include="Jobs\JobScheduler.cs" />
     <Compile Include="Toolkit\Convert.cs" />
     <Compile Include="Controls\MoveDirection.cs" />

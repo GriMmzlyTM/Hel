@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hel.Jobs
 {
@@ -10,6 +7,11 @@ namespace Hel.Jobs
     {
         private static readonly Queue<IJob> jobQueue = new Queue<IJob>();
 
+        /// <summary>
+        /// Tries to queue the job if not already queued. 
+        /// Throws JobAlreadyQueuedException 
+        /// </summary>
+        /// <param name="job">The job you wish to queue</param>
         public static void ScheduleJob(IJob job)
         {
 
@@ -20,7 +22,15 @@ namespace Hel.Jobs
 
         }
 
+        /// <summary>
+        /// Returns the jobQueue.
+        /// </summary>
+        /// <returns></returns>
         public static Queue<IJob> GetJobs() => jobQueue;
+
+        /// <summary>
+        /// Purge all jobs from the jobQueue
+        /// </summary>
         public static void PurgeJobs() => jobQueue.Clear();
         
 

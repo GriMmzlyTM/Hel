@@ -1,25 +1,41 @@
-﻿using System;
+﻿using Hel.ECS.Entities;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using Hel.ECS.Entities;
 
 namespace Hel.Jobs
 {
 
     public delegate void EntityJobCallback (IEnumerable<IEntity> entityList);
-    internal interface IJob
+    public interface IJob
     {
+        /// <summary>
+        /// The key that represents the job. Should properly represent the functionality 
+        /// of the job to ensure multiple jobs with the same function dont run. 
+        /// </summary>
         string Key { get; }
+
+        /// <summary>
+        /// Queues the job to be run whenever a thread is available.
+        /// </summary>
         void QueueJobThread();
+
+        /// <summary>
+        /// Returns the entities that the job utilizes.
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<IEntity> GetEntities();
+
+        /// <summary>
+        /// Runs the job logic specified on creation. 
+        /// </summary>
+        /// <param name="entityList">The list of entities to pass to the job.</param>
+        void Run(IEnumerable<IEntity> entityList);
     }
 
-    internal class EntityJob : IJob
+    public class EntityJob : IJob
     {
         private readonly IEnumerable<IEntity> _entities;
-        //public readonly JobManager manager;
 
         private readonly EntityJobCallback _jobCallback;
         public string Key { get; private set; }
@@ -31,20 +47,15 @@ namespace Hel.Jobs
         {
 
             _entities = entities;
-            //this.manager = manager;
             _jobCallback = jobCallback;
             Key = key;
 
         }
 
-        public void QueueJobThread()
-        {
-
+        public void QueueJobThread() =>
             ThreadPool.QueueUserWorkItem(new WaitCallback(jobLogic), this);
 
-        }
-
-        public void Run(IEnumerable<IEntity> entity) => _jobCallback(entity);
+        public void Run(IEnumerable<IEntity> entityList) => _jobCallback(entityList);
 
         public IEnumerable<IEntity> GetEntities() => _entities;
 
