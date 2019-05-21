@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Hel.Jobs;
 using Microsoft.Xna.Framework;
@@ -11,34 +12,33 @@ namespace Hel.ECS.Systems
 {
     public class SystemManager : DrawableGameComponent
     {
+
         private readonly List<ISystem> systems = new List<ISystem>();
         public World World { get; private set; }
-        private readonly JobManager jobManager;
+        //public readonly JobManager jobManager;
         public static float DeltaTime { get; private set; }
 
         public SystemManager(Game game, World world) : base(game)
         {
             World = world;
             game.Components.Add(this);
-            jobManager = new JobManager();
+            //jobManager = new JobManager();
             InitializeSystems();
         }
 
         private void InitializeSystems()
         {
-            var _ = new Render(this);
-            var __ = new Movement(this);
+            new Render(this);
+            new Movement(this);
         }
 
         public void AddSystem(ISystem system) => systems.Add(system);
 
         public override void Draw(GameTime gameTime)
         {
-       
-            foreach(ISystem sys in systems)
-                sys.Draw(gameTime, World.SpriteBatch);
 
-            //jobManager.RunJobs();
+            foreach (ISystem sys in systems)
+                sys.Draw(gameTime, World.SpriteBatch);
 
             base.Draw(gameTime);
         }
@@ -50,7 +50,14 @@ namespace Hel.ECS.Systems
             foreach (ISystem sys in systems)
                 sys.Update(gameTime);
 
-            jobManager.RunJobs();
+            JobManager.RunJobs();
+
+            var runningJobs = JobManager.GetRunningJobs();
+
+            while (runningJobs.Count != 0) {
+                Thread.Sleep(1);
+            }
+
             JobMutator.ApplyMutations(World.EntityManager);
 
             base.Update(gameTime);

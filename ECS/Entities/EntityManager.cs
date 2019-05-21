@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using Hel.ECS.Entities;
-using Microsoft.Xna.Framework;
 
 namespace Hel.ECS.Entities
 {
@@ -63,11 +57,7 @@ namespace Hel.ECS.Entities
             entities.Add(entity.Id, entity);
         }
 
-        public List<IEntity> GetEntityType<T>()
-        {
-            var entityList = entities.Values.Where(x => x is T).ToList(); //entities.OfType<T>().ToList();
-            return entityList;
-        }
+        public List<IEntity> GetEntityType<T>() => entities.Values.Where(x => x is T).ToList();
 
         public IEntity GetEntityID(uint ID) => entities[ID];
 
