@@ -26,11 +26,11 @@ namespace Hel.ECS.Systems
                         spriteBatch.Begin();
 
             //Draws all entities to the screen that implement the IRender interface.
-            foreach (IEntity component in world.EntityManager.GetEntityType<IRender>())
+            foreach (IEntity entity in world.EntityManager.GetEntityType<IRender>())
             {
-                if (!(component is IRender renderComponent)) continue;
+                if (!(entity is IRender renderComponent) || entity.Active == false) continue;
                 spriteBatch.Draw(
-                    renderComponent.texture,
+                    renderComponent.Texture,
                     new Vector2(renderComponent.X, renderComponent.Y),
                     Color.White);
             }

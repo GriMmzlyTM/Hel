@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Hel.ECS.Entities
@@ -9,7 +10,7 @@ namespace Hel.ECS.Entities
         /// Add an entity to the world. An entity is any struct with the IEntity interface implemented.
         /// </summary>
         /// <param name="entity">Struct with the IEntity interface</param>
-        void AddEntity(IEntity entity);
+        uint AddEntity(IEntity entity);
         /// <summary>
         /// Returns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example/
         /// </summary>
@@ -52,9 +53,29 @@ namespace Hel.ECS.Entities
         public World World { get; private set; }
 
         public EntityManager(World world) => World = world;
-        public void AddEntity(IEntity entity)
+        public uint AddEntity(IEntity entity) =>
+            AddEntityInternal(
+                entity.Id != 0 ? entity.Id : GenerateEntityIdInternal(),
+                entity);
+
+        private uint AddEntityInternal(uint id, IEntity entity)
         {
-            entities.Add(entity.Id, entity);
+            try {
+                entities.Add(id, entity);
+            } catch (ArgumentException)
+            {
+                entities.Add(GenerateEntityIdInternal(), entity);
+            }
+
+            return id;
+
+        }
+        private uint GenerateEntityIdInternal()
+        {
+
+            return entities.ContainsKey(0)
+                ? entities.Where(x => !entities.ContainsKey(x.Key + 1)).First().Key + 1
+                : 0;
         }
 
         public List<IEntity> GetEntityType<T>() => entities.Values.Where(x => x is T).ToList();

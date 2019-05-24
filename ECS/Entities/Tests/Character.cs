@@ -11,7 +11,8 @@ namespace Hel.ECS.Entities.Tests
     public struct Character : IEntity, IRender, IMovement
     {
         public uint Id { get; set; }
-        public Texture2D texture { get; set; }
+        public bool Active { get; set; }
+        public Texture2D Texture { get; set; }
         public float X { get; set; }
         public float Y { get; set; }
 
