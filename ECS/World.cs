@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hel.ECS.Entities;
+﻿using Hel.ECS.Entities;
 using Hel.ECS.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -17,7 +12,7 @@ namespace Hel.ECS
     public class World
     {
         public string Name { get; private set; }
-        public EntityManager EntityManager;
+        public IEntityManager EntityManager;
         public SystemManager SystemManager;
         public SpriteBatch SpriteBatch { get; private set; }
 

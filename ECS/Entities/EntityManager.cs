@@ -4,8 +4,12 @@ using System.Linq;
 
 namespace Hel.ECS.Entities
 {
-    internal interface IEntityManager
+    public interface IEntityManager
     {
+        /// <summary>
+        /// The world that this entity manager belongs to
+        /// </summary>
+        World World { get; }
         /// <summary>
         /// Add an entity to the world. An entity is any struct with the IEntity interface implemented.
         /// </summary>
@@ -43,7 +47,15 @@ namespace Hel.ECS.Entities
         /// <typeparam name="T">Type of component</typeparam>
         void ClearEntitiesType<T>();
 
+        /// <summary>
+        /// Uses the ID of the entity to replace it within the entities dictionary
+        /// with a new entity. Useful for updating mutated entities.
+        /// </summary>
+        /// <param name="entity"></param>
+        void ReplaceEntity(IEntity entity);
+
     }
+
     /// <summary>
     /// EntityManager stores entity data and provides a safe way to mutate the entities dictionary ( Dictionary<uint, IEntity> )
     /// </summary>
@@ -53,21 +65,17 @@ namespace Hel.ECS.Entities
         public World World { get; private set; }
 
         public EntityManager(World world) => World = world;
+
         public uint AddEntity(IEntity entity) =>
-            AddEntityInternal(
-                entity.Id != 0 ? entity.Id : GenerateEntityIdInternal(),
-                entity);
+            AddEntityInternal(entity);
 
-        private uint AddEntityInternal(uint id, IEntity entity)
+        private uint AddEntityInternal(IEntity entity)
         {
-            try {
-                entities.Add(id, entity);
-            } catch (ArgumentException)
-            {
-                entities.Add(GenerateEntityIdInternal(), entity);
-            }
 
-            return id;
+            entity.SetId(GenerateEntityIdInternal());
+            entities.Add(entity.Id, entity);
+
+            return entity.Id;
 
         }
         private uint GenerateEntityIdInternal()

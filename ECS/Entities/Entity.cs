@@ -13,7 +13,7 @@
         /// when creating the entity, an ID will be assigned 
         /// when passed to the entity manager.
         /// </summary>
-        uint Id { get; set; }
+        uint Id { get; }
 
         /// <summary>
         /// Whether or not the entity is active. 
@@ -27,5 +27,12 @@
         /// activation state. 
         /// </summary>
         bool Active { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id">The ID to set </param>
+        void SetId(uint id);
     }
+
 }

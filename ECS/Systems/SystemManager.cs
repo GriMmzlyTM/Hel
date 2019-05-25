@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Hel.ECS.Systems
 {
+
     public class SystemManager : DrawableGameComponent
     {
 
