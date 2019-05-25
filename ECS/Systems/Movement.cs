@@ -28,11 +28,12 @@ namespace Hel.ECS.Systems
         }
 
 
-        public override void JobLogic(IEnumerable<IEntity> entityList)
+        protected override void JobLogic(IEnumerable<IEntity> entityList)
         {
             
             foreach (IEntity entity in entityList)
             {
+                if (entity.Active == false) continue;
                 if (entity is IMovement moveComponent)
                 {
                     Vector2 moveDir = (MoveDirection.KeyboardDirection() * 5);

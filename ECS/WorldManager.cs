@@ -37,8 +37,7 @@ namespace Hel.ECS
     {
        private readonly Dictionary<string, World> worlds = new Dictionary<string, World>();
 
-       public WorldManager()
-       {}
+       public WorldManager() {}
 
        public World GenerateWorld(Game game, SpriteBatch spriteBatch, string worldName)
        {

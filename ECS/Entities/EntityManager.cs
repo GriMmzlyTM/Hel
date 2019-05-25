@@ -1,15 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Hel.ECS.Entities
 {
-    internal interface IEntityManager
+    public interface IEntityManager
     {
+        /// <summary>
+        /// The world that this entity manager belongs to
+        /// </summary>
+        World World { get; }
         /// <summary>
         /// Add an entity to the world. An entity is any struct with the IEntity interface implemented.
         /// </summary>
         /// <param name="entity">Struct with the IEntity interface</param>
-        void AddEntity(IEntity entity);
+        uint AddEntity(IEntity entity);
         /// <summary>
         /// Returns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example/
         /// </summary>
@@ -42,7 +47,15 @@ namespace Hel.ECS.Entities
         /// <typeparam name="T">Type of component</typeparam>
         void ClearEntitiesType<T>();
 
+        /// <summary>
+        /// Uses the ID of the entity to replace it within the entities dictionary
+        /// with a new entity. Useful for updating mutated entities.
+        /// </summary>
+        /// <param name="entity"></param>
+        void ReplaceEntity(IEntity entity);
+
     }
+
     /// <summary>
     /// EntityManager stores entity data and provides a safe way to mutate the entities dictionary ( Dictionary<uint, IEntity> )
     /// </summary>
@@ -52,9 +65,25 @@ namespace Hel.ECS.Entities
         public World World { get; private set; }
 
         public EntityManager(World world) => World = world;
-        public void AddEntity(IEntity entity)
+
+        public uint AddEntity(IEntity entity) =>
+            AddEntityInternal(entity);
+
+        private uint AddEntityInternal(IEntity entity)
         {
+
+            entity.SetId(GenerateEntityIdInternal());
             entities.Add(entity.Id, entity);
+
+            return entity.Id;
+
+        }
+        private uint GenerateEntityIdInternal()
+        {
+
+            return entities.ContainsKey(0)
+                ? entities.Where(x => !entities.ContainsKey(x.Key + 1)).First().Key + 1
+                : 0;
         }
 
         public List<IEntity> GetEntityType<T>() => entities.Values.Where(x => x is T).ToList();

@@ -27,7 +27,7 @@ namespace Hel.Jobs
             }
         }
 
-        public static void ApplyMutations(EntityManager manager)
+        public static void ApplyMutations(IEntityManager manager)
         {
             lock (stagedEntities) {
                 List<IEntity> stagedEntitiesSafe  = new List<IEntity>(stagedEntities);
