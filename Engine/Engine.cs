@@ -22,7 +22,6 @@ namespace Hel.Engine
     {
 
         public static string FileRoot { get; private set; }
-        public static WorldManager worldManager { get; private set; }
 
         private static Game game;
 
@@ -35,7 +34,6 @@ namespace Hel.Engine
         public static void Initialize(Game game)
         {
             game.Components.Add(new Controls.Controls(game));
-            worldManager = new WorldManager();
 
             FileRoot = @"C:\HelTests";
         }
