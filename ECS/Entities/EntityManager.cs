@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Hel.ECS.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Hel.ECS.Entities
 {
-    public interface IEntityManager
+    internal interface IEntityManager
     {
         /// <summary>
         /// The world that this entity manager belongs to
@@ -20,13 +21,13 @@ namespace Hel.ECS.Entities
         /// </summary>
         /// <typeparam name="T">Interface to check for.</typeparam>
         /// <returns>List containing all entities data for specified type.</returns>
-        List<IEntity> GetEntityType<T>();
+        Dictionary<uint, HashSet<IComponent>> GetEntityType<T>();
         /// <summary>
         /// Access an entities data based on the ID
         /// </summary>
         /// <param name="ID">ID of the entity</param>
         /// <returns>Entity component</returns>
-        IEntity GetEntityID(uint ID);
+        HashSet<IComponent> GetEntityID(uint ID);
         /// <summary>
         /// Removes an entity from the world
         /// </summary>
@@ -36,7 +37,7 @@ namespace Hel.ECS.Entities
         /// Remove all entities with the same ID as the one provided. Useful if you have a list or array of entities you wish to remove. 
         /// </summary>
         /// <param name="entitiesList">IEnumerable containing IEntities</param>
-        void RemoveEntities(IEnumerable<IEntity> entitiesList);
+        void RemoveEntities(IEnumerable<uint> entitiesList);
         /// <summary>
         /// Removes all entities from the world. Useful for resets, map restarts, or closing the game.
         /// </summary>
@@ -47,76 +48,75 @@ namespace Hel.ECS.Entities
         /// <typeparam name="T">Type of component</typeparam>
         void ClearEntitiesType<T>();
 
-        /// <summary>
-        /// Uses the ID of the entity to replace it within the entities dictionary
-        /// with a new entity. Useful for updating mutated entities.
-        /// </summary>
-        /// <param name="entity"></param>
-        void ReplaceEntity(IEntity entity);
-
     }
 
     /// <summary>
-    /// EntityManager stores entity data and provides a safe way to mutate the entities dictionary ( Dictionary<uint, IEntity> )
+    /// EntityManager stores entity data and provides a safe way to mutate the entities dictionary ( Dictionary<uint, HashSet<IComponent>> )
     /// </summary>
     public class EntityManager : IEntityManager
     {
-        private readonly Dictionary<uint, IEntity> entities = new Dictionary<uint, IEntity>();
+        private readonly Dictionary<uint, HashSet<IComponent>> entities = new Dictionary<uint, HashSet<IComponent>>();
         public World World { get; private set; }
 
         public EntityManager(World world) => World = world;
+
+        public IEntity CreateEntity(string entityName) =>
+            EntityCreator.CreateEntity(entityName);
+
+        public void LoadJSON(List<string> jsonFiles) =>
+            EntityCreator.LoadJSON(jsonFiles);
+
+        public uint CreateEntityApply(string entityName) =>
+            AddEntity(
+                EntityCreator.CreateEntity(entityName));
 
         public uint AddEntity(IEntity entity) =>
             AddEntityInternal(entity);
 
         private uint AddEntityInternal(IEntity entity)
         {
-
-            entity.SetId(GenerateEntityIdInternal());
-            entities.Add(entity.Id, entity);
-
-            return entity.Id;
+            lock (entities)
+            {
+                uint _entity_id = GenerateEntityIdInternal();
+                entities.Add(_entity_id, entity.Components);
+                return _entity_id;
+            }
 
         }
-        private uint GenerateEntityIdInternal()
-        {
-
-            return entities.ContainsKey(0)
+        private uint GenerateEntityIdInternal() =>
+            entities.ContainsKey(0)
                 ? entities.Where(x => !entities.ContainsKey(x.Key + 1)).First().Key + 1
                 : 0;
-        }
 
-        public List<IEntity> GetEntityType<T>() => entities.Values.Where(x => x is T).ToList();
+        public Dictionary<uint, HashSet<IComponent>> GetEntityType<T>() => 
+            entities
+            .Where(x => x.Value.Any(p => p is T))
+            .ToDictionary(x => x.Key,
+                x => x.Value);
 
-        public IEntity GetEntityID(uint ID) => entities[ID];
+        public HashSet<IComponent> GetEntityID(uint ID) => entities[ID];
 
         public void RemoveEntity(uint ID) => entities.Remove(ID);
 
-        public void RemoveEntities(IEnumerable<IEntity> entitiesList)
+        public void RemoveEntities(IEnumerable<uint> entitiesList)
         {
-            foreach (IEntity entity in entitiesList)
-                entities.Remove(entity.Id);
+            foreach (uint entity in entitiesList)
+                entities.Remove(entity);
         }
 
         public void ClearEntities() => entities.Clear();
 
         public void ClearEntitiesType<T>()
         {
-            List<IEntity> entityType = GetEntityType<T>();
-            foreach (var entity in entityType)
+            var entityType = GetEntityType<T>();
+            lock (entities)
             {
-                    entities.Remove(entity.Id);
+                foreach (var entity in entityType)
+                {
+                    entities.Remove(entity.Key);
+                }
             }
         }
-
-        public void ReplaceEntity(IEntity entity)
-        {
-            if (entities.ContainsKey(entity.Id))
-                entities[entity.Id] = entity;
-            else
-                AddEntity(entity);
-        }
-
 
     }
 }

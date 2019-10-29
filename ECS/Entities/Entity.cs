@@ -1,4 +1,9 @@
-﻿namespace Hel.ECS.Entities
+﻿using Hel.ECS.Components;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Hel.ECS.Entities
 {
     /// <summary>
     /// IEntity is the base component all entities need to use. 
@@ -13,7 +18,8 @@
         /// when creating the entity, an ID will be assigned 
         /// when passed to the entity manager.
         /// </summary>
-        uint Id { get; }
+        //[Obsolete]
+        //uint Id { get; }
 
         /// <summary>
         /// Whether or not the entity is active. 
@@ -26,13 +32,59 @@
         /// due to the fact that some systems may want to run regardless of
         /// activation state. 
         /// </summary>
-        bool Active { get; set; }
+        //[Obsolete]
+        //bool Active { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id">The ID to set </param>
-        void SetId(uint id);
+        //[Obsolete]
+        //void SetId(uint id);
+
+        HashSet<IComponent> Components { get; }
+
+        void AddComponent(IComponent component);
+
+    }
+
+    public struct Entity : IEntity
+    {
+        public ComponentList Components { get; }
+
+        public Entity(List<IComponent> componentList)
+        {
+            Components = new HashSet<IComponent>();
+            foreach(var component in componentList)
+            {
+                AddComponent(component);
+            }
+        }
+
+        public void AddComponent(IComponent component)
+        {
+            Components.Add(component);
+        }
+    }
+
+    public class EntityList : IEnumerable
+    {
+
+        private Dictionary<uint, ComponentList> entities = new Dictionary<uint, ComponentList>();
+
+        public void AddEntity(uint entity, ComponentList components) =>
+          entities.Add(entity, components);
+
+        public void RemoveEntityById(uint id) =>
+            entities.Remove(id);
+
+        public IEnumerator GetEnumerator()
+        {
+            foreach(var entity in entities)
+            {
+                yield return entity.Value;
+            }
+        }
     }
 
 }

@@ -1,17 +1,15 @@
 ﻿using Hel.Controls;
 using Hel.ECS.Components;
-using Hel.ECS.Entities;
 using Hel.Jobs;
 using Microsoft.Xna.Framework;
-using System;
 using System.Collections.Generic;
 
 namespace Hel.ECS.Systems
 {
-    public class Movement : System
+    public class MovementSystem : System
     {
 
-        public Movement(SystemManager manager) : base(manager)
+        public MovementSystem(SystemManager manager) : base(manager)
         {
             //job = new Job(world.EntityManager.GetEntityType<IMovement>(), JobLogic);
         }
@@ -21,20 +19,20 @@ namespace Hel.ECS.Systems
 
             JobScheduler.ScheduleJob(
                 new EntityJob(
-                    world.EntityManager.GetEntityType<IMovement>(),
+                    world.EntityManager.GetEntityType<MovementComponent>(),
                     JobLogic,
-                    "MovementJob"
-                    ));
+                    "MovementJob" ));
         }
 
 
-        protected override void JobLogic(IEnumerable<IEntity> entityList)
+        protected override void JobLogic(Dictionary<uint, HashSet<IComponent>> entityList)
         {
             
-            foreach (IEntity entity in entityList)
+            foreach (var entity in entityList)
             {
-                if (entity.Active == false) continue;
-                if (entity is IMovement moveComponent)
+                IComponent component;
+                if (entity.Value.TryGetValue(typeof(MovementComponent), out component) == false) continue;
+                if (entity is MovementComponent moveComponent)
                 {
                     Vector2 moveDir = (MoveDirection.KeyboardDirection() * 5);
                     moveComponent.X += (moveDir.X * SystemManager.DeltaTime);

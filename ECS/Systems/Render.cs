@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hel.ECS.Components;
+﻿using Hel.ECS.Components;
 using Hel.ECS.Entities;
-using Hel.Jobs;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 

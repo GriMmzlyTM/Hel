@@ -55,6 +55,8 @@
     <Compile Include="Controls\KeyAction.cs" />
     <Compile Include="Controls\KeyBinding.cs" />
     <Compile Include="Controls\MoveDirection.cs" />
+    <Compile Include="ECS\Components\ComponentManager.cs" />
+    <Compile Include="ECS\Components\IComponent.cs" />
     <Compile Include="ECS\Components\IMovement.cs" />
     <Compile Include="ECS\Components\IRender.cs" />
     <Compile Include="ECS\Entities\Entity.cs" />

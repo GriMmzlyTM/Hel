@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework.Graphics;
 
 namespace Hel.ECS.Components
 {
@@ -17,7 +11,7 @@ namespace Hel.ECS.Components
     /// IRender has its own Render system which is added to the
     /// SystemManager when the World is created. 
     /// </summary>
-    public interface IRender
+    public interface IRender : IComponent
     {
         /// <summary>
         /// Texture is the Texture2D your entity should draw to the screen 
@@ -34,5 +28,13 @@ namespace Hel.ECS.Components
         /// </summary>
         float Y { get; set; }
 
+    }
+
+    public struct Render : IRender
+    {
+        public Texture2D Texture { get; set; }
+        public float X { get; set; }
+        public float Y { get; set; }
+        public bool Active { get; set; }
     }
 }

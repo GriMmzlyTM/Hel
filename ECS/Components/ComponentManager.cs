@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Hel.ECS.Components
 {
-    interface IMovement
+
+    internal interface IComponentManager
     {
-        float X { get; set; }
-        float Y { get; set; }
+
+    }
+
+    public class ComponentManager : IComponentManager
+    {
+
     }
 }
