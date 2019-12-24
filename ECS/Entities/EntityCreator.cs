@@ -20,7 +20,6 @@ namespace Hel.ECS.Entities
             }
         }
 
-
         private static IEntity CreateEntityInternal(string entityName) =>
             json[entityName].ToObject<Entity>();
     }

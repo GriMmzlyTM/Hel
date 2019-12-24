@@ -1,17 +1,17 @@
-﻿using System;
+﻿using Hel.ECS.Entities;
+using Hel.Jobs.ExceptionExtensions;
+using Hel.Jobs.Model;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Hel.Jobs
+namespace Hel.ECS.Jobs
 {
-    class JobManager
+    class EntityJobManager
     {
 
         private static List<string> _jobsRunning = new List<string>();
 
-        public JobManager()
+        public EntityJobManager()
         {
 
         }
@@ -24,7 +24,8 @@ namespace Hel.Jobs
                 throw new JobNotQueuedException($"{key} job is not running!");
         }
 
-        private static void AddRunningJob(string key) {
+        private static void AddRunningJob(string key)
+        {
             if (_jobsRunning.FirstOrDefault(x => x.Equals(key)) is null)
                 _jobsRunning.Add(key);
             else
@@ -36,14 +37,14 @@ namespace Hel.Jobs
         public static void RunJobs()
         {
 
-            Queue<IJob> jobQueue = JobScheduler.GetJobs();
+            Queue<IJob<EntityDictionary>> jobQueue = EntityJobScheduler.GetJobs();
 
             while (jobQueue.Count != 0)
             {
-                IJob job = jobQueue.Dequeue();
+                IJob<EntityDictionary> job = jobQueue.Dequeue();
                 AddRunningJob(job.Key);
                 job.QueueJobThread();
-                
+
             }
         }
 

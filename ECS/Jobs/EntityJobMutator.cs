@@ -2,9 +2,9 @@
 using Hel.ECS.Entities;
 using System.Collections.Generic;
 
-namespace Hel.Jobs
+namespace Hel.ECS.Jobs
 {
-    class JobMutator
+    class EntityJobMutator
     {
         private static readonly EntityDictionary stagedEntities = new EntityDictionary();
         private static readonly List<uint> removedEntities = new List<uint>();
@@ -13,7 +13,7 @@ namespace Hel.Jobs
         {
             lock (stagedEntities)
             {
-                ComponentDictionary stagedComponents = 
+                ComponentDictionary stagedComponents =
                     stagedEntities.ContainsKey(id) ? stagedEntities[id] : new ComponentDictionary();
 
                 foreach (var component in components)
@@ -42,8 +42,9 @@ namespace Hel.Jobs
                 manager.RemoveEntities(removedEntitiesSafe);
             }
 
-            lock (stagedEntities) {
-                EntityDictionary stagedEntitiesSafe  = new EntityDictionary(stagedEntities);
+            lock (stagedEntities)
+            {
+                EntityDictionary stagedEntitiesSafe = new EntityDictionary(stagedEntities);
                 stagedEntities.Clear();
 
                 foreach (var entity in stagedEntitiesSafe)

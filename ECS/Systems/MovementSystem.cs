@@ -2,7 +2,8 @@
 using Hel.ECS.Components;
 using Hel.ECS.Components.Model;
 using Hel.ECS.Entities;
-using Hel.Jobs;
+using Hel.ECS.Jobs;
+using Hel.Jobs.Model;
 using Microsoft.Xna.Framework;
 
 namespace Hel.ECS.Systems
@@ -17,7 +18,7 @@ namespace Hel.ECS.Systems
 
         public override void Update(GameTime gameTime)
         {
-            JobScheduler.ScheduleJob(
+            EntityJobScheduler.ScheduleJob(
                 new EntityJob(
                     world.EntityManager.GetEntities<MovementComponent>(),
                     JobLogic,
@@ -38,7 +39,7 @@ namespace Hel.ECS.Systems
                     transformComponent.X += (moveDir.X * SystemManager.DeltaTime);
                     transformComponent.Y += (moveDir.Y * SystemManager.DeltaTime);
 
-                    JobMutator.StageEntityMutation(entity.Key, transformComponent);
+                    EntityJobMutator.StageEntityMutation(entity.Key, transformComponent);
                 }
 
             }

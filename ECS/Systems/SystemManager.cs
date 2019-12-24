@@ -1,4 +1,5 @@
-﻿using Hel.Jobs;
+﻿using Hel.ECS.Jobs;
+using Hel.Jobs;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using System.Threading;
@@ -46,15 +47,15 @@ namespace Hel.ECS.Systems
             foreach (ISystem sys in systems)
                 sys.Update(gameTime);
 
-            JobManager.RunJobs();
+            EntityJobManager.RunJobs();
 
-            var runningJobs = JobManager.GetRunningJobs();
+            var runningJobs = EntityJobManager.GetRunningJobs();
 
             while (runningJobs.Count != 0) {
                 Thread.Sleep(1);
             }
 
-            JobMutator.ApplyMutations(World.EntityManager);
+            EntityJobMutator.ApplyMutations(World.EntityManager);
 
             base.Update(gameTime);
         }
