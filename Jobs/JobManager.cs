@@ -21,7 +21,7 @@ namespace Hel.Jobs
             if (!(_jobsRunning.FirstOrDefault(x => x.Equals(key)) is null))
                 _jobsRunning.Remove(key);
             else
-                throw new JobAlreadyQueuedException($"{key} job is not running!");
+                throw new JobNotQueuedException($"{key} job is not running!");
         }
 
         private static void AddRunningJob(string key) {

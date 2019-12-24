@@ -17,17 +17,17 @@ namespace Hel.ECS.Entities
         /// <param name="entity">Struct with the IEntity interface</param>
         uint AddEntity(IEntity entity);
         /// <summary>
-        /// Returns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example/
+        /// Returns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example
         /// </summary>
         /// <typeparam name="T">Interface to check for.</typeparam>
         /// <returns>List containing all entities data for specified type.</returns>
-        Dictionary<uint, HashSet<IComponent>> GetEntityType<T>();
+        EntityDictionary GetEntities<T>();
         /// <summary>
-        /// Access an entities data based on the ID
+        /// Returns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example
         /// </summary>
         /// <param name="ID">ID of the entity</param>
         /// <returns>Entity component</returns>
-        HashSet<IComponent> GetEntityID(uint ID);
+        EntityDictionary GetEntities(uint ID);
         /// <summary>
         /// Removes an entity from the world
         /// </summary>
@@ -43,10 +43,16 @@ namespace Hel.ECS.Entities
         /// </summary>
         void ClearEntities();
         /// <summary>
-        /// Clears all entities that correspond to a certain type. For example, clearing all entities that contain IRenderable components.
+        /// Clears all entities that correspond to a certain type. For example, clearing all entities that contain IRenderable _components.
         /// </summary>
         /// <typeparam name="T">Type of component</typeparam>
         void ClearEntitiesType<T>();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ID"></param>
+        void UpdateEntity(uint ID, ComponentDictionary components);
 
     }
 
@@ -55,7 +61,7 @@ namespace Hel.ECS.Entities
     /// </summary>
     public class EntityManager : IEntityManager
     {
-        private readonly Dictionary<uint, HashSet<IComponent>> entities = new Dictionary<uint, HashSet<IComponent>>();
+        private readonly EntityDictionary entities = new EntityDictionary();
         public World World { get; private set; }
 
         public EntityManager(World world) => World = world;
@@ -88,35 +94,43 @@ namespace Hel.ECS.Entities
                 ? entities.Where(x => !entities.ContainsKey(x.Key + 1)).First().Key + 1
                 : 0;
 
-        public Dictionary<uint, HashSet<IComponent>> GetEntityType<T>() => 
-            entities
-            .Where(x => x.Value.Any(p => p is T))
-            .ToDictionary(x => x.Key,
-                x => x.Value);
+        public EntityDictionary GetEntities<T>() =>
+            new EntityDictionary(entities
+            .Where(entity => entity.Value.Any(component => (component.Value is T) && (component.Value.Active)))
+            .ToDictionary(id => id.Key,
+                comp => comp.Value));
 
-        public HashSet<IComponent> GetEntityID(uint ID) => entities[ID];
+        public EntityDictionary GetEntities(uint ID) =>
+            new EntityDictionary(ID, entities[ID]);
 
-        public void RemoveEntity(uint ID) => entities.Remove(ID);
-
+        public void RemoveEntity(uint ID)
+        {
+            lock (entities)
+            {
+                entities.Remove(ID);
+            }
+        }
         public void RemoveEntities(IEnumerable<uint> entitiesList)
         {
             foreach (uint entity in entitiesList)
-                entities.Remove(entity);
+                this.RemoveEntity(entity);
         }
 
         public void ClearEntities() => entities.Clear();
 
         public void ClearEntitiesType<T>()
         {
-            var entityType = GetEntityType<T>();
-            lock (entities)
+            var entityType = GetEntities<T>();
+
+            foreach (var entity in entityType)
             {
-                foreach (var entity in entityType)
-                {
-                    entities.Remove(entity.Key);
-                }
+                this.RemoveEntity(entity.Key);
             }
+
         }
 
+        public void UpdateEntity(uint id, ComponentDictionary components) =>
+            entities.UpdateEntity(id, components);
     }
 }
+ 

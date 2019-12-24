@@ -32,9 +32,15 @@
   <PropertyGroup>
     <RootNamespace>Hel</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MonoGame\MonoGame.Framework\bin\DesktopGL\Release\net452\MonoGame.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -48,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ECS\Entities\Tests\TestEntities.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -57,12 +64,14 @@
     <Compile Include="Controls\MoveDirection.cs" />
     <Compile Include="ECS\Components\ComponentManager.cs" />
     <Compile Include="ECS\Components\IComponent.cs" />
-    <Compile Include="ECS\Components\IMovement.cs" />
-    <Compile Include="ECS\Components\IRender.cs" />
+    <Compile Include="ECS\Components\Model\EntityActiveComponent.cs" />
+    <Compile Include="ECS\Components\Model\MovementComponent.cs" />
+    <Compile Include="ECS\Components\Model\RenderComponent.cs" />
+    <Compile Include="ECS\Components\Model\TransformComponent.cs" />
     <Compile Include="ECS\Entities\Entity.cs" />
+    <Compile Include="ECS\Entities\EntityCreator.cs" />
     <Compile Include="ECS\Entities\EntityManager.cs" />
-    <Compile Include="ECS\Entities\Tests\Character.cs" />
-    <Compile Include="ECS\Systems\Movement.cs" />
+    <Compile Include="ECS\Systems\MovementSystem.cs" />
     <Compile Include="ECS\Systems\Render.cs" />
     <Compile Include="ECS\Systems\System.cs" />
     <Compile Include="ECS\Systems\SystemManager.cs" />
@@ -82,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.2</Version>
+      <Version>12.0.3</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />

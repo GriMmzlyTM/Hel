@@ -25,7 +25,7 @@ namespace Hel.ECS.Systems
         private void InitializeSystems()
         {
             new Render(this);
-            new Movement(this);
+            new MovementSystem(this);
         }
 
         public void AddSystem(ISystem system) => systems.Add(system);

@@ -1,6 +1,8 @@
-﻿using Hel.ECS.Entities;
+﻿using Hel.ECS.Components;
+using Hel.ECS.Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 using System.Collections.Generic;
 
 namespace Hel.ECS.Systems
@@ -25,7 +27,7 @@ namespace Hel.ECS.Systems
         public virtual void Update(GameTime gameTime) { }
         public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch) { }
 
-        protected virtual void JobLogic(IEnumerable<IEntity> entityList) { }
+        protected virtual void JobLogic(EntityDictionary entityList) { }
 
     }
 }

@@ -1,44 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Hel.ECS.Components;
 using Hel.ECS.Entities;
+using System.Collections.Generic;
 
 namespace Hel.Jobs
 {
     class JobMutator
     {
-        private static readonly List<IEntity> stagedEntities = new List<IEntity>();
-        private static readonly List<IEntity> removedEntities = new List<IEntity>();
+        private static readonly EntityDictionary stagedEntities = new EntityDictionary();
+        private static readonly List<uint> removedEntities = new List<uint>();
 
-        public static void StageEntityMutation(IEntity entity)
+        public static void StageEntityMutation(uint id, params IComponent[] components)
         {
-            lock (stagedEntities) {
-                stagedEntities.Add(entity);
+            lock (stagedEntities)
+            {
+                ComponentDictionary stagedComponents = 
+                    stagedEntities.ContainsKey(id) ? stagedEntities[id] : new ComponentDictionary();
+
+                foreach (var component in components)
+                {
+                    stagedComponents.UpdateComponent(component);
+                }
+                stagedEntities.UpdateEntity(id, stagedComponents);
             }
         }
 
-        public static void RemoveEntity(IEntity entity)
+        public static void RemoveEntity(uint id)
         {
             lock (removedEntities)
             {
-                removedEntities.Add(entity);
+                removedEntities.Add(id);
             }
         }
 
         public static void ApplyMutations(IEntityManager manager)
         {
-            lock (stagedEntities) {
-                List<IEntity> stagedEntitiesSafe  = new List<IEntity>(stagedEntities);
-                List<IEntity> removedEntitiesSafe = new List<IEntity>(removedEntities);
+            lock (removedEntities)
+            {
+                List<uint> removedEntitiesSafe = new List<uint>(removedEntities);
                 removedEntities.Clear();
-                stagedEntities.Clear();
 
                 manager.RemoveEntities(removedEntitiesSafe);
+            }
 
-                foreach (IEntity entity in stagedEntitiesSafe)
-                    manager.ReplaceEntity(entity);
+            lock (stagedEntities) {
+                EntityDictionary stagedEntitiesSafe  = new EntityDictionary(stagedEntities);
+                stagedEntities.Clear();
+
+                foreach (var entity in stagedEntitiesSafe)
+                    manager.UpdateEntity(entity.Key, entity.Value);
             }
         }
 

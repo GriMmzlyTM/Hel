@@ -12,7 +12,7 @@ namespace Hel.ECS
     public class World
     {
         public string Name { get; private set; }
-        public IEntityManager EntityManager;
+        public EntityManager EntityManager;
         public SystemManager SystemManager;
         public SpriteBatch SpriteBatch { get; private set; }
 

@@ -6,7 +6,7 @@ using System.Threading;
 namespace Hel.Jobs
 {
 
-    public delegate void EntityJobCallback (IEnumerable<IEntity> entityList);
+    public delegate void EntityJobCallback (EntityDictionary entityList);
     public interface IJob
     {
         /// <summary>
@@ -24,24 +24,24 @@ namespace Hel.Jobs
         /// Returns the entities that the job utilizes.
         /// </summary>
         /// <returns></returns>
-        IEnumerable<IEntity> GetEntities();
+        EntityDictionary GetEntities();
 
         /// <summary>
         /// Runs the job logic specified on creation. 
         /// </summary>
         /// <param name="entityList">The list of entities to pass to the job.</param>
-        void Run(IEnumerable<IEntity> entityList);
+        void Run(EntityDictionary entityList);
     }
 
     public class EntityJob : IJob
     {
-        private readonly IEnumerable<IEntity> _entities;
+        private readonly EntityDictionary _entities;
 
         private readonly EntityJobCallback _jobCallback;
         public string Key { get; private set; }
 
         public EntityJob(
-            IEnumerable<IEntity> entities, 
+            EntityDictionary entities, 
             EntityJobCallback jobCallback, 
             string key)
         {
@@ -55,9 +55,9 @@ namespace Hel.Jobs
         public void QueueJobThread() =>
             ThreadPool.QueueUserWorkItem(new WaitCallback(jobLogic), this);
 
-        public void Run(IEnumerable<IEntity> entityList) => _jobCallback(entityList);
+        public void Run(EntityDictionary entityList) => _jobCallback(entityList);
 
-        public IEnumerable<IEntity> GetEntities() => _entities;
+        public EntityDictionary GetEntities() => _entities;
 
         private void jobLogic(object obj)
         {
@@ -76,6 +76,12 @@ namespace Hel.Jobs
         public JobAlreadyQueuedException() { }
 
         public JobAlreadyQueuedException(string message) : base(message) { }
+    }
 
+    public class JobNotQueuedException : Exception
+    {
+        public JobNotQueuedException() { }
+
+        public JobNotQueuedException(string message) : base(message) { }
     }
 }

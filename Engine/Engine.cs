@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mime;
-using System.Text;
-using System.Threading.Tasks;
-using Hel.Controls;
-using Hel.ECS;
-using Hel.ECS.Entities.Tests;
+﻿using Hel.ECS;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace Hel.Engine
 {
@@ -28,7 +18,7 @@ namespace Hel.Engine
 
         /// <summary>
         /// The Initialize method is required in-order to initialize and startup the hel engine properly. This will run necessary setup methods, as well as
-        /// assign the required components to your game so they can run automatically.
+        /// assign the required _components to your game so they can run automatically.
         /// </summary>
         /// <param name="game">Your Game1 instance.</param>
         public static void Initialize(Game game)

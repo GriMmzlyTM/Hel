@@ -1,7 +1,9 @@
 ﻿using Hel.ECS.Components;
+using Hel.ECS.Components.Model;
 using Hel.ECS.Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace Hel.ECS.Systems
 {
@@ -15,18 +17,21 @@ namespace Hel.ECS.Systems
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
 
-            //Job job = new Job(world.EntityManager.GetEntityType<IRender>(), JobLogic);
+            //Job job = new Job(world.EntityManager.GetEntities<IRender>(), JobLogic);
             
                         spriteBatch.Begin();
 
             //Draws all entities to the screen that implement the IRender interface.
-            foreach (IEntity entity in world.EntityManager.GetEntityType<IRender>())
+            foreach (var entity in world.EntityManager.GetEntities<RenderComponent>())
             {
-                if (!(entity is IRender renderComponent) || entity.Active == false) continue;
-                spriteBatch.Draw(
-                    renderComponent.Texture,
-                    new Vector2(renderComponent.X, renderComponent.Y),
-                    Color.White);
+                if (entity.Value.GetComponentOrFail(out RenderComponent renderComponent)
+                    && entity.Value.GetComponentOrFail(out TransformComponent transformComponent))
+                {
+                    spriteBatch.Draw(
+                        renderComponent.Texture,
+                        new Vector2(transformComponent.X, transformComponent.Y),
+                        Color.White);
+                }
             }
 
             spriteBatch.End();
