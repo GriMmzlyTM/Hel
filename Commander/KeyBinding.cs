@@ -1,10 +1,12 @@
-﻿using Hel.Engine;
+﻿
+using Hel.Commander.Model;
+using Hel.Engine;
 using Microsoft.Xna.Framework.Input;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Hel.Controls
+namespace Hel.Commander
 {
     internal interface IKeyBinding
     {
@@ -13,28 +15,28 @@ namespace Hel.Controls
         /// Useful if searching for a specific action. Slower then GetKey due to the fact that
         /// Bindings use Keys as TKey and KeyActions as TValues.   
         /// </summary>
-        /// <param name="action">KeyAction you are searching for.</param>
+        /// <param name="action">ICommand you are searching for.</param>
         /// <returns>Key associated with said action, if available. Returns 0 or Keys.None if Action does not exist.</returns>
-        Keys GetAction(KeyAction action);
+        Keys GetAction(ICommand action);
         /// <summary>
-        /// Uses the provided key to return the KeyAction associated with a specific key.
+        /// Uses the provided key to return the ICommand associated with a specific key.
         /// Faster than GetKey due to the Bindings dictionary using Keys as TKeys
         /// </summary>
         /// <param name="key">The key you're trying to get the action of.</param>
-        /// <returns>Returns the action associated with said key. If key does not exist in dictionary, returns 0 or KeyAction.None</returns>
-        KeyAction GetKey(Keys key);
+        /// <returns>Returns the action associated with said key. If key does not exist in dictionary, returns 0 or ICommand.None</returns>
+        ICommand GetKey(Keys key);
         /// <summary>
-        /// Adds a Key-KeyAction pair to the bindings dictionary. If key is already in use, replaces the associated action. 
+        /// Adds a Key-ICommand pair to the bindings dictionary. If key is already in use, replaces the associated action. 
         /// </summary>
         /// <param name="key">The key to bind</param>
         /// <param name="action">The action to bind to the key</param>
-        void SetAction(Keys key, KeyAction action);
+        void SetAction(Keys key, ICommand action);
         /// <summary>
-        /// Adds multiple Key-KeyAction pairs to the bindings dictionary. If key is already in use, replaces the associated action. 
+        /// Adds multiple Key-ICommand pairs to the bindings dictionary. If key is already in use, replaces the associated action. 
         /// </summary>
         /// <param name="key">The key to bind</param>
         /// <param name="action">The action to bind to the key</param>
-        void SetActions(Dictionary<Keys, KeyAction> actions);
+        void SetActions(Dictionary<Keys, ICommand> actions);
         /// <summary>
         /// Removes a key from the dictionary entirely. 
         /// </summary>
@@ -53,7 +55,7 @@ namespace Hel.Controls
         /// </summary>
         void SaveBindingsJSON();
         /// <summary>
-        /// Loads bindings from the JSON file.
+        /// Loads bindings from the JSON file. UpdateBindings() must be called to save the bindings.
         /// </summary>
         void LoadBindingsJSON();
     }
@@ -62,16 +64,16 @@ namespace Hel.Controls
         /// <summary>
         /// Permanent key bindings used by Get methods
         /// </summary>
-        private Dictionary<Keys, KeyAction> _bindings;
+        private Dictionary<Keys, ICommand> _bindings;
         /// <summary>
         /// Temporary key bindings used to safely modify bindings, and revert if needed. 
         /// </summary>
-        private Dictionary<Keys, KeyAction> _tempBindings;
+        private Dictionary<Keys, ICommand> _tempBindings;
 
-        public KeyBinding(Dictionary<Keys,KeyAction> dict)
+        public KeyBinding(Dictionary<Keys, ICommand> dict)
         {
-            _bindings = new Dictionary<Keys, KeyAction>();
-            _tempBindings = new Dictionary<Keys, KeyAction>();
+            _bindings = new Dictionary<Keys, ICommand>();
+            _tempBindings = new Dictionary<Keys, ICommand>();
 
             foreach (var entry in dict)
             {
@@ -80,28 +82,28 @@ namespace Hel.Controls
             }
         }
 
-        public KeyBinding() : this(new Dictionary<Keys, KeyAction>()) {}
+        public KeyBinding() : this(new Dictionary<Keys, ICommand>()) {}
 
-        public KeyAction GetKey(Keys key) =>
-            _bindings.ContainsKey(key) ? _bindings[key] : KeyAction.None;
+        public ICommand GetKey(Keys key) =>
+            _bindings.ContainsKey(key) ? _bindings[key] : null;
      
 
-        public Keys GetAction(KeyAction action) =>
+        public Keys GetAction(ICommand action) =>
             _bindings.FirstOrDefault((v => v.Value == action)).Key;
 
         public void RemoveKey(Keys key) =>
             _tempBindings.Remove(key);
         
 
-        public void SetAction(Keys key, KeyAction action)
+        public void SetAction(Keys key, ICommand action)
         {
-            if (GetKey(key) != KeyAction.None)
+            if (GetKey(key) != null)
                 _tempBindings[0] = action;
             else
                 _tempBindings.Add(key, action);
         }
 
-        public void SetActions(Dictionary<Keys, KeyAction> actions)
+        public void SetActions(Dictionary<Keys, ICommand> actions)
         {
             foreach (var pair in actions)
             {
@@ -111,23 +113,23 @@ namespace Hel.Controls
 
         public void UpdateBindings()
         {
-            _bindings = new Dictionary<Keys, KeyAction>(_tempBindings);
+            _bindings = new Dictionary<Keys, ICommand>(_tempBindings);
             OnChangeEvents(this);
         }
 
         public void UndoBindings() =>
-            _tempBindings = new Dictionary<Keys, KeyAction>(_bindings);
+            _tempBindings = new Dictionary<Keys, ICommand>(_bindings);
 
         public void SaveBindingsJSON()
         {
             string output = JsonConvert.SerializeObject(_bindings);
-            System.IO.File.WriteAllText($"{Engine.Engine.FileRoot}\\Bindings.json", output);
+            System.IO.File.WriteAllText($"{Engine.Engine.FileRoot}/Bindings.json", output);
         }
 
         public void LoadBindingsJSON()
         {
-            string input = System.IO.File.ReadAllText($"{Engine.Engine.FileRoot}\\Bindings.json");
-            _tempBindings = JsonConvert.DeserializeObject<Dictionary<Keys, KeyAction>>(input);
+            string input = System.IO.File.ReadAllText($"{Engine.Engine.FileRoot}/Bindings.json");
+            _tempBindings = JsonConvert.DeserializeObject<Dictionary<Keys, ICommand>>(input);
         }
     }
 }

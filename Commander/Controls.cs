@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace Hel.Controls
+namespace Hel.Commander
 {
     class Controls : GameComponent
     {

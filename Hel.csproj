@@ -58,10 +58,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\Controls.cs" />
-    <Compile Include="Controls\KeyAction.cs" />
-    <Compile Include="Controls\KeyBinding.cs" />
-    <Compile Include="Controls\MoveDirection.cs" />
+    <Compile Include="Commander\Controls.cs" />
+    <Compile Include="Commander\KeyAction.cs" />
+    <Compile Include="Commander\KeyBinding.cs" />
+    <Compile Include="Commander\Model\ICommand.cs" />
+    <Compile Include="Commander\MoveDirection.cs" />
     <Compile Include="ECS\Components\ComponentDictionary.cs" />
     <Compile Include="ECS\Components\ComponentManager.cs" />
     <Compile Include="ECS\Components\IComponent.cs" />
@@ -91,9 +92,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Toolkit\Convert.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>

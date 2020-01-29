@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Input;
 using Hel.Toolkit;
 
-namespace Hel.Controls
+namespace Hel.Commander
 {
     public static class MoveDirection
     {

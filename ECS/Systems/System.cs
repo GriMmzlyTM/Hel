@@ -1,9 +1,6 @@
-﻿using Hel.ECS.Components;
-using Hel.ECS.Entities;
+﻿using Hel.ECS.Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
 
 namespace Hel.ECS.Systems
 {

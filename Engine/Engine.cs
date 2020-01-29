@@ -23,7 +23,7 @@ namespace Hel.Engine
         /// <param name="game">Your Game1 instance.</param>
         public static void Initialize(Game game)
         {
-            game.Components.Add(new Controls.Controls(game));
+            game.Components.Add(new Commander.Controls(game));
 
             FileRoot = @"C:\HelTests";
         }
