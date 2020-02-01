@@ -6,8 +6,8 @@ namespace Hel.Commander
 {
     public static class MoveDirection
     {
-        public static KeyboardState KeyState => Controls.KeyboardState;
-        public static KeyboardState LastKeyState => Controls.LastKeyboardState;
+        public static KeyboardState KeyState => InputHandler.KeyboardState;
+        public static KeyboardState LastKeyState => InputHandler.LastKeyboardState;
         private static int _lastX;
 
         private static Keys Up;
@@ -37,14 +37,6 @@ namespace Hel.Commander
             if (!dir.Equals(Vector2.Zero)) dir.Normalize(); 
 
             return dir;
-        }
-
-        public static void UpdateBindings(KeyBinding binding)
-        { 
-            Up = binding.GetAction(KeyAction.Up);
-            Down = binding.GetAction(KeyAction.Down);
-            Left = binding.GetAction(KeyAction.Left);
-            Right = binding.GetAction(KeyAction.Right);
         }
 
     }

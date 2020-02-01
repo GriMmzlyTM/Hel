@@ -3,21 +3,18 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Hel.Commander
 {
-    class Controls : GameComponent
+    class InputHandler : GameComponent
     {
 
         public static KeyboardState KeyboardState { get; private set; } = Keyboard.GetState();
         public static KeyboardState LastKeyboardState { get; private set; } = Keyboard.GetState();
 
-        public static KeyBinding KeyBindings { get; private set; } = new KeyBinding();
+        public static KeyBindingManager KeyBindings { get; private set; } = new KeyBindingManager();
 
-        public Controls(Game game) : base(game) { }
+        public InputHandler(Game game) : base(game) { }
 
         public override void Initialize()
         {
-
-            KeyBindings.AddChangeEvent(MoveDirection.UpdateBindings);
-
             KeyBindings.LoadBindingsJSON();
             KeyBindings.UpdateBindings();
 
@@ -28,6 +25,14 @@ namespace Hel.Commander
         {
             LastKeyboardState = KeyboardState;
             KeyboardState = Keyboard.GetState();
+
+            foreach(var pressedKey in KeyboardState.GetPressedKeys())
+            {
+                var keyBinding = KeyBindings.GetKeyBinding(pressedKey);
+                if (keyBinding != null)
+                    keyBinding.Commands.ForEach(command => command.Execute());
+            }
+
 
             base.Update(gameTime);
         }
