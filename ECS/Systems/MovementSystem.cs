@@ -3,6 +3,7 @@ using Hel.ECS.Components;
 using Hel.ECS.Components.Model;
 using Hel.ECS.Entities;
 using Hel.ECS.Jobs;
+using Hel.Input.Util;
 using Hel.Jobs.Model;
 using Microsoft.Xna.Framework;
 

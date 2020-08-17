@@ -1,4 +1,6 @@
-﻿namespace Hel.Commander.Model
+﻿using Hel.Commander.Model.Payload;
+
+namespace Hel.Commander.Model
 {
     /// <summary>
     /// Interface for all commands to use. 
@@ -10,8 +12,13 @@
     /// </summary>
     public interface ICommand
     {
-        void Execute();
+        abstract void Execute();
 
-        void Undo();
+        abstract void Undo();
+    }
+
+    public interface ICommand<T> : ICommand
+    {
+        T Payload { get; set; } 
     }
 }

@@ -1,4 +1,22 @@
-﻿$HEADER$namespace $NAMESPACE$
+﻿using System;
+using System.Diagnostics;
+using Hel.Commander.Model;
+using Hel.ECS;
+using Microsoft.Xna.Framework;
+
+namespace Hel.Commander
 {
-  public class $CLASS$ {$END$}
+    [Serializable]
+    public class ExitCommand : ICommand
+    {
+        public void Execute()
+        {
+            Engine.Engine.worldManager.GetGame().Exit();
+        }
+
+        public void Undo()
+        {
+        }
+
+    }
 }

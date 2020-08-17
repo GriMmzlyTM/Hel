@@ -16,11 +16,10 @@ namespace Hel.ECS
         /// Generates a new world and stores it in the world manager.
         /// The newly generated world will also generate a SystemManager and an EntityManager.
         /// </summary>
-        /// <param name="game">Your Game1 instance</param>
         /// <param name="spriteBatch">Game1 spritebatch</param>
         /// <param name="worldName">The name you want this world to be stored with in the dictionary</param>
         /// <returns></returns>
-        World GenerateWorld(Game game, SpriteBatch spriteBatch, string worldName);
+        World GenerateWorld(SpriteBatch spriteBatch, string worldName);
         /// <summary>
         /// Gets a world from the dictionary by name and returns it.
         /// </summary>
@@ -35,24 +34,27 @@ namespace Hel.ECS
     /// </summary
     public class WorldManager : IWorldManager
     {
-       private readonly Dictionary<string, World> worlds = new Dictionary<string, World>();
+       private readonly Dictionary<string, World> _worlds = new Dictionary<string, World>();
+       private readonly Game _game;
 
-       public WorldManager() {}
-
-       public World GenerateWorld(Game game, SpriteBatch spriteBatch, string worldName)
+       public WorldManager(Game game)
        {
-           World world = new World(game, spriteBatch, worldName);
-           worlds.Add(worldName, world);
+           _game = game;
+       }
+
+       public World GenerateWorld(SpriteBatch spriteBatch, string worldName)
+       {
+           World world = new World(_game, spriteBatch, worldName);
+           _worlds.Add(worldName, world);
 
            return world;
        }
 
+       public Game GetGame() => _game;
+
        public World GetWorld(string worldName)
        {
-           if (worlds.ContainsKey(worldName))
-               return worlds[worldName];
-
-           return null;
+           return _worlds.ContainsKey(worldName) ? _worlds[worldName] : null;
        }
     }
 }

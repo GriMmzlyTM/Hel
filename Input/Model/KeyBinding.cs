@@ -20,14 +20,13 @@ namespace Hel.Input.Model
 
         public override bool Equals(object other)
         {
-            //if (!(other is KeyBinding)) return false;
-            //var obj = (KeyBinding)other;
-            //return Keys.SetEquals(obj.Keys);
-            return true;
+            if (!(other is KeyBinding)) return false;
+            var obj = (KeyBinding)other;
+            return Keys.SetEquals(obj.Keys);
         }
 
         public bool Equals(KeyBinding other) =>
-            true;//other != null && Keys.SetEquals(other.Keys);
+            other != null && Keys.SetEquals(other.Keys);
 
         public override int GetHashCode() =>
             Keys.GetHashCode();

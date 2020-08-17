@@ -29,7 +29,7 @@
         /// </summary>
         /// <typeparam name="T">Class type of the object. Auto set when using This keyword</typeparam>
         /// <param name="context">Object to be passed along.</param>
-        protected virtual void OnChangeEvents(T context) => OnChange(context);
+        protected void OnChangeEvents(T context) => OnChange?.Invoke(context);
         public virtual void AddChangeEvent(OnChangeEvent<T> method) => OnChange += method;
         public virtual void RemoveChangeEvent(OnChangeEvent<T> method) => OnChange -= method;
         public virtual void ResetEvent() => OnChange = null;

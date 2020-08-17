@@ -55,6 +55,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commander\ExitCommand.cs" />
+    <Compile Include="Commander\Model\Payload\ICommandPayload.cs" />
     <Compile Include="Input\GameComponent\Controls.cs" />
     <Compile Include="Input\KeyBindingManager.cs" />
     <Compile Include="Commander\Model\ICommand.cs" />

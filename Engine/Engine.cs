@@ -1,4 +1,6 @@
-﻿using Hel.ECS;
+﻿using System.IO;
+using Hel.ECS;
+using Hel.Input.GameComponent;
 using Microsoft.Xna.Framework;
 
 namespace Hel.Engine
@@ -23,9 +25,9 @@ namespace Hel.Engine
         /// <param name="game">Your Game1 instance.</param>
         public static void Initialize(Game game)
         {
-            game.Components.Add(new Commander.InputHandler(game));
+            game.Components.Add(new InputHandler(game));
 
-            FileRoot = @"C:\HelTests";
+            FileRoot = Directory.GetCurrentDirectory();
         }
 
     }
