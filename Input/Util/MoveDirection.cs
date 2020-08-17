@@ -1,8 +1,9 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
+﻿using Hel.Input.GameComponent;
 using Hel.Toolkit;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
-namespace Hel.Commander
+namespace Hel.Input.Util
 {
     public static class MoveDirection
     {

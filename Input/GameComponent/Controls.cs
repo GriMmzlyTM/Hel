@@ -1,9 +1,10 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Hel.Commander;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace Hel.Commander
+namespace Hel.Input.GameComponent
 {
-    class InputHandler : GameComponent
+    class InputHandler : Microsoft.Xna.Framework.GameComponent
     {
 
         public static KeyboardState KeyboardState { get; private set; } = Keyboard.GetState();
@@ -29,8 +30,7 @@ namespace Hel.Commander
             foreach(var pressedKey in KeyboardState.GetPressedKeys())
             {
                 var keyBinding = KeyBindings.GetKeyBinding(pressedKey);
-                if (keyBinding != null)
-                    keyBinding.Commands.ForEach(command => command.Execute());
+                keyBinding?.Commands.ForEach(command => command.Execute());
             }
 
 

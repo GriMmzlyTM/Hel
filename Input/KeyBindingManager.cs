@@ -1,10 +1,15 @@
-﻿using Hel.Engine;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
+using Hel.Commander;
+using Hel.Commander.Model;
+using Hel.Engine;
 using Hel.Input.Model;
 using Microsoft.Xna.Framework.Input;
-using Newtonsoft.Json;
-using System.Collections.Generic;
 
-namespace Hel.Commander
+namespace Hel.Input
 {
     internal interface IKeyBindingManager
     {
@@ -57,7 +62,7 @@ namespace Hel.Commander
         /// </summary>
         void LoadBindingsJSON();
     }
-    public class KeyBindingManager : EventChange<KeyBindingManager>, IKeyBindingManager
+    public class KeyBindingManager : EventChange<HashSet<KeyBinding>>, IKeyBindingManager
     {
         /// <summary>
         /// Permanent key bindings used by Get methods
@@ -86,10 +91,9 @@ namespace Hel.Commander
             GetKeyBinding(new KeyBinding(new HashSet<Keys>() { key }, null));
 
         public HashSet<KeyBinding> GetAllBindings() => new HashSet<KeyBinding>(_bindings);
-        public KeyBinding GetKeyBinding(KeyBinding key) =>
-          _bindings.TryGetValue(key, out KeyBinding binding) 
-            ? binding 
-            : null;
+
+        public KeyBinding GetKeyBinding(KeyBinding key) => 
+            _bindings.FirstOrDefault(binding => binding.Equals(key));
 
         public void RemoveKey(Keys key) =>
             RemoveKey(new KeyBinding(new HashSet<Keys>() { key }, null));
@@ -115,7 +119,7 @@ namespace Hel.Commander
         public void UpdateBindings()
         {
             _bindings = new HashSet<KeyBinding>(_tempBindings);
-            OnChangeEvents(this);
+            OnChangeEvents(_bindings);
         }
 
         public void UndoBindings() =>
@@ -123,14 +127,47 @@ namespace Hel.Commander
 
         public void SaveBindingsJSON()
         {
-            string output = JsonConvert.SerializeObject(_bindings);
-            System.IO.File.WriteAllText($"{Engine.Engine.FileRoot}/Bindings.json", output);
+            var output = ObjectToByteArray(_bindings);//JsonConvert.SerializeObject(_bindings);
+            File.WriteAllBytes($"{Engine.Engine.FileRoot}/Bindings", output);
+        }
+        
+        public static object ByteArrayToObject(byte[] arrBytes)
+        {
+            using var memStream = new MemoryStream();
+            var binForm = new BinaryFormatter();
+            memStream.Write(arrBytes, 0, arrBytes.Length);
+            memStream.Seek(0, SeekOrigin.Begin);
+            var obj = binForm.Deserialize(memStream);
+            return obj;
         }
 
+        public static byte[] ObjectToByteArray(Object obj)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using var ms = new MemoryStream();
+            bf.Serialize(ms, obj);
+            return ms.ToArray();
+        }
         public void LoadBindingsJSON()
         {
-            string input = System.IO.File.ReadAllText($"{Engine.Engine.FileRoot}/Bindings.json");
-            _tempBindings = JsonConvert.DeserializeObject<HashSet<KeyBinding>>(input);
+            string filePath = $"{Engine.Engine.FileRoot}/Bindings";
+            
+            if (!File.Exists(filePath))
+            {
+                SetKeyBindings(new HashSet<KeyBinding>()
+                {
+                    new KeyBinding(
+                        new HashSet<Keys> {Keys.Enter},
+                        new List<ICommand> {new ExitCommand()})
+                });
+                UpdateBindings();
+                SaveBindingsJSON();
+            }
+
+            var input = File.ReadAllBytes(filePath);
+            
+            
+            _tempBindings = (HashSet<KeyBinding>) ByteArrayToObject(input);//JsonConvert.DeserializeObject<HashSet<KeyBinding>>(input);
         }
     }
 }
