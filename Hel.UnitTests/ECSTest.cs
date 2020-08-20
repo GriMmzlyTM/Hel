@@ -1,5 +1,4 @@
 ﻿using System;
-using Hel.ECS;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

@@ -15,6 +15,7 @@ namespace Hel.Engine
 
         public static string FileRoot { get; private set; }
         private static Game _game;
+        public static WorldManager WorldManager { get; private set; }
 
         /// <summary>
         /// The Initialize method is required in-order to initialize and startup the hel engine properly. This will run necessary setup methods, as well as
@@ -24,7 +25,8 @@ namespace Hel.Engine
         public static void Initialize(Game game)
         {
             game.Components.Add(new InputHandler(game));
-
+            
+            WorldManager = new WorldManager(game);
             FileRoot = Directory.GetCurrentDirectory();
         }
 
