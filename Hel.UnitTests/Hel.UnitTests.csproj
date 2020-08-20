@@ -20,7 +20,7 @@
     <TestProjectType>UnitTest</TestProjectType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <LangVersion>8</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,6 +75,14 @@
     <ProjectReference Include="..\Hel.csproj">
       <Project>{758253C5-AD12-4902-80F2-05464EA0AB77}</Project>
       <Name>Hel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hel.ECS\Hel.ECS.csproj">
+      <Project>{bae2e49c-a77b-438a-9ccb-2a6654bb4b91}</Project>
+      <Name>Hel.ECS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hel.Engine\Hel.Engine.csproj">
+      <Project>{19ebf608-68ac-43be-bed7-1370cc0a6299}</Project>
+      <Name>Hel.Engine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

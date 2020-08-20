@@ -15,11 +15,11 @@ namespace Hel.UnitTests
         public void GenerateWorld_generates_proper_World()
         {
             //Define
-            WorldManager worldManager = new WorldManager();
             var game = new Mock<Game1>();
+            WorldManager worldManager = new WorldManager(game.Object);
 
             //Action
-            worldManager.GenerateWorld(game.Object, new SpriteBatch(game.Object.GraphicsDevice), "test");
+            worldManager.GenerateWorld(new SpriteBatch(game.Object.GraphicsDevice), "test");
             World world = worldManager.GetWorld("test");
 
             //Assert
@@ -30,35 +30,29 @@ namespace Hel.UnitTests
         [TestMethod]
         public void World_contains_SystemManager()
         {
+            using var game = new Game1();
             //Define
-            WorldManager worldManager = new WorldManager();
+            WorldManager worldManager = new WorldManager(game);
+            //Action
+            worldManager.GenerateWorld(new SpriteBatch(game.GraphicsDevice), "test");
+            World world = worldManager.GetWorld("test");
 
-            using (var game = new Game1())
-            {
-                //Action
-                worldManager.GenerateWorld(game, new SpriteBatch(game.GraphicsDevice), "test");
-                World world = worldManager.GetWorld("test");
-
-                //Assert
-                Assert.IsNotNull(world.SystemManager);
-            }
+            //Assert
+            Assert.IsNotNull(world.SystemManager);
         }
 
         [TestMethod]
         public void World_contains_EntityManager()
         {
+            using Game game = new Game1();
             //Define
-            WorldManager worldManager = new WorldManager();
+            WorldManager worldManager = new WorldManager(game);
+            //Action
+            worldManager.GenerateWorld(new SpriteBatch(game.GraphicsDevice), "test");
+            World world = worldManager.GetWorld("test");
 
-            using (Game game = new Game1())
-            {
-                //Action
-                worldManager.GenerateWorld(game, new SpriteBatch(game.GraphicsDevice), "test");
-                World world = worldManager.GetWorld("test");
-
-                //Assert
-                Assert.IsNotNull(world.EntityManager);
-            }
+            //Assert
+            Assert.IsNotNull(world.EntityManager);
         }
 
     }
