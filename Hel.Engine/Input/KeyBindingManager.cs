@@ -89,9 +89,9 @@ namespace Hel.Engine.Input
 
         public KeyBinding GetKeyBinding(Keys key) =>
             GetKeyBinding(new KeyBinding(new HashSet<Keys>() { key }, null));
-
+        
         public HashSet<KeyBinding> GetAllBindings() => new HashSet<KeyBinding>(_bindings);
-
+        
         public KeyBinding GetKeyBinding(KeyBinding key) => 
             _bindings.FirstOrDefault(binding => binding.Equals(key));
 

@@ -1,4 +1,4 @@
-﻿using Hel.Engine.ECS.Components.Model;
+﻿/*using Hel.Engine.ECS.Components.Model;
 using Hel.Engine.ECS.Entities;
 using Hel.Engine.ECS.Jobs;
 using Hel.Engine.ECS.Systems;
@@ -45,4 +45,4 @@ namespace Hel.Engine.Input.ECS.Systems
         }
 
     }
-}
+}*/

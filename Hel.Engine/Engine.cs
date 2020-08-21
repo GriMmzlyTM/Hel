@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using Hel.Engine.ECS;
 using Hel.Engine.Input.GameComponent;
 using Microsoft.Xna.Framework;
@@ -14,9 +15,12 @@ namespace Hel.Engine
     {
 
         public static string FileRoot { get; private set; }
-        private static Game _game;
+        public static Game _game { get; private set; }
         public static WorldManager WorldManager { get; private set; }
-
+        
+        public static InputHandler InputHandler { get; private set; }
+        
+        
         /// <summary>
         /// The Initialize method is required in-order to initialize and startup the hel engine properly. This will run necessary setup methods, as well as
         /// assign the required _components to your game so they can run automatically.
@@ -24,10 +28,18 @@ namespace Hel.Engine
         /// <param name="game">Your Game1 instance.</param>
         public static void Initialize(Game game)
         {
-            game.Components.Add(new InputHandler(game));
+            _game = game;
+            
+            InputHandler = new InputHandler(game);
+            game.Components.Add(InputHandler);
             
             WorldManager = new WorldManager(game);
             FileRoot = Directory.GetCurrentDirectory();
+        }
+
+        public static void AddComponent(IGameComponent gameComponent)
+        {
+            _game.Components.Add(gameComponent);
         }
 
     }

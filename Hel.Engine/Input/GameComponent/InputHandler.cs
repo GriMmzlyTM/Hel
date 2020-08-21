@@ -12,7 +12,7 @@ namespace Hel.Engine.Input.GameComponent
         public static KeyBindingManager KeyBindings { get; private set; } = new KeyBindingManager();
 
         public InputHandler(Game game) : base(game) { }
-
+        
         public override void Initialize()
         {
             KeyBindings.LoadBindingsJSON();

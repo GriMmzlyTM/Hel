@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Hel.Engine.ECS.Exceptions;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -21,6 +23,13 @@ namespace Hel.Engine.ECS
         /// <returns></returns>
         World GetWorld(string worldName);
 
+        /// <summary>
+        /// Sets the primary World. The world provides must exist in the worlds dictionary.
+        /// Throws <see cref="InvalidWorldException"/>
+        /// </summary>
+        /// <param name="worldName"></param>
+        void SetPrimaryWorld(string worldName);
+
     }
 
     /// <summary>
@@ -29,6 +38,7 @@ namespace Hel.Engine.ECS
     public class WorldManager : IWorldManager
     {
        private readonly Dictionary<string, World> _worlds = new Dictionary<string, World>();
+       public World PrimaryWorld { get; private set; }
        private readonly Game _game;
 
        public WorldManager(Game game)
@@ -46,6 +56,11 @@ namespace Hel.Engine.ECS
 
        public Game GetGame() => _game;
 
+       public void SetPrimaryWorld(string worldName) => 
+           PrimaryWorld = _worlds.ContainsKey(worldName)
+                   ? _worlds[worldName]
+                   : throw new InvalidWorldException($"{worldName} does not exist. Can not set as primary world.");
+       
        public World GetWorld(string worldName)
        {
            return _worlds.ContainsKey(worldName) ? _worlds[worldName] : null;

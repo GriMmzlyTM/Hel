@@ -1,4 +1,6 @@
-﻿using Hel.Engine.Input.GameComponent;
+﻿using Hel.Engine.ECS;
+using Hel.Engine.Input.GameComponent;
+using Hel.Engine.Input.Model;
 using Hel.Engine.Toolkit.Math;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
@@ -11,24 +13,18 @@ namespace Hel.Engine.Input.Util
         public static KeyboardState LastKeyState => InputHandler.LastKeyboardState;
         private static int _lastX;
 
-        private static Keys Up;
-        private static Keys Down;
-        private static Keys Left;
-        private static Keys Right;
-
         /// <summary>
         /// KeyboardDirection takes the current keyboard state, and calculates the required direction accordingly. 
         /// </summary>
         /// <returns>Direction to move based on keyboard input.</returns>
-        public static Vector2 KeyboardDirection()
+        public static Vector2 KeyboardDirection(DirectionalKeys directionalKeys)
         {
+            int x = ConversionUtil.BoolToInt(KeyState.IsKeyDown(directionalKeys.Right)) - ConversionUtil.BoolToInt(KeyState.IsKeyDown(directionalKeys.Left));
+            int y = ConversionUtil.BoolToInt(KeyState.IsKeyDown(directionalKeys.Down)) - ConversionUtil.BoolToInt(KeyState.IsKeyDown(directionalKeys.Up));
 
-            int x = ConversionUtil.BoolToInt(KeyState.IsKeyDown(Right)) - ConversionUtil.BoolToInt(KeyState.IsKeyDown(Left));
-            int y = ConversionUtil.BoolToInt(KeyState.IsKeyDown(Down)) - ConversionUtil.BoolToInt(KeyState.IsKeyDown(Up));
-
-            if (KeyState.IsKeyDown(Right) && KeyState.IsKeyDown(Left))
+            if (KeyState.IsKeyDown(directionalKeys.Right) && KeyState.IsKeyDown(directionalKeys.Left))
             {
-                x = LastKeyState.IsKeyDown(Right) && LastKeyState.IsKeyDown(Left) ? _lastX : -_lastX;
+                x = LastKeyState.IsKeyDown(directionalKeys.Right) && LastKeyState.IsKeyDown(directionalKeys.Left) ? _lastX : -_lastX;
             }
 
             Vector2 dir = new Vector2(x, y);
