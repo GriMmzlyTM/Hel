@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using Hel.Engine.ECS.Jobs;
 using Microsoft.Xna.Framework;
@@ -28,6 +29,9 @@ namespace Hel.Engine.ECS.Systems
         }
 
         public void AddSystem(ISystem system) => systems.Add(system);
+
+        public void AddSystem<T>() where T : ISystem, new() =>
+            systems.Add((T) Activator.CreateInstance(typeof(T), this));
 
         public override void Draw(GameTime gameTime)
         {
