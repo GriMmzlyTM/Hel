@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Hel.Engine.ECS.Exceptions;
 
 namespace Hel.Engine.ECS.Components
 {
