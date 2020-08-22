@@ -19,8 +19,8 @@ namespace Hel.Engine.ECS.Systems
             //Draws all entities to the screen that implement the IRender interface.
             foreach (var entity in world.EntityManager.GetEntities<RenderComponent>())
             {
-                if (entity.Value.GetComponentOrFail(out RenderComponent renderComponent)
-                    && entity.Value.GetComponentOrFail(out TransformComponent transformComponent))
+                if (entity.Value.GetComponentOrNull(out RenderComponent renderComponent)
+                    && entity.Value.GetComponentOrNull(out TransformComponent transformComponent))
                 {
                     spriteBatch.Draw(
                         renderComponent.Texture,

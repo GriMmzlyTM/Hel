@@ -24,7 +24,16 @@ namespace Hel.Engine.ECS.Components
         {
             component = (TryGetValue(typeof(T), out IComponent tryGetComponent)
                 && tryGetComponent is T genericComponent)
-                    ? genericComponent : default;
+                    ? genericComponent : throw new InvalidComponentException($"Unable to find component of type {typeof(T)}");
+
+            return !EqualityComparer<T>.Default.Equals(component, default);
+        }
+        
+        public bool GetComponentOrNull<T>(out T component) where T : struct, IComponent
+        {
+            component = (TryGetValue(typeof(T), out IComponent tryGetComponent)
+                         && tryGetComponent is T genericComponent)
+                ? genericComponent : default;
 
             return !EqualityComparer<T>.Default.Equals(component, default);
         }
