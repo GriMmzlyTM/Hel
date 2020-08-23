@@ -20,6 +20,13 @@ namespace Hel.Engine.ECS.Components
             _components = new Dictionary<Type, IComponent>(newComponents);
         }
 
+        public T GetComponentOfType<T>() where T : IComponent
+        {
+            return (TryGetValue(typeof(T), out IComponent tryGetComponent)
+                         && tryGetComponent is T genericComponent)
+                ? genericComponent : throw new InvalidComponentException($"Unable to find component of type {typeof(T)}");
+        }
+        
         public bool GetComponentOrFail<T>(out T component) where T : struct, IComponent
         {
             component = (TryGetValue(typeof(T), out IComponent tryGetComponent)

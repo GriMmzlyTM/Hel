@@ -39,12 +39,10 @@ namespace Hel.Engine.ECS
     {
        private readonly Dictionary<string, World> _worlds = new Dictionary<string, World>();
        public World PrimaryWorld { get; private set; }
-       private readonly Game _game;
+       private Game _game => Engine.Game;
 
-       public WorldManager(Game game)
-       {
-           _game = game;
-       }
+       public WorldManager()
+       { }
 
        public World GenerateWorld(SpriteBatch spriteBatch, string worldName)
        {

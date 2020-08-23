@@ -17,6 +17,8 @@ namespace Hel.Engine.ECS.Components.Model
         /// Texture is the Texture2D your entity should draw to the screen 
         /// </summary>
         public Texture2D Texture { get; set; }
+        
+        public int ZIndex { get; set; }
 
         public bool Active { get; set; }
 

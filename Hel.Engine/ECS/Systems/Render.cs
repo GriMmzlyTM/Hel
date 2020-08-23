@@ -14,7 +14,7 @@ namespace Hel.Engine.ECS.Systems
 
             //Job job = new Job(world.EntityManager.GetEntities<IRender>(), JobLogic);
             
-                        spriteBatch.Begin();
+            spriteBatch.Begin();
 
             //Draws all entities to the screen that implement the IRender interface.
             foreach (var entity in world.EntityManager.GetEntities<RenderComponent>())

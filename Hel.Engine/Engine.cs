@@ -15,7 +15,7 @@ namespace Hel.Engine
     {
 
         public static string FileRoot { get; private set; }
-        public static Game _game { get; private set; }
+        public static Game Game { get; private set; }
         public static WorldManager WorldManager { get; private set; }
         
         public static InputHandler InputHandler { get; private set; }
@@ -28,18 +28,18 @@ namespace Hel.Engine
         /// <param name="game">Your Game1 instance.</param>
         public static void Initialize(Game game)
         {
-            _game = game;
+            Game = game;
             
             InputHandler = new InputHandler(game);
             game.Components.Add(InputHandler);
             
-            WorldManager = new WorldManager(game);
+            WorldManager = new WorldManager();
             FileRoot = Directory.GetCurrentDirectory();
         }
 
         public static void AddComponent(IGameComponent gameComponent)
         {
-            _game.Components.Add(gameComponent);
+            Game.Components.Add(gameComponent);
         }
 
     }
