@@ -7,16 +7,16 @@ namespace Hel.Tiled.Models.Tileset
         /// <summary>
         /// Cell height of tile grid
         /// </summary>
-        public int Height { get; }
+        public int Height { get; set; }
         
         /// <summary>
         /// 	Cell width of tile grid
         /// </summary>
-        public int Width { get; }
+        public int Width { get; set; }
         
         /// <summary>
         /// Orientation of grid
         /// </summary>
-        public GridOrientationEnum Orientation { get; }
+        public GridOrientationEnum Orientation { get; set; }
     }
 }

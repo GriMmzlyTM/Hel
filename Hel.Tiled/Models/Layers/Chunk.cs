@@ -5,27 +5,27 @@
         /// <summary>
         ///  Array of unsigned int GIDs
         /// </summary>
-        public string[] Data { get; }
+        public string[] Data { get; set; }
         
         /// <summary>
         /// Height in tiles
         /// </summary>
-        public int Height { get; }
+        public int Height { get; set; }
         
         /// <summary>
         /// Width in tiles
         /// </summary>
-        public int Width { get; }
+        public int Width { get; set; }
         
         /// <summary>
         /// X coordinate in tiles
         /// </summary>
-        public int X { get; }
+        public int X { get; set; }
         
         /// <summary>
         /// Y coordinate in tiles
         /// </summary>
-        public int Y { get; }
+        public int Y { get; set; }
         
     }
 }
