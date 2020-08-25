@@ -104,7 +104,7 @@ namespace Hel.Tiled.Models.Layers
         /// <summary>
         /// Array of tile GIDs
         /// </summary>
-        public string[] Data { get; set; } 
+        public int[] Data { get; set; } 
         
         /// <summary>
         /// Chunks are used to store the tile layer data for infinite maps.

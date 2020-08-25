@@ -4,7 +4,7 @@ using Hel.Tiled.Models.Layers;
 
 namespace Hel.Tiled.Models.Tilemap
 {
-    public class Tilemap
+    public sealed class Tilemap
     {
          /// <summary>
         /// Number of tile rows
@@ -34,7 +34,24 @@ namespace Hel.Tiled.Models.Tilemap
         /// <summary>
         /// Tilesets used in the map
         /// </summary>
-        public List<Tileset.Tileset> Tilesets { get; set; }
+        public List<TilesetInfo> Tilesets { get; set; }
+
+        public sealed class TilesetInfo
+        {
+            /// <summary>
+            /// The external file that contains this tilesets data
+            /// </summary>
+            public string Source { get; set; }
+            
+            /// <summary>
+            /// Each tileset has a firstgid (first global ID) property which tells you the global ID of its first tile
+            /// (the one with local tile ID 0). This allows you to map the global IDs back to the right tileset,
+            /// and then calculate the local tile ID by subtracting the firstgid from the global tile ID. The first tileset
+            /// always has a firstgid value of 1.
+            /// </summary>
+            public int FirstGid { get; set; }
+
+        } 
         
         /// <summary>
         /// Tilemap layers

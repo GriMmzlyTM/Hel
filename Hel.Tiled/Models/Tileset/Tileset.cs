@@ -1,14 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
 using Hel.Tiled.Models.Enums;
 using Hel.Tiled.Models.Tileset.Tiles;
 using Hel.Tiled.Models.Tileset.Wang;
+using Newtonsoft.Json;
 
 namespace Hel.Tiled.Models.Tileset
 {
     public class Tileset
     {
+
         /// <summary>
-        /// 	Name given to this tileset
+        /// Name given to this tileset
         /// </summary>
         public string Name { get; set; }
         
@@ -16,15 +19,7 @@ namespace Hel.Tiled.Models.Tileset
         /// The number of tile columns in the tileset
         /// </summary>
         public int Columns { get; set; }
-        
-        /// <summary>
-        /// Each tileset has a firstgid (first global ID) property which tells you the global ID of its first tile
-        /// (the one with local tile ID 0). This allows you to map the global IDs back to the right tileset,
-        /// and then calculate the local tile ID by subtracting the firstgid from the global tile ID. The first tileset
-        /// always has a firstgid value of 1.
-        /// </summary>
-        public int FirstGid { get; set; }
-        
+
         /// <summary>
         /// Optional
         /// </summary>
@@ -64,11 +59,6 @@ namespace Hel.Tiled.Models.Tileset
         /// Array of custom properties
         /// </summary>
         public List<Property> Properties { get; set; }
-        
-        /// <summary>
-        /// The external file that contains this tilesets data
-        /// </summary>
-        public string Source { get; set; }
         
         /// <summary>
         /// Spacing between adjacent tiles in image (pixels)
@@ -122,5 +112,53 @@ namespace Hel.Tiled.Models.Tileset
 
         // List of wang sets
         public List<WangSet> WangSets { get; set; }
+        
+        // NOW SERIALIZED 
+        
+        /// <summary>
+        /// Row count
+        /// </summary>
+        [JsonIgnore]
+        public int Rows => TileCount / Columns;
+
+        /// <summary>
+        /// Provides the rectangles you need to properly render reach tile
+        /// </summary>
+        [JsonIgnore] 
+        public Dictionary<int, Rectangle> TileRectangles { get; }
+
+        public Dictionary<int, Rectangle> CalculateTileRectangles(int firstGid)
+        {
+            var rectangleDict = new Dictionary<int, Rectangle>();
+
+            var gidCounter = firstGid;
+            
+            for (var row = 0; row < Rows; row++)
+            {
+                for (var column = 0; column < Columns; column++)
+                {
+                    // If first row/column, tile is at margin 
+                    // spacing * column = All spaces up to that point
+                    // TileHeight * column = All tiles up to that point
+                    
+                    var yTilePoint = row == 0
+                        ? Margin
+                        : Margin + (Spacing * row) + (TileHeight * row);
+
+                    var xTilePoint = column == 0
+                        ? Margin
+                        : Margin + (Spacing * column) + (TileWidth * column);
+                    
+                    rectangleDict.Add(
+                        gidCounter,
+                        new Rectangle(xTilePoint, yTilePoint, TileWidth, TileHeight) );
+
+                    gidCounter++;
+                }
+            }
+
+            return rectangleDict;
+        }
+        
     }
 }
