@@ -112,5 +112,53 @@ namespace Hel.Tiled.Models.Tileset
 
         // List of wang sets
         public List<WangSet> WangSets { get; set; }
+        
+        // NOW SERIALIZED 
+        
+        /// <summary>
+        /// Row count
+        /// </summary>
+        [JsonIgnore]
+        public int Rows => TileCount / Columns;
+
+        /// <summary>
+        /// Provides the rectangles you need to properly render reach tile
+        /// </summary>
+        [JsonIgnore] 
+        public Dictionary<int, Rectangle> TileRectangles { get; }
+
+        public Dictionary<int, Rectangle> CalculateTileRectangles(int firstGid)
+        {
+            var rectangleDict = new Dictionary<int, Rectangle>();
+
+            var gidCounter = firstGid;
+            
+            for (var row = 0; row < Rows; row++)
+            {
+                for (var column = 0; column < Columns; column++)
+                {
+                    // If first row/column, tile is at margin 
+                    // spacing * column = All spaces up to that point
+                    // TileHeight * column = All tiles up to that point
+                    
+                    var yTilePoint = row == 0
+                        ? Margin
+                        : Margin + (Spacing * row) + (TileHeight * row);
+
+                    var xTilePoint = column == 0
+                        ? Margin
+                        : Margin + (Spacing * column) + (TileWidth * column);
+                    
+                    rectangleDict.Add(
+                        gidCounter,
+                        new Rectangle(xTilePoint, yTilePoint, TileWidth, TileHeight) );
+
+                    gidCounter++;
+                }
+            }
+
+            return rectangleDict;
+        }
+        
     }
 }
