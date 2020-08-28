@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 using Hel.Tiled.Models.Enums.Layer;
+using Hel.Tiled.Models.Layers.Objects;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Layers
 {
@@ -23,25 +26,27 @@ namespace Hel.Tiled.Models.Layers
         /// <summary>
         /// The layer type dictates what values are available
         /// </summary>
-        public LayerTypeEnum TypeEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public LayerTypeEnum Type { get; set; }
         
         /// <summary>
         /// Row count. Same as map height for fixed-size maps.
         /// </summary>
-        public int Height { get; set; }
+        public ushort Height { get; set; }
+        
         /// <summary>
         /// Column count. Same as map width for fixed-size maps.
         /// </summary>
-        public int Width { get; set; }
+        public ushort Width { get; set; }
         
         /// <summary>
         /// Horizontal layer offset in tiles. Always 0
         /// </summary>
-        public int X { get; set; }
+        public ushort X { get; set; }
         /// <summary>
         /// Vertical layer offset in tiles. Always 0.
         /// </summary>
-        public int Y { get; set; }
+        public ushort Y { get; set; }
         
         /// <summary>
         /// Array of properties set for the layer
@@ -94,12 +99,13 @@ namespace Hel.Tiled.Models.Layers
         /// <summary>
         /// Objectgroup only
         /// </summary>
-        public LayerDrawOrderEnum DrawOrderEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public LayerDrawOrderEnum DrawOrder { get; set; }
         
         /// <summary>
         /// Objects for when type is ObjectGroup
         /// </summary>
-        public List<Layer> Objects { get; set; }
+        public List<Object> Objects { get; set; }
         
         /// <summary>
         /// Array of tile GIDs
@@ -114,10 +120,11 @@ namespace Hel.Tiled.Models.Layers
         /// <summary>
         /// If the Data is encoded
         /// </summary>
-        public LayerEncodingEnum EncodingEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public LayerEncodingEnum Encoding { get; set; }
         /// <summary>
         /// Compression used
         /// </summary>
-        public LayerCompressionEnum CompressionEnum { get; set; }
+        public LayerCompressionEnum Compression { get; set; }
     }
 }

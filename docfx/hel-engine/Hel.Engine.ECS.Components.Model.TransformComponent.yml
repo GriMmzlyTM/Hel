@@ -1,0 +1,689 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.TransformComponent
+  id: TransformComponent
+  parent: Hel.Engine.ECS.Components.Model
+  children:
+  - Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  - Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  - Hel.Engine.ECS.Components.Model.TransformComponent.X
+  - Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent
+  nameWithType: TransformComponent
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  type: Struct
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TransformComponent
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 5
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: 'public struct TransformComponent : IComponent, IEquatable<TransformComponent>'
+    content.vb: >-
+      Public Structure TransformComponent
+          Implements IComponent, IEquatable(Of TransformComponent)
+  implements:
+  - Hel.Engine.ECS.Components.IComponent
+  - System.IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.X
+  commentId: P:Hel.Engine.ECS.Components.Model.TransformComponent.X
+  id: X
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: TransformComponent.X
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.X
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: X
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 10
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  summary: "\nThe X position where your Texture2D will be placed when drawing\n"
+  example: []
+  syntax:
+    content: public uint X { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property X As UInteger
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.X*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  commentId: P:Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  id: Y
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: TransformComponent.Y
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Y
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 15
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  summary: "\nThe Y position where your Texture2D will be places when drawing\n"
+  example: []
+  syntax:
+    content: public uint Y { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property Y As UInteger
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.Y*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  id: Active
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: TransformComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Active
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 16
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Active { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Active As Boolean
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.Active*
+  implements:
+  - Hel.Engine.ECS.Components.IComponent.Active
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  commentId: M:Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  id: Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Equals(TransformComponent)
+  nameWithType: TransformComponent.Equals(TransformComponent)
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Equals
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 18
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Equals(TransformComponent other)
+    parameters:
+    - id: other
+      type: Hel.Engine.ECS.Components.Model.TransformComponent
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As TransformComponent) As Boolean
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.Equals*
+  implements:
+  - System.IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS.Components.Model
+  commentId: N:Hel.Engine.ECS.Components.Model
+  name: Hel.Engine.ECS.Components.Model
+  nameWithType: Hel.Engine.ECS.Components.Model
+  fullName: Hel.Engine.ECS.Components.Model
+- uid: Hel.Engine.ECS.Components.IComponent
+  commentId: T:Hel.Engine.ECS.Components.IComponent
+  parent: Hel.Engine.ECS.Components
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Hel.Engine.ECS.Components.IComponent
+- uid: System.IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}
+  commentId: T:System.IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<TransformComponent>
+  nameWithType: IEquatable<TransformComponent>
+  fullName: System.IEquatable<Hel.Engine.ECS.Components.Model.TransformComponent>
+  nameWithType.vb: IEquatable(Of TransformComponent)
+  fullName.vb: System.IEquatable(Of Hel.Engine.ECS.Components.Model.TransformComponent)
+  name.vb: IEquatable(Of TransformComponent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.ECS.Components.Model.TransformComponent
+    name: TransformComponent
+    nameWithType: TransformComponent
+    fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.ECS.Components.Model.TransformComponent
+    name: TransformComponent
+    nameWithType: TransformComponent
+    fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.X*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.X
+  name: X
+  nameWithType: TransformComponent.X
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.X
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Y*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  name: Y
+  nameWithType: TransformComponent.Y
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Y
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Active*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  name: Active
+  nameWithType: TransformComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Active
+- uid: Hel.Engine.ECS.Components.IComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.IComponent.Active
+  parent: Hel.Engine.ECS.Components.IComponent
+  name: Active
+  nameWithType: IComponent.Active
+  fullName: Hel.Engine.ECS.Components.IComponent.Active
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Equals*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.Equals
+  name: Equals
+  nameWithType: TransformComponent.Equals
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Equals
+- uid: System.IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  commentId: M:System.IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  parent: System.IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(TransformComponent)
+  nameWithType: IEquatable<TransformComponent>.Equals(TransformComponent)
+  fullName: System.IEquatable<Hel.Engine.ECS.Components.Model.TransformComponent>.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  nameWithType.vb: IEquatable(Of TransformComponent).Equals(TransformComponent)
+  fullName.vb: System.IEquatable(Of Hel.Engine.ECS.Components.Model.TransformComponent).Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<TransformComponent>.Equals
+    fullName: System.IEquatable<Hel.Engine.ECS.Components.Model.TransformComponent>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.ECS.Components.Model.TransformComponent
+    name: TransformComponent
+    nameWithType: TransformComponent
+    fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of TransformComponent).Equals
+    fullName: System.IEquatable(Of Hel.Engine.ECS.Components.Model.TransformComponent).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.ECS.Components.Model.TransformComponent
+    name: TransformComponent
+    nameWithType: TransformComponent
+    fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.TransformComponent
+  parent: Hel.Engine.ECS.Components.Model
+  name: TransformComponent
+  nameWithType: TransformComponent
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

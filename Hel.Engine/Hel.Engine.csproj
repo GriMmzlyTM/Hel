@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Jobs" />
+      <ProjectReference Include="..\Hel.Tiled\Hel.Tiled.csproj" />
     </ItemGroup>
 
 </Project>

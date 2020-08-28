@@ -23,12 +23,12 @@ namespace Hel.Tiled.Models.Tileset.Tiles
         /// <summary>
         /// Height of the tile image in pixels
         /// </summary>
-        public int ImageHeight { get; set; }
+        public ushort ImageHeight { get; set; }
         
         /// <summary>
         /// Width of the tile image in pixels
         /// </summary>
-        public int ImageWidth { get; set; }
+        public ushort ImageWidth { get; set; }
         
         /// <summary>
         /// Layer with type objectgroup, when collision shapes are specified (optional)

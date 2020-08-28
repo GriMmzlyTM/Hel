@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Commander.Model.Payload.ICommandPayload
+  commentId: T:Hel.Engine.Commander.Model.Payload.ICommandPayload
+  id: ICommandPayload
+  parent: Hel.Engine.Commander.Model.Payload
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICommandPayload
+  nameWithType: ICommandPayload
+  fullName: Hel.Engine.Commander.Model.Payload.ICommandPayload
+  type: Interface
+  source:
+    remote:
+      path: Hel.Engine/Commander/Model/Payload/ICommandPayload.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ICommandPayload
+    path: ../Hel.Engine/Commander/Model/Payload/ICommandPayload.cs
+    startLine: 2
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Commander.Model.Payload
+  syntax:
+    content: public interface ICommandPayload
+    content.vb: Public Interface ICommandPayload
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Hel.Engine.Commander.Model.Payload
+  commentId: N:Hel.Engine.Commander.Model.Payload
+  name: Hel.Engine.Commander.Model.Payload
+  nameWithType: Hel.Engine.Commander.Model.Payload
+  fullName: Hel.Engine.Commander.Model.Payload

@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  id: LayerCompressionEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  children:
+  - Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Empty
+  - Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Gzip
+  - Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zlib
+  - Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zstd
+  langs:
+  - csharp
+  - vb
+  name: LayerCompressionEnum
+  nameWithType: LayerCompressionEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: LayerCompressionEnum
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: public enum LayerCompressionEnum
+    content.vb: Public Enum LayerCompressionEnum
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Empty
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Empty
+  id: Empty
+  parent: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: LayerCompressionEnum.Empty
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Empty
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Empty
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: Empty = 0
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zlib
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zlib
+  id: Zlib
+  parent: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  langs:
+  - csharp
+  - vb
+  name: Zlib
+  nameWithType: LayerCompressionEnum.Zlib
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zlib
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Zlib
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: Zlib = 1
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Gzip
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Gzip
+  id: Gzip
+  parent: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  langs:
+  - csharp
+  - vb
+  name: Gzip
+  nameWithType: LayerCompressionEnum.Gzip
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Gzip
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Gzip
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: Gzip = 2
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zstd
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zstd
+  id: Zstd
+  parent: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  langs:
+  - csharp
+  - vb
+  name: Zstd
+  nameWithType: LayerCompressionEnum.Zstd
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum.Zstd
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Zstd
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerCompressionEnum.cs
+    startLine: 7
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: Zstd = 3
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Layer
+  commentId: N:Hel.Tiled.Models.Enums.Layer
+  name: Hel.Tiled.Models.Enums.Layer
+  nameWithType: Hel.Tiled.Models.Enums.Layer
+  fullName: Hel.Tiled.Models.Enums.Layer
+- uid: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  name: LayerCompressionEnum
+  nameWithType: LayerCompressionEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum

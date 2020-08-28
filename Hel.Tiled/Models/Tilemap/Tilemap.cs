@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using Hel.Tiled.Models.Enums.Tilemap;
 using Hel.Tiled.Models.Layers;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Tilemap
 {
@@ -17,11 +19,6 @@ namespace Hel.Tiled.Models.Tilemap
         public int Width { get; set; }
 
         /// <summary>
-        /// Whether the map has infinite dimensions
-        /// </summary>
-        public bool Infinite { get; set; }
-
-        /// <summary>
         /// Map grid height
         /// </summary>
         public int TileHeight { get; set; }
@@ -31,6 +28,11 @@ namespace Hel.Tiled.Models.Tilemap
         /// </summary>
         public int TileWidth { get; set; }
 
+        /// <summary>
+        /// Whether the map has infinite dimensions
+        /// </summary>
+        public bool Infinite { get; set; }
+        
         /// <summary>
         /// Tilesets used in the map
         /// </summary>
@@ -50,6 +52,8 @@ namespace Hel.Tiled.Models.Tilemap
             /// always has a firstgid value of 1.
             /// </summary>
             public int FirstGid { get; set; }
+            
+            public Tileset.Tileset Tileset { get; set; }
 
         } 
         
@@ -61,7 +65,8 @@ namespace Hel.Tiled.Models.Tilemap
         /// <summary>
         /// The type of the tilemap (Only Map since 1.0)
         /// </summary>
-        public TilemapTypeEnum TypeEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public TilemapTypeEnum Type { get; set; }
         
         /// <summary>
         /// Hex-formatted color (#RRGGBB or #AARRGGBB) (optional)
@@ -91,7 +96,8 @@ namespace Hel.Tiled.Models.Tilemap
         /// <summary>
         /// Orientation of the tilemap
         /// </summary>
-        public TilemapOrientationEnum OrientationEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public TilemapOrientationEnum Orientation { get; set; }
         
         /// <summary>
         /// Defined properties
@@ -111,16 +117,19 @@ namespace Hel.Tiled.Models.Tilemap
         /// <summary>
         /// staggered / hexagonal maps only
         /// </summary>
-        public TilemapStaggerAxisEnum StaggerAxisEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public TilemapStaggerAxisEnum StaggerAxis { get; set; }
         
         /// <summary>
         /// staggered / hexagonal maps only
         /// </summary>
-        public TilemapStaggerIndexEnum StaggerIndexEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public TilemapStaggerIndexEnum StaggerIndex { get; set; }
         
         /// <summary>
         /// Only for orthogonal maps
         /// </summary>
-        public TilemapRenderOrderEnum RenderOrderEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public TilemapRenderOrderEnum RenderOrder { get; set; }
     }
 }

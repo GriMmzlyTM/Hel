@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Input.Util
+  commentId: N:Hel.Engine.Input.Util
+  id: Hel.Engine.Input.Util
+  children:
+  - Hel.Engine.Input.Util.MoveDirection
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.Input.Util
+  nameWithType: Hel.Engine.Input.Util
+  fullName: Hel.Engine.Input.Util
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.Input.Util.MoveDirection
+  commentId: T:Hel.Engine.Input.Util.MoveDirection
+  name: MoveDirection
+  nameWithType: MoveDirection
+  fullName: Hel.Engine.Input.Util.MoveDirection

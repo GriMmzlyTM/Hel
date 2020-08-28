@@ -1,4 +1,6 @@
-﻿namespace Hel.Engine.ECS.Components
+﻿using System;
+
+namespace Hel.Engine.ECS.Components
 {
     public interface IComponent
     {

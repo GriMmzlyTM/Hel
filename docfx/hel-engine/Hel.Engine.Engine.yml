@@ -1,0 +1,650 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Engine
+  commentId: T:Hel.Engine.Engine
+  id: Engine
+  parent: Hel.Engine
+  children:
+  - Hel.Engine.Engine.AddComponent(Microsoft.Xna.Framework.IGameComponent)
+  - Hel.Engine.Engine.FileRoot
+  - Hel.Engine.Engine.Game
+  - Hel.Engine.Engine.Initialize(Microsoft.Xna.Framework.Game)
+  - Hel.Engine.Engine.InputHandler
+  - Hel.Engine.Engine.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: Engine
+  nameWithType: Engine
+  fullName: Hel.Engine.Engine
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Engine.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Engine
+    path: ../Hel.Engine/Engine.cs
+    startLine: 13
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  summary: "\nThe Hel Engine&apos;s primary class. The Engine class allows you to initialize, manage, and control the engine safely and exposes\ncertain methods and functions which may be unsafe otherwise. For example, all games must run the Engine.Initialize(game) method\nin order to assign the necessary GameComponents from Hel Engine to your Game object.\n"
+  example: []
+  syntax:
+    content: public class Engine
+    content.vb: Public Class Engine
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.Engine.FileRoot
+  commentId: P:Hel.Engine.Engine.FileRoot
+  id: FileRoot
+  parent: Hel.Engine.Engine
+  langs:
+  - csharp
+  - vb
+  name: FileRoot
+  nameWithType: Engine.FileRoot
+  fullName: Hel.Engine.Engine.FileRoot
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/Engine.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: FileRoot
+    path: ../Hel.Engine/Engine.cs
+    startLine: 16
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public static string FileRoot { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property FileRoot As String
+  overload: Hel.Engine.Engine.FileRoot*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hel.Engine.Engine.Game
+  commentId: P:Hel.Engine.Engine.Game
+  id: Game
+  parent: Hel.Engine.Engine
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: Engine.Game
+  fullName: Hel.Engine.Engine.Game
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/Engine.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Game
+    path: ../Hel.Engine/Engine.cs
+    startLine: 17
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public static Game Game { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Game
+    content.vb: Public Shared ReadOnly Property Game As Game
+  overload: Hel.Engine.Engine.Game*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hel.Engine.Engine.WorldManager
+  commentId: P:Hel.Engine.Engine.WorldManager
+  id: WorldManager
+  parent: Hel.Engine.Engine
+  langs:
+  - csharp
+  - vb
+  name: WorldManager
+  nameWithType: Engine.WorldManager
+  fullName: Hel.Engine.Engine.WorldManager
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/Engine.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: WorldManager
+    path: ../Hel.Engine/Engine.cs
+    startLine: 18
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public static WorldManager WorldManager { get; }
+    parameters: []
+    return:
+      type: Hel.Engine.ECS.WorldManager
+    content.vb: Public Shared ReadOnly Property WorldManager As WorldManager
+  overload: Hel.Engine.Engine.WorldManager*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hel.Engine.Engine.InputHandler
+  commentId: P:Hel.Engine.Engine.InputHandler
+  id: InputHandler
+  parent: Hel.Engine.Engine
+  langs:
+  - csharp
+  - vb
+  name: InputHandler
+  nameWithType: Engine.InputHandler
+  fullName: Hel.Engine.Engine.InputHandler
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/Engine.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: InputHandler
+    path: ../Hel.Engine/Engine.cs
+    startLine: 20
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public static InputHandler InputHandler { get; }
+    parameters: []
+    return:
+      type: Hel.Engine.Input.GameComponent.InputHandler
+    content.vb: Public Shared ReadOnly Property InputHandler As InputHandler
+  overload: Hel.Engine.Engine.InputHandler*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hel.Engine.Engine.Initialize(Microsoft.Xna.Framework.Game)
+  commentId: M:Hel.Engine.Engine.Initialize(Microsoft.Xna.Framework.Game)
+  id: Initialize(Microsoft.Xna.Framework.Game)
+  parent: Hel.Engine.Engine
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Game)
+  nameWithType: Engine.Initialize(Game)
+  fullName: Hel.Engine.Engine.Initialize(Microsoft.Xna.Framework.Game)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Engine.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Initialize
+    path: ../Hel.Engine/Engine.cs
+    startLine: 28
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  summary: "\nThe Initialize method is required in-order to initialize and startup the hel engine properly. This will run necessary setup methods, as well as\nassign the required _components to your game so they can run automatically.\n"
+  example: []
+  syntax:
+    content: public static void Initialize(Game game)
+    parameters:
+    - id: game
+      type: Microsoft.Xna.Framework.Game
+      description: Your Game1 instance.
+    content.vb: Public Shared Sub Initialize(game As Game)
+  overload: Hel.Engine.Engine.Initialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hel.Engine.Engine.AddComponent(Microsoft.Xna.Framework.IGameComponent)
+  commentId: M:Hel.Engine.Engine.AddComponent(Microsoft.Xna.Framework.IGameComponent)
+  id: AddComponent(Microsoft.Xna.Framework.IGameComponent)
+  parent: Hel.Engine.Engine
+  langs:
+  - csharp
+  - vb
+  name: AddComponent(IGameComponent)
+  nameWithType: Engine.AddComponent(IGameComponent)
+  fullName: Hel.Engine.Engine.AddComponent(Microsoft.Xna.Framework.IGameComponent)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Engine.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: AddComponent
+    path: ../Hel.Engine/Engine.cs
+    startLine: 39
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public static void AddComponent(IGameComponent gameComponent)
+    parameters:
+    - id: gameComponent
+      type: Microsoft.Xna.Framework.IGameComponent
+    content.vb: Public Shared Sub AddComponent(gameComponent As IGameComponent)
+  overload: Hel.Engine.Engine.AddComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hel.Engine
+  commentId: N:Hel.Engine
+  name: Hel.Engine
+  nameWithType: Hel.Engine
+  fullName: Hel.Engine
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Engine.Engine.FileRoot*
+  commentId: Overload:Hel.Engine.Engine.FileRoot
+  name: FileRoot
+  nameWithType: Engine.FileRoot
+  fullName: Hel.Engine.Engine.FileRoot
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Engine.Engine.Game*
+  commentId: Overload:Hel.Engine.Engine.Game
+  name: Game
+  nameWithType: Engine.Game
+  fullName: Hel.Engine.Engine.Game
+- uid: Microsoft.Xna.Framework.Game
+  commentId: T:Microsoft.Xna.Framework.Game
+  parent: Microsoft.Xna.Framework
+  isExternal: true
+  name: Game
+  nameWithType: Game
+  fullName: Microsoft.Xna.Framework.Game
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: true
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Hel.Engine.Engine.WorldManager*
+  commentId: Overload:Hel.Engine.Engine.WorldManager
+  name: WorldManager
+  nameWithType: Engine.WorldManager
+  fullName: Hel.Engine.Engine.WorldManager
+- uid: Hel.Engine.ECS.WorldManager
+  commentId: T:Hel.Engine.ECS.WorldManager
+  parent: Hel.Engine.ECS
+  name: WorldManager
+  nameWithType: WorldManager
+  fullName: Hel.Engine.ECS.WorldManager
+- uid: Hel.Engine.ECS
+  commentId: N:Hel.Engine.ECS
+  name: Hel.Engine.ECS
+  nameWithType: Hel.Engine.ECS
+  fullName: Hel.Engine.ECS
+- uid: Hel.Engine.Engine.InputHandler*
+  commentId: Overload:Hel.Engine.Engine.InputHandler
+  name: InputHandler
+  nameWithType: Engine.InputHandler
+  fullName: Hel.Engine.Engine.InputHandler
+- uid: Hel.Engine.Input.GameComponent.InputHandler
+  commentId: T:Hel.Engine.Input.GameComponent.InputHandler
+  parent: Hel.Engine.Input.GameComponent
+  name: InputHandler
+  nameWithType: InputHandler
+  fullName: Hel.Engine.Input.GameComponent.InputHandler
+- uid: Hel.Engine.Input.GameComponent
+  commentId: N:Hel.Engine.Input.GameComponent
+  name: Hel.Engine.Input.GameComponent
+  nameWithType: Hel.Engine.Input.GameComponent
+  fullName: Hel.Engine.Input.GameComponent
+- uid: Hel.Engine.Engine.Initialize*
+  commentId: Overload:Hel.Engine.Engine.Initialize
+  name: Initialize
+  nameWithType: Engine.Initialize
+  fullName: Hel.Engine.Engine.Initialize
+- uid: Hel.Engine.Engine.AddComponent*
+  commentId: Overload:Hel.Engine.Engine.AddComponent
+  name: AddComponent
+  nameWithType: Engine.AddComponent
+  fullName: Hel.Engine.Engine.AddComponent
+- uid: Microsoft.Xna.Framework.IGameComponent
+  commentId: T:Microsoft.Xna.Framework.IGameComponent
+  parent: Microsoft.Xna.Framework
+  isExternal: true
+  name: IGameComponent
+  nameWithType: IGameComponent
+  fullName: Microsoft.Xna.Framework.IGameComponent

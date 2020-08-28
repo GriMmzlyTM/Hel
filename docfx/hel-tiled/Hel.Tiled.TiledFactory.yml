@@ -1,0 +1,575 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.TiledFactory
+  commentId: T:Hel.Tiled.TiledFactory
+  id: TiledFactory
+  parent: Hel.Tiled
+  children:
+  - Hel.Tiled.TiledFactory.LoadGeneric``1(System.String)
+  - Hel.Tiled.TiledFactory.LoadTemplate(System.String)
+  - Hel.Tiled.TiledFactory.LoadTilemap(System.String)
+  - Hel.Tiled.TiledFactory.LoadTileset(System.String)
+  langs:
+  - csharp
+  - vb
+  name: TiledFactory
+  nameWithType: TiledFactory
+  fullName: Hel.Tiled.TiledFactory
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/TiledFactory.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TiledFactory
+    path: ../Hel.Tiled/TiledFactory.cs
+    startLine: 9
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled
+  syntax:
+    content: public static class TiledFactory
+    content.vb: Public Module TiledFactory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hel.Tiled.TiledFactory.LoadGeneric``1(System.String)
+  commentId: M:Hel.Tiled.TiledFactory.LoadGeneric``1(System.String)
+  id: LoadGeneric``1(System.String)
+  parent: Hel.Tiled.TiledFactory
+  langs:
+  - csharp
+  - vb
+  name: LoadGeneric<T>(String)
+  nameWithType: TiledFactory.LoadGeneric<T>(String)
+  fullName: Hel.Tiled.TiledFactory.LoadGeneric<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Tiled/TiledFactory.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: LoadGeneric
+    path: ../Hel.Tiled/TiledFactory.cs
+    startLine: 11
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled
+  syntax:
+    content: public static T LoadGeneric<T>(string path)
+    parameters:
+    - id: path
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function LoadGeneric(Of T)(path As String) As T
+  overload: Hel.Tiled.TiledFactory.LoadGeneric*
+  nameWithType.vb: TiledFactory.LoadGeneric(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hel.Tiled.TiledFactory.LoadGeneric(Of T)(System.String)
+  name.vb: LoadGeneric(Of T)(String)
+- uid: Hel.Tiled.TiledFactory.LoadTileset(System.String)
+  commentId: M:Hel.Tiled.TiledFactory.LoadTileset(System.String)
+  id: LoadTileset(System.String)
+  parent: Hel.Tiled.TiledFactory
+  langs:
+  - csharp
+  - vb
+  name: LoadTileset(String)
+  nameWithType: TiledFactory.LoadTileset(String)
+  fullName: Hel.Tiled.TiledFactory.LoadTileset(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Tiled/TiledFactory.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: LoadTileset
+    path: ../Hel.Tiled/TiledFactory.cs
+    startLine: 17
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled
+  syntax:
+    content: public static Tileset LoadTileset(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Hel.Tiled.Models.Tileset.Tileset
+    content.vb: Public Shared Function LoadTileset(path As String) As Tileset
+  overload: Hel.Tiled.TiledFactory.LoadTileset*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hel.Tiled.TiledFactory.LoadTemplate(System.String)
+  commentId: M:Hel.Tiled.TiledFactory.LoadTemplate(System.String)
+  id: LoadTemplate(System.String)
+  parent: Hel.Tiled.TiledFactory
+  langs:
+  - csharp
+  - vb
+  name: LoadTemplate(String)
+  nameWithType: TiledFactory.LoadTemplate(String)
+  fullName: Hel.Tiled.TiledFactory.LoadTemplate(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Tiled/TiledFactory.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: LoadTemplate
+    path: ../Hel.Tiled/TiledFactory.cs
+    startLine: 18
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled
+  syntax:
+    content: public static Template LoadTemplate(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Hel.Tiled.Models.Template
+    content.vb: Public Shared Function LoadTemplate(path As String) As Template
+  overload: Hel.Tiled.TiledFactory.LoadTemplate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hel.Tiled.TiledFactory.LoadTilemap(System.String)
+  commentId: M:Hel.Tiled.TiledFactory.LoadTilemap(System.String)
+  id: LoadTilemap(System.String)
+  parent: Hel.Tiled.TiledFactory
+  langs:
+  - csharp
+  - vb
+  name: LoadTilemap(String)
+  nameWithType: TiledFactory.LoadTilemap(String)
+  fullName: Hel.Tiled.TiledFactory.LoadTilemap(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Tiled/TiledFactory.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: LoadTilemap
+    path: ../Hel.Tiled/TiledFactory.cs
+    startLine: 25
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled
+  summary: "\nLoads a tilemap and its required tilesets\n"
+  example: []
+  syntax:
+    content: public static Tilemap LoadTilemap(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: ''
+    return:
+      type: Hel.Tiled.Models.Tilemap.Tilemap
+      description: ''
+    content.vb: Public Shared Function LoadTilemap(path As String) As Tilemap
+  overload: Hel.Tiled.TiledFactory.LoadTilemap*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hel.Tiled
+  commentId: N:Hel.Tiled
+  name: Hel.Tiled
+  nameWithType: Hel.Tiled
+  fullName: Hel.Tiled
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Tiled.TiledFactory.LoadGeneric*
+  commentId: Overload:Hel.Tiled.TiledFactory.LoadGeneric
+  name: LoadGeneric
+  nameWithType: TiledFactory.LoadGeneric
+  fullName: Hel.Tiled.TiledFactory.LoadGeneric
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hel.Tiled.TiledFactory.LoadTileset*
+  commentId: Overload:Hel.Tiled.TiledFactory.LoadTileset
+  name: LoadTileset
+  nameWithType: TiledFactory.LoadTileset
+  fullName: Hel.Tiled.TiledFactory.LoadTileset
+- uid: Hel.Tiled.Models.Tileset.Tileset
+  commentId: T:Hel.Tiled.Models.Tileset.Tileset
+  parent: Hel.Tiled.Models.Tileset
+  name: Tileset
+  nameWithType: Tileset
+  fullName: Hel.Tiled.Models.Tileset.Tileset
+- uid: Hel.Tiled.Models.Tileset
+  commentId: N:Hel.Tiled.Models.Tileset
+  name: Hel.Tiled.Models.Tileset
+  nameWithType: Hel.Tiled.Models.Tileset
+  fullName: Hel.Tiled.Models.Tileset
+- uid: Hel.Tiled.TiledFactory.LoadTemplate*
+  commentId: Overload:Hel.Tiled.TiledFactory.LoadTemplate
+  name: LoadTemplate
+  nameWithType: TiledFactory.LoadTemplate
+  fullName: Hel.Tiled.TiledFactory.LoadTemplate
+- uid: Hel.Tiled.Models.Template
+  commentId: T:Hel.Tiled.Models.Template
+  parent: Hel.Tiled.Models
+  name: Template
+  nameWithType: Template
+  fullName: Hel.Tiled.Models.Template
+- uid: Hel.Tiled.Models
+  commentId: N:Hel.Tiled.Models
+  name: Hel.Tiled.Models
+  nameWithType: Hel.Tiled.Models
+  fullName: Hel.Tiled.Models
+- uid: Hel.Tiled.TiledFactory.LoadTilemap*
+  commentId: Overload:Hel.Tiled.TiledFactory.LoadTilemap
+  name: LoadTilemap
+  nameWithType: TiledFactory.LoadTilemap
+  fullName: Hel.Tiled.TiledFactory.LoadTilemap
+- uid: Hel.Tiled.Models.Tilemap.Tilemap
+  commentId: T:Hel.Tiled.Models.Tilemap.Tilemap
+  parent: Hel.Tiled.Models.Tilemap
+  name: Tilemap
+  nameWithType: Tilemap
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap
+- uid: Hel.Tiled.Models.Tilemap
+  commentId: N:Hel.Tiled.Models.Tilemap
+  name: Hel.Tiled.Models.Tilemap
+  nameWithType: Hel.Tiled.Models.Tilemap
+  fullName: Hel.Tiled.Models.Tilemap

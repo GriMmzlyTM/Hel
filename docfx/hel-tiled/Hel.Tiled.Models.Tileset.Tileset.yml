@@ -1,0 +1,1840 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Tileset.Tileset
+  commentId: T:Hel.Tiled.Models.Tileset.Tileset
+  id: Tileset
+  parent: Hel.Tiled.Models.Tileset
+  children:
+  - Hel.Tiled.Models.Tileset.Tileset.BackgroundColor
+  - Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles(System.Int32)
+  - Hel.Tiled.Models.Tileset.Tileset.Columns
+  - Hel.Tiled.Models.Tileset.Tileset.Grid
+  - Hel.Tiled.Models.Tileset.Tileset.Image
+  - Hel.Tiled.Models.Tileset.Tileset.ImageHeight
+  - Hel.Tiled.Models.Tileset.Tileset.ImageWidth
+  - Hel.Tiled.Models.Tileset.Tileset.Margin
+  - Hel.Tiled.Models.Tileset.Tileset.Name
+  - Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment
+  - Hel.Tiled.Models.Tileset.Tileset.Properties
+  - Hel.Tiled.Models.Tileset.Tileset.Rows
+  - Hel.Tiled.Models.Tileset.Tileset.Spacing
+  - Hel.Tiled.Models.Tileset.Tileset.Terrains
+  - Hel.Tiled.Models.Tileset.Tileset.Texture
+  - Hel.Tiled.Models.Tileset.Tileset.TileCount
+  - Hel.Tiled.Models.Tileset.Tileset.TiledVersion
+  - Hel.Tiled.Models.Tileset.Tileset.TileHeight
+  - Hel.Tiled.Models.Tileset.Tileset.TileOffset
+  - Hel.Tiled.Models.Tileset.Tileset.TileRectangles
+  - Hel.Tiled.Models.Tileset.Tileset.Tiles
+  - Hel.Tiled.Models.Tileset.Tileset.TileWidth
+  - Hel.Tiled.Models.Tileset.Tileset.Type
+  - Hel.Tiled.Models.Tileset.Tileset.Version
+  - Hel.Tiled.Models.Tileset.Tileset.WangSets
+  langs:
+  - csharp
+  - vb
+  name: Tileset
+  nameWithType: Tileset
+  fullName: Hel.Tiled.Models.Tileset.Tileset
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Tileset
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 10
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  syntax:
+    content: public class Tileset
+    content.vb: Public Class Tileset
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Tileset.Tileset.Name
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Name
+  id: Name
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Tileset.Name
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Name
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Name
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 16
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nName given to this tileset\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Hel.Tiled.Models.Tileset.Tileset.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Image
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Image
+  id: Image
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: Tileset.Image
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Image
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Image
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 21
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nImage used for tiles in this set\n"
+  example: []
+  syntax:
+    content: public string Image { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Image As String
+  overload: Hel.Tiled.Models.Tileset.Tileset.Image*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Grid
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Grid
+  id: Grid
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Grid
+  nameWithType: Tileset.Grid
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Grid
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Grid
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 26
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nOptional\n"
+  example: []
+  syntax:
+    content: public Grid Grid { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Tileset.Grid
+    content.vb: Public Property Grid As Grid
+  overload: Hel.Tiled.Models.Tileset.Tileset.Grid*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Columns
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Columns
+  id: Columns
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Columns
+  nameWithType: Tileset.Columns
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Columns
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Columns
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 31
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nThe number of tile columns in the tileset\n"
+  example: []
+  syntax:
+    content: public ushort Columns { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Columns As UShort
+  overload: Hel.Tiled.Models.Tileset.Tileset.Columns*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.ImageHeight
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.ImageHeight
+  id: ImageHeight
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: ImageHeight
+  nameWithType: Tileset.ImageHeight
+  fullName: Hel.Tiled.Models.Tileset.Tileset.ImageHeight
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ImageHeight
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 36
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nHeight of source image in pixels\n"
+  example: []
+  syntax:
+    content: public ushort ImageHeight { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property ImageHeight As UShort
+  overload: Hel.Tiled.Models.Tileset.Tileset.ImageHeight*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.ImageWidth
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.ImageWidth
+  id: ImageWidth
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: ImageWidth
+  nameWithType: Tileset.ImageWidth
+  fullName: Hel.Tiled.Models.Tileset.Tileset.ImageWidth
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ImageWidth
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 41
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nWidth of source image in pixels\n"
+  example: []
+  syntax:
+    content: public ushort ImageWidth { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property ImageWidth As UShort
+  overload: Hel.Tiled.Models.Tileset.Tileset.ImageWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Margin
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Margin
+  id: Margin
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Margin
+  nameWithType: Tileset.Margin
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Margin
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Margin
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 46
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nBuffer between image edge and first tile (pixels)\n"
+  example: []
+  syntax:
+    content: public ushort Margin { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Margin As UShort
+  overload: Hel.Tiled.Models.Tileset.Tileset.Margin*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.BackgroundColor
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.BackgroundColor
+  id: BackgroundColor
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: Tileset.BackgroundColor
+  fullName: Hel.Tiled.Models.Tileset.Tileset.BackgroundColor
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: BackgroundColor
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 51
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nHex-formatted color (#RRGGBB or #AARRGGBB) (optional)\n"
+  example: []
+  syntax:
+    content: public string BackgroundColor { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BackgroundColor As String
+  overload: Hel.Tiled.Models.Tileset.Tileset.BackgroundColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment
+  id: ObjectAlignment
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: ObjectAlignment
+  nameWithType: Tileset.ObjectAlignment
+  fullName: Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ObjectAlignment
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 56
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nAlignment to use for tile objects\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public TilesetObjectAlignmentEnum ObjectAlignment { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: >-
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property ObjectAlignment As TilesetObjectAlignmentEnum
+  overload: Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment*
+  attributes:
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Properties
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Properties
+  id: Properties
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: Tileset.Properties
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Properties
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Properties
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 62
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nArray of custom properties\n"
+  example: []
+  syntax:
+    content: public List<Property> Properties { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Property}
+    content.vb: Public Property Properties As List(Of  Property)
+  overload: Hel.Tiled.Models.Tileset.Tileset.Properties*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Spacing
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Spacing
+  id: Spacing
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Spacing
+  nameWithType: Tileset.Spacing
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Spacing
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Spacing
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 67
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nSpacing between adjacent tiles in image (pixels)\n"
+  example: []
+  syntax:
+    content: public ushort Spacing { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Spacing As UShort
+  overload: Hel.Tiled.Models.Tileset.Tileset.Spacing*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileCount
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.TileCount
+  id: TileCount
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: TileCount
+  nameWithType: Tileset.TileCount
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileCount
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TileCount
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 72
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nThe number of tiles in this tileset\n"
+  example: []
+  syntax:
+    content: public int TileCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TileCount As Integer
+  overload: Hel.Tiled.Models.Tileset.Tileset.TileCount*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileHeight
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.TileHeight
+  id: TileHeight
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: TileHeight
+  nameWithType: Tileset.TileHeight
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileHeight
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TileHeight
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 77
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nMaximum height of tiles in this set\n"
+  example: []
+  syntax:
+    content: public ushort TileHeight { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property TileHeight As UShort
+  overload: Hel.Tiled.Models.Tileset.Tileset.TileHeight*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileWidth
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.TileWidth
+  id: TileWidth
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: TileWidth
+  nameWithType: Tileset.TileWidth
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileWidth
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TileWidth
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 82
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nMaximum width of tiles in this set\n"
+  example: []
+  syntax:
+    content: public ushort TileWidth { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property TileWidth As UShort
+  overload: Hel.Tiled.Models.Tileset.Tileset.TileWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Terrains
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Terrains
+  id: Terrains
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Terrains
+  nameWithType: Tileset.Terrains
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Terrains
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Terrains
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 87
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nOptional terrains\n"
+  example: []
+  syntax:
+    content: public List<Terrain> Terrains { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Tiles.Terrain}
+    content.vb: Public Property Terrains As List(Of Terrain)
+  overload: Hel.Tiled.Models.Tileset.Tileset.Terrains*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileOffset
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.TileOffset
+  id: TileOffset
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: TileOffset
+  nameWithType: Tileset.TileOffset
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileOffset
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TileOffset
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 92
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nOptional\n"
+  example: []
+  syntax:
+    content: public TileOffset TileOffset { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Tileset.Tiles.TileOffset
+    content.vb: Public Property TileOffset As TileOffset
+  overload: Hel.Tiled.Models.Tileset.Tileset.TileOffset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Tiles
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Tiles
+  id: Tiles
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Tiles
+  nameWithType: Tileset.Tiles
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Tiles
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Tiles
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 97
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nOptional\n"
+  example: []
+  syntax:
+    content: public List<Tile> Tiles { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Tiles.Tile}
+    content.vb: Public Property Tiles As List(Of Tile)
+  overload: Hel.Tiled.Models.Tileset.Tileset.Tiles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Type
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Type
+  id: Type
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Tileset.Type
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Type
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Type
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 102
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\ntileset (for tileset files, since 1.0)\n"
+  example: []
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Hel.Tiled.Models.Tileset.Tileset.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.TiledVersion
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.TiledVersion
+  id: TiledVersion
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: TiledVersion
+  nameWithType: Tileset.TiledVersion
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TiledVersion
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TiledVersion
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 107
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nThe Tiled version used to save the file\n"
+  example: []
+  syntax:
+    content: public string TiledVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TiledVersion As String
+  overload: Hel.Tiled.Models.Tileset.Tileset.TiledVersion*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Version
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Version
+  id: Version
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: Tileset.Version
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Version
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Version
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 112
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nJSON/XML version\n"
+  example: []
+  syntax:
+    content: public float Version { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Version As Single
+  overload: Hel.Tiled.Models.Tileset.Tileset.Version*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.WangSets
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.WangSets
+  id: WangSets
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: WangSets
+  nameWithType: Tileset.WangSets
+  fullName: Hel.Tiled.Models.Tileset.Tileset.WangSets
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: WangSets
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 115
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  syntax:
+    content: public List<WangSet> WangSets { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Wang.WangSet}
+    content.vb: Public Property WangSets As List(Of WangSet)
+  overload: Hel.Tiled.Models.Tileset.Tileset.WangSets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Rows
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Rows
+  id: Rows
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Rows
+  nameWithType: Tileset.Rows
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Rows
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Rows
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 122
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nRow count\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public int Rows { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property Rows As Integer
+  overload: Hel.Tiled.Models.Tileset.Tileset.Rows*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileRectangles
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.TileRectangles
+  id: TileRectangles
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: TileRectangles
+  nameWithType: Tileset.TileRectangles
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileRectangles
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TileRectangles
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 125
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public Dictionary<int, Rectangle> TileRectangles { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.Int32,System.Drawing.Rectangle}
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property TileRectangles As Dictionary(Of Integer, Rectangle)
+  overload: Hel.Tiled.Models.Tileset.Tileset.TileRectangles*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.Texture
+  commentId: P:Hel.Tiled.Models.Tileset.Tileset.Texture
+  id: Texture
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: Tileset.Texture
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Texture
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Texture
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 128
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public object Texture { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property Texture As Object
+  overload: Hel.Tiled.Models.Tileset.Tileset.Texture*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles(System.Int32)
+  commentId: M:Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles(System.Int32)
+  id: CalculateTileRectangles(System.Int32)
+  parent: Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: CalculateTileRectangles(Int32)
+  nameWithType: Tileset.CalculateTileRectangles(Int32)
+  fullName: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tileset.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: CalculateTileRectangles
+    path: ../Hel.Tiled/Models/Tileset/Tileset.cs
+    startLine: 136
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nCalculate how to split up the tileset so it can be properly rendered\n"
+  example: []
+  syntax:
+    content: public Dictionary<int, Rectangle> CalculateTileRectangles(int firstGid)
+    parameters:
+    - id: firstGid
+      type: System.Int32
+      description: FirstGid property in the <xref href="Hel.Tiled.Models.Tilemap" data-throw-if-not-resolved="false"></xref> that uses this tileset
+    return:
+      type: System.Collections.Generic.Dictionary{System.Int32,System.Drawing.Rectangle}
+      description: ''
+    content.vb: Public Function CalculateTileRectangles(firstGid As Integer) As Dictionary(Of Integer, Rectangle)
+  overload: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Tileset
+  commentId: N:Hel.Tiled.Models.Tileset
+  name: Hel.Tiled.Models.Tileset
+  nameWithType: Hel.Tiled.Models.Tileset
+  fullName: Hel.Tiled.Models.Tileset
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Tiled.Models.Tileset.Tileset.Name*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Name
+  name: Name
+  nameWithType: Tileset.Name
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Tileset.Tileset.Image*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Image
+  name: Image
+  nameWithType: Tileset.Image
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Image
+- uid: Hel.Tiled.Models.Tileset.Tileset.Grid*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Grid
+  name: Grid
+  nameWithType: Tileset.Grid
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Grid
+- uid: Hel.Tiled.Models.Tileset.Grid
+  commentId: T:Hel.Tiled.Models.Tileset.Grid
+  parent: Hel.Tiled.Models.Tileset
+  name: Grid
+  nameWithType: Grid
+  fullName: Hel.Tiled.Models.Tileset.Grid
+- uid: Hel.Tiled.Models.Tileset.Tileset.Columns*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Columns
+  name: Columns
+  nameWithType: Tileset.Columns
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Columns
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Hel.Tiled.Models.Tileset.Tileset.ImageHeight*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.ImageHeight
+  name: ImageHeight
+  nameWithType: Tileset.ImageHeight
+  fullName: Hel.Tiled.Models.Tileset.Tileset.ImageHeight
+- uid: Hel.Tiled.Models.Tileset.Tileset.ImageWidth*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.ImageWidth
+  name: ImageWidth
+  nameWithType: Tileset.ImageWidth
+  fullName: Hel.Tiled.Models.Tileset.Tileset.ImageWidth
+- uid: Hel.Tiled.Models.Tileset.Tileset.Margin*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Margin
+  name: Margin
+  nameWithType: Tileset.Margin
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Margin
+- uid: Hel.Tiled.Models.Tileset.Tileset.BackgroundColor*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.BackgroundColor
+  name: BackgroundColor
+  nameWithType: Tileset.BackgroundColor
+  fullName: Hel.Tiled.Models.Tileset.Tileset.BackgroundColor
+- uid: Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment
+  name: ObjectAlignment
+  nameWithType: Tileset.ObjectAlignment
+  fullName: Hel.Tiled.Models.Tileset.Tileset.ObjectAlignment
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  commentId: T:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  parent: Hel.Tiled.Models.Enums
+  name: TilesetObjectAlignmentEnum
+  nameWithType: TilesetObjectAlignmentEnum
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+- uid: Hel.Tiled.Models.Enums
+  commentId: N:Hel.Tiled.Models.Enums
+  name: Hel.Tiled.Models.Enums
+  nameWithType: Hel.Tiled.Models.Enums
+  fullName: Hel.Tiled.Models.Enums
+- uid: Hel.Tiled.Models.Tileset.Tileset.Properties*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Properties
+  name: Properties
+  nameWithType: Tileset.Properties
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Properties
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Property}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Property}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Property>
+  nameWithType: List<Property>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Property>
+  nameWithType.vb: List(Of Property)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Property)
+  name.vb: List(Of Property)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hel.Tiled.Models.Tileset.Tileset.Spacing*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Spacing
+  name: Spacing
+  nameWithType: Tileset.Spacing
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Spacing
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileCount*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.TileCount
+  name: TileCount
+  nameWithType: Tileset.TileCount
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileHeight*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.TileHeight
+  name: TileHeight
+  nameWithType: Tileset.TileHeight
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileHeight
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileWidth*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.TileWidth
+  name: TileWidth
+  nameWithType: Tileset.TileWidth
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileWidth
+- uid: Hel.Tiled.Models.Tileset.Tileset.Terrains*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Terrains
+  name: Terrains
+  nameWithType: Tileset.Terrains
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Terrains
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Tiles.Terrain}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Tiles.Terrain}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Terrain>
+  nameWithType: List<Terrain>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Tileset.Tiles.Terrain>
+  nameWithType.vb: List(Of Terrain)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Tileset.Tiles.Terrain)
+  name.vb: List(Of Terrain)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Tileset.Tiles.Terrain
+    name: Terrain
+    nameWithType: Terrain
+    fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Tileset.Tiles.Terrain
+    name: Terrain
+    nameWithType: Terrain
+    fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileOffset*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.TileOffset
+  name: TileOffset
+  nameWithType: Tileset.TileOffset
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileOffset
+- uid: Hel.Tiled.Models.Tileset.Tiles.TileOffset
+  commentId: T:Hel.Tiled.Models.Tileset.Tiles.TileOffset
+  parent: Hel.Tiled.Models.Tileset.Tiles
+  name: TileOffset
+  nameWithType: TileOffset
+  fullName: Hel.Tiled.Models.Tileset.Tiles.TileOffset
+- uid: Hel.Tiled.Models.Tileset.Tiles
+  commentId: N:Hel.Tiled.Models.Tileset.Tiles
+  name: Hel.Tiled.Models.Tileset.Tiles
+  nameWithType: Hel.Tiled.Models.Tileset.Tiles
+  fullName: Hel.Tiled.Models.Tileset.Tiles
+- uid: Hel.Tiled.Models.Tileset.Tileset.Tiles*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Tiles
+  name: Tiles
+  nameWithType: Tileset.Tiles
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Tiles
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Tiles.Tile}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Tiles.Tile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Tile>
+  nameWithType: List<Tile>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Tileset.Tiles.Tile>
+  nameWithType.vb: List(Of Tile)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Tileset.Tiles.Tile)
+  name.vb: List(Of Tile)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Tileset.Tiles.Tile
+    name: Tile
+    nameWithType: Tile
+    fullName: Hel.Tiled.Models.Tileset.Tiles.Tile
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Tileset.Tiles.Tile
+    name: Tile
+    nameWithType: Tile
+    fullName: Hel.Tiled.Models.Tileset.Tiles.Tile
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Tileset.Tileset.Type*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Type
+  name: Type
+  nameWithType: Tileset.Type
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Type
+- uid: Hel.Tiled.Models.Tileset.Tileset.TiledVersion*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.TiledVersion
+  name: TiledVersion
+  nameWithType: Tileset.TiledVersion
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TiledVersion
+- uid: Hel.Tiled.Models.Tileset.Tileset.Version*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Version
+  name: Version
+  nameWithType: Tileset.Version
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Version
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Hel.Tiled.Models.Tileset.Tileset.WangSets*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.WangSets
+  name: WangSets
+  nameWithType: Tileset.WangSets
+  fullName: Hel.Tiled.Models.Tileset.Tileset.WangSets
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Wang.WangSet}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Tileset.Wang.WangSet}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<WangSet>
+  nameWithType: List<WangSet>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Tileset.Wang.WangSet>
+  nameWithType.vb: List(Of WangSet)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Tileset.Wang.WangSet)
+  name.vb: List(Of WangSet)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Tileset.Wang.WangSet
+    name: WangSet
+    nameWithType: WangSet
+    fullName: Hel.Tiled.Models.Tileset.Wang.WangSet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Tileset.Wang.WangSet
+    name: WangSet
+    nameWithType: WangSet
+    fullName: Hel.Tiled.Models.Tileset.Wang.WangSet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Tileset.Tileset.Rows*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Rows
+  name: Rows
+  nameWithType: Tileset.Rows
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Rows
+- uid: Hel.Tiled.Models.Tileset.Tileset.TileRectangles*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.TileRectangles
+  name: TileRectangles
+  nameWithType: Tileset.TileRectangles
+  fullName: Hel.Tiled.Models.Tileset.Tileset.TileRectangles
+- uid: System.Collections.Generic.Dictionary{System.Int32,System.Drawing.Rectangle}
+  commentId: T:System.Collections.Generic.Dictionary{System.Int32,System.Drawing.Rectangle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Int32, Rectangle>
+  nameWithType: Dictionary<Int32, Rectangle>
+  fullName: System.Collections.Generic.Dictionary<System.Int32, System.Drawing.Rectangle>
+  nameWithType.vb: Dictionary(Of Int32, Rectangle)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Int32, System.Drawing.Rectangle)
+  name.vb: Dictionary(Of Int32, Rectangle)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Drawing.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: System.Drawing.Rectangle
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Drawing.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: System.Drawing.Rectangle
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Tileset.Tileset.Texture*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.Texture
+  name: Texture
+  nameWithType: Tileset.Texture
+  fullName: Hel.Tiled.Models.Tileset.Tileset.Texture
+- uid: Hel.Tiled.Models.Tilemap
+  commentId: N:Hel.Tiled.Models.Tilemap
+  name: Hel.Tiled.Models.Tilemap
+  nameWithType: Hel.Tiled.Models.Tilemap
+  fullName: Hel.Tiled.Models.Tilemap
+- uid: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles
+  name: CalculateTileRectangles
+  nameWithType: Tileset.CalculateTileRectangles
+  fullName: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles

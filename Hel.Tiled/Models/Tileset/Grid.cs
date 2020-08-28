@@ -1,4 +1,6 @@
 ﻿using Hel.Tiled.Models.Enums;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Tileset
 {
@@ -7,16 +9,17 @@ namespace Hel.Tiled.Models.Tileset
         /// <summary>
         /// Cell height of tile grid
         /// </summary>
-        public int Height { get; set; }
+        public ushort Height { get; set; }
         
         /// <summary>
-        /// 	Cell width of tile grid
+        /// Cell width of tile grid
         /// </summary>
-        public int Width { get; set; }
+        public ushort Width { get; set; }
         
         /// <summary>
         /// Orientation of grid
         /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
         public GridOrientationEnum Orientation { get; set; }
     }
 }

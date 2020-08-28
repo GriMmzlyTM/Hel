@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Commander.Model
+  commentId: N:Hel.Engine.Commander.Model
+  id: Hel.Engine.Commander.Model
+  children:
+  - Hel.Engine.Commander.Model.ICommand
+  - Hel.Engine.Commander.Model.ICommand`1
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.Commander.Model
+  nameWithType: Hel.Engine.Commander.Model
+  fullName: Hel.Engine.Commander.Model
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.Commander.Model.ICommand
+  commentId: T:Hel.Engine.Commander.Model.ICommand
+  parent: Hel.Engine.Commander.Model
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Hel.Engine.Commander.Model.ICommand
+- uid: Hel.Engine.Commander.Model.ICommand`1
+  commentId: T:Hel.Engine.Commander.Model.ICommand`1
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: Hel.Engine.Commander.Model.ICommand<T>
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: Hel.Engine.Commander.Model.ICommand(Of T)
+  name.vb: ICommand(Of T)
+  spec.csharp:
+  - uid: Hel.Engine.Commander.Model.ICommand`1
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Hel.Engine.Commander.Model.ICommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hel.Engine.Commander.Model.ICommand`1
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Hel.Engine.Commander.Model.ICommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.Commander.Model
+  commentId: N:Hel.Engine.Commander.Model
+  name: Hel.Engine.Commander.Model
+  nameWithType: Hel.Engine.Commander.Model
+  fullName: Hel.Engine.Commander.Model

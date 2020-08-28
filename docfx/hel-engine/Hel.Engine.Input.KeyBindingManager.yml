@@ -1,0 +1,1500 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Input.KeyBindingManager
+  commentId: T:Hel.Engine.Input.KeyBindingManager
+  id: KeyBindingManager
+  parent: Hel.Engine.Input
+  children:
+  - Hel.Engine.Input.KeyBindingManager.#ctor
+  - Hel.Engine.Input.KeyBindingManager.#ctor(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  - Hel.Engine.Input.KeyBindingManager.GetAllBindings
+  - Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  - Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Microsoft.Xna.Framework.Input.Keys)
+  - Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON
+  - Hel.Engine.Input.KeyBindingManager.RemoveKey(Hel.Engine.Input.Model.KeyBinding)
+  - Hel.Engine.Input.KeyBindingManager.RemoveKey(Microsoft.Xna.Framework.Input.Keys)
+  - Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON
+  - Hel.Engine.Input.KeyBindingManager.SetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  - Hel.Engine.Input.KeyBindingManager.SetKeyBindings(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  - Hel.Engine.Input.KeyBindingManager.UndoBindings
+  - Hel.Engine.Input.KeyBindingManager.UpdateBindings
+  langs:
+  - csharp
+  - vb
+  name: KeyBindingManager
+  nameWithType: KeyBindingManager
+  fullName: Hel.Engine.Input.KeyBindingManager
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: KeyBindingManager
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 64
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: 'public class KeyBindingManager : EventChange<HashSet<KeyBinding>>, IEventChange<HashSet<KeyBinding>>, IKeyBindingManager'
+    content.vb: >-
+      Public Class KeyBindingManager
+          Inherits EventChange(Of HashSet(Of KeyBinding))
+          Implements IEventChange(Of HashSet(Of KeyBinding)), IKeyBindingManager
+  inheritance:
+  - System.Object
+  - Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  inheritedMembers:
+  - Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.OnChange
+  - Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.OnChangeEvents(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  - Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.AddChangeEvent(Hel.Engine.OnChangeEvent{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}})
+  - Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.RemoveChangeEvent(Hel.Engine.OnChangeEvent{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}})
+  - Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.ResetEvent
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.Input.KeyBindingManager.#ctor(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  commentId: M:Hel.Engine.Input.KeyBindingManager.#ctor(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  id: '#ctor(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})'
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: KeyBindingManager(HashSet<KeyBinding>)
+  nameWithType: KeyBindingManager.KeyBindingManager(HashSet<KeyBinding>)
+  fullName: Hel.Engine.Input.KeyBindingManager.KeyBindingManager(System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: .ctor
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 75
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public KeyBindingManager(HashSet<KeyBinding> _bindingSet)
+    parameters:
+    - id: _bindingSet
+      type: System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}
+    content.vb: Public Sub New(_bindingSet As HashSet(Of KeyBinding))
+  overload: Hel.Engine.Input.KeyBindingManager.#ctor*
+  nameWithType.vb: KeyBindingManager.KeyBindingManager(HashSet(Of KeyBinding))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Hel.Engine.Input.KeyBindingManager.KeyBindingManager(System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding))
+  name.vb: KeyBindingManager(HashSet(Of KeyBinding))
+- uid: Hel.Engine.Input.KeyBindingManager.#ctor
+  commentId: M:Hel.Engine.Input.KeyBindingManager.#ctor
+  id: '#ctor'
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: KeyBindingManager()
+  nameWithType: KeyBindingManager.KeyBindingManager()
+  fullName: Hel.Engine.Input.KeyBindingManager.KeyBindingManager()
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: .ctor
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 87
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public KeyBindingManager()
+    content.vb: Public Sub New
+  overload: Hel.Engine.Input.KeyBindingManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Microsoft.Xna.Framework.Input.Keys)
+  commentId: M:Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Microsoft.Xna.Framework.Input.Keys)
+  id: GetKeyBinding(Microsoft.Xna.Framework.Input.Keys)
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: GetKeyBinding(Keys)
+  nameWithType: KeyBindingManager.GetKeyBinding(Keys)
+  fullName: Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Microsoft.Xna.Framework.Input.Keys)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GetKeyBinding
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 89
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public KeyBinding GetKeyBinding(Keys key)
+    parameters:
+    - id: key
+      type: Microsoft.Xna.Framework.Input.Keys
+    return:
+      type: Hel.Engine.Input.Model.KeyBinding
+    content.vb: Public Function GetKeyBinding(key As Keys) As KeyBinding
+  overload: Hel.Engine.Input.KeyBindingManager.GetKeyBinding*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.GetAllBindings
+  commentId: M:Hel.Engine.Input.KeyBindingManager.GetAllBindings
+  id: GetAllBindings
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: GetAllBindings()
+  nameWithType: KeyBindingManager.GetAllBindings()
+  fullName: Hel.Engine.Input.KeyBindingManager.GetAllBindings()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GetAllBindings
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 92
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public HashSet<KeyBinding> GetAllBindings()
+    return:
+      type: System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}
+    content.vb: Public Function GetAllBindings As HashSet(Of KeyBinding)
+  overload: Hel.Engine.Input.KeyBindingManager.GetAllBindings*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  commentId: M:Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  id: GetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: GetKeyBinding(KeyBinding)
+  nameWithType: KeyBindingManager.GetKeyBinding(KeyBinding)
+  fullName: Hel.Engine.Input.KeyBindingManager.GetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GetKeyBinding
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 94
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public KeyBinding GetKeyBinding(KeyBinding key)
+    parameters:
+    - id: key
+      type: Hel.Engine.Input.Model.KeyBinding
+    return:
+      type: Hel.Engine.Input.Model.KeyBinding
+    content.vb: Public Function GetKeyBinding(key As KeyBinding) As KeyBinding
+  overload: Hel.Engine.Input.KeyBindingManager.GetKeyBinding*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.RemoveKey(Microsoft.Xna.Framework.Input.Keys)
+  commentId: M:Hel.Engine.Input.KeyBindingManager.RemoveKey(Microsoft.Xna.Framework.Input.Keys)
+  id: RemoveKey(Microsoft.Xna.Framework.Input.Keys)
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveKey(Keys)
+  nameWithType: KeyBindingManager.RemoveKey(Keys)
+  fullName: Hel.Engine.Input.KeyBindingManager.RemoveKey(Microsoft.Xna.Framework.Input.Keys)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: RemoveKey
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 97
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void RemoveKey(Keys key)
+    parameters:
+    - id: key
+      type: Microsoft.Xna.Framework.Input.Keys
+    content.vb: Public Sub RemoveKey(key As Keys)
+  overload: Hel.Engine.Input.KeyBindingManager.RemoveKey*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.RemoveKey(Hel.Engine.Input.Model.KeyBinding)
+  commentId: M:Hel.Engine.Input.KeyBindingManager.RemoveKey(Hel.Engine.Input.Model.KeyBinding)
+  id: RemoveKey(Hel.Engine.Input.Model.KeyBinding)
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveKey(KeyBinding)
+  nameWithType: KeyBindingManager.RemoveKey(KeyBinding)
+  fullName: Hel.Engine.Input.KeyBindingManager.RemoveKey(Hel.Engine.Input.Model.KeyBinding)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: RemoveKey
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 100
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void RemoveKey(KeyBinding key)
+    parameters:
+    - id: key
+      type: Hel.Engine.Input.Model.KeyBinding
+    content.vb: Public Sub RemoveKey(key As KeyBinding)
+  overload: Hel.Engine.Input.KeyBindingManager.RemoveKey*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.SetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  commentId: M:Hel.Engine.Input.KeyBindingManager.SetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  id: SetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: SetKeyBinding(KeyBinding)
+  nameWithType: KeyBindingManager.SetKeyBinding(KeyBinding)
+  fullName: Hel.Engine.Input.KeyBindingManager.SetKeyBinding(Hel.Engine.Input.Model.KeyBinding)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: SetKeyBinding
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 103
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void SetKeyBinding(KeyBinding binding)
+    parameters:
+    - id: binding
+      type: Hel.Engine.Input.Model.KeyBinding
+    content.vb: Public Sub SetKeyBinding(binding As KeyBinding)
+  overload: Hel.Engine.Input.KeyBindingManager.SetKeyBinding*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.SetKeyBindings(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  commentId: M:Hel.Engine.Input.KeyBindingManager.SetKeyBindings(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  id: SetKeyBindings(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: SetKeyBindings(HashSet<KeyBinding>)
+  nameWithType: KeyBindingManager.SetKeyBindings(HashSet<KeyBinding>)
+  fullName: Hel.Engine.Input.KeyBindingManager.SetKeyBindings(System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: SetKeyBindings
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 110
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void SetKeyBindings(HashSet<KeyBinding> bindings)
+    parameters:
+    - id: bindings
+      type: System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}
+    content.vb: Public Sub SetKeyBindings(bindings As HashSet(Of KeyBinding))
+  overload: Hel.Engine.Input.KeyBindingManager.SetKeyBindings*
+  nameWithType.vb: KeyBindingManager.SetKeyBindings(HashSet(Of KeyBinding))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Hel.Engine.Input.KeyBindingManager.SetKeyBindings(System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding))
+  name.vb: SetKeyBindings(HashSet(Of KeyBinding))
+- uid: Hel.Engine.Input.KeyBindingManager.UpdateBindings
+  commentId: M:Hel.Engine.Input.KeyBindingManager.UpdateBindings
+  id: UpdateBindings
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateBindings()
+  nameWithType: KeyBindingManager.UpdateBindings()
+  fullName: Hel.Engine.Input.KeyBindingManager.UpdateBindings()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: UpdateBindings
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 118
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void UpdateBindings()
+    content.vb: Public Sub UpdateBindings
+  overload: Hel.Engine.Input.KeyBindingManager.UpdateBindings*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.UndoBindings
+  commentId: M:Hel.Engine.Input.KeyBindingManager.UndoBindings
+  id: UndoBindings
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: UndoBindings()
+  nameWithType: KeyBindingManager.UndoBindings()
+  fullName: Hel.Engine.Input.KeyBindingManager.UndoBindings()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: UndoBindings
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 124
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void UndoBindings()
+    content.vb: Public Sub UndoBindings
+  overload: Hel.Engine.Input.KeyBindingManager.UndoBindings*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON
+  commentId: M:Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON
+  id: SaveBindingsJSON
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: SaveBindingsJSON()
+  nameWithType: KeyBindingManager.SaveBindingsJSON()
+  fullName: Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: SaveBindingsJSON
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 127
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void SaveBindingsJSON()
+    content.vb: Public Sub SaveBindingsJSON
+  overload: Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON
+  commentId: M:Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON
+  id: LoadBindingsJSON
+  parent: Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: LoadBindingsJSON()
+  nameWithType: KeyBindingManager.LoadBindingsJSON()
+  fullName: Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/KeyBindingManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: LoadBindingsJSON
+    path: ../Hel.Engine/Input/KeyBindingManager.cs
+    startLine: 133
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input
+  syntax:
+    content: public void LoadBindingsJSON()
+    content.vb: Public Sub LoadBindingsJSON
+  overload: Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.Input
+  commentId: N:Hel.Engine.Input
+  name: Hel.Engine.Input
+  nameWithType: Hel.Engine.Input
+  fullName: Hel.Engine.Input
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  commentId: T:Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  parent: Hel.Engine
+  definition: Hel.Engine.EventChange`1
+  name: EventChange<HashSet<KeyBinding>>
+  nameWithType: EventChange<HashSet<KeyBinding>>
+  fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>
+  nameWithType.vb: EventChange(Of HashSet(Of KeyBinding))
+  fullName.vb: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding))
+  name.vb: EventChange(Of HashSet(Of KeyBinding))
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1
+    name: EventChange
+    nameWithType: EventChange
+    fullName: Hel.Engine.EventChange
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1
+    name: EventChange
+    nameWithType: EventChange
+    fullName: Hel.Engine.EventChange
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.OnChange
+  commentId: F:Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.OnChange
+  parent: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  definition: Hel.Engine.EventChange`1.OnChange
+  name: OnChange
+  nameWithType: EventChange<HashSet<KeyBinding>>.OnChange
+  fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.OnChange
+  nameWithType.vb: EventChange(Of HashSet(Of KeyBinding)).OnChange
+  fullName.vb: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).OnChange
+- uid: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.OnChangeEvents(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  commentId: M:Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.OnChangeEvents(System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding})
+  parent: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  definition: Hel.Engine.EventChange`1.OnChangeEvents(`0)
+  name: OnChangeEvents(HashSet<KeyBinding>)
+  nameWithType: EventChange<HashSet<KeyBinding>>.OnChangeEvents(HashSet<KeyBinding>)
+  fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.OnChangeEvents(System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>)
+  nameWithType.vb: EventChange(Of HashSet(Of KeyBinding)).OnChangeEvents(HashSet(Of KeyBinding))
+  fullName.vb: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).OnChangeEvents(System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding))
+  name.vb: OnChangeEvents(HashSet(Of KeyBinding))
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.OnChangeEvents(`0)
+    name: OnChangeEvents
+    nameWithType: EventChange<HashSet<KeyBinding>>.OnChangeEvents
+    fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.OnChangeEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.OnChangeEvents(`0)
+    name: OnChangeEvents
+    nameWithType: EventChange(Of HashSet(Of KeyBinding)).OnChangeEvents
+    fullName: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).OnChangeEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.AddChangeEvent(Hel.Engine.OnChangeEvent{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}})
+  commentId: M:Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.AddChangeEvent(Hel.Engine.OnChangeEvent{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}})
+  parent: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  definition: Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  name: AddChangeEvent(OnChangeEvent<HashSet<KeyBinding>>)
+  nameWithType: EventChange<HashSet<KeyBinding>>.AddChangeEvent(OnChangeEvent<HashSet<KeyBinding>>)
+  fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.AddChangeEvent(Hel.Engine.OnChangeEvent<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>)
+  nameWithType.vb: EventChange(Of HashSet(Of KeyBinding)).AddChangeEvent(OnChangeEvent(Of HashSet(Of KeyBinding)))
+  fullName.vb: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).AddChangeEvent(Hel.Engine.OnChangeEvent(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)))
+  name.vb: AddChangeEvent(OnChangeEvent(Of HashSet(Of KeyBinding)))
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: AddChangeEvent
+    nameWithType: EventChange<HashSet<KeyBinding>>.AddChangeEvent
+    fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.AddChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: AddChangeEvent
+    nameWithType: EventChange(Of HashSet(Of KeyBinding)).AddChangeEvent
+    fullName: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).AddChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.RemoveChangeEvent(Hel.Engine.OnChangeEvent{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}})
+  commentId: M:Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.RemoveChangeEvent(Hel.Engine.OnChangeEvent{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}})
+  parent: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  definition: Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  name: RemoveChangeEvent(OnChangeEvent<HashSet<KeyBinding>>)
+  nameWithType: EventChange<HashSet<KeyBinding>>.RemoveChangeEvent(OnChangeEvent<HashSet<KeyBinding>>)
+  fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.RemoveChangeEvent(Hel.Engine.OnChangeEvent<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>)
+  nameWithType.vb: EventChange(Of HashSet(Of KeyBinding)).RemoveChangeEvent(OnChangeEvent(Of HashSet(Of KeyBinding)))
+  fullName.vb: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).RemoveChangeEvent(Hel.Engine.OnChangeEvent(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)))
+  name.vb: RemoveChangeEvent(OnChangeEvent(Of HashSet(Of KeyBinding)))
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: RemoveChangeEvent
+    nameWithType: EventChange<HashSet<KeyBinding>>.RemoveChangeEvent
+    fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.RemoveChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: RemoveChangeEvent
+    nameWithType: EventChange(Of HashSet(Of KeyBinding)).RemoveChangeEvent
+    fullName: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).RemoveChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.ResetEvent
+  commentId: M:Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}.ResetEvent
+  parent: Hel.Engine.EventChange{System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}}
+  definition: Hel.Engine.EventChange`1.ResetEvent
+  name: ResetEvent()
+  nameWithType: EventChange<HashSet<KeyBinding>>.ResetEvent()
+  fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.ResetEvent()
+  nameWithType.vb: EventChange(Of HashSet(Of KeyBinding)).ResetEvent()
+  fullName.vb: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).ResetEvent()
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.ResetEvent
+    name: ResetEvent
+    nameWithType: EventChange<HashSet<KeyBinding>>.ResetEvent
+    fullName: Hel.Engine.EventChange<System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>>.ResetEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.ResetEvent
+    name: ResetEvent
+    nameWithType: EventChange(Of HashSet(Of KeyBinding)).ResetEvent
+    fullName: Hel.Engine.EventChange(Of System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)).ResetEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Engine.EventChange`1
+  commentId: T:Hel.Engine.EventChange`1
+  name: EventChange<T>
+  nameWithType: EventChange<T>
+  fullName: Hel.Engine.EventChange<T>
+  nameWithType.vb: EventChange(Of T)
+  fullName.vb: Hel.Engine.EventChange(Of T)
+  name.vb: EventChange(Of T)
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1
+    name: EventChange
+    nameWithType: EventChange
+    fullName: Hel.Engine.EventChange
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1
+    name: EventChange
+    nameWithType: EventChange
+    fullName: Hel.Engine.EventChange
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine
+  commentId: N:Hel.Engine
+  name: Hel.Engine
+  nameWithType: Hel.Engine
+  fullName: Hel.Engine
+- uid: Hel.Engine.EventChange`1.OnChange
+  commentId: F:Hel.Engine.EventChange`1.OnChange
+  name: OnChange
+  nameWithType: EventChange<T>.OnChange
+  fullName: Hel.Engine.EventChange<T>.OnChange
+  nameWithType.vb: EventChange(Of T).OnChange
+  fullName.vb: Hel.Engine.EventChange(Of T).OnChange
+- uid: Hel.Engine.EventChange`1.OnChangeEvents(`0)
+  commentId: M:Hel.Engine.EventChange`1.OnChangeEvents(`0)
+  name: OnChangeEvents(T)
+  nameWithType: EventChange<T>.OnChangeEvents(T)
+  fullName: Hel.Engine.EventChange<T>.OnChangeEvents(T)
+  nameWithType.vb: EventChange(Of T).OnChangeEvents(T)
+  fullName.vb: Hel.Engine.EventChange(Of T).OnChangeEvents(T)
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.OnChangeEvents(`0)
+    name: OnChangeEvents
+    nameWithType: EventChange<T>.OnChangeEvents
+    fullName: Hel.Engine.EventChange<T>.OnChangeEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.OnChangeEvents(`0)
+    name: OnChangeEvents
+    nameWithType: EventChange(Of T).OnChangeEvents
+    fullName: Hel.Engine.EventChange(Of T).OnChangeEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  commentId: M:Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  name: AddChangeEvent(OnChangeEvent<T>)
+  nameWithType: EventChange<T>.AddChangeEvent(OnChangeEvent<T>)
+  fullName: Hel.Engine.EventChange<T>.AddChangeEvent(Hel.Engine.OnChangeEvent<T>)
+  nameWithType.vb: EventChange(Of T).AddChangeEvent(OnChangeEvent(Of T))
+  fullName.vb: Hel.Engine.EventChange(Of T).AddChangeEvent(Hel.Engine.OnChangeEvent(Of T))
+  name.vb: AddChangeEvent(OnChangeEvent(Of T))
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: AddChangeEvent
+    nameWithType: EventChange<T>.AddChangeEvent
+    fullName: Hel.Engine.EventChange<T>.AddChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: AddChangeEvent
+    nameWithType: EventChange(Of T).AddChangeEvent
+    fullName: Hel.Engine.EventChange(Of T).AddChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  commentId: M:Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  name: RemoveChangeEvent(OnChangeEvent<T>)
+  nameWithType: EventChange<T>.RemoveChangeEvent(OnChangeEvent<T>)
+  fullName: Hel.Engine.EventChange<T>.RemoveChangeEvent(Hel.Engine.OnChangeEvent<T>)
+  nameWithType.vb: EventChange(Of T).RemoveChangeEvent(OnChangeEvent(Of T))
+  fullName.vb: Hel.Engine.EventChange(Of T).RemoveChangeEvent(Hel.Engine.OnChangeEvent(Of T))
+  name.vb: RemoveChangeEvent(OnChangeEvent(Of T))
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: RemoveChangeEvent
+    nameWithType: EventChange<T>.RemoveChangeEvent
+    fullName: Hel.Engine.EventChange<T>.RemoveChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+    name: RemoveChangeEvent
+    nameWithType: EventChange(Of T).RemoveChangeEvent
+    fullName: Hel.Engine.EventChange(Of T).RemoveChangeEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange`1.ResetEvent
+  commentId: M:Hel.Engine.EventChange`1.ResetEvent
+  name: ResetEvent()
+  nameWithType: EventChange<T>.ResetEvent()
+  fullName: Hel.Engine.EventChange<T>.ResetEvent()
+  nameWithType.vb: EventChange(Of T).ResetEvent()
+  fullName.vb: Hel.Engine.EventChange(Of T).ResetEvent()
+  spec.csharp:
+  - uid: Hel.Engine.EventChange`1.ResetEvent
+    name: ResetEvent
+    nameWithType: EventChange<T>.ResetEvent
+    fullName: Hel.Engine.EventChange<T>.ResetEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.EventChange`1.ResetEvent
+    name: ResetEvent
+    nameWithType: EventChange(Of T).ResetEvent
+    fullName: Hel.Engine.EventChange(Of T).ResetEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.Input.KeyBindingManager.#ctor*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.#ctor
+  name: KeyBindingManager
+  nameWithType: KeyBindingManager.KeyBindingManager
+  fullName: Hel.Engine.Input.KeyBindingManager.KeyBindingManager
+- uid: System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}
+  commentId: T:System.Collections.Generic.HashSet{Hel.Engine.Input.Model.KeyBinding}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  name: HashSet<KeyBinding>
+  nameWithType: HashSet<KeyBinding>
+  fullName: System.Collections.Generic.HashSet<Hel.Engine.Input.Model.KeyBinding>
+  nameWithType.vb: HashSet(Of KeyBinding)
+  fullName.vb: System.Collections.Generic.HashSet(Of Hel.Engine.Input.Model.KeyBinding)
+  name.vb: HashSet(Of KeyBinding)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.Input.Model.KeyBinding
+    name: KeyBinding
+    nameWithType: KeyBinding
+    fullName: Hel.Engine.Input.Model.KeyBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hel.Engine.Input.KeyBindingManager.GetKeyBinding*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.GetKeyBinding
+  name: GetKeyBinding
+  nameWithType: KeyBindingManager.GetKeyBinding
+  fullName: Hel.Engine.Input.KeyBindingManager.GetKeyBinding
+- uid: Microsoft.Xna.Framework.Input.Keys
+  commentId: T:Microsoft.Xna.Framework.Input.Keys
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: true
+  name: Keys
+  nameWithType: Keys
+  fullName: Microsoft.Xna.Framework.Input.Keys
+- uid: Hel.Engine.Input.Model.KeyBinding
+  commentId: T:Hel.Engine.Input.Model.KeyBinding
+  parent: Hel.Engine.Input.Model
+  name: KeyBinding
+  nameWithType: KeyBinding
+  fullName: Hel.Engine.Input.Model.KeyBinding
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: true
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: Hel.Engine.Input.Model
+  commentId: N:Hel.Engine.Input.Model
+  name: Hel.Engine.Input.Model
+  nameWithType: Hel.Engine.Input.Model
+  fullName: Hel.Engine.Input.Model
+- uid: Hel.Engine.Input.KeyBindingManager.GetAllBindings*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.GetAllBindings
+  name: GetAllBindings
+  nameWithType: KeyBindingManager.GetAllBindings
+  fullName: Hel.Engine.Input.KeyBindingManager.GetAllBindings
+- uid: Hel.Engine.Input.KeyBindingManager.RemoveKey*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.RemoveKey
+  name: RemoveKey
+  nameWithType: KeyBindingManager.RemoveKey
+  fullName: Hel.Engine.Input.KeyBindingManager.RemoveKey
+- uid: Hel.Engine.Input.KeyBindingManager.SetKeyBinding*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.SetKeyBinding
+  name: SetKeyBinding
+  nameWithType: KeyBindingManager.SetKeyBinding
+  fullName: Hel.Engine.Input.KeyBindingManager.SetKeyBinding
+- uid: Hel.Engine.Input.KeyBindingManager.SetKeyBindings*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.SetKeyBindings
+  name: SetKeyBindings
+  nameWithType: KeyBindingManager.SetKeyBindings
+  fullName: Hel.Engine.Input.KeyBindingManager.SetKeyBindings
+- uid: Hel.Engine.Input.KeyBindingManager.UpdateBindings*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.UpdateBindings
+  name: UpdateBindings
+  nameWithType: KeyBindingManager.UpdateBindings
+  fullName: Hel.Engine.Input.KeyBindingManager.UpdateBindings
+- uid: Hel.Engine.Input.KeyBindingManager.UndoBindings*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.UndoBindings
+  name: UndoBindings
+  nameWithType: KeyBindingManager.UndoBindings
+  fullName: Hel.Engine.Input.KeyBindingManager.UndoBindings
+- uid: Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON
+  name: SaveBindingsJSON
+  nameWithType: KeyBindingManager.SaveBindingsJSON
+  fullName: Hel.Engine.Input.KeyBindingManager.SaveBindingsJSON
+- uid: Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON*
+  commentId: Overload:Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON
+  name: LoadBindingsJSON
+  nameWithType: KeyBindingManager.LoadBindingsJSON
+  fullName: Hel.Engine.Input.KeyBindingManager.LoadBindingsJSON

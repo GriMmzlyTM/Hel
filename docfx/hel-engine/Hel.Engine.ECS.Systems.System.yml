@@ -1,0 +1,657 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Systems.System
+  commentId: T:Hel.Engine.ECS.Systems.System
+  id: System
+  parent: Hel.Engine.ECS.Systems
+  children:
+  - Hel.Engine.ECS.Systems.System.#ctor(Hel.Engine.ECS.Systems.SystemManager)
+  - Hel.Engine.ECS.Systems.System.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  - Hel.Engine.ECS.Systems.System.JobLogic(Hel.Engine.ECS.Entities.EntityDictionary)
+  - Hel.Engine.ECS.Systems.System.Update(Microsoft.Xna.Framework.GameTime)
+  langs:
+  - csharp
+  - vb
+  name: System
+  nameWithType: System
+  fullName: Hel.Engine.ECS.Systems.System
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: System
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 12
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: 'public class System : ISystem'
+    content.vb: >-
+      Public Class System
+          Implements ISystem
+  inheritance:
+  - System.Object
+  implements:
+  - Hel.Engine.ECS.Systems.ISystem
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.ECS.Systems.System.#ctor(Hel.Engine.ECS.Systems.SystemManager)
+  commentId: M:Hel.Engine.ECS.Systems.System.#ctor(Hel.Engine.ECS.Systems.SystemManager)
+  id: '#ctor(Hel.Engine.ECS.Systems.SystemManager)'
+  parent: Hel.Engine.ECS.Systems.System
+  langs:
+  - csharp
+  - vb
+  name: System(SystemManager)
+  nameWithType: System.System(SystemManager)
+  fullName: Hel.Engine.ECS.Systems.System.System(Hel.Engine.ECS.Systems.SystemManager)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: .ctor
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 14
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: public System(SystemManager manager)
+    parameters:
+    - id: manager
+      type: Hel.Engine.ECS.Systems.SystemManager
+    content.vb: Public Sub New(manager As SystemManager)
+  overload: Hel.Engine.ECS.Systems.System.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Systems.System.Update(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Hel.Engine.ECS.Systems.System.Update(Microsoft.Xna.Framework.GameTime)
+  id: Update(Microsoft.Xna.Framework.GameTime)
+  parent: Hel.Engine.ECS.Systems.System
+  langs:
+  - csharp
+  - vb
+  name: Update(GameTime)
+  nameWithType: System.Update(GameTime)
+  fullName: Hel.Engine.ECS.Systems.System.Update(Microsoft.Xna.Framework.GameTime)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Update
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 19
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: public virtual void Update(GameTime gameTime)
+    parameters:
+    - id: gameTime
+      type: Microsoft.Xna.Framework.GameTime
+    content.vb: Public Overridable Sub Update(gameTime As GameTime)
+  overload: Hel.Engine.ECS.Systems.System.Update*
+  implements:
+  - Hel.Engine.ECS.Systems.ISystem.Update(Microsoft.Xna.Framework.GameTime)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Hel.Engine.ECS.Systems.System.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  commentId: M:Hel.Engine.ECS.Systems.System.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  id: Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  parent: Hel.Engine.ECS.Systems.System
+  langs:
+  - csharp
+  - vb
+  name: Draw(GameTime, SpriteBatch)
+  nameWithType: System.Draw(GameTime, SpriteBatch)
+  fullName: Hel.Engine.ECS.Systems.System.Draw(Microsoft.Xna.Framework.GameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Draw
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 20
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+    parameters:
+    - id: gameTime
+      type: Microsoft.Xna.Framework.GameTime
+    - id: spriteBatch
+      type: Microsoft.Xna.Framework.Graphics.SpriteBatch
+    content.vb: Public Overridable Sub Draw(gameTime As GameTime, spriteBatch As SpriteBatch)
+  overload: Hel.Engine.ECS.Systems.System.Draw*
+  implements:
+  - Hel.Engine.ECS.Systems.ISystem.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Hel.Engine.ECS.Systems.System.JobLogic(Hel.Engine.ECS.Entities.EntityDictionary)
+  commentId: M:Hel.Engine.ECS.Systems.System.JobLogic(Hel.Engine.ECS.Entities.EntityDictionary)
+  id: JobLogic(Hel.Engine.ECS.Entities.EntityDictionary)
+  parent: Hel.Engine.ECS.Systems.System
+  langs:
+  - csharp
+  - vb
+  name: JobLogic(EntityDictionary)
+  nameWithType: System.JobLogic(EntityDictionary)
+  fullName: Hel.Engine.ECS.Systems.System.JobLogic(Hel.Engine.ECS.Entities.EntityDictionary)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: JobLogic
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 22
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: protected virtual void JobLogic(EntityDictionary entityList)
+    parameters:
+    - id: entityList
+      type: Hel.Engine.ECS.Entities.EntityDictionary
+    content.vb: Protected Overridable Sub JobLogic(entityList As EntityDictionary)
+  overload: Hel.Engine.ECS.Systems.System.JobLogic*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Hel.Engine.ECS.Systems
+  commentId: N:Hel.Engine.ECS.Systems
+  name: Hel.Engine.ECS.Systems
+  nameWithType: Hel.Engine.ECS.Systems
+  fullName: Hel.Engine.ECS.Systems
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.ECS.Systems.ISystem
+  commentId: T:Hel.Engine.ECS.Systems.ISystem
+  parent: Hel.Engine.ECS.Systems
+  name: ISystem
+  nameWithType: ISystem
+  fullName: Hel.Engine.ECS.Systems.ISystem
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Engine.ECS.Systems.System.#ctor*
+  commentId: Overload:Hel.Engine.ECS.Systems.System.#ctor
+  name: System
+  nameWithType: System.System
+  fullName: Hel.Engine.ECS.Systems.System.System
+- uid: Hel.Engine.ECS.Systems.SystemManager
+  commentId: T:Hel.Engine.ECS.Systems.SystemManager
+  parent: Hel.Engine.ECS.Systems
+  name: SystemManager
+  nameWithType: SystemManager
+  fullName: Hel.Engine.ECS.Systems.SystemManager
+- uid: Hel.Engine.ECS.Systems.System.Update*
+  commentId: Overload:Hel.Engine.ECS.Systems.System.Update
+  name: Update
+  nameWithType: System.Update
+  fullName: Hel.Engine.ECS.Systems.System.Update
+- uid: Hel.Engine.ECS.Systems.ISystem.Update(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Hel.Engine.ECS.Systems.ISystem.Update(Microsoft.Xna.Framework.GameTime)
+  parent: Hel.Engine.ECS.Systems.ISystem
+  isExternal: true
+  name: Update(GameTime)
+  nameWithType: ISystem.Update(GameTime)
+  fullName: Hel.Engine.ECS.Systems.ISystem.Update(Microsoft.Xna.Framework.GameTime)
+  spec.csharp:
+  - uid: Hel.Engine.ECS.Systems.ISystem.Update(Microsoft.Xna.Framework.GameTime)
+    name: Update
+    nameWithType: ISystem.Update
+    fullName: Hel.Engine.ECS.Systems.ISystem.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.ECS.Systems.ISystem.Update(Microsoft.Xna.Framework.GameTime)
+    name: Update
+    nameWithType: ISystem.Update
+    fullName: Hel.Engine.ECS.Systems.ISystem.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.GameTime
+  commentId: T:Microsoft.Xna.Framework.GameTime
+  parent: Microsoft.Xna.Framework
+  isExternal: true
+  name: GameTime
+  nameWithType: GameTime
+  fullName: Microsoft.Xna.Framework.GameTime
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: true
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Hel.Engine.ECS.Systems.System.Draw*
+  commentId: Overload:Hel.Engine.ECS.Systems.System.Draw
+  name: Draw
+  nameWithType: System.Draw
+  fullName: Hel.Engine.ECS.Systems.System.Draw
+- uid: Hel.Engine.ECS.Systems.ISystem.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  commentId: M:Hel.Engine.ECS.Systems.ISystem.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  parent: Hel.Engine.ECS.Systems.ISystem
+  isExternal: true
+  name: Draw(GameTime, SpriteBatch)
+  nameWithType: ISystem.Draw(GameTime, SpriteBatch)
+  fullName: Hel.Engine.ECS.Systems.ISystem.Draw(Microsoft.Xna.Framework.GameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch)
+  spec.csharp:
+  - uid: Hel.Engine.ECS.Systems.ISystem.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+    name: Draw
+    nameWithType: ISystem.Draw
+    fullName: Hel.Engine.ECS.Systems.ISystem.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.SpriteBatch
+    name: SpriteBatch
+    nameWithType: SpriteBatch
+    fullName: Microsoft.Xna.Framework.Graphics.SpriteBatch
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.ECS.Systems.ISystem.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)
+    name: Draw
+    nameWithType: ISystem.Draw
+    fullName: Hel.Engine.ECS.Systems.ISystem.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.SpriteBatch
+    name: SpriteBatch
+    nameWithType: SpriteBatch
+    fullName: Microsoft.Xna.Framework.Graphics.SpriteBatch
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.SpriteBatch
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteBatch
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: true
+  name: SpriteBatch
+  nameWithType: SpriteBatch
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteBatch
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: true
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Hel.Engine.ECS.Systems.System.JobLogic*
+  commentId: Overload:Hel.Engine.ECS.Systems.System.JobLogic
+  name: JobLogic
+  nameWithType: System.JobLogic
+  fullName: Hel.Engine.ECS.Systems.System.JobLogic
+- uid: Hel.Engine.ECS.Entities.EntityDictionary
+  commentId: T:Hel.Engine.ECS.Entities.EntityDictionary
+  parent: Hel.Engine.ECS.Entities
+  name: EntityDictionary
+  nameWithType: EntityDictionary
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary
+- uid: Hel.Engine.ECS.Entities
+  commentId: N:Hel.Engine.ECS.Entities
+  name: Hel.Engine.ECS.Entities
+  nameWithType: Hel.Engine.ECS.Entities
+  fullName: Hel.Engine.ECS.Entities
