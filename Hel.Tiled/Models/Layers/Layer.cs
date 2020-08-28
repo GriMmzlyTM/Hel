@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 using Hel.Tiled.Models.Enums.Layer;
+using Hel.Tiled.Models.Layers.Objects;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Layers
 {

@@ -1,4 +1,8 @@
-﻿namespace Hel.Tiled.Models.Enums.Layer
+﻿using System.Runtime.Serialization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace Hel.Tiled.Models.Enums.Layer
 {
     public enum LayerTypeEnum
     {
