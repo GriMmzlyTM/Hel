@@ -1,4 +1,6 @@
 ﻿using Hel.Tiled.Models.Enums.Object;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Layers.Objects
 {
@@ -22,12 +24,14 @@ namespace Hel.Tiled.Models.Layers.Objects
         /// <summary>
         /// Horizontal alignment
         /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
         public HAlignEnum HAlign { get; set; }
         
         /// <summary>
         /// Vertical alignment
         /// </summary>
-        public VAlignEnum VAlignEnum { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public VAlignEnum VAlign { get; set; }
         
         /// <summary>
         /// Whether to use an italic font (default: false)

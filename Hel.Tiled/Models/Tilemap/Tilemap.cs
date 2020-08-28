@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using Hel.Tiled.Models.Enums.Tilemap;
 using Hel.Tiled.Models.Layers;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Tilemap
 {
@@ -17,11 +19,6 @@ namespace Hel.Tiled.Models.Tilemap
         public int Width { get; set; }
 
         /// <summary>
-        /// Whether the map has infinite dimensions
-        /// </summary>
-        public bool Infinite { get; set; }
-
-        /// <summary>
         /// Map grid height
         /// </summary>
         public int TileHeight { get; set; }
@@ -31,6 +28,11 @@ namespace Hel.Tiled.Models.Tilemap
         /// </summary>
         public int TileWidth { get; set; }
 
+        /// <summary>
+        /// Whether the map has infinite dimensions
+        /// </summary>
+        public bool Infinite { get; set; }
+        
         /// <summary>
         /// Tilesets used in the map
         /// </summary>
