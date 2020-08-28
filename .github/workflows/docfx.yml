@@ -1,0 +1,14 @@
+
+name: DoxFX -> Documentation generator
+
+on:
+  push:
+    branches: [ release ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: nikeee/docfx-action@v1.0.0
+        with:
+          args:  docfx/docfx.json --build --overwrite --output ./docs/
