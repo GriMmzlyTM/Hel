@@ -4,6 +4,7 @@ using Hel.Tiled.Models.Enums;
 using Hel.Tiled.Models.Tileset.Tiles;
 using Hel.Tiled.Models.Tileset.Wang;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Tileset
 {
@@ -14,36 +15,36 @@ namespace Hel.Tiled.Models.Tileset
         /// Name given to this tileset
         /// </summary>
         public string Name { get; set; }
-        
-        /// <summary>
-        /// The number of tile columns in the tileset
-        /// </summary>
-        public int Columns { get; set; }
 
-        /// <summary>
-        /// Optional
-        /// </summary>
-        public Grid? Grid { get; set; }
-        
         /// <summary>
         /// Image used for tiles in this set
         /// </summary>
         public string Image { get; set; }
         
         /// <summary>
+        /// Optional
+        /// </summary>
+        public Grid? Grid { get; set; }
+        
+        /// <summary>
+        /// The number of tile columns in the tileset
+        /// </summary>
+        public ushort Columns { get; set; }
+        
+        /// <summary>
         /// Height of source image in pixels
         /// </summary>
-        public int ImageHeight { get; set; }
+        public ushort ImageHeight { get; set; }
         
         /// <summary>
         /// Width of source image in pixels
         /// </summary>
-        public int ImageWidth { get; set; }
+        public ushort ImageWidth { get; set; }
         
         /// <summary>
         /// Buffer between image edge and first tile (pixels)
         /// </summary>
-        public int Margin { get; set; }
+        public ushort Margin { get; set; }
         
         /// <summary>
         /// Hex-formatted color (#RRGGBB or #AARRGGBB) (optional)
@@ -53,6 +54,7 @@ namespace Hel.Tiled.Models.Tileset
         /// <summary>
         /// Alignment to use for tile objects
         /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
         public TilesetObjectAlignmentEnum ObjectAlignment { get; set; }
         
         /// <summary>
@@ -63,18 +65,28 @@ namespace Hel.Tiled.Models.Tileset
         /// <summary>
         /// Spacing between adjacent tiles in image (pixels)
         /// </summary>
-        public int Spacing { get; set; }
-        
-        /// <summary>
-        /// Optional terrains
-        /// </summary>
-        public List<Terrain>? Terrains { get; set; }
+        public ushort Spacing { get; set; }
         
         /// <summary>
         /// The number of tiles in this tileset
         /// </summary>
         public int TileCount { get; set; }
         
+        /// <summary>
+        /// Maximum height of tiles in this set
+        /// </summary>
+        public ushort TileHeight { get; set; }
+        
+        /// <summary>
+        /// Maximum width of tiles in this set
+        /// </summary>
+        public ushort TileWidth { get; set; }
+        
+        /// <summary>
+        /// Optional terrains
+        /// </summary>
+        public List<Terrain>? Terrains { get; set; }
+
         /// <summary>
         /// Optional
         /// </summary>
@@ -84,49 +96,44 @@ namespace Hel.Tiled.Models.Tileset
         /// Optional
         /// </summary>
         public List<Tile>? Tiles { get; set; }
-        
-        /// <summary>
-        /// Maximum height of tiles in this set
-        /// </summary>
-        public int TileHeight { get; set; }
-        
-        /// <summary>
-        /// Maximum width of tiles in this set
-        /// </summary>
-        public int TileWidth { get; set; }
-        
+
         /// <summary>
         /// tileset (for tileset files, since 1.0)
         /// </summary>
         public string Type { get; set; }
         
         /// <summary>
-        /// JSON/XML version
-        /// </summary>
-        public float Version { get; set; }
-        
-        /// <summary>
         /// The Tiled version used to save the file
         /// </summary>
         public string TiledVersion { get; set; }
+        
+        /// <summary>
+        /// JSON/XML version
+        /// </summary>
+        public float Version { get; set; }
 
         // List of wang sets
         public List<WangSet> WangSets { get; set; }
         
-        // NOW SERIALIZED 
+        // NOT SERIALIZED 
         
         /// <summary>
         /// Row count
         /// </summary>
         [JsonIgnore]
         public int Rows => TileCount / Columns;
+        
+        [JsonIgnore]
+        public Dictionary<int, Rectangle> TileRectangles { get; set; }
+        
+        [JsonIgnore]
+        public object Texture { get; set; }
 
         /// <summary>
-        /// Provides the rectangles you need to properly render reach tile
+        /// Calculate how to split up the tileset so it can be properly rendered
         /// </summary>
-        [JsonIgnore] 
-        public Dictionary<int, Rectangle> TileRectangles { get; }
-
+        /// <param name="firstGid">FirstGid property in the <see cref="Tilemap"/> that uses this tileset</param>
+        /// <returns></returns>
         public Dictionary<int, Rectangle> CalculateTileRectangles(int firstGid)
         {
             var rectangleDict = new Dictionary<int, Rectangle>();

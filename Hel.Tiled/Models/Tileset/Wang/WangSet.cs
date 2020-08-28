@@ -25,7 +25,7 @@ namespace Hel.Tiled.Models.Tileset.Wang
         public List<Property> Properties { get; set; }
         
         /// <summary>
-        /// 	Local ID of tile representing the Wang set
+        /// Local ID of tile representing the Wang set
         /// </summary>
         public int Tile { get; set; }
         
