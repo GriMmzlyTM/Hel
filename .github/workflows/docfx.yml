@@ -11,4 +11,9 @@ jobs:
     steps:
       - uses: nikeee/docfx-action@v1.0.0
         with:
-          args:  docfx/docfx.json --build --overwrite --output ./docs/
+          args:  docfx/docfx.json --build --overwrite
+      - uses: maxheld83/ghpages@master
+        name: Publish Documentation on GitHub Pages
+        env:
+          BUILD_DIR: docfx/_site # docfx's default output directory is _site
+          GH_PAT: ${{ secrets.GH_PAT }}
