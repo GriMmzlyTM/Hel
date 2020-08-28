@@ -12,13 +12,9 @@ namespace Hel.Engine.ECS.Systems
     }
     public class System : ISystem
     {
-        protected World world;
         public System(SystemManager manager)
         {
-
             manager.AddSystem(this);
-            world = manager.World;
-
         }
 
         public virtual void Update(GameTime gameTime) { }

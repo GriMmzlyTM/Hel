@@ -17,16 +17,16 @@ namespace Hel.Engine.ECS.Systems
             spriteBatch.Begin();
 
             //Draws all entities to the screen that implement the IRender interface.
-            foreach (var entity in world.EntityManager.GetEntities<RenderComponent>())
+            foreach (var entity in Engine.WorldManager.PrimaryWorld.EntityManager.GetEntities<IRenderComponent>())
             {
-                if (entity.Value.GetComponentOrNull(out RenderComponent renderComponent)
-                    && entity.Value.GetComponentOrNull(out TransformComponent transformComponent))
-                {
-                    spriteBatch.Draw(
-                        renderComponent.Texture,
-                        new Vector2(transformComponent.X, transformComponent.Y),
-                        Color.White);
-                }
+                if (!entity.Value.GetComponentOrNull(out RenderComponent renderComponent) ||
+                    !entity.Value.GetComponentOrNull(out TransformComponent transformComponent)) continue;
+                
+             
+                spriteBatch.Draw(
+                    renderComponent.Texture,
+                    new Vector2(transformComponent.X, transformComponent.Y),
+                    Color.White);
             }
 
             spriteBatch.End();

@@ -9,7 +9,6 @@ namespace Hel.Engine.ECS.Systems
 
     public class SystemManager : DrawableGameComponent
     {
-
         private readonly List<ISystem> systems = new List<ISystem>();
         public World World { get; private set; }
         //public readonly JobManager jobManager;
