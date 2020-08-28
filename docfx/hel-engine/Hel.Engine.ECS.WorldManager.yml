@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.WorldManager
+  commentId: T:Hel.Engine.ECS.WorldManager
+  id: WorldManager
+  parent: Hel.Engine.ECS
+  children:
+  - Hel.Engine.ECS.WorldManager.#ctor
+  - Hel.Engine.ECS.WorldManager.GenerateWorld(Microsoft.Xna.Framework.Graphics.SpriteBatch,System.String)
+  - Hel.Engine.ECS.WorldManager.GetGame
+  - Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  - Hel.Engine.ECS.WorldManager.PrimaryWorld
+  - Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  langs:
+  - csharp
+  - vb
+  name: WorldManager
+  nameWithType: WorldManager
+  fullName: Hel.Engine.ECS.WorldManager
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: WorldManager
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 37
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: 'public class WorldManager : IWorldManager'
+    content.vb: >-
+      Public Class WorldManager
+          Implements IWorldManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.ECS.WorldManager.PrimaryWorld
+  commentId: P:Hel.Engine.ECS.WorldManager.PrimaryWorld
+  id: PrimaryWorld
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: PrimaryWorld
+  nameWithType: WorldManager.PrimaryWorld
+  fullName: Hel.Engine.ECS.WorldManager.PrimaryWorld
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: PrimaryWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 40
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public World PrimaryWorld { get; }
+    parameters: []
+    return:
+      type: Hel.Engine.ECS.World
+    content.vb: Public ReadOnly Property PrimaryWorld As World
+  overload: Hel.Engine.ECS.WorldManager.PrimaryWorld*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Hel.Engine.ECS.WorldManager.#ctor
+  commentId: M:Hel.Engine.ECS.WorldManager.#ctor
+  id: '#ctor'
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: WorldManager()
+  nameWithType: WorldManager.WorldManager()
+  fullName: Hel.Engine.ECS.WorldManager.WorldManager()
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: .ctor
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 43
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public WorldManager()
+    content.vb: Public Sub New
+  overload: Hel.Engine.ECS.WorldManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.GenerateWorld(Microsoft.Xna.Framework.Graphics.SpriteBatch,System.String)
+  commentId: M:Hel.Engine.ECS.WorldManager.GenerateWorld(Microsoft.Xna.Framework.Graphics.SpriteBatch,System.String)
+  id: GenerateWorld(Microsoft.Xna.Framework.Graphics.SpriteBatch,System.String)
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: GenerateWorld(SpriteBatch, String)
+  nameWithType: WorldManager.GenerateWorld(SpriteBatch, String)
+  fullName: Hel.Engine.ECS.WorldManager.GenerateWorld(Microsoft.Xna.Framework.Graphics.SpriteBatch, System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GenerateWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 46
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public World GenerateWorld(SpriteBatch spriteBatch, string worldName)
+    parameters:
+    - id: spriteBatch
+      type: Microsoft.Xna.Framework.Graphics.SpriteBatch
+    - id: worldName
+      type: System.String
+    return:
+      type: Hel.Engine.ECS.World
+    content.vb: Public Function GenerateWorld(spriteBatch As SpriteBatch, worldName As String) As World
+  overload: Hel.Engine.ECS.WorldManager.GenerateWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.GetGame
+  commentId: M:Hel.Engine.ECS.WorldManager.GetGame
+  id: GetGame
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: GetGame()
+  nameWithType: WorldManager.GetGame()
+  fullName: Hel.Engine.ECS.WorldManager.GetGame()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GetGame
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 54
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public Game GetGame()
+    return:
+      type: Microsoft.Xna.Framework.Game
+    content.vb: Public Function GetGame As Game
+  overload: Hel.Engine.ECS.WorldManager.GetGame*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  commentId: M:Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  id: SetPrimaryWorld(System.String)
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: SetPrimaryWorld(String)
+  nameWithType: WorldManager.SetPrimaryWorld(String)
+  fullName: Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: SetPrimaryWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 56
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public void SetPrimaryWorld(string worldName)
+    parameters:
+    - id: worldName
+      type: System.String
+    content.vb: Public Sub SetPrimaryWorld(worldName As String)
+  overload: Hel.Engine.ECS.WorldManager.SetPrimaryWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  commentId: M:Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  id: GetWorld(System.String)
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: GetWorld(String)
+  nameWithType: WorldManager.GetWorld(String)
+  fullName: Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GetWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 61
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public World GetWorld(string worldName)
+    parameters:
+    - id: worldName
+      type: System.String
+    return:
+      type: Hel.Engine.ECS.World
+    content.vb: Public Function GetWorld(worldName As String) As World
+  overload: Hel.Engine.ECS.WorldManager.GetWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS
+  commentId: N:Hel.Engine.ECS
+  name: Hel.Engine.ECS
+  nameWithType: Hel.Engine.ECS
+  fullName: Hel.Engine.ECS
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Engine.ECS.WorldManager.PrimaryWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.PrimaryWorld
+  name: PrimaryWorld
+  nameWithType: WorldManager.PrimaryWorld
+  fullName: Hel.Engine.ECS.WorldManager.PrimaryWorld
+- uid: Hel.Engine.ECS.World
+  commentId: T:Hel.Engine.ECS.World
+  parent: Hel.Engine.ECS
+  name: World
+  nameWithType: World
+  fullName: Hel.Engine.ECS.World
+- uid: Hel.Engine.ECS.WorldManager.#ctor*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.#ctor
+  name: WorldManager
+  nameWithType: WorldManager.WorldManager
+  fullName: Hel.Engine.ECS.WorldManager.WorldManager
+- uid: Hel.Engine.ECS.WorldManager.GenerateWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.GenerateWorld
+  name: GenerateWorld
+  nameWithType: WorldManager.GenerateWorld
+  fullName: Hel.Engine.ECS.WorldManager.GenerateWorld
+- uid: Microsoft.Xna.Framework.Graphics.SpriteBatch
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteBatch
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: true
+  name: SpriteBatch
+  nameWithType: SpriteBatch
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteBatch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: true
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Hel.Engine.ECS.WorldManager.GetGame*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.GetGame
+  name: GetGame
+  nameWithType: WorldManager.GetGame
+  fullName: Hel.Engine.ECS.WorldManager.GetGame
+- uid: Microsoft.Xna.Framework.Game
+  commentId: T:Microsoft.Xna.Framework.Game
+  parent: Microsoft.Xna.Framework
+  isExternal: true
+  name: Game
+  nameWithType: Game
+  fullName: Microsoft.Xna.Framework.Game
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: true
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Hel.Engine.ECS.WorldManager.SetPrimaryWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.SetPrimaryWorld
+  name: SetPrimaryWorld
+  nameWithType: WorldManager.SetPrimaryWorld
+  fullName: Hel.Engine.ECS.WorldManager.SetPrimaryWorld
+- uid: Hel.Engine.ECS.WorldManager.GetWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.GetWorld
+  name: GetWorld
+  nameWithType: WorldManager.GetWorld
+  fullName: Hel.Engine.ECS.WorldManager.GetWorld

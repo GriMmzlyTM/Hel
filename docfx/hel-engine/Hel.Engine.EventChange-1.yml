@@ -1,0 +1,651 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.EventChange`1
+  commentId: T:Hel.Engine.EventChange`1
+  id: EventChange`1
+  parent: Hel.Engine
+  children:
+  - Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  - Hel.Engine.EventChange`1.OnChange
+  - Hel.Engine.EventChange`1.OnChangeEvents(`0)
+  - Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  - Hel.Engine.EventChange`1.ResetEvent
+  langs:
+  - csharp
+  - vb
+  name: EventChange<T>
+  nameWithType: EventChange<T>
+  fullName: Hel.Engine.EventChange<T>
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/EventChange.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: EventChange
+    path: ../Hel.Engine/EventChange.cs
+    startLine: 21
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: 'public abstract class EventChange<T> : IEventChange<T>'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class EventChange(Of T)
+          Implements IEventChange(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Hel.Engine.Input.KeyBindingManager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: EventChange(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Hel.Engine.EventChange(Of T)
+  name.vb: EventChange(Of T)
+- uid: Hel.Engine.EventChange`1.OnChange
+  commentId: F:Hel.Engine.EventChange`1.OnChange
+  id: OnChange
+  parent: Hel.Engine.EventChange`1
+  langs:
+  - csharp
+  - vb
+  name: OnChange
+  nameWithType: EventChange<T>.OnChange
+  fullName: Hel.Engine.EventChange<T>.OnChange
+  type: Field
+  source:
+    remote:
+      path: Hel.Engine/EventChange.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: OnChange
+    path: ../Hel.Engine/EventChange.cs
+    startLine: 23
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: protected OnChangeEvent<T> OnChange
+    return:
+      type: Hel.Engine.OnChangeEvent{{T}}
+    content.vb: Protected OnChange As OnChangeEvent(Of T)
+  nameWithType.vb: EventChange(Of T).OnChange
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Hel.Engine.EventChange(Of T).OnChange
+- uid: Hel.Engine.EventChange`1.OnChangeEvents(`0)
+  commentId: M:Hel.Engine.EventChange`1.OnChangeEvents(`0)
+  id: OnChangeEvents(`0)
+  parent: Hel.Engine.EventChange`1
+  langs:
+  - csharp
+  - vb
+  name: OnChangeEvents(T)
+  nameWithType: EventChange<T>.OnChangeEvents(T)
+  fullName: Hel.Engine.EventChange<T>.OnChangeEvents(T)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/EventChange.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: OnChangeEvents
+    path: ../Hel.Engine/EventChange.cs
+    startLine: 31
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  summary: "\nCalling this will run all OnChange events. Context should generally be the object calling (this)\ndoing so will get the object type to the objects class type. Methods being called should use the class type for param.\n"
+  example: []
+  syntax:
+    content: protected void OnChangeEvents(T context)
+    parameters:
+    - id: context
+      type: '{T}'
+      description: Object to be passed along.
+    content.vb: Protected Sub OnChangeEvents(context As T)
+  overload: Hel.Engine.EventChange`1.OnChangeEvents*
+  nameWithType.vb: EventChange(Of T).OnChangeEvents(T)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Hel.Engine.EventChange(Of T).OnChangeEvents(T)
+- uid: Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  commentId: M:Hel.Engine.EventChange`1.AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  id: AddChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  parent: Hel.Engine.EventChange`1
+  langs:
+  - csharp
+  - vb
+  name: AddChangeEvent(OnChangeEvent<T>)
+  nameWithType: EventChange<T>.AddChangeEvent(OnChangeEvent<T>)
+  fullName: Hel.Engine.EventChange<T>.AddChangeEvent(Hel.Engine.OnChangeEvent<T>)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/EventChange.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: AddChangeEvent
+    path: ../Hel.Engine/EventChange.cs
+    startLine: 32
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public virtual void AddChangeEvent(OnChangeEvent<T> method)
+    parameters:
+    - id: method
+      type: Hel.Engine.OnChangeEvent{{T}}
+    content.vb: Public Overridable Sub AddChangeEvent(method As OnChangeEvent(Of T))
+  overload: Hel.Engine.EventChange`1.AddChangeEvent*
+  nameWithType.vb: EventChange(Of T).AddChangeEvent(OnChangeEvent(Of T))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Hel.Engine.EventChange(Of T).AddChangeEvent(Hel.Engine.OnChangeEvent(Of T))
+  name.vb: AddChangeEvent(OnChangeEvent(Of T))
+- uid: Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  commentId: M:Hel.Engine.EventChange`1.RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  id: RemoveChangeEvent(Hel.Engine.OnChangeEvent{`0})
+  parent: Hel.Engine.EventChange`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveChangeEvent(OnChangeEvent<T>)
+  nameWithType: EventChange<T>.RemoveChangeEvent(OnChangeEvent<T>)
+  fullName: Hel.Engine.EventChange<T>.RemoveChangeEvent(Hel.Engine.OnChangeEvent<T>)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/EventChange.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: RemoveChangeEvent
+    path: ../Hel.Engine/EventChange.cs
+    startLine: 33
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public virtual void RemoveChangeEvent(OnChangeEvent<T> method)
+    parameters:
+    - id: method
+      type: Hel.Engine.OnChangeEvent{{T}}
+    content.vb: Public Overridable Sub RemoveChangeEvent(method As OnChangeEvent(Of T))
+  overload: Hel.Engine.EventChange`1.RemoveChangeEvent*
+  nameWithType.vb: EventChange(Of T).RemoveChangeEvent(OnChangeEvent(Of T))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Hel.Engine.EventChange(Of T).RemoveChangeEvent(Hel.Engine.OnChangeEvent(Of T))
+  name.vb: RemoveChangeEvent(OnChangeEvent(Of T))
+- uid: Hel.Engine.EventChange`1.ResetEvent
+  commentId: M:Hel.Engine.EventChange`1.ResetEvent
+  id: ResetEvent
+  parent: Hel.Engine.EventChange`1
+  langs:
+  - csharp
+  - vb
+  name: ResetEvent()
+  nameWithType: EventChange<T>.ResetEvent()
+  fullName: Hel.Engine.EventChange<T>.ResetEvent()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/EventChange.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ResetEvent
+    path: ../Hel.Engine/EventChange.cs
+    startLine: 34
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public virtual void ResetEvent()
+    content.vb: Public Overridable Sub ResetEvent
+  overload: Hel.Engine.EventChange`1.ResetEvent*
+  nameWithType.vb: EventChange(Of T).ResetEvent()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Hel.Engine.EventChange(Of T).ResetEvent()
+references:
+- uid: Hel.Engine
+  commentId: N:Hel.Engine
+  name: Hel.Engine
+  nameWithType: Hel.Engine
+  fullName: Hel.Engine
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Engine.OnChangeEvent{{T}}
+  commentId: T:Hel.Engine.OnChangeEvent{`0}
+  parent: Hel.Engine
+  definition: Hel.Engine.OnChangeEvent`1
+  name: OnChangeEvent<T>
+  nameWithType: OnChangeEvent<T>
+  fullName: Hel.Engine.OnChangeEvent<T>
+  nameWithType.vb: OnChangeEvent(Of T)
+  fullName.vb: Hel.Engine.OnChangeEvent(Of T)
+  name.vb: OnChangeEvent(Of T)
+  spec.csharp:
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.OnChangeEvent`1
+  commentId: T:Hel.Engine.OnChangeEvent`1
+  name: OnChangeEvent<T>
+  nameWithType: OnChangeEvent<T>
+  fullName: Hel.Engine.OnChangeEvent<T>
+  nameWithType.vb: OnChangeEvent(Of T)
+  fullName.vb: Hel.Engine.OnChangeEvent(Of T)
+  name.vb: OnChangeEvent(Of T)
+  spec.csharp:
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hel.Engine.OnChangeEvent`1
+    name: OnChangeEvent
+    nameWithType: OnChangeEvent
+    fullName: Hel.Engine.OnChangeEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.EventChange`1.OnChangeEvents*
+  commentId: Overload:Hel.Engine.EventChange`1.OnChangeEvents
+  name: OnChangeEvents
+  nameWithType: EventChange<T>.OnChangeEvents
+  fullName: Hel.Engine.EventChange<T>.OnChangeEvents
+  nameWithType.vb: EventChange(Of T).OnChangeEvents
+  fullName.vb: Hel.Engine.EventChange(Of T).OnChangeEvents
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hel.Engine.EventChange`1.AddChangeEvent*
+  commentId: Overload:Hel.Engine.EventChange`1.AddChangeEvent
+  name: AddChangeEvent
+  nameWithType: EventChange<T>.AddChangeEvent
+  fullName: Hel.Engine.EventChange<T>.AddChangeEvent
+  nameWithType.vb: EventChange(Of T).AddChangeEvent
+  fullName.vb: Hel.Engine.EventChange(Of T).AddChangeEvent
+- uid: Hel.Engine.EventChange`1.RemoveChangeEvent*
+  commentId: Overload:Hel.Engine.EventChange`1.RemoveChangeEvent
+  name: RemoveChangeEvent
+  nameWithType: EventChange<T>.RemoveChangeEvent
+  fullName: Hel.Engine.EventChange<T>.RemoveChangeEvent
+  nameWithType.vb: EventChange(Of T).RemoveChangeEvent
+  fullName.vb: Hel.Engine.EventChange(Of T).RemoveChangeEvent
+- uid: Hel.Engine.EventChange`1.ResetEvent*
+  commentId: Overload:Hel.Engine.EventChange`1.ResetEvent
+  name: ResetEvent
+  nameWithType: EventChange<T>.ResetEvent
+  fullName: Hel.Engine.EventChange<T>.ResetEvent
+  nameWithType.vb: EventChange(Of T).ResetEvent
+  fullName.vb: Hel.Engine.EventChange(Of T).ResetEvent

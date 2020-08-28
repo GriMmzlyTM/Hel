@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  id: LayerTypeEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  children:
+  - Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.Group
+  - Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ImageLayer
+  - Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ObjectGroup
+  - Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.TileLayer
+  langs:
+  - csharp
+  - vb
+  name: LayerTypeEnum
+  nameWithType: LayerTypeEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: LayerTypeEnum
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: public enum LayerTypeEnum
+    content.vb: Public Enum LayerTypeEnum
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.TileLayer
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.TileLayer
+  id: TileLayer
+  parent: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: TileLayer
+  nameWithType: LayerTypeEnum.TileLayer
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.TileLayer
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TileLayer
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+    startLine: 8
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: TileLayer = 0
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ObjectGroup
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ObjectGroup
+  id: ObjectGroup
+  parent: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: ObjectGroup
+  nameWithType: LayerTypeEnum.ObjectGroup
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ObjectGroup
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ObjectGroup
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+    startLine: 9
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: ObjectGroup = 1
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ImageLayer
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ImageLayer
+  id: ImageLayer
+  parent: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: ImageLayer
+  nameWithType: LayerTypeEnum.ImageLayer
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.ImageLayer
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ImageLayer
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+    startLine: 10
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: ImageLayer = 2
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.Group
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.Group
+  id: Group
+  parent: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Group
+  nameWithType: LayerTypeEnum.Group
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum.Group
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Group
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerTypeEnum.cs
+    startLine: 11
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: Group = 3
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Layer
+  commentId: N:Hel.Tiled.Models.Enums.Layer
+  name: Hel.Tiled.Models.Enums.Layer
+  nameWithType: Hel.Tiled.Models.Enums.Layer
+  fullName: Hel.Tiled.Models.Enums.Layer
+- uid: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  name: LayerTypeEnum
+  nameWithType: LayerTypeEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum

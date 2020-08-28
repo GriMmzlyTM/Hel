@@ -1,0 +1,496 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo
+  commentId: T:Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo
+  id: Tilemap.TilesetInfo
+  parent: Hel.Tiled.Models.Tilemap
+  children:
+  - Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid
+  - Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source
+  - Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Tilemap.TilesetInfo
+  nameWithType: Tilemap.TilesetInfo
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tilemap/Tilemap.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TilesetInfo
+    path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
+    startLine: 40
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tilemap
+  syntax:
+    content: public sealed class TilesetInfo
+    content.vb: Public NotInheritable Class TilesetInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source
+  commentId: P:Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source
+  id: Source
+  parent: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: Tilemap.TilesetInfo.Source
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tilemap/Tilemap.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Source
+    path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
+    startLine: 45
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tilemap
+  summary: "\nThe external file that contains this tilesets data\n"
+  example: []
+  syntax:
+    content: public string Source { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Source As String
+  overload: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid
+  commentId: P:Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid
+  id: FirstGid
+  parent: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo
+  langs:
+  - csharp
+  - vb
+  name: FirstGid
+  nameWithType: Tilemap.TilesetInfo.FirstGid
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tilemap/Tilemap.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: FirstGid
+    path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
+    startLine: 53
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tilemap
+  summary: "\nEach tileset has a firstgid (first global ID) property which tells you the global ID of its first tile\n(the one with local tile ID 0). This allows you to map the global IDs back to the right tileset,\nand then calculate the local tile ID by subtracting the firstgid from the global tile ID. The first tileset\nalways has a firstgid value of 1.\n"
+  example: []
+  syntax:
+    content: public int FirstGid { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FirstGid As Integer
+  overload: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset
+  commentId: P:Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset
+  id: Tileset
+  parent: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo
+  langs:
+  - csharp
+  - vb
+  name: Tileset
+  nameWithType: Tilemap.TilesetInfo.Tileset
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tilemap/Tilemap.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Tileset
+    path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
+    startLine: 55
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tilemap
+  syntax:
+    content: public Tileset Tileset { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Tileset.Tileset
+    content.vb: Public Property Tileset As Tileset
+  overload: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Tilemap
+  commentId: N:Hel.Tiled.Models.Tilemap
+  name: Hel.Tiled.Models.Tilemap
+  nameWithType: Hel.Tiled.Models.Tilemap
+  fullName: Hel.Tiled.Models.Tilemap
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source*
+  commentId: Overload:Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source
+  name: Source
+  nameWithType: Tilemap.TilesetInfo.Source
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Source
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid*
+  commentId: Overload:Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid
+  name: FirstGid
+  nameWithType: Tilemap.TilesetInfo.FirstGid
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.FirstGid
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset*
+  commentId: Overload:Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset
+  name: Tileset
+  nameWithType: Tilemap.TilesetInfo.Tileset
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap.TilesetInfo.Tileset
+- uid: Hel.Tiled.Models.Tileset.Tileset
+  commentId: T:Hel.Tiled.Models.Tileset.Tileset
+  parent: Hel.Tiled.Models.Tileset
+  name: Tileset
+  nameWithType: Tileset
+  fullName: Hel.Tiled.Models.Tileset.Tileset
+- uid: Hel.Tiled.Models.Tileset
+  commentId: N:Hel.Tiled.Models.Tileset
+  name: Hel.Tiled.Models.Tileset
+  nameWithType: Hel.Tiled.Models.Tileset
+  fullName: Hel.Tiled.Models.Tileset

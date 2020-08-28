@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.VAlignEnum
+  id: VAlignEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  children:
+  - Hel.Tiled.Models.Enums.Object.VAlignEnum.Bottom
+  - Hel.Tiled.Models.Enums.Object.VAlignEnum.Center
+  - Hel.Tiled.Models.Enums.Object.VAlignEnum.Top
+  langs:
+  - csharp
+  - vb
+  name: VAlignEnum
+  nameWithType: VAlignEnum
+  fullName: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: VAlignEnum
+    path: ../Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: public enum VAlignEnum
+    content.vb: Public Enum VAlignEnum
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Object.VAlignEnum.Top
+  commentId: F:Hel.Tiled.Models.Enums.Object.VAlignEnum.Top
+  id: Top
+  parent: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: VAlignEnum.Top
+  fullName: Hel.Tiled.Models.Enums.Object.VAlignEnum.Top
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Top
+    path: ../Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Top = 0
+    return:
+      type: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.VAlignEnum.Center
+  commentId: F:Hel.Tiled.Models.Enums.Object.VAlignEnum.Center
+  id: Center
+  parent: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: VAlignEnum.Center
+  fullName: Hel.Tiled.Models.Enums.Object.VAlignEnum.Center
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Center
+    path: ../Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Center = 1
+    return:
+      type: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.VAlignEnum.Bottom
+  commentId: F:Hel.Tiled.Models.Enums.Object.VAlignEnum.Bottom
+  id: Bottom
+  parent: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: VAlignEnum.Bottom
+  fullName: Hel.Tiled.Models.Enums.Object.VAlignEnum.Bottom
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Bottom
+    path: ../Hel.Tiled/Models/Enums/Object/VAlignEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Bottom = 2
+    return:
+      type: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Object
+  commentId: N:Hel.Tiled.Models.Enums.Object
+  name: Hel.Tiled.Models.Enums.Object
+  nameWithType: Hel.Tiled.Models.Enums.Object
+  fullName: Hel.Tiled.Models.Enums.Object
+- uid: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.VAlignEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  name: VAlignEnum
+  nameWithType: VAlignEnum
+  fullName: Hel.Tiled.Models.Enums.Object.VAlignEnum

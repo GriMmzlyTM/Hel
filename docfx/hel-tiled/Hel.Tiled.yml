@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled
+  commentId: N:Hel.Tiled
+  id: Hel.Tiled
+  children:
+  - Hel.Tiled.TiledFactory
+  langs:
+  - csharp
+  - vb
+  name: Hel.Tiled
+  nameWithType: Hel.Tiled
+  fullName: Hel.Tiled
+  type: Namespace
+  assemblies:
+  - Hel.Tiled
+references:
+- uid: Hel.Tiled.TiledFactory
+  commentId: T:Hel.Tiled.TiledFactory
+  name: TiledFactory
+  nameWithType: TiledFactory
+  fullName: Hel.Tiled.TiledFactory

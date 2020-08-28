@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Commander.Model.Payload
+  commentId: N:Hel.Engine.Commander.Model.Payload
+  id: Hel.Engine.Commander.Model.Payload
+  children:
+  - Hel.Engine.Commander.Model.Payload.ICommandPayload
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.Commander.Model.Payload
+  nameWithType: Hel.Engine.Commander.Model.Payload
+  fullName: Hel.Engine.Commander.Model.Payload
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.Commander.Model.Payload.ICommandPayload
+  commentId: T:Hel.Engine.Commander.Model.Payload.ICommandPayload
+  name: ICommandPayload
+  nameWithType: ICommandPayload
+  fullName: Hel.Engine.Commander.Model.Payload.ICommandPayload

@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Tilemap
+  commentId: N:Hel.Tiled.Models.Enums.Tilemap
+  id: Hel.Tiled.Models.Enums.Tilemap
+  children:
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapOrientationEnum
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerIndexEnum
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Hel.Tiled.Models.Enums.Tilemap
+  nameWithType: Hel.Tiled.Models.Enums.Tilemap
+  fullName: Hel.Tiled.Models.Enums.Tilemap
+  type: Namespace
+  assemblies:
+  - Hel.Tiled
+references:
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapOrientationEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapOrientationEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  name: TilemapOrientationEnum
+  nameWithType: TilemapOrientationEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapOrientationEnum
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  name: TilemapRenderOrderEnum
+  nameWithType: TilemapRenderOrderEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  name: TilemapStaggerAxisEnum
+  nameWithType: TilemapStaggerAxisEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerIndexEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerIndexEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  name: TilemapStaggerIndexEnum
+  nameWithType: TilemapStaggerIndexEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerIndexEnum
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapTypeEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapTypeEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  name: TilemapTypeEnum
+  nameWithType: TilemapTypeEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapTypeEnum
+- uid: Hel.Tiled.Models.Enums.Tilemap
+  commentId: N:Hel.Tiled.Models.Enums.Tilemap
+  name: Hel.Tiled.Models.Enums.Tilemap
+  nameWithType: Hel.Tiled.Models.Enums.Tilemap
+  fullName: Hel.Tiled.Models.Enums.Tilemap

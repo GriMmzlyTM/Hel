@@ -1,0 +1,1796 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Layers.Layer
+  commentId: T:Hel.Tiled.Models.Layers.Layer
+  id: Layer
+  parent: Hel.Tiled.Models.Layers
+  children:
+  - Hel.Tiled.Models.Layers.Layer.Chunks
+  - Hel.Tiled.Models.Layers.Layer.Compression
+  - Hel.Tiled.Models.Layers.Layer.Data
+  - Hel.Tiled.Models.Layers.Layer.DrawOrder
+  - Hel.Tiled.Models.Layers.Layer.Encoding
+  - Hel.Tiled.Models.Layers.Layer.Height
+  - Hel.Tiled.Models.Layers.Layer.Id
+  - Hel.Tiled.Models.Layers.Layer.Image
+  - Hel.Tiled.Models.Layers.Layer.Layers
+  - Hel.Tiled.Models.Layers.Layer.Name
+  - Hel.Tiled.Models.Layers.Layer.Objects
+  - Hel.Tiled.Models.Layers.Layer.OffsetX
+  - Hel.Tiled.Models.Layers.Layer.OffsetY
+  - Hel.Tiled.Models.Layers.Layer.Opacity
+  - Hel.Tiled.Models.Layers.Layer.Properties
+  - Hel.Tiled.Models.Layers.Layer.StartX
+  - Hel.Tiled.Models.Layers.Layer.StartY
+  - Hel.Tiled.Models.Layers.Layer.TintColor
+  - Hel.Tiled.Models.Layers.Layer.TransparentColor
+  - Hel.Tiled.Models.Layers.Layer.Type
+  - Hel.Tiled.Models.Layers.Layer.Visible
+  - Hel.Tiled.Models.Layers.Layer.Width
+  - Hel.Tiled.Models.Layers.Layer.X
+  - Hel.Tiled.Models.Layers.Layer.Y
+  langs:
+  - csharp
+  - vb
+  name: Layer
+  nameWithType: Layer
+  fullName: Hel.Tiled.Models.Layers.Layer
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Layer
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 8
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  syntax:
+    content: public class Layer
+    content.vb: Public Class Layer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Layers.Layer.Id
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Id
+  id: Id
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Layer.Id
+  fullName: Hel.Tiled.Models.Layers.Layer.Id
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Id
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 13
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nIncremental ID - unique across all layers\n"
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: Hel.Tiled.Models.Layers.Layer.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Name
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Name
+  id: Name
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Layer.Name
+  fullName: Hel.Tiled.Models.Layers.Layer.Name
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Name
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 18
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nName assigned to this layer\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Hel.Tiled.Models.Layers.Layer.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Visible
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Visible
+  id: Visible
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: Layer.Visible
+  fullName: Hel.Tiled.Models.Layers.Layer.Visible
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Visible
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 23
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nWhether layer is shown or hidden in editor\n"
+  example: []
+  syntax:
+    content: public bool Visible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Visible As Boolean
+  overload: Hel.Tiled.Models.Layers.Layer.Visible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Type
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Type
+  id: Type
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Layer.Type
+  fullName: Hel.Tiled.Models.Layers.Layer.Type
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Type
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 28
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nThe layer type dictates what values are available\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public LayerTypeEnum Type { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+    content.vb: >-
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property Type As LayerTypeEnum
+  overload: Hel.Tiled.Models.Layers.Layer.Type*
+  attributes:
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Height
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Height
+  id: Height
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Layer.Height
+  fullName: Hel.Tiled.Models.Layers.Layer.Height
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Height
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 34
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nRow count. Same as map height for fixed-size maps.\n"
+  example: []
+  syntax:
+    content: public ushort Height { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Height As UShort
+  overload: Hel.Tiled.Models.Layers.Layer.Height*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Width
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Width
+  id: Width
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Layer.Width
+  fullName: Hel.Tiled.Models.Layers.Layer.Width
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Width
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 39
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nColumn count. Same as map width for fixed-size maps.\n"
+  example: []
+  syntax:
+    content: public ushort Width { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Width As UShort
+  overload: Hel.Tiled.Models.Layers.Layer.Width*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.X
+  commentId: P:Hel.Tiled.Models.Layers.Layer.X
+  id: X
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Layer.X
+  fullName: Hel.Tiled.Models.Layers.Layer.X
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: X
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 44
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nHorizontal layer offset in tiles. Always 0\n"
+  example: []
+  syntax:
+    content: public ushort X { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property X As UShort
+  overload: Hel.Tiled.Models.Layers.Layer.X*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Y
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Y
+  id: Y
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Layer.Y
+  fullName: Hel.Tiled.Models.Layers.Layer.Y
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Y
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 48
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nVertical layer offset in tiles. Always 0.\n"
+  example: []
+  syntax:
+    content: public ushort Y { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Y As UShort
+  overload: Hel.Tiled.Models.Layers.Layer.Y*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Properties
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Properties
+  id: Properties
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: Layer.Properties
+  fullName: Hel.Tiled.Models.Layers.Layer.Properties
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Properties
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 53
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nArray of properties set for the layer\n"
+  example: []
+  syntax:
+    content: public List<Property> Properties { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Property}
+    content.vb: Public Property Properties As List(Of  Property)
+  overload: Hel.Tiled.Models.Layers.Layer.Properties*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.OffsetX
+  commentId: P:Hel.Tiled.Models.Layers.Layer.OffsetX
+  id: OffsetX
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: OffsetX
+  nameWithType: Layer.OffsetX
+  fullName: Hel.Tiled.Models.Layers.Layer.OffsetX
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: OffsetX
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 58
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nHorizontal layer offset in pixels (default: 0)\n"
+  example: []
+  syntax:
+    content: public double OffsetX { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property OffsetX As Double
+  overload: Hel.Tiled.Models.Layers.Layer.OffsetX*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.OffsetY
+  commentId: P:Hel.Tiled.Models.Layers.Layer.OffsetY
+  id: OffsetY
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: OffsetY
+  nameWithType: Layer.OffsetY
+  fullName: Hel.Tiled.Models.Layers.Layer.OffsetY
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: OffsetY
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 62
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nVertical layer offset in pixels (default: 0)\n"
+  example: []
+  syntax:
+    content: public double OffsetY { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property OffsetY As Double
+  overload: Hel.Tiled.Models.Layers.Layer.OffsetY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Opacity
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Opacity
+  id: Opacity
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Opacity
+  nameWithType: Layer.Opacity
+  fullName: Hel.Tiled.Models.Layers.Layer.Opacity
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Opacity
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 66
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nValue between 0 and 1\n"
+  example: []
+  syntax:
+    content: public double Opacity { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Opacity As Double
+  overload: Hel.Tiled.Models.Layers.Layer.Opacity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.TintColor
+  commentId: P:Hel.Tiled.Models.Layers.Layer.TintColor
+  id: TintColor
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: TintColor
+  nameWithType: Layer.TintColor
+  fullName: Hel.Tiled.Models.Layers.Layer.TintColor
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TintColor
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 71
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nHex-formatted color (#RRGGBB or #AARRGGBB) that is multiplied with any graphics drawn by this layer or any child layers (optional).\n"
+  example: []
+  syntax:
+    content: public string TintColor { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TintColor As String
+  overload: Hel.Tiled.Models.Layers.Layer.TintColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.StartX
+  commentId: P:Hel.Tiled.Models.Layers.Layer.StartX
+  id: StartX
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: StartX
+  nameWithType: Layer.StartX
+  fullName: Hel.Tiled.Models.Layers.Layer.StartX
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: StartX
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 76
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nX coordinate where layer content starts (for infinite maps)\n"
+  example: []
+  syntax:
+    content: public int? StartX { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property StartX As Integer?
+  overload: Hel.Tiled.Models.Layers.Layer.StartX*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.StartY
+  commentId: P:Hel.Tiled.Models.Layers.Layer.StartY
+  id: StartY
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: StartY
+  nameWithType: Layer.StartY
+  fullName: Hel.Tiled.Models.Layers.Layer.StartY
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: StartY
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 81
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nY coordinate where layer content starts (for infinite maps)\n"
+  example: []
+  syntax:
+    content: public int? StartY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property StartY As Integer?
+  overload: Hel.Tiled.Models.Layers.Layer.StartY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Layers
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Layers
+  id: Layers
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Layers
+  nameWithType: Layer.Layers
+  fullName: Hel.Tiled.Models.Layers.Layer.Layers
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Layers
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 86
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nLayers for when type is Group\n"
+  example: []
+  syntax:
+    content: public List<Layer> Layers { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Layers.Layer}
+    content.vb: Public Property Layers As List(Of Layer)
+  overload: Hel.Tiled.Models.Layers.Layer.Layers*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.TransparentColor
+  commentId: P:Hel.Tiled.Models.Layers.Layer.TransparentColor
+  id: TransparentColor
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: TransparentColor
+  nameWithType: Layer.TransparentColor
+  fullName: Hel.Tiled.Models.Layers.Layer.TransparentColor
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: TransparentColor
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 91
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nHex-formatted color (#RRGGBB) (optional). imagelayer only.\n"
+  example: []
+  syntax:
+    content: public string TransparentColor { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TransparentColor As String
+  overload: Hel.Tiled.Models.Layers.Layer.TransparentColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Image
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Image
+  id: Image
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: Layer.Image
+  fullName: Hel.Tiled.Models.Layers.Layer.Image
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Image
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 96
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nImage used by this layer\n"
+  example: []
+  syntax:
+    content: public string Image { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Image As String
+  overload: Hel.Tiled.Models.Layers.Layer.Image*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.DrawOrder
+  commentId: P:Hel.Tiled.Models.Layers.Layer.DrawOrder
+  id: DrawOrder
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: DrawOrder
+  nameWithType: Layer.DrawOrder
+  fullName: Hel.Tiled.Models.Layers.Layer.DrawOrder
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: DrawOrder
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 101
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nObjectgroup only\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public LayerDrawOrderEnum DrawOrder { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+    content.vb: >-
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property DrawOrder As LayerDrawOrderEnum
+  overload: Hel.Tiled.Models.Layers.Layer.DrawOrder*
+  attributes:
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Objects
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Objects
+  id: Objects
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Objects
+  nameWithType: Layer.Objects
+  fullName: Hel.Tiled.Models.Layers.Layer.Objects
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Objects
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 107
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nObjects for when type is ObjectGroup\n"
+  example: []
+  syntax:
+    content: public List<Object> Objects { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Layers.Objects.Object}
+    content.vb: Public Property Objects As List(Of Object)
+  overload: Hel.Tiled.Models.Layers.Layer.Objects*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Data
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Data
+  id: Data
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: Layer.Data
+  fullName: Hel.Tiled.Models.Layers.Layer.Data
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Data
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 112
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nArray of tile GIDs\n"
+  example: []
+  syntax:
+    content: public int[] Data { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public Property Data As Integer()
+  overload: Hel.Tiled.Models.Layers.Layer.Data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Chunks
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Chunks
+  id: Chunks
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Chunks
+  nameWithType: Layer.Chunks
+  fullName: Hel.Tiled.Models.Layers.Layer.Chunks
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Chunks
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 117
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nChunks are used to store the tile layer data for infinite maps.\n"
+  example: []
+  syntax:
+    content: public List<Chunk> Chunks { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Hel.Tiled.Models.Layers.Chunk}
+    content.vb: Public Property Chunks As List(Of Chunk)
+  overload: Hel.Tiled.Models.Layers.Layer.Chunks*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Encoding
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Encoding
+  id: Encoding
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Encoding
+  nameWithType: Layer.Encoding
+  fullName: Hel.Tiled.Models.Layers.Layer.Encoding
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Encoding
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 122
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nIf the Data is encoded\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public LayerEncodingEnum Encoding { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerEncodingEnum
+    content.vb: >-
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property Encoding As LayerEncodingEnum
+  overload: Hel.Tiled.Models.Layers.Layer.Encoding*
+  attributes:
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Layer.Compression
+  commentId: P:Hel.Tiled.Models.Layers.Layer.Compression
+  id: Compression
+  parent: Hel.Tiled.Models.Layers.Layer
+  langs:
+  - csharp
+  - vb
+  name: Compression
+  nameWithType: Layer.Compression
+  fullName: Hel.Tiled.Models.Layers.Layer.Compression
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Layer.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: Compression
+    path: ../Hel.Tiled/Models/Layers/Layer.cs
+    startLine: 127
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nCompression used\n"
+  example: []
+  syntax:
+    content: public LayerCompressionEnum Compression { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+    content.vb: Public Property Compression As LayerCompressionEnum
+  overload: Hel.Tiled.Models.Layers.Layer.Compression*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Layers
+  commentId: N:Hel.Tiled.Models.Layers
+  name: Hel.Tiled.Models.Layers
+  nameWithType: Hel.Tiled.Models.Layers
+  fullName: Hel.Tiled.Models.Layers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Tiled.Models.Layers.Layer.Id*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Id
+  name: Id
+  nameWithType: Layer.Id
+  fullName: Hel.Tiled.Models.Layers.Layer.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hel.Tiled.Models.Layers.Layer.Name*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Name
+  name: Name
+  nameWithType: Layer.Name
+  fullName: Hel.Tiled.Models.Layers.Layer.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Layers.Layer.Visible*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Visible
+  name: Visible
+  nameWithType: Layer.Visible
+  fullName: Hel.Tiled.Models.Layers.Layer.Visible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hel.Tiled.Models.Layers.Layer.Type*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Type
+  name: Type
+  nameWithType: Layer.Type
+  fullName: Hel.Tiled.Models.Layers.Layer.Type
+- uid: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  name: LayerTypeEnum
+  nameWithType: LayerTypeEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerTypeEnum
+- uid: Hel.Tiled.Models.Enums.Layer
+  commentId: N:Hel.Tiled.Models.Enums.Layer
+  name: Hel.Tiled.Models.Enums.Layer
+  nameWithType: Hel.Tiled.Models.Enums.Layer
+  fullName: Hel.Tiled.Models.Enums.Layer
+- uid: Hel.Tiled.Models.Layers.Layer.Height*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Height
+  name: Height
+  nameWithType: Layer.Height
+  fullName: Hel.Tiled.Models.Layers.Layer.Height
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Hel.Tiled.Models.Layers.Layer.Width*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Width
+  name: Width
+  nameWithType: Layer.Width
+  fullName: Hel.Tiled.Models.Layers.Layer.Width
+- uid: Hel.Tiled.Models.Layers.Layer.X*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.X
+  name: X
+  nameWithType: Layer.X
+  fullName: Hel.Tiled.Models.Layers.Layer.X
+- uid: Hel.Tiled.Models.Layers.Layer.Y*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Y
+  name: Y
+  nameWithType: Layer.Y
+  fullName: Hel.Tiled.Models.Layers.Layer.Y
+- uid: Hel.Tiled.Models.Layers.Layer.Properties*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Properties
+  name: Properties
+  nameWithType: Layer.Properties
+  fullName: Hel.Tiled.Models.Layers.Layer.Properties
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Property}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Property}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Property>
+  nameWithType: List<Property>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Property>
+  nameWithType.vb: List(Of Property)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Property)
+  name.vb: List(Of Property)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hel.Tiled.Models.Layers.Layer.OffsetX*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.OffsetX
+  name: OffsetX
+  nameWithType: Layer.OffsetX
+  fullName: Hel.Tiled.Models.Layers.Layer.OffsetX
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Hel.Tiled.Models.Layers.Layer.OffsetY*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.OffsetY
+  name: OffsetY
+  nameWithType: Layer.OffsetY
+  fullName: Hel.Tiled.Models.Layers.Layer.OffsetY
+- uid: Hel.Tiled.Models.Layers.Layer.Opacity*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Opacity
+  name: Opacity
+  nameWithType: Layer.Opacity
+  fullName: Hel.Tiled.Models.Layers.Layer.Opacity
+- uid: Hel.Tiled.Models.Layers.Layer.TintColor*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.TintColor
+  name: TintColor
+  nameWithType: Layer.TintColor
+  fullName: Hel.Tiled.Models.Layers.Layer.TintColor
+- uid: Hel.Tiled.Models.Layers.Layer.StartX*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.StartX
+  name: StartX
+  nameWithType: Layer.StartX
+  fullName: Hel.Tiled.Models.Layers.Layer.StartX
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Layers.Layer.StartY*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.StartY
+  name: StartY
+  nameWithType: Layer.StartY
+  fullName: Hel.Tiled.Models.Layers.Layer.StartY
+- uid: Hel.Tiled.Models.Layers.Layer.Layers*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Layers
+  name: Layers
+  nameWithType: Layer.Layers
+  fullName: Hel.Tiled.Models.Layers.Layer.Layers
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Layers.Layer}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Layers.Layer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Layer>
+  nameWithType: List<Layer>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Layers.Layer>
+  nameWithType.vb: List(Of Layer)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Layers.Layer)
+  name.vb: List(Of Layer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Layers.Layer
+    name: Layer
+    nameWithType: Layer
+    fullName: Hel.Tiled.Models.Layers.Layer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Layers.Layer
+    name: Layer
+    nameWithType: Layer
+    fullName: Hel.Tiled.Models.Layers.Layer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Layers.Layer.TransparentColor*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.TransparentColor
+  name: TransparentColor
+  nameWithType: Layer.TransparentColor
+  fullName: Hel.Tiled.Models.Layers.Layer.TransparentColor
+- uid: Hel.Tiled.Models.Layers.Layer.Image*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Image
+  name: Image
+  nameWithType: Layer.Image
+  fullName: Hel.Tiled.Models.Layers.Layer.Image
+- uid: Hel.Tiled.Models.Layers.Layer.DrawOrder*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.DrawOrder
+  name: DrawOrder
+  nameWithType: Layer.DrawOrder
+  fullName: Hel.Tiled.Models.Layers.Layer.DrawOrder
+- uid: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  name: LayerDrawOrderEnum
+  nameWithType: LayerDrawOrderEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+- uid: Hel.Tiled.Models.Layers.Layer.Objects*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Objects
+  name: Objects
+  nameWithType: Layer.Objects
+  fullName: Hel.Tiled.Models.Layers.Layer.Objects
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Layers.Objects.Object}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Layers.Objects.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Object>
+  nameWithType: List<Object>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Layers.Objects.Object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Layers.Objects.Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Layers.Objects.Object
+    name: Object
+    nameWithType: Object
+    fullName: Hel.Tiled.Models.Layers.Objects.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Layers.Objects.Object
+    name: Object
+    nameWithType: Object
+    fullName: Hel.Tiled.Models.Layers.Objects.Object
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Layers.Layer.Data*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Data
+  name: Data
+  nameWithType: Layer.Data
+  fullName: Hel.Tiled.Models.Layers.Layer.Data
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hel.Tiled.Models.Layers.Layer.Chunks*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Chunks
+  name: Chunks
+  nameWithType: Layer.Chunks
+  fullName: Hel.Tiled.Models.Layers.Layer.Chunks
+- uid: System.Collections.Generic.List{Hel.Tiled.Models.Layers.Chunk}
+  commentId: T:System.Collections.Generic.List{Hel.Tiled.Models.Layers.Chunk}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Chunk>
+  nameWithType: List<Chunk>
+  fullName: System.Collections.Generic.List<Hel.Tiled.Models.Layers.Chunk>
+  nameWithType.vb: List(Of Chunk)
+  fullName.vb: System.Collections.Generic.List(Of Hel.Tiled.Models.Layers.Chunk)
+  name.vb: List(Of Chunk)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Layers.Chunk
+    name: Chunk
+    nameWithType: Chunk
+    fullName: Hel.Tiled.Models.Layers.Chunk
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Layers.Chunk
+    name: Chunk
+    nameWithType: Chunk
+    fullName: Hel.Tiled.Models.Layers.Chunk
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Layers.Layer.Encoding*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Encoding
+  name: Encoding
+  nameWithType: Layer.Encoding
+  fullName: Hel.Tiled.Models.Layers.Layer.Encoding
+- uid: Hel.Tiled.Models.Enums.Layer.LayerEncodingEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerEncodingEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  name: LayerEncodingEnum
+  nameWithType: LayerEncodingEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerEncodingEnum
+- uid: Hel.Tiled.Models.Layers.Layer.Compression*
+  commentId: Overload:Hel.Tiled.Models.Layers.Layer.Compression
+  name: Compression
+  nameWithType: Layer.Compression
+  fullName: Hel.Tiled.Models.Layers.Layer.Compression
+- uid: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  name: LayerCompressionEnum
+  nameWithType: LayerCompressionEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerCompressionEnum

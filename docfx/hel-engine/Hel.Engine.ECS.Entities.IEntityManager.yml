@@ -1,0 +1,529 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Entities.IEntityManager
+  commentId: T:Hel.Engine.ECS.Entities.IEntityManager
+  id: IEntityManager
+  parent: Hel.Engine.ECS.Entities
+  children:
+  - Hel.Engine.ECS.Entities.IEntityManager.AddEntity(Hel.Engine.ECS.Entities.IEntity)
+  - Hel.Engine.ECS.Entities.IEntityManager.ClearEntities
+  - Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType``1
+  - Hel.Engine.ECS.Entities.IEntityManager.GetEntities(System.UInt32)
+  - Hel.Engine.ECS.Entities.IEntityManager.GetEntities``1
+  - Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities(System.Collections.Generic.IEnumerable{System.UInt32})
+  - Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity(System.UInt32)
+  - Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  - Hel.Engine.ECS.Entities.IEntityManager.World
+  langs:
+  - csharp
+  - vb
+  name: IEntityManager
+  nameWithType: IEntityManager
+  fullName: Hel.Engine.ECS.Entities.IEntityManager
+  type: Interface
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: IEntityManager
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public interface IEntityManager
+    content.vb: Public Interface IEntityManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Hel.Engine.ECS.Entities.IEntityManager.World
+  commentId: P:Hel.Engine.ECS.Entities.IEntityManager.World
+  id: World
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: World
+  nameWithType: IEntityManager.World
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.World
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: World
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 11
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nThe world that this entity manager belongs to\n"
+  example: []
+  syntax:
+    content: World World { get; }
+    parameters: []
+    return:
+      type: Hel.Engine.ECS.World
+    content.vb: ReadOnly Property World As World
+  overload: Hel.Engine.ECS.Entities.IEntityManager.World*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Hel.Engine.ECS.Entities.IEntityManager.AddEntity(Hel.Engine.ECS.Entities.IEntity)
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.AddEntity(Hel.Engine.ECS.Entities.IEntity)
+  id: AddEntity(Hel.Engine.ECS.Entities.IEntity)
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: AddEntity(IEntity)
+  nameWithType: IEntityManager.AddEntity(IEntity)
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.AddEntity(Hel.Engine.ECS.Entities.IEntity)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: AddEntity
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 16
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nAdd an entity to the world. An entity is any struct with the IEntity interface implemented.\n"
+  example: []
+  syntax:
+    content: uint AddEntity(IEntity entity)
+    parameters:
+    - id: entity
+      type: Hel.Engine.ECS.Entities.IEntity
+      description: Struct with the IEntity interface
+    return:
+      type: System.UInt32
+    content.vb: Function AddEntity(entity As IEntity) As UInteger
+  overload: Hel.Engine.ECS.Entities.IEntityManager.AddEntity*
+- uid: Hel.Engine.ECS.Entities.IEntityManager.GetEntities``1
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.GetEntities``1
+  id: GetEntities``1
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: GetEntities<T>()
+  nameWithType: IEntityManager.GetEntities<T>()
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.GetEntities<T>()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GetEntities
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 22
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nReturns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example\n"
+  example: []
+  syntax:
+    content: EntityDictionary GetEntities<T>()
+    typeParameters:
+    - id: T
+      description: Interface to check for.
+    return:
+      type: Hel.Engine.ECS.Entities.EntityDictionary
+      description: List containing all entities data for specified type.
+    content.vb: Function GetEntities(Of T) As EntityDictionary
+  overload: Hel.Engine.ECS.Entities.IEntityManager.GetEntities*
+  nameWithType.vb: IEntityManager.GetEntities(Of T)()
+  fullName.vb: Hel.Engine.ECS.Entities.IEntityManager.GetEntities(Of T)()
+  name.vb: GetEntities(Of T)()
+- uid: Hel.Engine.ECS.Entities.IEntityManager.GetEntities(System.UInt32)
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.GetEntities(System.UInt32)
+  id: GetEntities(System.UInt32)
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: GetEntities(UInt32)
+  nameWithType: IEntityManager.GetEntities(UInt32)
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.GetEntities(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: GetEntities
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 28
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nReturns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example\n"
+  example: []
+  syntax:
+    content: EntityDictionary GetEntities(uint ID)
+    parameters:
+    - id: ID
+      type: System.UInt32
+      description: ID of the entity
+    return:
+      type: Hel.Engine.ECS.Entities.EntityDictionary
+      description: Entity component
+    content.vb: Function GetEntities(ID As UInteger) As EntityDictionary
+  overload: Hel.Engine.ECS.Entities.IEntityManager.GetEntities*
+- uid: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity(System.UInt32)
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity(System.UInt32)
+  id: RemoveEntity(System.UInt32)
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveEntity(UInt32)
+  nameWithType: IEntityManager.RemoveEntity(UInt32)
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: RemoveEntity
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 33
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nRemoves an entity from the world\n"
+  example: []
+  syntax:
+    content: void RemoveEntity(uint ID)
+    parameters:
+    - id: ID
+      type: System.UInt32
+      description: ID of the entity to remove.
+    content.vb: Sub RemoveEntity(ID As UInteger)
+  overload: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity*
+- uid: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities(System.Collections.Generic.IEnumerable{System.UInt32})
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities(System.Collections.Generic.IEnumerable{System.UInt32})
+  id: RemoveEntities(System.Collections.Generic.IEnumerable{System.UInt32})
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveEntities(IEnumerable<UInt32>)
+  nameWithType: IEntityManager.RemoveEntities(IEnumerable<UInt32>)
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities(System.Collections.Generic.IEnumerable<System.UInt32>)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: RemoveEntities
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 38
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nRemove all entities with the same ID as the one provided. Useful if you have a list or array of entities you wish to remove. \n"
+  example: []
+  syntax:
+    content: void RemoveEntities(IEnumerable<uint> entitiesList)
+    parameters:
+    - id: entitiesList
+      type: System.Collections.Generic.IEnumerable{System.UInt32}
+      description: IEnumerable containing IEntities
+    content.vb: Sub RemoveEntities(entitiesList As IEnumerable(Of UInteger))
+  overload: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities*
+  nameWithType.vb: IEntityManager.RemoveEntities(IEnumerable(Of UInt32))
+  fullName.vb: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities(System.Collections.Generic.IEnumerable(Of System.UInt32))
+  name.vb: RemoveEntities(IEnumerable(Of UInt32))
+- uid: Hel.Engine.ECS.Entities.IEntityManager.ClearEntities
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.ClearEntities
+  id: ClearEntities
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: ClearEntities()
+  nameWithType: IEntityManager.ClearEntities()
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.ClearEntities()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ClearEntities
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 42
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nRemoves all entities from the world. Useful for resets, map restarts, or closing the game.\n"
+  example: []
+  syntax:
+    content: void ClearEntities()
+    content.vb: Sub ClearEntities
+  overload: Hel.Engine.ECS.Entities.IEntityManager.ClearEntities*
+- uid: Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType``1
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType``1
+  id: ClearEntitiesType``1
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: ClearEntitiesType<T>()
+  nameWithType: IEntityManager.ClearEntitiesType<T>()
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType<T>()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: ClearEntitiesType
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 47
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\nClears all entities that correspond to a certain type. For example, clearing all entities that contain IRenderable _components.\n"
+  example: []
+  syntax:
+    content: void ClearEntitiesType<T>()
+    typeParameters:
+    - id: T
+      description: Type of component
+    content.vb: Sub ClearEntitiesType(Of T)
+  overload: Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType*
+  nameWithType.vb: IEntityManager.ClearEntitiesType(Of T)()
+  fullName.vb: Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType(Of T)()
+  name.vb: ClearEntitiesType(Of T)()
+- uid: Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  commentId: M:Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  id: UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  parent: Hel.Engine.ECS.Entities.IEntityManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateEntity(UInt32, ComponentDictionary)
+  nameWithType: IEntityManager.UpdateEntity(UInt32, ComponentDictionary)
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity(System.UInt32, Hel.Engine.ECS.Components.ComponentDictionary)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityManager.cs
+      branch: master
+      repo: https://github.com/GriMmzlyTM/Hel.git
+    id: UpdateEntity
+    path: ../Hel.Engine/ECS/Entities/EntityManager.cs
+    startLine: 53
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: void UpdateEntity(uint ID, ComponentDictionary components)
+    parameters:
+    - id: ID
+      type: System.UInt32
+      description: ''
+    - id: components
+      type: Hel.Engine.ECS.Components.ComponentDictionary
+    content.vb: Sub UpdateEntity(ID As UInteger, components As ComponentDictionary)
+  overload: Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity*
+references:
+- uid: Hel.Engine.ECS.Entities
+  commentId: N:Hel.Engine.ECS.Entities
+  name: Hel.Engine.ECS.Entities
+  nameWithType: Hel.Engine.ECS.Entities
+  fullName: Hel.Engine.ECS.Entities
+- uid: Hel.Engine.ECS.Entities.IEntityManager.World*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.World
+  name: World
+  nameWithType: IEntityManager.World
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.World
+- uid: Hel.Engine.ECS.World
+  commentId: T:Hel.Engine.ECS.World
+  parent: Hel.Engine.ECS
+  name: World
+  nameWithType: World
+  fullName: Hel.Engine.ECS.World
+- uid: Hel.Engine.ECS
+  commentId: N:Hel.Engine.ECS
+  name: Hel.Engine.ECS
+  nameWithType: Hel.Engine.ECS
+  fullName: Hel.Engine.ECS
+- uid: Hel.Engine.ECS.Entities.IEntityManager.AddEntity*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.AddEntity
+  name: AddEntity
+  nameWithType: IEntityManager.AddEntity
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.AddEntity
+- uid: Hel.Engine.ECS.Entities.IEntity
+  commentId: T:Hel.Engine.ECS.Entities.IEntity
+  parent: Hel.Engine.ECS.Entities
+  name: IEntity
+  nameWithType: IEntity
+  fullName: Hel.Engine.ECS.Entities.IEntity
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hel.Engine.ECS.Entities.IEntityManager.GetEntities*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.GetEntities
+  name: GetEntities
+  nameWithType: IEntityManager.GetEntities
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.GetEntities
+- uid: Hel.Engine.ECS.Entities.EntityDictionary
+  commentId: T:Hel.Engine.ECS.Entities.EntityDictionary
+  parent: Hel.Engine.ECS.Entities
+  name: EntityDictionary
+  nameWithType: EntityDictionary
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary
+- uid: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity
+  name: RemoveEntity
+  nameWithType: IEntityManager.RemoveEntity
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntity
+- uid: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities
+  name: RemoveEntities
+  nameWithType: IEntityManager.RemoveEntities
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.RemoveEntities
+- uid: System.Collections.Generic.IEnumerable{System.UInt32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.UInt32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<UInt32>
+  nameWithType: IEnumerable<UInt32>
+  fullName: System.Collections.Generic.IEnumerable<System.UInt32>
+  nameWithType.vb: IEnumerable(Of UInt32)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.UInt32)
+  name.vb: IEnumerable(Of UInt32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hel.Engine.ECS.Entities.IEntityManager.ClearEntities*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.ClearEntities
+  name: ClearEntities
+  nameWithType: IEntityManager.ClearEntities
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.ClearEntities
+- uid: Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType
+  name: ClearEntitiesType
+  nameWithType: IEntityManager.ClearEntitiesType
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.ClearEntitiesType
+- uid: Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity*
+  commentId: Overload:Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity
+  name: UpdateEntity
+  nameWithType: IEntityManager.UpdateEntity
+  fullName: Hel.Engine.ECS.Entities.IEntityManager.UpdateEntity
+- uid: Hel.Engine.ECS.Components.ComponentDictionary
+  commentId: T:Hel.Engine.ECS.Components.ComponentDictionary
+  parent: Hel.Engine.ECS.Components
+  name: ComponentDictionary
+  nameWithType: ComponentDictionary
+  fullName: Hel.Engine.ECS.Components.ComponentDictionary
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components

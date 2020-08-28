@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Toolkit.Serializer
+  commentId: N:Hel.Engine.Toolkit.Serializer
+  id: Hel.Engine.Toolkit.Serializer
+  children:
+  - Hel.Engine.Toolkit.Serializer.ByteSerializer
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.Toolkit.Serializer
+  nameWithType: Hel.Engine.Toolkit.Serializer
+  fullName: Hel.Engine.Toolkit.Serializer
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.Toolkit.Serializer.ByteSerializer
+  commentId: T:Hel.Engine.Toolkit.Serializer.ByteSerializer
+  name: ByteSerializer
+  nameWithType: ByteSerializer
+  fullName: Hel.Engine.Toolkit.Serializer.ByteSerializer
