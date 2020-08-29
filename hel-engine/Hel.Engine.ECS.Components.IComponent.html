@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../hel-engine-config/toc.html">
     
     
     
@@ -73,7 +73,12 @@
   
   <h1 id="Hel_Engine_ECS_Components_IComponent" data-uid="Hel.Engine.ECS.Components.IComponent" class="text-break">Interface IComponent
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Marks a struct as a component that can be linked to an entity.
+This is the base interface all components MUST implement.</p>
+<p>A component is a struct that contains single purpose values that is passed to one or multiple systems in-order
+to run the logic associated.</p>
+<p>For example, a 2Dtransform component would contain X and Y location data, X and Y rotation and X and Y scale.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Hel.Engine.ECS.Components.html">Hel.Engine.ECS.Components</a></h6>
   <h6><strong>Assembly</strong>: Hel.Engine.dll</h6>
@@ -85,14 +90,17 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/GriMmzlyTM/Hel/new/b519062fccc2e979e562232daeb76097d3bfc602/apiSpec/new?filename=Hel_Engine_ECS_Components_IComponent_Active.md&amp;value=---%0Auid%3A%20Hel.Engine.ECS.Components.IComponent.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/GriMmzlyTM/Hel/new/f998df76609e49466bb2a1c43f06e119244f1118/apiSpec/new?filename=Hel_Engine_ECS_Components_IComponent_Active.md&amp;value=---%0Auid%3A%20Hel.Engine.ECS.Components.IComponent.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GriMmzlyTM/Hel/blob/b519062fccc2e979e562232daeb76097d3bfc602/Hel.Engine/ECS/Components/IComponent.cs/#L7">View Source</a>
+    <a href="https://github.com/GriMmzlyTM/Hel/blob/f998df76609e49466bb2a1c43f06e119244f1118/Hel.Engine/ECS/Components/IComponent.cs/#L22">View Source</a>
   </span>
   <a id="Hel_Engine_ECS_Components_IComponent_Active_" data-uid="Hel.Engine.ECS.Components.IComponent.Active*"></a>
   <h4 id="Hel_Engine_ECS_Components_IComponent_Active" data-uid="Hel.Engine.ECS.Components.IComponent.Active">Active</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A component that is not active will not be returned when fetching components from an entity.
+Setting this to false is the same as if the component was not attached to the entity.
+<a class="xref" href="Hel.Engine.ECS.Entities.EntityManager.html#Hel_Engine_ECS_Entities_EntityManager_GetEntities_System_UInt32_">GetEntities(UInt32)</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,10 +129,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/GriMmzlyTM/Hel/new/b519062fccc2e979e562232daeb76097d3bfc602/apiSpec/new?filename=Hel_Engine_ECS_Components_IComponent.md&amp;value=---%0Auid%3A%20Hel.Engine.ECS.Components.IComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/GriMmzlyTM/Hel/new/f998df76609e49466bb2a1c43f06e119244f1118/apiSpec/new?filename=Hel_Engine_ECS_Components_IComponent.md&amp;value=---%0Auid%3A%20Hel.Engine.ECS.Components.IComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/GriMmzlyTM/Hel/blob/b519062fccc2e979e562232daeb76097d3bfc602/Hel.Engine/ECS/Components/IComponent.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/GriMmzlyTM/Hel/blob/f998df76609e49466bb2a1c43f06e119244f1118/Hel.Engine/ECS/Components/IComponent.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

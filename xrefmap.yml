@@ -280,12 +280,6 @@ references:
   isSpec: "True"
   fullName: Hel.Engine.ECS.Components.ComponentDictionary.UpdateComponents
   nameWithType: ComponentDictionary.UpdateComponents
-- uid: Hel.Engine.ECS.Components.ComponentManager
-  name: ComponentManager
-  href: hel-engine/Hel.Engine.ECS.Components.ComponentManager.html
-  commentId: T:Hel.Engine.ECS.Components.ComponentManager
-  fullName: Hel.Engine.ECS.Components.ComponentManager
-  nameWithType: ComponentManager
 - uid: Hel.Engine.ECS.Components.IComponent
   name: IComponent
   href: hel-engine/Hel.Engine.ECS.Components.IComponent.html
