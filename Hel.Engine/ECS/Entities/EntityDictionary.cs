@@ -4,6 +4,9 @@ using Hel.Engine.ECS.Components;
 
 namespace Hel.Engine.ECS.Entities
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class EntityDictionary : Dictionary<uint, ComponentDictionary>
     {
         

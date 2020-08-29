@@ -15,9 +15,21 @@ namespace Hel.Engine
     {
 
         public static string FileRoot { get; private set; }
+        
+        /// <summary>
+        /// <see cref="Microsoft.Xna.Framework.Game"/> instance passed in by game during initialization. Useful for adding components
+        /// and loading data.
+        /// </summary>
         public static Game Game { get; private set; }
+        
+        /// <summary>
+        /// World manager containing world and entities.
+        /// </summary>
         public static WorldManager WorldManager { get; private set; }
         
+        /// <summary>
+        /// Input manager for handling user inputs and keybindings
+        /// </summary>
         public static InputHandler InputHandler { get; private set; }
         
         

@@ -14,6 +14,5 @@ namespace Hel.Engine.Commander
         public void Undo()
         {
         }
-
     }
 }
