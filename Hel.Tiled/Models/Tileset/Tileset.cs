@@ -8,6 +8,11 @@ using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Tileset
 {
+    /// <summary>
+    /// Tileset containing all information required to render the tileset image.
+    /// The purpose of this object is to tell you how to cut up and render the texture image.
+    /// This object allows you to cut up the texture image into rectangles. 
+    /// </summary>
     public class Tileset
     {
 
@@ -112,7 +117,9 @@ namespace Hel.Tiled.Models.Tileset
         /// </summary>
         public float Version { get; set; }
 
-        // List of wang sets
+        /// <summary>
+        /// List of wang tiles
+        /// </summary>
         public List<WangSet> WangSets { get; set; }
         
         // NOT SERIALIZED 
@@ -122,23 +129,26 @@ namespace Hel.Tiled.Models.Tileset
         /// </summary>
         [JsonIgnore]
         public int Rows => TileCount / Columns;
-        
-        [JsonIgnore]
-        public Dictionary<int, Rectangle> TileRectangles { get; set; }
-        
+
+        /// <summary>
+        /// Framework independent texture object. In Monogame this is a Texture2D
+        /// </summary>
         [JsonIgnore]
         public object Texture { get; set; }
 
         /// <summary>
-        /// Calculate how to split up the tileset so it can be properly rendered
+        /// Calculate how to split up the tileset so it can be properly rendered. The data here is GID Independent.
+        /// To use with a tilemap (Which gives each tileset a FirstGid) substract the firstGid from the tile GID the tilemap is requesting.
+        /// I.E. FirstGid = 32
+        /// Tilemap needs Gid 37
+        /// rectangle index = 37 - 32
         /// </summary>
-        /// <param name="firstGid">FirstGid property in the <see cref="Tilemap"/> that uses this tileset</param>
-        /// <returns></returns>
-        public Dictionary<int, Rectangle> CalculateTileRectangles(int firstGid)
+        /// <returns>Dictionary providing the rectangles required to split up a tilemap. GID independent.</returns>
+        public Dictionary<int, Rectangle> CalculateTileRectangles()
         {
             var rectangleDict = new Dictionary<int, Rectangle>();
 
-            var gidCounter = firstGid;
+            var tileCounter = 0;
             
             for (var row = 0; row < Rows; row++)
             {
@@ -157,10 +167,10 @@ namespace Hel.Tiled.Models.Tileset
                         : Margin + (Spacing * column) + (TileWidth * column);
                     
                     rectangleDict.Add(
-                        gidCounter,
+                        tileCounter,
                         new Rectangle(xTilePoint, yTilePoint, TileWidth, TileHeight) );
 
-                    gidCounter++;
+                    tileCounter++;
                 }
             }
 

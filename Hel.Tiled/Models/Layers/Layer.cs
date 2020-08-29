@@ -6,6 +6,11 @@ using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Layers
 {
+    /// <summary>
+    /// A layer represents a level in the draw order. Layers are meant to be drawn in the order in which they are
+    /// provided. Layers can contain a multitude of types of data/objects which change how the layer is meant to be
+    /// used.
+    /// </summary>
     public class Layer
     {
         /// <summary>
