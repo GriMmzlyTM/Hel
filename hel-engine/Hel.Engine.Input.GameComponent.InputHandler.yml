@@ -1,0 +1,322 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Input.GameComponent.InputHandler
+  commentId: T:Hel.Engine.Input.GameComponent.InputHandler
+  id: InputHandler
+  parent: Hel.Engine.Input.GameComponent
+  children:
+  - Hel.Engine.Input.GameComponent.InputHandler.#ctor(Game)
+  - Hel.Engine.Input.GameComponent.InputHandler.Initialize
+  - Hel.Engine.Input.GameComponent.InputHandler.KeyBindings
+  - Hel.Engine.Input.GameComponent.InputHandler.KeyboardState
+  - Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState
+  - Hel.Engine.Input.GameComponent.InputHandler.Update(GameTime)
+  langs:
+  - csharp
+  - vb
+  name: InputHandler
+  nameWithType: InputHandler
+  fullName: Hel.Engine.Input.GameComponent.InputHandler
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Input/GameComponent/InputHandler.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: InputHandler
+    path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
+    startLine: 5
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.GameComponent
+  syntax:
+    content: 'public class InputHandler : Microsoft.Xna.Framework.GameComponent'
+    content.vb: >-
+      Public Class InputHandler
+          Inherits Microsoft.Xna.Framework.GameComponent
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.Input.GameComponent.InputHandler.KeyboardState
+  commentId: P:Hel.Engine.Input.GameComponent.InputHandler.KeyboardState
+  id: KeyboardState
+  parent: Hel.Engine.Input.GameComponent.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: KeyboardState
+  nameWithType: InputHandler.KeyboardState
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.KeyboardState
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/Input/GameComponent/InputHandler.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: KeyboardState
+    path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
+    startLine: 8
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.GameComponent
+  syntax:
+    content: public static KeyboardState KeyboardState { get; }
+    parameters: []
+    return:
+      type: KeyboardState
+    content.vb: Public Shared ReadOnly Property KeyboardState As KeyboardState
+  overload: Hel.Engine.Input.GameComponent.InputHandler.KeyboardState*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState
+  commentId: P:Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState
+  id: LastKeyboardState
+  parent: Hel.Engine.Input.GameComponent.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: LastKeyboardState
+  nameWithType: InputHandler.LastKeyboardState
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/Input/GameComponent/InputHandler.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: LastKeyboardState
+    path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
+    startLine: 9
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.GameComponent
+  syntax:
+    content: public static KeyboardState LastKeyboardState { get; }
+    parameters: []
+    return:
+      type: KeyboardState
+    content.vb: Public Shared ReadOnly Property LastKeyboardState As KeyboardState
+  overload: Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hel.Engine.Input.GameComponent.InputHandler.KeyBindings
+  commentId: P:Hel.Engine.Input.GameComponent.InputHandler.KeyBindings
+  id: KeyBindings
+  parent: Hel.Engine.Input.GameComponent.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: KeyBindings
+  nameWithType: InputHandler.KeyBindings
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.KeyBindings
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/Input/GameComponent/InputHandler.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: KeyBindings
+    path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
+    startLine: 11
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.GameComponent
+  syntax:
+    content: public static KeyBindingManager KeyBindings { get; }
+    parameters: []
+    return:
+      type: Hel.Engine.Input.KeyBindingManager
+    content.vb: Public Shared ReadOnly Property KeyBindings As KeyBindingManager
+  overload: Hel.Engine.Input.GameComponent.InputHandler.KeyBindings*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hel.Engine.Input.GameComponent.InputHandler.#ctor(Game)
+  commentId: M:Hel.Engine.Input.GameComponent.InputHandler.#ctor(Game)
+  id: '#ctor(Game)'
+  parent: Hel.Engine.Input.GameComponent.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: InputHandler(Game)
+  nameWithType: InputHandler.InputHandler(Game)
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.InputHandler(Game)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/Input/GameComponent/InputHandler.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
+    startLine: 13
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.GameComponent
+  syntax:
+    content: public InputHandler(Game game)
+    parameters:
+    - id: game
+      type: Game
+    content.vb: Public Sub New(game As Game)
+  overload: Hel.Engine.Input.GameComponent.InputHandler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.GameComponent.InputHandler.Initialize
+  commentId: M:Hel.Engine.Input.GameComponent.InputHandler.Initialize
+  id: Initialize
+  parent: Hel.Engine.Input.GameComponent.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: InputHandler.Initialize()
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.Initialize()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/GameComponent/InputHandler.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Initialize
+    path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
+    startLine: 15
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.GameComponent
+  syntax:
+    content: public override void Initialize()
+    content.vb: Public Overrides Sub Initialize
+  overload: Hel.Engine.Input.GameComponent.InputHandler.Initialize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Hel.Engine.Input.GameComponent.InputHandler.Update(GameTime)
+  commentId: M:Hel.Engine.Input.GameComponent.InputHandler.Update(GameTime)
+  id: Update(GameTime)
+  parent: Hel.Engine.Input.GameComponent.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: Update(GameTime)
+  nameWithType: InputHandler.Update(GameTime)
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.Update(GameTime)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Input/GameComponent/InputHandler.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Update
+    path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
+    startLine: 23
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.GameComponent
+  syntax:
+    content: public override void Update(GameTime gameTime)
+    parameters:
+    - id: gameTime
+      type: GameTime
+    content.vb: Public Overrides Sub Update(gameTime As GameTime)
+  overload: Hel.Engine.Input.GameComponent.InputHandler.Update*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Hel.Engine.Input.GameComponent
+  commentId: N:Hel.Engine.Input.GameComponent
+  name: Hel.Engine.Input.GameComponent
+  nameWithType: Hel.Engine.Input.GameComponent
+  fullName: Hel.Engine.Input.GameComponent
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.Input.GameComponent.InputHandler.KeyboardState*
+  commentId: Overload:Hel.Engine.Input.GameComponent.InputHandler.KeyboardState
+  name: KeyboardState
+  nameWithType: InputHandler.KeyboardState
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.KeyboardState
+- uid: KeyboardState
+  isExternal: true
+  name: KeyboardState
+  nameWithType: KeyboardState
+  fullName: KeyboardState
+- uid: Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState*
+  commentId: Overload:Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState
+  name: LastKeyboardState
+  nameWithType: InputHandler.LastKeyboardState
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.LastKeyboardState
+- uid: Hel.Engine.Input.GameComponent.InputHandler.KeyBindings*
+  commentId: Overload:Hel.Engine.Input.GameComponent.InputHandler.KeyBindings
+  name: KeyBindings
+  nameWithType: InputHandler.KeyBindings
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.KeyBindings
+- uid: Hel.Engine.Input.KeyBindingManager
+  commentId: T:Hel.Engine.Input.KeyBindingManager
+  parent: Hel.Engine.Input
+  name: KeyBindingManager
+  nameWithType: KeyBindingManager
+  fullName: Hel.Engine.Input.KeyBindingManager
+- uid: Hel.Engine.Input
+  commentId: N:Hel.Engine.Input
+  name: Hel.Engine.Input
+  nameWithType: Hel.Engine.Input
+  fullName: Hel.Engine.Input
+- uid: Hel.Engine.Input.GameComponent.InputHandler.#ctor*
+  commentId: Overload:Hel.Engine.Input.GameComponent.InputHandler.#ctor
+  name: InputHandler
+  nameWithType: InputHandler.InputHandler
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.InputHandler
+- uid: Game
+  isExternal: true
+  name: Game
+  nameWithType: Game
+  fullName: Game
+- uid: Hel.Engine.Input.GameComponent.InputHandler.Initialize*
+  commentId: Overload:Hel.Engine.Input.GameComponent.InputHandler.Initialize
+  name: Initialize
+  nameWithType: InputHandler.Initialize
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.Initialize
+- uid: Hel.Engine.Input.GameComponent.InputHandler.Update*
+  commentId: Overload:Hel.Engine.Input.GameComponent.InputHandler.Update
+  name: Update
+  nameWithType: InputHandler.Update
+  fullName: Hel.Engine.Input.GameComponent.InputHandler.Update
+- uid: GameTime
+  isExternal: true
+  name: GameTime
+  nameWithType: GameTime
+  fullName: GameTime

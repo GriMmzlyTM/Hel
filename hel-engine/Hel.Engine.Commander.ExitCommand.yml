@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Commander.ExitCommand
+  commentId: T:Hel.Engine.Commander.ExitCommand
+  id: ExitCommand
+  parent: Hel.Engine.Commander
+  children:
+  - Hel.Engine.Commander.ExitCommand.Execute
+  - Hel.Engine.Commander.ExitCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: ExitCommand
+  nameWithType: ExitCommand
+  fullName: Hel.Engine.Commander.ExitCommand
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Commander/ExitCommand.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ExitCommand
+    path: ../Hel.Engine/Commander/ExitCommand.cs
+    startLine: 5
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Commander
+  syntax:
+    content: 'public class ExitCommand : object, ICommand'
+    content.vb: >-
+      Public Class ExitCommand
+          Inherits Object
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - Hel.Engine.Commander.Model.ICommand
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.Commander.ExitCommand.Execute
+  commentId: M:Hel.Engine.Commander.ExitCommand.Execute
+  id: Execute
+  parent: Hel.Engine.Commander.ExitCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: ExitCommand.Execute()
+  fullName: Hel.Engine.Commander.ExitCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Commander/ExitCommand.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Execute
+    path: ../Hel.Engine/Commander/ExitCommand.cs
+    startLine: 8
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Commander
+  syntax:
+    content: public void Execute()
+    content.vb: Public Sub Execute
+  overload: Hel.Engine.Commander.ExitCommand.Execute*
+  implements:
+  - Hel.Engine.Commander.Model.ICommand.Execute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Commander.ExitCommand.Undo
+  commentId: M:Hel.Engine.Commander.ExitCommand.Undo
+  id: Undo
+  parent: Hel.Engine.Commander.ExitCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: ExitCommand.Undo()
+  fullName: Hel.Engine.Commander.ExitCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Commander/ExitCommand.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Undo
+    path: ../Hel.Engine/Commander/ExitCommand.cs
+    startLine: 13
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Commander
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo
+  overload: Hel.Engine.Commander.ExitCommand.Undo*
+  implements:
+  - Hel.Engine.Commander.Model.ICommand.Undo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.Commander
+  commentId: N:Hel.Engine.Commander
+  name: Hel.Engine.Commander
+  nameWithType: Hel.Engine.Commander
+  fullName: Hel.Engine.Commander
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.Commander.Model.ICommand
+  commentId: T:Hel.Engine.Commander.Model.ICommand
+  parent: Hel.Engine.Commander.Model
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Hel.Engine.Commander.Model.ICommand
+- uid: Hel.Engine.Commander.Model
+  commentId: N:Hel.Engine.Commander.Model
+  name: Hel.Engine.Commander.Model
+  nameWithType: Hel.Engine.Commander.Model
+  fullName: Hel.Engine.Commander.Model
+- uid: Hel.Engine.Commander.ExitCommand.Execute*
+  commentId: Overload:Hel.Engine.Commander.ExitCommand.Execute
+  name: Execute
+  nameWithType: ExitCommand.Execute
+  fullName: Hel.Engine.Commander.ExitCommand.Execute
+- uid: Hel.Engine.Commander.Model.ICommand.Execute
+  commentId: M:Hel.Engine.Commander.Model.ICommand.Execute
+  parent: Hel.Engine.Commander.Model.ICommand
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: Hel.Engine.Commander.Model.ICommand.Execute()
+  spec.csharp:
+  - uid: Hel.Engine.Commander.Model.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: Hel.Engine.Commander.Model.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.Commander.Model.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: Hel.Engine.Commander.Model.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.Commander.ExitCommand.Undo*
+  commentId: Overload:Hel.Engine.Commander.ExitCommand.Undo
+  name: Undo
+  nameWithType: ExitCommand.Undo
+  fullName: Hel.Engine.Commander.ExitCommand.Undo
+- uid: Hel.Engine.Commander.Model.ICommand.Undo
+  commentId: M:Hel.Engine.Commander.Model.ICommand.Undo
+  parent: Hel.Engine.Commander.Model.ICommand
+  name: Undo()
+  nameWithType: ICommand.Undo()
+  fullName: Hel.Engine.Commander.Model.ICommand.Undo()
+  spec.csharp:
+  - uid: Hel.Engine.Commander.Model.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: Hel.Engine.Commander.Model.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hel.Engine.Commander.Model.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: Hel.Engine.Commander.Model.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

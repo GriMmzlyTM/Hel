@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Exceptions.InvalidComponentException
+  commentId: T:Hel.Engine.ECS.Exceptions.InvalidComponentException
+  id: InvalidComponentException
+  parent: Hel.Engine.ECS.Exceptions
+  children:
+  - Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor
+  - Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: InvalidComponentException
+  nameWithType: InvalidComponentException
+  fullName: Hel.Engine.ECS.Exceptions.InvalidComponentException
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/Exceptions/InvalidComponentException.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: InvalidComponentException
+    path: ../Hel.Engine/ECS/Exceptions/InvalidComponentException.cs
+    startLine: 4
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Exceptions
+  syntax:
+    content: 'public class InvalidComponentException : Exception'
+    content.vb: >-
+      Public Class InvalidComponentException
+          Inherits Exception
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor
+  commentId: M:Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor
+  id: '#ctor'
+  parent: Hel.Engine.ECS.Exceptions.InvalidComponentException
+  langs:
+  - csharp
+  - vb
+  name: InvalidComponentException()
+  nameWithType: InvalidComponentException.InvalidComponentException()
+  fullName: Hel.Engine.ECS.Exceptions.InvalidComponentException.InvalidComponentException()
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/Exceptions/InvalidComponentException.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/ECS/Exceptions/InvalidComponentException.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Exceptions
+  syntax:
+    content: public InvalidComponentException()
+    content.vb: Public Sub New
+  overload: Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor(System.String)
+  commentId: M:Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Hel.Engine.ECS.Exceptions.InvalidComponentException
+  langs:
+  - csharp
+  - vb
+  name: InvalidComponentException(String)
+  nameWithType: InvalidComponentException.InvalidComponentException(String)
+  fullName: Hel.Engine.ECS.Exceptions.InvalidComponentException.InvalidComponentException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/Exceptions/InvalidComponentException.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/ECS/Exceptions/InvalidComponentException.cs
+    startLine: 7
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Exceptions
+  syntax:
+    content: public InvalidComponentException(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+    content.vb: Public Sub New(msg As String)
+  overload: Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS.Exceptions
+  commentId: N:Hel.Engine.ECS.Exceptions
+  name: Hel.Engine.ECS.Exceptions
+  nameWithType: Hel.Engine.ECS.Exceptions
+  fullName: Hel.Engine.ECS.Exceptions
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor*
+  commentId: Overload:Hel.Engine.ECS.Exceptions.InvalidComponentException.#ctor
+  name: InvalidComponentException
+  nameWithType: InvalidComponentException.InvalidComponentException
+  fullName: Hel.Engine.ECS.Exceptions.InvalidComponentException.InvalidComponentException
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

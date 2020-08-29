@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Components.IComponent
+  commentId: T:Hel.Engine.ECS.Components.IComponent
+  id: IComponent
+  parent: Hel.Engine.ECS.Components
+  children:
+  - Hel.Engine.ECS.Components.IComponent.Active
+  langs:
+  - csharp
+  - vb
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Hel.Engine.ECS.Components.IComponent
+  type: Interface
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/IComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: IComponent
+    path: ../Hel.Engine/ECS/Components/IComponent.cs
+    startLine: 4
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components
+  syntax:
+    content: public interface IComponent
+    content.vb: Public Interface IComponent
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Hel.Engine.ECS.Components.IComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.IComponent.Active
+  id: Active
+  parent: Hel.Engine.ECS.Components.IComponent
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: IComponent.Active
+  fullName: Hel.Engine.ECS.Components.IComponent.Active
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/IComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Active
+    path: ../Hel.Engine/ECS/Components/IComponent.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components
+  syntax:
+    content: bool Active { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Active As Boolean
+  overload: Hel.Engine.ECS.Components.IComponent.Active*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components
+- uid: Hel.Engine.ECS.Components.IComponent.Active*
+  commentId: Overload:Hel.Engine.ECS.Components.IComponent.Active
+  name: Active
+  nameWithType: IComponent.Active
+  fullName: Hel.Engine.ECS.Components.IComponent.Active
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

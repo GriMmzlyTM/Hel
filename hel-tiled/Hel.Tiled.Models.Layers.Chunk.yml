@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Layers.Chunk
+  commentId: T:Hel.Tiled.Models.Layers.Chunk
+  id: Chunk
+  parent: Hel.Tiled.Models.Layers
+  children:
+  - Hel.Tiled.Models.Layers.Chunk.Data
+  - Hel.Tiled.Models.Layers.Chunk.Height
+  - Hel.Tiled.Models.Layers.Chunk.Width
+  - Hel.Tiled.Models.Layers.Chunk.X
+  - Hel.Tiled.Models.Layers.Chunk.Y
+  langs:
+  - csharp
+  - vb
+  name: Chunk
+  nameWithType: Chunk
+  fullName: Hel.Tiled.Models.Layers.Chunk
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Chunk.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Chunk
+    path: ../Hel.Tiled/Models/Layers/Chunk.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  syntax:
+    content: 'public class Chunk : object'
+    content.vb: >-
+      Public Class Chunk
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Layers.Chunk.Data
+  commentId: P:Hel.Tiled.Models.Layers.Chunk.Data
+  id: Data
+  parent: Hel.Tiled.Models.Layers.Chunk
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: Chunk.Data
+  fullName: Hel.Tiled.Models.Layers.Chunk.Data
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Chunk.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Data
+    path: ../Hel.Tiled/Models/Layers/Chunk.cs
+    startLine: 7
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nArray of unsigned int GIDs\n"
+  example: []
+  syntax:
+    content: public string[] Data { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Data As String()
+  overload: Hel.Tiled.Models.Layers.Chunk.Data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Chunk.Height
+  commentId: P:Hel.Tiled.Models.Layers.Chunk.Height
+  id: Height
+  parent: Hel.Tiled.Models.Layers.Chunk
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Chunk.Height
+  fullName: Hel.Tiled.Models.Layers.Chunk.Height
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Chunk.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Height
+    path: ../Hel.Tiled/Models/Layers/Chunk.cs
+    startLine: 12
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nHeight in tiles\n"
+  example: []
+  syntax:
+    content: public int Height { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Height As Integer
+  overload: Hel.Tiled.Models.Layers.Chunk.Height*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Chunk.Width
+  commentId: P:Hel.Tiled.Models.Layers.Chunk.Width
+  id: Width
+  parent: Hel.Tiled.Models.Layers.Chunk
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Chunk.Width
+  fullName: Hel.Tiled.Models.Layers.Chunk.Width
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Chunk.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Width
+    path: ../Hel.Tiled/Models/Layers/Chunk.cs
+    startLine: 17
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nWidth in tiles\n"
+  example: []
+  syntax:
+    content: public int Width { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Width As Integer
+  overload: Hel.Tiled.Models.Layers.Chunk.Width*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Chunk.X
+  commentId: P:Hel.Tiled.Models.Layers.Chunk.X
+  id: X
+  parent: Hel.Tiled.Models.Layers.Chunk
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Chunk.X
+  fullName: Hel.Tiled.Models.Layers.Chunk.X
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Chunk.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: X
+    path: ../Hel.Tiled/Models/Layers/Chunk.cs
+    startLine: 22
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nX coordinate in tiles\n"
+  example: []
+  syntax:
+    content: public int X { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property X As Integer
+  overload: Hel.Tiled.Models.Layers.Chunk.X*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Chunk.Y
+  commentId: P:Hel.Tiled.Models.Layers.Chunk.Y
+  id: Y
+  parent: Hel.Tiled.Models.Layers.Chunk
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Chunk.Y
+  fullName: Hel.Tiled.Models.Layers.Chunk.Y
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Chunk.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Y
+    path: ../Hel.Tiled/Models/Layers/Chunk.cs
+    startLine: 27
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers
+  summary: "\nY coordinate in tiles\n"
+  example: []
+  syntax:
+    content: public int Y { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Y As Integer
+  overload: Hel.Tiled.Models.Layers.Chunk.Y*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Layers
+  commentId: N:Hel.Tiled.Models.Layers
+  name: Hel.Tiled.Models.Layers
+  nameWithType: Hel.Tiled.Models.Layers
+  fullName: Hel.Tiled.Models.Layers
+- uid: System.Object
+  commentId: '!:System.Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Tiled.Models.Layers.Chunk.Data*
+  commentId: Overload:Hel.Tiled.Models.Layers.Chunk.Data
+  name: Data
+  nameWithType: Chunk.Data
+  fullName: Hel.Tiled.Models.Layers.Chunk.Data
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hel.Tiled.Models.Layers.Chunk.Height*
+  commentId: Overload:Hel.Tiled.Models.Layers.Chunk.Height
+  name: Height
+  nameWithType: Chunk.Height
+  fullName: Hel.Tiled.Models.Layers.Chunk.Height
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hel.Tiled.Models.Layers.Chunk.Width*
+  commentId: Overload:Hel.Tiled.Models.Layers.Chunk.Width
+  name: Width
+  nameWithType: Chunk.Width
+  fullName: Hel.Tiled.Models.Layers.Chunk.Width
+- uid: Hel.Tiled.Models.Layers.Chunk.X*
+  commentId: Overload:Hel.Tiled.Models.Layers.Chunk.X
+  name: X
+  nameWithType: Chunk.X
+  fullName: Hel.Tiled.Models.Layers.Chunk.X
+- uid: Hel.Tiled.Models.Layers.Chunk.Y*
+  commentId: Overload:Hel.Tiled.Models.Layers.Chunk.Y
+  name: Y
+  nameWithType: Chunk.Y
+  fullName: Hel.Tiled.Models.Layers.Chunk.Y

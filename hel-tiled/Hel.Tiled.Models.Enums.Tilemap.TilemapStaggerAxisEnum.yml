@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  id: TilemapStaggerAxisEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  children:
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.None
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.X
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.Y
+  langs:
+  - csharp
+  - vb
+  name: TilemapStaggerAxisEnum
+  nameWithType: TilemapStaggerAxisEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TilemapStaggerAxisEnum
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: 'public enum TilemapStaggerAxisEnum : int'
+    content.vb: Public Enum TilemapStaggerAxisEnum As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.None
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.None
+  id: None
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TilemapStaggerAxisEnum.None
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.None
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: None
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: None = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+    content.vb: None = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.X
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.X
+  id: X
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: TilemapStaggerAxisEnum.X
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.X
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: X
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: X = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+    content.vb: X = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.Y
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.Y
+  id: Y
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: TilemapStaggerAxisEnum.Y
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum.Y
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Y
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapStaggerAxisEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: Y = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+    content.vb: Y = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Tilemap
+  commentId: N:Hel.Tiled.Models.Enums.Tilemap
+  name: Hel.Tiled.Models.Enums.Tilemap
+  nameWithType: Hel.Tiled.Models.Enums.Tilemap
+  fullName: Hel.Tiled.Models.Enums.Tilemap
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  name: TilemapStaggerAxisEnum
+  nameWithType: TilemapStaggerAxisEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapStaggerAxisEnum

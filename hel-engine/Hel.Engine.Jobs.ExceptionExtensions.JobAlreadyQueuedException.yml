@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException
+  commentId: T:Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException
+  id: JobAlreadyQueuedException
+  parent: Hel.Engine.Jobs.ExceptionExtensions
+  children:
+  - Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor
+  - Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: JobAlreadyQueuedException
+  nameWithType: JobAlreadyQueuedException
+  fullName: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Jobs/ExceptionExtensions/JobAlreadyQueuedException.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: JobAlreadyQueuedException
+    path: ../Hel.Engine/Jobs/ExceptionExtensions/JobAlreadyQueuedException.cs
+    startLine: 4
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Jobs.ExceptionExtensions
+  syntax:
+    content: 'public class JobAlreadyQueuedException : Exception'
+    content.vb: >-
+      Public Class JobAlreadyQueuedException
+          Inherits Exception
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor
+  commentId: M:Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor
+  id: '#ctor'
+  parent: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException
+  langs:
+  - csharp
+  - vb
+  name: JobAlreadyQueuedException()
+  nameWithType: JobAlreadyQueuedException.JobAlreadyQueuedException()
+  fullName: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.JobAlreadyQueuedException()
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/Jobs/ExceptionExtensions/JobAlreadyQueuedException.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/Jobs/ExceptionExtensions/JobAlreadyQueuedException.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Jobs.ExceptionExtensions
+  syntax:
+    content: public JobAlreadyQueuedException()
+    content.vb: Public Sub New
+  overload: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor(System.String)
+  commentId: M:Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException
+  langs:
+  - csharp
+  - vb
+  name: JobAlreadyQueuedException(String)
+  nameWithType: JobAlreadyQueuedException.JobAlreadyQueuedException(String)
+  fullName: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.JobAlreadyQueuedException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/Jobs/ExceptionExtensions/JobAlreadyQueuedException.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/Jobs/ExceptionExtensions/JobAlreadyQueuedException.cs
+    startLine: 8
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Jobs.ExceptionExtensions
+  syntax:
+    content: public JobAlreadyQueuedException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.Jobs.ExceptionExtensions
+  commentId: N:Hel.Engine.Jobs.ExceptionExtensions
+  name: Hel.Engine.Jobs.ExceptionExtensions
+  nameWithType: Hel.Engine.Jobs.ExceptionExtensions
+  fullName: Hel.Engine.Jobs.ExceptionExtensions
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor*
+  commentId: Overload:Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.#ctor
+  name: JobAlreadyQueuedException
+  nameWithType: JobAlreadyQueuedException.JobAlreadyQueuedException
+  fullName: Hel.Engine.Jobs.ExceptionExtensions.JobAlreadyQueuedException.JobAlreadyQueuedException
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.OnChangeEvent`1
+  commentId: T:Hel.Engine.OnChangeEvent`1
+  id: OnChangeEvent`1
+  parent: Hel.Engine
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnChangeEvent<T>
+  nameWithType: OnChangeEvent<T>
+  fullName: Hel.Engine.OnChangeEvent<T>
+  type: Delegate
+  source:
+    remote:
+      path: Hel.Engine/EventChange.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: OnChangeEvent
+    path: ../Hel.Engine/EventChange.cs
+    startLine: 2
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine
+  syntax:
+    content: public delegate void OnChangeEvent<in T>(T obj);
+    parameters:
+    - id: obj
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Public Delegate Sub OnChangeEvent(Of In T)(obj As T)
+  nameWithType.vb: OnChangeEvent(Of T)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: Hel.Engine.OnChangeEvent(Of T)
+  name.vb: OnChangeEvent(Of T)
+references:
+- uid: Hel.Engine
+  commentId: N:Hel.Engine
+  name: Hel.Engine
+  nameWithType: Hel.Engine
+  fullName: Hel.Engine
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

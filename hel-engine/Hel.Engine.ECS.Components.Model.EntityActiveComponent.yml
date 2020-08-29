@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  id: EntityActiveComponent
+  parent: Hel.Engine.ECS.Components.Model
+  children:
+  - Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active
+  - Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals(Hel.Engine.ECS.Components.Model.EntityActiveComponent)
+  langs:
+  - csharp
+  - vb
+  name: EntityActiveComponent
+  nameWithType: EntityActiveComponent
+  fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  type: Struct
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/EntityActiveComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: EntityActiveComponent
+    path: ../Hel.Engine/ECS/Components/Model/EntityActiveComponent.cs
+    startLine: 7
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  summary: "\nSets if the entity this is attached to is active at all. Inactive entities are not sent to any system. \n"
+  example: []
+  syntax:
+    content: 'public struct EntityActiveComponent : IComponent, IEquatable<EntityActiveComponent>'
+    content.vb: >-
+      Public Structure EntityActiveComponent
+          Implements IComponent, IEquatable(Of EntityActiveComponent)
+  implements:
+  - Hel.Engine.ECS.Components.IComponent
+  - IEquatable{Hel.Engine.ECS.Components.Model.EntityActiveComponent}
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active
+  id: Active
+  parent: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: EntityActiveComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/EntityActiveComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Active
+    path: ../Hel.Engine/ECS/Components/Model/EntityActiveComponent.cs
+    startLine: 9
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Active { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Active As Boolean
+  overload: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active*
+  implements:
+  - Hel.Engine.ECS.Components.IComponent.Active
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals(Hel.Engine.ECS.Components.Model.EntityActiveComponent)
+  commentId: M:Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals(Hel.Engine.ECS.Components.Model.EntityActiveComponent)
+  id: Equals(Hel.Engine.ECS.Components.Model.EntityActiveComponent)
+  parent: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  langs:
+  - csharp
+  - vb
+  name: Equals(EntityActiveComponent)
+  nameWithType: EntityActiveComponent.Equals(EntityActiveComponent)
+  fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals(Hel.Engine.ECS.Components.Model.EntityActiveComponent)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/EntityActiveComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Equals
+    path: ../Hel.Engine/ECS/Components/Model/EntityActiveComponent.cs
+    startLine: 11
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Equals(EntityActiveComponent other)
+    parameters:
+    - id: other
+      type: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As EntityActiveComponent) As Boolean
+  overload: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS.Components.Model
+  commentId: N:Hel.Engine.ECS.Components.Model
+  name: Hel.Engine.ECS.Components.Model
+  nameWithType: Hel.Engine.ECS.Components.Model
+  fullName: Hel.Engine.ECS.Components.Model
+- uid: Hel.Engine.ECS.Components.IComponent
+  commentId: T:Hel.Engine.ECS.Components.IComponent
+  parent: Hel.Engine.ECS.Components
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Hel.Engine.ECS.Components.IComponent
+- uid: IEquatable{Hel.Engine.ECS.Components.Model.EntityActiveComponent}
+  commentId: '!:IEquatable{Hel.Engine.ECS.Components.Model.EntityActiveComponent}'
+  definition: IEquatable`1
+  name: IEquatable<EntityActiveComponent>
+  nameWithType: IEquatable<EntityActiveComponent>
+  fullName: IEquatable<Hel.Engine.ECS.Components.Model.EntityActiveComponent>
+  nameWithType.vb: IEquatable(Of EntityActiveComponent)
+  fullName.vb: IEquatable(Of Hel.Engine.ECS.Components.Model.EntityActiveComponent)
+  name.vb: IEquatable(Of EntityActiveComponent)
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+    name: EntityActiveComponent
+    nameWithType: EntityActiveComponent
+    fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+    name: EntityActiveComponent
+    nameWithType: EntityActiveComponent
+    fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components
+- uid: IEquatable`1
+  isExternal: true
+  name: IEquatable<>
+  nameWithType: IEquatable<>
+  fullName: IEquatable<>
+  nameWithType.vb: IEquatable(Of )
+  fullName.vb: IEquatable(Of )
+  name.vb: IEquatable(Of )
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active
+  name: Active
+  nameWithType: EntityActiveComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Active
+- uid: Hel.Engine.ECS.Components.IComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.IComponent.Active
+  parent: Hel.Engine.ECS.Components.IComponent
+  name: Active
+  nameWithType: IComponent.Active
+  fullName: Hel.Engine.ECS.Components.IComponent.Active
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals
+  name: Equals
+  nameWithType: EntityActiveComponent.Equals
+  fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent.Equals
+- uid: Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.EntityActiveComponent
+  parent: Hel.Engine.ECS.Components.Model
+  name: EntityActiveComponent
+  nameWithType: EntityActiveComponent
+  fullName: Hel.Engine.ECS.Components.Model.EntityActiveComponent

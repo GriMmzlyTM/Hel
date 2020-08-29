@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  id: TilemapRenderOrderEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  children:
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftDown
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftUp
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.None
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightDown
+  - Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightUp
+  langs:
+  - csharp
+  - vb
+  name: TilemapRenderOrderEnum
+  nameWithType: TilemapRenderOrderEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TilemapRenderOrderEnum
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: 'public enum TilemapRenderOrderEnum : int'
+    content.vb: Public Enum TilemapRenderOrderEnum As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.None
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.None
+  id: None
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TilemapRenderOrderEnum.None
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.None
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: None
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: None = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+    content.vb: None = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightDown
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightDown
+  id: RightDown
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: RightDown
+  nameWithType: TilemapRenderOrderEnum.RightDown
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightDown
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: RightDown
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+    startLine: 7
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: RightDown = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+    content.vb: RightDown = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightUp
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightUp
+  id: RightUp
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: RightUp
+  nameWithType: TilemapRenderOrderEnum.RightUp
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.RightUp
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: RightUp
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+    startLine: 9
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: RightUp = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+    content.vb: RightUp = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftDown
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftDown
+  id: LeftDown
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: LeftDown
+  nameWithType: TilemapRenderOrderEnum.LeftDown
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftDown
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: LeftDown
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+    startLine: 11
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: LeftDown = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+    content.vb: LeftDown = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftUp
+  commentId: F:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftUp
+  id: LeftUp
+  parent: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: LeftUp
+  nameWithType: TilemapRenderOrderEnum.LeftUp
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum.LeftUp
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: LeftUp
+    path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
+    startLine: 13
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Tilemap
+  syntax:
+    content: LeftUp = null
+    return:
+      type: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+    content.vb: LeftUp = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Tilemap
+  commentId: N:Hel.Tiled.Models.Enums.Tilemap
+  name: Hel.Tiled.Models.Enums.Tilemap
+  nameWithType: Hel.Tiled.Models.Enums.Tilemap
+  fullName: Hel.Tiled.Models.Enums.Tilemap
+- uid: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  commentId: T:Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum
+  parent: Hel.Tiled.Models.Enums.Tilemap
+  name: TilemapRenderOrderEnum
+  nameWithType: TilemapRenderOrderEnum
+  fullName: Hel.Tiled.Models.Enums.Tilemap.TilemapRenderOrderEnum

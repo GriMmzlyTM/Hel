@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Tileset
+  commentId: N:Hel.Tiled.Models.Tileset
+  id: Hel.Tiled.Models.Tileset
+  children:
+  - Hel.Tiled.Models.Tileset.Grid
+  - Hel.Tiled.Models.Tileset.Tileset
+  langs:
+  - csharp
+  - vb
+  name: Hel.Tiled.Models.Tileset
+  nameWithType: Hel.Tiled.Models.Tileset
+  fullName: Hel.Tiled.Models.Tileset
+  type: Namespace
+  assemblies:
+  - Hel.Tiled
+references:
+- uid: Hel.Tiled.Models.Tileset.Grid
+  commentId: T:Hel.Tiled.Models.Tileset.Grid
+  name: Grid
+  nameWithType: Grid
+  fullName: Hel.Tiled.Models.Tileset.Grid
+- uid: Hel.Tiled.Models.Tileset.Tileset
+  commentId: T:Hel.Tiled.Models.Tileset.Tileset
+  parent: Hel.Tiled.Models.Tileset
+  name: Tileset
+  nameWithType: Tileset
+  fullName: Hel.Tiled.Models.Tileset.Tileset
+- uid: Hel.Tiled.Models.Tileset
+  commentId: N:Hel.Tiled.Models.Tileset
+  name: Hel.Tiled.Models.Tileset
+  nameWithType: Hel.Tiled.Models.Tileset
+  fullName: Hel.Tiled.Models.Tileset

@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Entities.EntityDictionary
+  commentId: T:Hel.Engine.ECS.Entities.EntityDictionary
+  id: EntityDictionary
+  parent: Hel.Engine.ECS.Entities
+  children:
+  - Hel.Engine.ECS.Entities.EntityDictionary.#ctor
+  - Hel.Engine.ECS.Entities.EntityDictionary.#ctor(Dictionary{System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary})
+  - Hel.Engine.ECS.Entities.EntityDictionary.#ctor(Hel.Engine.ECS.Entities.EntityDictionary)
+  - Hel.Engine.ECS.Entities.EntityDictionary.#ctor(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  - Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities(Hel.Engine.ECS.Entities.EntityDictionary)
+  - Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  langs:
+  - csharp
+  - vb
+  name: EntityDictionary
+  nameWithType: EntityDictionary
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityDictionary.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: EntityDictionary
+    path: ../Hel.Engine/ECS/Entities/EntityDictionary.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: 'public class EntityDictionary : Dictionary<uint, ComponentDictionary>'
+    content.vb: >-
+      Public Class EntityDictionary
+          Inherits Dictionary(Of UInteger, ComponentDictionary)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.#ctor
+  commentId: M:Hel.Engine.ECS.Entities.EntityDictionary.#ctor
+  id: '#ctor'
+  parent: Hel.Engine.ECS.Entities.EntityDictionary
+  langs:
+  - csharp
+  - vb
+  name: EntityDictionary()
+  nameWithType: EntityDictionary.EntityDictionary()
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.EntityDictionary()
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityDictionary.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/ECS/Entities/EntityDictionary.cs
+    startLine: 9
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public EntityDictionary()
+    content.vb: Public Sub New
+  overload: Hel.Engine.ECS.Entities.EntityDictionary.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.#ctor(Dictionary{System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary})
+  commentId: M:Hel.Engine.ECS.Entities.EntityDictionary.#ctor(Dictionary{System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary})
+  id: '#ctor(Dictionary{System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary})'
+  parent: Hel.Engine.ECS.Entities.EntityDictionary
+  langs:
+  - csharp
+  - vb
+  name: EntityDictionary(Dictionary<UInt32, ComponentDictionary>)
+  nameWithType: EntityDictionary.EntityDictionary(Dictionary<UInt32, ComponentDictionary>)
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.EntityDictionary(Dictionary<System.UInt32, Hel.Engine.ECS.Components.ComponentDictionary>)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityDictionary.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/ECS/Entities/EntityDictionary.cs
+    startLine: 11
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public EntityDictionary(Dictionary<uint, ComponentDictionary> newEntities)
+    parameters:
+    - id: newEntities
+      type: Dictionary{System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary}
+    content.vb: Public Sub New(newEntities As Dictionary(Of UInteger, ComponentDictionary))
+  overload: Hel.Engine.ECS.Entities.EntityDictionary.#ctor*
+  nameWithType.vb: EntityDictionary.EntityDictionary(Dictionary(Of UInt32, ComponentDictionary))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Hel.Engine.ECS.Entities.EntityDictionary.EntityDictionary(Dictionary(Of System.UInt32, Hel.Engine.ECS.Components.ComponentDictionary))
+  name.vb: EntityDictionary(Dictionary(Of UInt32, ComponentDictionary))
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.#ctor(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  commentId: M:Hel.Engine.ECS.Entities.EntityDictionary.#ctor(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  id: '#ctor(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)'
+  parent: Hel.Engine.ECS.Entities.EntityDictionary
+  langs:
+  - csharp
+  - vb
+  name: EntityDictionary(UInt32, ComponentDictionary)
+  nameWithType: EntityDictionary.EntityDictionary(UInt32, ComponentDictionary)
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.EntityDictionary(System.UInt32, Hel.Engine.ECS.Components.ComponentDictionary)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityDictionary.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/ECS/Entities/EntityDictionary.cs
+    startLine: 13
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public EntityDictionary(uint id, ComponentDictionary componentDictionary)
+    parameters:
+    - id: id
+      type: System.UInt32
+    - id: componentDictionary
+      type: Hel.Engine.ECS.Components.ComponentDictionary
+    content.vb: Public Sub New(id As UInteger, componentDictionary As ComponentDictionary)
+  overload: Hel.Engine.ECS.Entities.EntityDictionary.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.#ctor(Hel.Engine.ECS.Entities.EntityDictionary)
+  commentId: M:Hel.Engine.ECS.Entities.EntityDictionary.#ctor(Hel.Engine.ECS.Entities.EntityDictionary)
+  id: '#ctor(Hel.Engine.ECS.Entities.EntityDictionary)'
+  parent: Hel.Engine.ECS.Entities.EntityDictionary
+  langs:
+  - csharp
+  - vb
+  name: EntityDictionary(EntityDictionary)
+  nameWithType: EntityDictionary.EntityDictionary(EntityDictionary)
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.EntityDictionary(Hel.Engine.ECS.Entities.EntityDictionary)
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityDictionary.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/ECS/Entities/EntityDictionary.cs
+    startLine: 18
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public EntityDictionary(EntityDictionary oldDictionary)
+    parameters:
+    - id: oldDictionary
+      type: Hel.Engine.ECS.Entities.EntityDictionary
+    content.vb: Public Sub New(oldDictionary As EntityDictionary)
+  overload: Hel.Engine.ECS.Entities.EntityDictionary.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  commentId: M:Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  id: UpdateEntity(System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary)
+  parent: Hel.Engine.ECS.Entities.EntityDictionary
+  langs:
+  - csharp
+  - vb
+  name: UpdateEntity(UInt32, ComponentDictionary)
+  nameWithType: EntityDictionary.UpdateEntity(UInt32, ComponentDictionary)
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity(System.UInt32, Hel.Engine.ECS.Components.ComponentDictionary)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityDictionary.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: UpdateEntity
+    path: ../Hel.Engine/ECS/Entities/EntityDictionary.cs
+    startLine: 26
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public void UpdateEntity(uint id, ComponentDictionary components)
+    parameters:
+    - id: id
+      type: System.UInt32
+    - id: components
+      type: Hel.Engine.ECS.Components.ComponentDictionary
+    content.vb: Public Sub UpdateEntity(id As UInteger, components As ComponentDictionary)
+  overload: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities(Hel.Engine.ECS.Entities.EntityDictionary)
+  commentId: M:Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities(Hel.Engine.ECS.Entities.EntityDictionary)
+  id: UpdateEntities(Hel.Engine.ECS.Entities.EntityDictionary)
+  parent: Hel.Engine.ECS.Entities.EntityDictionary
+  langs:
+  - csharp
+  - vb
+  name: UpdateEntities(EntityDictionary)
+  nameWithType: EntityDictionary.UpdateEntities(EntityDictionary)
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities(Hel.Engine.ECS.Entities.EntityDictionary)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityDictionary.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: UpdateEntities
+    path: ../Hel.Engine/ECS/Entities/EntityDictionary.cs
+    startLine: 38
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public void UpdateEntities(EntityDictionary entities)
+    parameters:
+    - id: entities
+      type: Hel.Engine.ECS.Entities.EntityDictionary
+    content.vb: Public Sub UpdateEntities(entities As EntityDictionary)
+  overload: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS.Entities
+  commentId: N:Hel.Engine.ECS.Entities
+  name: Hel.Engine.ECS.Entities
+  nameWithType: Hel.Engine.ECS.Entities
+  fullName: Hel.Engine.ECS.Entities
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.#ctor*
+  commentId: Overload:Hel.Engine.ECS.Entities.EntityDictionary.#ctor
+  name: EntityDictionary
+  nameWithType: EntityDictionary.EntityDictionary
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.EntityDictionary
+- uid: Dictionary{System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary}
+  commentId: '!:Dictionary{System.UInt32,Hel.Engine.ECS.Components.ComponentDictionary}'
+  definition: Dictionary`2
+  name: Dictionary<UInt32, ComponentDictionary>
+  nameWithType: Dictionary<UInt32, ComponentDictionary>
+  fullName: Dictionary<System.UInt32, Hel.Engine.ECS.Components.ComponentDictionary>
+  nameWithType.vb: Dictionary(Of UInt32, ComponentDictionary)
+  fullName.vb: Dictionary(Of System.UInt32, Hel.Engine.ECS.Components.ComponentDictionary)
+  name.vb: Dictionary(Of UInt32, ComponentDictionary)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Hel.Engine.ECS.Components.ComponentDictionary
+    name: ComponentDictionary
+    nameWithType: ComponentDictionary
+    fullName: Hel.Engine.ECS.Components.ComponentDictionary
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Hel.Engine.ECS.Components.ComponentDictionary
+    name: ComponentDictionary
+    nameWithType: ComponentDictionary
+    fullName: Hel.Engine.ECS.Components.ComponentDictionary
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  commentId: '!:Dictionary`2'
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Hel.Engine.ECS.Components.ComponentDictionary
+  commentId: T:Hel.Engine.ECS.Components.ComponentDictionary
+  parent: Hel.Engine.ECS.Components
+  name: ComponentDictionary
+  nameWithType: ComponentDictionary
+  fullName: Hel.Engine.ECS.Components.ComponentDictionary
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components
+- uid: Hel.Engine.ECS.Entities.EntityDictionary
+  commentId: T:Hel.Engine.ECS.Entities.EntityDictionary
+  parent: Hel.Engine.ECS.Entities
+  name: EntityDictionary
+  nameWithType: EntityDictionary
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity*
+  commentId: Overload:Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity
+  name: UpdateEntity
+  nameWithType: EntityDictionary.UpdateEntity
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntity
+- uid: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities*
+  commentId: Overload:Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities
+  name: UpdateEntities
+  nameWithType: EntityDictionary.UpdateEntities
+  fullName: Hel.Engine.ECS.Entities.EntityDictionary.UpdateEntities

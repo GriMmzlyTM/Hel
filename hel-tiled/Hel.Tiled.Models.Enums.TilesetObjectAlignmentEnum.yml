@@ -1,0 +1,386 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  commentId: T:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  id: TilesetObjectAlignmentEnum
+  parent: Hel.Tiled.Models.Enums
+  children:
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Bottom
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomLeft
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomRight
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Center
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Left
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Right
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Top
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopLeft
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopRight
+  - Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Unspecified
+  langs:
+  - csharp
+  - vb
+  name: TilesetObjectAlignmentEnum
+  nameWithType: TilesetObjectAlignmentEnum
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TilesetObjectAlignmentEnum
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: 'public enum TilesetObjectAlignmentEnum : int'
+    content.vb: Public Enum TilesetObjectAlignmentEnum As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Unspecified
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Unspecified
+  id: Unspecified
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: Unspecified
+  nameWithType: TilesetObjectAlignmentEnum.Unspecified
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Unspecified
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Unspecified
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: Unspecified = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: Unspecified = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopLeft
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopLeft
+  id: TopLeft
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: TopLeft
+  nameWithType: TilesetObjectAlignmentEnum.TopLeft
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopLeft
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TopLeft
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: TopLeft = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: TopLeft = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Top
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Top
+  id: Top
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: TilesetObjectAlignmentEnum.Top
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Top
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Top
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: Top = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: Top = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopRight
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopRight
+  id: TopRight
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: TopRight
+  nameWithType: TilesetObjectAlignmentEnum.TopRight
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.TopRight
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TopRight
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 7
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: TopRight = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: TopRight = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Left
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Left
+  id: Left
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: TilesetObjectAlignmentEnum.Left
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Left
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Left
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 8
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: Left = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: Left = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Center
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Center
+  id: Center
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: TilesetObjectAlignmentEnum.Center
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Center
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Center
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 9
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: Center = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: Center = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Right
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Right
+  id: Right
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: TilesetObjectAlignmentEnum.Right
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Right
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Right
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 10
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: Right = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: Right = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomLeft
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomLeft
+  id: BottomLeft
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: BottomLeft
+  nameWithType: TilesetObjectAlignmentEnum.BottomLeft
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomLeft
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: BottomLeft
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 11
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: BottomLeft = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: BottomLeft = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Bottom
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Bottom
+  id: Bottom
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: TilesetObjectAlignmentEnum.Bottom
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.Bottom
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Bottom
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 12
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: Bottom = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: Bottom = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomRight
+  commentId: F:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomRight
+  id: BottomRight
+  parent: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  langs:
+  - csharp
+  - vb
+  name: BottomRight
+  nameWithType: TilesetObjectAlignmentEnum.BottomRight
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum.BottomRight
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: BottomRight
+    path: ../Hel.Tiled/Models/Enums/TilesetObjectAlignmentEnum.cs
+    startLine: 13
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums
+  syntax:
+    content: BottomRight = null
+    return:
+      type: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+    content.vb: BottomRight = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums
+  commentId: N:Hel.Tiled.Models.Enums
+  name: Hel.Tiled.Models.Enums
+  nameWithType: Hel.Tiled.Models.Enums
+  fullName: Hel.Tiled.Models.Enums
+- uid: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  commentId: T:Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum
+  parent: Hel.Tiled.Models.Enums
+  name: TilesetObjectAlignmentEnum
+  nameWithType: TilesetObjectAlignmentEnum
+  fullName: Hel.Tiled.Models.Enums.TilesetObjectAlignmentEnum

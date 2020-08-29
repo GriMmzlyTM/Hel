@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Toolkit.Math
+  commentId: N:Hel.Engine.Toolkit.Math
+  id: Hel.Engine.Toolkit.Math
+  children:
+  - Hel.Engine.Toolkit.Math.ConversionUtil
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.Toolkit.Math
+  nameWithType: Hel.Engine.Toolkit.Math
+  fullName: Hel.Engine.Toolkit.Math
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.Toolkit.Math.ConversionUtil
+  commentId: T:Hel.Engine.Toolkit.Math.ConversionUtil
+  name: ConversionUtil
+  nameWithType: ConversionUtil
+  fullName: Hel.Engine.Toolkit.Math.ConversionUtil

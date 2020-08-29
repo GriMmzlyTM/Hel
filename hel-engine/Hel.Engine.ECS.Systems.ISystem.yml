@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Systems.ISystem
+  commentId: T:Hel.Engine.ECS.Systems.ISystem
+  id: ISystem
+  parent: Hel.Engine.ECS.Systems
+  children:
+  - Hel.Engine.ECS.Systems.ISystem.Draw(GameTime,SpriteBatch)
+  - Hel.Engine.ECS.Systems.ISystem.Update(GameTime)
+  langs:
+  - csharp
+  - vb
+  name: ISystem
+  nameWithType: ISystem
+  fullName: Hel.Engine.ECS.Systems.ISystem
+  type: Interface
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ISystem
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: public interface ISystem
+    content.vb: Public Interface ISystem
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Hel.Engine.ECS.Systems.ISystem.Update(GameTime)
+  commentId: M:Hel.Engine.ECS.Systems.ISystem.Update(GameTime)
+  id: Update(GameTime)
+  parent: Hel.Engine.ECS.Systems.ISystem
+  langs:
+  - csharp
+  - vb
+  name: Update(GameTime)
+  nameWithType: ISystem.Update(GameTime)
+  fullName: Hel.Engine.ECS.Systems.ISystem.Update(GameTime)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Update
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 8
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: void Update(GameTime gameTime)
+    parameters:
+    - id: gameTime
+      type: GameTime
+    content.vb: Sub Update(gameTime As GameTime)
+  overload: Hel.Engine.ECS.Systems.ISystem.Update*
+- uid: Hel.Engine.ECS.Systems.ISystem.Draw(GameTime,SpriteBatch)
+  commentId: M:Hel.Engine.ECS.Systems.ISystem.Draw(GameTime,SpriteBatch)
+  id: Draw(GameTime,SpriteBatch)
+  parent: Hel.Engine.ECS.Systems.ISystem
+  langs:
+  - csharp
+  - vb
+  name: Draw(GameTime, SpriteBatch)
+  nameWithType: ISystem.Draw(GameTime, SpriteBatch)
+  fullName: Hel.Engine.ECS.Systems.ISystem.Draw(GameTime, SpriteBatch)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Systems/System.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Draw
+    path: ../Hel.Engine/ECS/Systems/System.cs
+    startLine: 9
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Systems
+  syntax:
+    content: void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+    parameters:
+    - id: gameTime
+      type: GameTime
+    - id: spriteBatch
+      type: SpriteBatch
+    content.vb: Sub Draw(gameTime As GameTime, spriteBatch As SpriteBatch)
+  overload: Hel.Engine.ECS.Systems.ISystem.Draw*
+references:
+- uid: Hel.Engine.ECS.Systems
+  commentId: N:Hel.Engine.ECS.Systems
+  name: Hel.Engine.ECS.Systems
+  nameWithType: Hel.Engine.ECS.Systems
+  fullName: Hel.Engine.ECS.Systems
+- uid: Hel.Engine.ECS.Systems.ISystem.Update*
+  commentId: Overload:Hel.Engine.ECS.Systems.ISystem.Update
+  name: Update
+  nameWithType: ISystem.Update
+  fullName: Hel.Engine.ECS.Systems.ISystem.Update
+- uid: GameTime
+  isExternal: true
+  name: GameTime
+  nameWithType: GameTime
+  fullName: GameTime
+- uid: Hel.Engine.ECS.Systems.ISystem.Draw*
+  commentId: Overload:Hel.Engine.ECS.Systems.ISystem.Draw
+  name: Draw
+  nameWithType: ISystem.Draw
+  fullName: Hel.Engine.ECS.Systems.ISystem.Draw
+- uid: SpriteBatch
+  isExternal: true
+  name: SpriteBatch
+  nameWithType: SpriteBatch
+  fullName: SpriteBatch

@@ -1,0 +1,50 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Components.ComponentManager
+  commentId: T:Hel.Engine.ECS.Components.ComponentManager
+  id: ComponentManager
+  parent: Hel.Engine.ECS.Components
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ComponentManager
+  nameWithType: ComponentManager
+  fullName: Hel.Engine.ECS.Components.ComponentManager
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/ComponentManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ComponentManager
+    path: ../Hel.Engine/ECS/Components/ComponentManager.cs
+    startLine: 8
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components
+  syntax:
+    content: 'public class ComponentManager : object, IComponentManager'
+    content.vb: >-
+      Public Class ComponentManager
+          Inherits Object
+          Implements IComponentManager
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

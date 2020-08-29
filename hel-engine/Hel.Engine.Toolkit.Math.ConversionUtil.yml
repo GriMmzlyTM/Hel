@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Toolkit.Math.ConversionUtil
+  commentId: T:Hel.Engine.Toolkit.Math.ConversionUtil
+  id: ConversionUtil
+  parent: Hel.Engine.Toolkit.Math
+  children:
+  - Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ConversionUtil
+  nameWithType: ConversionUtil
+  fullName: Hel.Engine.Toolkit.Math.ConversionUtil
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Toolkit/Math/ConversionUtil.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ConversionUtil
+    path: ../Hel.Engine/Toolkit/Math/ConversionUtil.cs
+    startLine: 2
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Toolkit.Math
+  syntax:
+    content: 'public class ConversionUtil : object'
+    content.vb: >-
+      Public Class ConversionUtil
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt(System.Boolean)
+  commentId: M:Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt(System.Boolean)
+  id: BoolToInt(System.Boolean)
+  parent: Hel.Engine.Toolkit.Math.ConversionUtil
+  langs:
+  - csharp
+  - vb
+  name: BoolToInt(Boolean)
+  nameWithType: ConversionUtil.BoolToInt(Boolean)
+  fullName: Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Toolkit/Math/ConversionUtil.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: BoolToInt
+    path: ../Hel.Engine/Toolkit/Math/ConversionUtil.cs
+    startLine: 11
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Toolkit.Math
+  summary: "\nConverts boolean values to integers for math.\nTRUE = 1\nFALSE = 0\n"
+  example: []
+  syntax:
+    content: public static int BoolToInt(bool val)
+    parameters:
+    - id: val
+      type: System.Boolean
+      description: Boolean value to check
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function BoolToInt(val As Boolean) As Integer
+  overload: Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hel.Engine.Toolkit.Math
+  commentId: N:Hel.Engine.Toolkit.Math
+  name: Hel.Engine.Toolkit.Math
+  nameWithType: Hel.Engine.Toolkit.Math
+  fullName: Hel.Engine.Toolkit.Math
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt*
+  commentId: Overload:Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt
+  name: BoolToInt
+  nameWithType: ConversionUtil.BoolToInt
+  fullName: Hel.Engine.Toolkit.Math.ConversionUtil.BoolToInt
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

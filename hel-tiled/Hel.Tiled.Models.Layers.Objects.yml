@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Layers.Objects
+  commentId: N:Hel.Tiled.Models.Layers.Objects
+  id: Hel.Tiled.Models.Layers.Objects
+  children:
+  - Hel.Tiled.Models.Layers.Objects.Object
+  - Hel.Tiled.Models.Layers.Objects.Point
+  - Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Hel.Tiled.Models.Layers.Objects
+  nameWithType: Hel.Tiled.Models.Layers.Objects
+  fullName: Hel.Tiled.Models.Layers.Objects
+  type: Namespace
+  assemblies:
+  - Hel.Tiled
+references:
+- uid: Hel.Tiled.Models.Layers.Objects.Object
+  commentId: T:Hel.Tiled.Models.Layers.Objects.Object
+  parent: Hel.Tiled.Models.Layers.Objects
+  name: Object
+  nameWithType: Object
+  fullName: Hel.Tiled.Models.Layers.Objects.Object
+- uid: Hel.Tiled.Models.Layers.Objects.Point
+  commentId: T:Hel.Tiled.Models.Layers.Objects.Point
+  name: Point
+  nameWithType: Point
+  fullName: Hel.Tiled.Models.Layers.Objects.Point
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject
+  commentId: T:Hel.Tiled.Models.Layers.Objects.TextObject
+  name: TextObject
+  nameWithType: TextObject
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject
+- uid: Hel.Tiled.Models.Layers.Objects
+  commentId: N:Hel.Tiled.Models.Layers.Objects
+  name: Hel.Tiled.Models.Layers.Objects
+  nameWithType: Hel.Tiled.Models.Layers.Objects
+  fullName: Hel.Tiled.Models.Layers.Objects

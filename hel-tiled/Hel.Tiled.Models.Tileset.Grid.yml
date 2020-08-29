@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Tileset.Grid
+  commentId: T:Hel.Tiled.Models.Tileset.Grid
+  id: Grid
+  parent: Hel.Tiled.Models.Tileset
+  children:
+  - Hel.Tiled.Models.Tileset.Grid.Height
+  - Hel.Tiled.Models.Tileset.Grid.Orientation
+  - Hel.Tiled.Models.Tileset.Grid.Width
+  langs:
+  - csharp
+  - vb
+  name: Grid
+  nameWithType: Grid
+  fullName: Hel.Tiled.Models.Tileset.Grid
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Grid.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Grid
+    path: ../Hel.Tiled/Models/Tileset/Grid.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  syntax:
+    content: 'public class Grid : object'
+    content.vb: >-
+      Public Class Grid
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Tileset.Grid.Height
+  commentId: P:Hel.Tiled.Models.Tileset.Grid.Height
+  id: Height
+  parent: Hel.Tiled.Models.Tileset.Grid
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Grid.Height
+  fullName: Hel.Tiled.Models.Tileset.Grid.Height
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Grid.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Height
+    path: ../Hel.Tiled/Models/Tileset/Grid.cs
+    startLine: 11
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nCell height of tile grid\n"
+  example: []
+  syntax:
+    content: public ushort Height { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Height As UShort
+  overload: Hel.Tiled.Models.Tileset.Grid.Height*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Grid.Width
+  commentId: P:Hel.Tiled.Models.Tileset.Grid.Width
+  id: Width
+  parent: Hel.Tiled.Models.Tileset.Grid
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Grid.Width
+  fullName: Hel.Tiled.Models.Tileset.Grid.Width
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Grid.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Width
+    path: ../Hel.Tiled/Models/Tileset/Grid.cs
+    startLine: 16
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nCell width of tile grid\n"
+  example: []
+  syntax:
+    content: public ushort Width { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property Width As UShort
+  overload: Hel.Tiled.Models.Tileset.Grid.Width*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Grid.Orientation
+  commentId: P:Hel.Tiled.Models.Tileset.Grid.Orientation
+  id: Orientation
+  parent: Hel.Tiled.Models.Tileset.Grid
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: Grid.Orientation
+  fullName: Hel.Tiled.Models.Tileset.Grid.Orientation
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Grid.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Orientation
+    path: ../Hel.Tiled/Models/Tileset/Grid.cs
+    startLine: 21
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset
+  summary: "\nOrientation of grid\n"
+  example: []
+  syntax:
+    content: public GridOrientationEnum Orientation { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.GridOrientationEnum
+    content.vb: Public Property Orientation As GridOrientationEnum
+  overload: Hel.Tiled.Models.Tileset.Grid.Orientation*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Tileset
+  commentId: N:Hel.Tiled.Models.Tileset
+  name: Hel.Tiled.Models.Tileset
+  nameWithType: Hel.Tiled.Models.Tileset
+  fullName: Hel.Tiled.Models.Tileset
+- uid: System.Object
+  commentId: '!:System.Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Tiled.Models.Tileset.Grid.Height*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Grid.Height
+  name: Height
+  nameWithType: Grid.Height
+  fullName: Hel.Tiled.Models.Tileset.Grid.Height
+- uid: System.UInt16
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Hel.Tiled.Models.Tileset.Grid.Width*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Grid.Width
+  name: Width
+  nameWithType: Grid.Width
+  fullName: Hel.Tiled.Models.Tileset.Grid.Width
+- uid: Hel.Tiled.Models.Tileset.Grid.Orientation*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Grid.Orientation
+  name: Orientation
+  nameWithType: Grid.Orientation
+  fullName: Hel.Tiled.Models.Tileset.Grid.Orientation
+- uid: Hel.Tiled.Models.Enums.GridOrientationEnum
+  commentId: T:Hel.Tiled.Models.Enums.GridOrientationEnum
+  parent: Hel.Tiled.Models.Enums
+  name: GridOrientationEnum
+  nameWithType: GridOrientationEnum
+  fullName: Hel.Tiled.Models.Enums.GridOrientationEnum
+- uid: Hel.Tiled.Models.Enums
+  commentId: N:Hel.Tiled.Models.Enums
+  name: Hel.Tiled.Models.Enums
+  nameWithType: Hel.Tiled.Models.Enums
+  fullName: Hel.Tiled.Models.Enums

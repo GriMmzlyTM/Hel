@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.HAlignEnum
+  id: HAlignEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  children:
+  - Hel.Tiled.Models.Enums.Object.HAlignEnum.Center
+  - Hel.Tiled.Models.Enums.Object.HAlignEnum.Justify
+  - Hel.Tiled.Models.Enums.Object.HAlignEnum.Left
+  - Hel.Tiled.Models.Enums.Object.HAlignEnum.Right
+  langs:
+  - csharp
+  - vb
+  name: HAlignEnum
+  nameWithType: HAlignEnum
+  fullName: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: HAlignEnum
+    path: ../Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: 'public enum HAlignEnum : int'
+    content.vb: Public Enum HAlignEnum As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Object.HAlignEnum.Left
+  commentId: F:Hel.Tiled.Models.Enums.Object.HAlignEnum.Left
+  id: Left
+  parent: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: HAlignEnum.Left
+  fullName: Hel.Tiled.Models.Enums.Object.HAlignEnum.Left
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Left
+    path: ../Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Left = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.HAlignEnum
+    content.vb: Left = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.HAlignEnum.Center
+  commentId: F:Hel.Tiled.Models.Enums.Object.HAlignEnum.Center
+  id: Center
+  parent: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: HAlignEnum.Center
+  fullName: Hel.Tiled.Models.Enums.Object.HAlignEnum.Center
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Center
+    path: ../Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Center = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.HAlignEnum
+    content.vb: Center = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.HAlignEnum.Right
+  commentId: F:Hel.Tiled.Models.Enums.Object.HAlignEnum.Right
+  id: Right
+  parent: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: HAlignEnum.Right
+  fullName: Hel.Tiled.Models.Enums.Object.HAlignEnum.Right
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Right
+    path: ../Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Right = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.HAlignEnum
+    content.vb: Right = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.HAlignEnum.Justify
+  commentId: F:Hel.Tiled.Models.Enums.Object.HAlignEnum.Justify
+  id: Justify
+  parent: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  langs:
+  - csharp
+  - vb
+  name: Justify
+  nameWithType: HAlignEnum.Justify
+  fullName: Hel.Tiled.Models.Enums.Object.HAlignEnum.Justify
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Justify
+    path: ../Hel.Tiled/Models/Enums/Object/HAlignEnum.cs
+    startLine: 7
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Justify = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.HAlignEnum
+    content.vb: Justify = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Object
+  commentId: N:Hel.Tiled.Models.Enums.Object
+  name: Hel.Tiled.Models.Enums.Object
+  nameWithType: Hel.Tiled.Models.Enums.Object
+  fullName: Hel.Tiled.Models.Enums.Object
+- uid: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.HAlignEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  name: HAlignEnum
+  nameWithType: HAlignEnum
+  fullName: Hel.Tiled.Models.Enums.Object.HAlignEnum

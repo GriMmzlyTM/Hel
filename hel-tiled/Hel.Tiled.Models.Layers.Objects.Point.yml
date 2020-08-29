@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Layers.Objects.Point
+  commentId: T:Hel.Tiled.Models.Layers.Objects.Point
+  id: Point
+  parent: Hel.Tiled.Models.Layers.Objects
+  children:
+  - Hel.Tiled.Models.Layers.Objects.Point.X
+  - Hel.Tiled.Models.Layers.Objects.Point.Y
+  langs:
+  - csharp
+  - vb
+  name: Point
+  nameWithType: Point
+  fullName: Hel.Tiled.Models.Layers.Objects.Point
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/Point.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Point
+    path: ../Hel.Tiled/Models/Layers/Objects/Point.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  syntax:
+    content: 'public class Point : object'
+    content.vb: >-
+      Public Class Point
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Layers.Objects.Point.X
+  commentId: P:Hel.Tiled.Models.Layers.Objects.Point.X
+  id: X
+  parent: Hel.Tiled.Models.Layers.Objects.Point
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Point.X
+  fullName: Hel.Tiled.Models.Layers.Objects.Point.X
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/Point.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: X
+    path: ../Hel.Tiled/Models/Layers/Objects/Point.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  syntax:
+    content: public double X { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property X As Double
+  overload: Hel.Tiled.Models.Layers.Objects.Point.X*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.Point.Y
+  commentId: P:Hel.Tiled.Models.Layers.Objects.Point.Y
+  id: Y
+  parent: Hel.Tiled.Models.Layers.Objects.Point
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Point.Y
+  fullName: Hel.Tiled.Models.Layers.Objects.Point.Y
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/Point.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Y
+    path: ../Hel.Tiled/Models/Layers/Objects/Point.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  syntax:
+    content: public double Y { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Y As Double
+  overload: Hel.Tiled.Models.Layers.Objects.Point.Y*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Layers.Objects
+  commentId: N:Hel.Tiled.Models.Layers.Objects
+  name: Hel.Tiled.Models.Layers.Objects
+  nameWithType: Hel.Tiled.Models.Layers.Objects
+  fullName: Hel.Tiled.Models.Layers.Objects
+- uid: System.Object
+  commentId: '!:System.Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Tiled.Models.Layers.Objects.Point.X*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.Point.X
+  name: X
+  nameWithType: Point.X
+  fullName: Hel.Tiled.Models.Layers.Objects.Point.X
+- uid: System.Double
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Hel.Tiled.Models.Layers.Objects.Point.Y*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.Point.Y
+  name: Y
+  nameWithType: Point.Y
+  fullName: Hel.Tiled.Models.Layers.Objects.Point.Y

@@ -1,0 +1,348 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.RenderComponent
+  id: RenderComponent
+  parent: Hel.Engine.ECS.Components.Model
+  children:
+  - Hel.Engine.ECS.Components.Model.RenderComponent.Active
+  - Hel.Engine.ECS.Components.Model.RenderComponent.Equals(Hel.Engine.ECS.Components.Model.RenderComponent)
+  - Hel.Engine.ECS.Components.Model.RenderComponent.Texture
+  - Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex
+  langs:
+  - csharp
+  - vb
+  name: RenderComponent
+  nameWithType: RenderComponent
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent
+  type: Struct
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/RenderComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: RenderComponent
+    path: ../Hel.Engine/ECS/Components/Model/RenderComponent.cs
+    startLine: 14
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  summary: "\nThe IRender component handles rendering the \nentity texture to the screen. \nIRender should be used for any entity that contains\nvisuals as opposed to simply logic. \n\nIRender has its own Render system which is added to the\nSystemManager when the World is created. \n"
+  example: []
+  syntax:
+    content: 'public struct RenderComponent : IRenderComponent, IComponent, IEquatable<RenderComponent>'
+    content.vb: >-
+      Public Structure RenderComponent
+          Implements IRenderComponent, IComponent, IEquatable(Of RenderComponent)
+  implements:
+  - Hel.Engine.ECS.Components.Model.IRenderComponent
+  - Hel.Engine.ECS.Components.IComponent
+  - IEquatable{Hel.Engine.ECS.Components.Model.RenderComponent}
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.Texture
+  commentId: P:Hel.Engine.ECS.Components.Model.RenderComponent.Texture
+  id: Texture
+  parent: Hel.Engine.ECS.Components.Model.RenderComponent
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: RenderComponent.Texture
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.Texture
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/RenderComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Texture
+    path: ../Hel.Engine/ECS/Components/Model/RenderComponent.cs
+    startLine: 19
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  summary: "\nTexture is the Texture2D your entity should draw to the screen \n"
+  example: []
+  syntax:
+    content: public Texture2D Texture { get; set; }
+    parameters: []
+    return:
+      type: Texture2D
+    content.vb: Public Property Texture As Texture2D
+  overload: Hel.Engine.ECS.Components.Model.RenderComponent.Texture*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex
+  commentId: P:Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex
+  id: ZIndex
+  parent: Hel.Engine.ECS.Components.Model.RenderComponent
+  langs:
+  - csharp
+  - vb
+  name: ZIndex
+  nameWithType: RenderComponent.ZIndex
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/RenderComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ZIndex
+    path: ../Hel.Engine/ECS/Components/Model/RenderComponent.cs
+    startLine: 21
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public ushort ZIndex { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property ZIndex As UShort
+  overload: Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex*
+  implements:
+  - Hel.Engine.ECS.Components.Model.IRenderComponent.ZIndex
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.Model.RenderComponent.Active
+  id: Active
+  parent: Hel.Engine.ECS.Components.Model.RenderComponent
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: RenderComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.Active
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/RenderComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Active
+    path: ../Hel.Engine/ECS/Components/Model/RenderComponent.cs
+    startLine: 22
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Active { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Active As Boolean
+  overload: Hel.Engine.ECS.Components.Model.RenderComponent.Active*
+  implements:
+  - Hel.Engine.ECS.Components.IComponent.Active
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.Equals(Hel.Engine.ECS.Components.Model.RenderComponent)
+  commentId: M:Hel.Engine.ECS.Components.Model.RenderComponent.Equals(Hel.Engine.ECS.Components.Model.RenderComponent)
+  id: Equals(Hel.Engine.ECS.Components.Model.RenderComponent)
+  parent: Hel.Engine.ECS.Components.Model.RenderComponent
+  langs:
+  - csharp
+  - vb
+  name: Equals(RenderComponent)
+  nameWithType: RenderComponent.Equals(RenderComponent)
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.Equals(Hel.Engine.ECS.Components.Model.RenderComponent)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/RenderComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Equals
+    path: ../Hel.Engine/ECS/Components/Model/RenderComponent.cs
+    startLine: 25
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Equals(RenderComponent other)
+    parameters:
+    - id: other
+      type: Hel.Engine.ECS.Components.Model.RenderComponent
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As RenderComponent) As Boolean
+  overload: Hel.Engine.ECS.Components.Model.RenderComponent.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS.Components.Model
+  commentId: N:Hel.Engine.ECS.Components.Model
+  name: Hel.Engine.ECS.Components.Model
+  nameWithType: Hel.Engine.ECS.Components.Model
+  fullName: Hel.Engine.ECS.Components.Model
+- uid: Hel.Engine.ECS.Components.Model.IRenderComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.IRenderComponent
+  parent: Hel.Engine.ECS.Components.Model
+  name: IRenderComponent
+  nameWithType: IRenderComponent
+  fullName: Hel.Engine.ECS.Components.Model.IRenderComponent
+- uid: Hel.Engine.ECS.Components.IComponent
+  commentId: T:Hel.Engine.ECS.Components.IComponent
+  parent: Hel.Engine.ECS.Components
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Hel.Engine.ECS.Components.IComponent
+- uid: IEquatable{Hel.Engine.ECS.Components.Model.RenderComponent}
+  commentId: '!:IEquatable{Hel.Engine.ECS.Components.Model.RenderComponent}'
+  definition: IEquatable`1
+  name: IEquatable<RenderComponent>
+  nameWithType: IEquatable<RenderComponent>
+  fullName: IEquatable<Hel.Engine.ECS.Components.Model.RenderComponent>
+  nameWithType.vb: IEquatable(Of RenderComponent)
+  fullName.vb: IEquatable(Of Hel.Engine.ECS.Components.Model.RenderComponent)
+  name.vb: IEquatable(Of RenderComponent)
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.ECS.Components.Model.RenderComponent
+    name: RenderComponent
+    nameWithType: RenderComponent
+    fullName: Hel.Engine.ECS.Components.Model.RenderComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.ECS.Components.Model.RenderComponent
+    name: RenderComponent
+    nameWithType: RenderComponent
+    fullName: Hel.Engine.ECS.Components.Model.RenderComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components
+- uid: IEquatable`1
+  isExternal: true
+  name: IEquatable<>
+  nameWithType: IEquatable<>
+  fullName: IEquatable<>
+  nameWithType.vb: IEquatable(Of )
+  fullName.vb: IEquatable(Of )
+  name.vb: IEquatable(Of )
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.Texture*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.RenderComponent.Texture
+  name: Texture
+  nameWithType: RenderComponent.Texture
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.Texture
+- uid: Texture2D
+  commentId: '!:Texture2D'
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Texture2D
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex
+  name: ZIndex
+  nameWithType: RenderComponent.ZIndex
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.ZIndex
+- uid: Hel.Engine.ECS.Components.Model.IRenderComponent.ZIndex
+  commentId: P:Hel.Engine.ECS.Components.Model.IRenderComponent.ZIndex
+  parent: Hel.Engine.ECS.Components.Model.IRenderComponent
+  name: ZIndex
+  nameWithType: IRenderComponent.ZIndex
+  fullName: Hel.Engine.ECS.Components.Model.IRenderComponent.ZIndex
+- uid: System.UInt16
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.Active*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.RenderComponent.Active
+  name: Active
+  nameWithType: RenderComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.Active
+- uid: Hel.Engine.ECS.Components.IComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.IComponent.Active
+  parent: Hel.Engine.ECS.Components.IComponent
+  name: Active
+  nameWithType: IComponent.Active
+  fullName: Hel.Engine.ECS.Components.IComponent.Active
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent.Equals*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.RenderComponent.Equals
+  name: Equals
+  nameWithType: RenderComponent.Equals
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent.Equals
+- uid: Hel.Engine.ECS.Components.Model.RenderComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.RenderComponent
+  parent: Hel.Engine.ECS.Components.Model
+  name: RenderComponent
+  nameWithType: RenderComponent
+  fullName: Hel.Engine.ECS.Components.Model.RenderComponent

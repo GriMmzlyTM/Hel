@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Tiled.TiledLoader
+  commentId: T:Hel.Engine.Tiled.TiledLoader
+  id: TiledLoader
+  parent: Hel.Engine.Tiled
+  children:
+  - Hel.Engine.Tiled.TiledLoader.TilemapLoader(System.String)
+  langs:
+  - csharp
+  - vb
+  name: TiledLoader
+  nameWithType: TiledLoader
+  fullName: Hel.Engine.Tiled.TiledLoader
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Tiled/TiledLoader.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TiledLoader
+    path: ../Hel.Engine/Tiled/TiledLoader.cs
+    startLine: 7
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Tiled
+  syntax:
+    content: 'public static class TiledLoader : object'
+    content.vb: >-
+      Public Module TiledLoader
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hel.Engine.Tiled.TiledLoader.TilemapLoader(System.String)
+  commentId: M:Hel.Engine.Tiled.TiledLoader.TilemapLoader(System.String)
+  id: TilemapLoader(System.String)
+  parent: Hel.Engine.Tiled.TiledLoader
+  langs:
+  - csharp
+  - vb
+  name: TilemapLoader(String)
+  nameWithType: TiledLoader.TilemapLoader(String)
+  fullName: Hel.Engine.Tiled.TiledLoader.TilemapLoader(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Tiled/TiledLoader.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TilemapLoader
+    path: ../Hel.Engine/Tiled/TiledLoader.cs
+    startLine: 9
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Tiled
+  syntax:
+    content: public static Tilemap TilemapLoader(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Hel.Tiled.Models.Tilemap.Tilemap
+    content.vb: Public Shared Function TilemapLoader(path As String) As Tilemap
+  overload: Hel.Engine.Tiled.TiledLoader.TilemapLoader*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hel.Engine.Tiled
+  commentId: N:Hel.Engine.Tiled
+  name: Hel.Engine.Tiled
+  nameWithType: Hel.Engine.Tiled
+  fullName: Hel.Engine.Tiled
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.Tiled.TiledLoader.TilemapLoader*
+  commentId: Overload:Hel.Engine.Tiled.TiledLoader.TilemapLoader
+  name: TilemapLoader
+  nameWithType: TiledLoader.TilemapLoader
+  fullName: Hel.Engine.Tiled.TiledLoader.TilemapLoader
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Tilemap.Tilemap
+  commentId: T:Hel.Tiled.Models.Tilemap.Tilemap
+  parent: Hel.Tiled.Models.Tilemap
+  name: Tilemap
+  nameWithType: Tilemap
+  fullName: Hel.Tiled.Models.Tilemap.Tilemap
+- uid: Hel.Tiled.Models.Tilemap
+  commentId: N:Hel.Tiled.Models.Tilemap
+  name: Hel.Tiled.Models.Tilemap
+  nameWithType: Hel.Tiled.Models.Tilemap
+  fullName: Hel.Tiled.Models.Tilemap

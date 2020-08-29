@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Toolkit.Serializer.ByteSerializer
+  commentId: T:Hel.Engine.Toolkit.Serializer.ByteSerializer
+  id: ByteSerializer
+  parent: Hel.Engine.Toolkit.Serializer
+  children:
+  - Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject(System.Byte[])
+  - Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ByteSerializer
+  nameWithType: ByteSerializer
+  fullName: Hel.Engine.Toolkit.Serializer.ByteSerializer
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/Toolkit/Serializer/ByteSerializer.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ByteSerializer
+    path: ../Hel.Engine/Toolkit/Serializer/ByteSerializer.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Toolkit.Serializer
+  syntax:
+    content: 'public static class ByteSerializer : object'
+    content.vb: >-
+      Public Module ByteSerializer
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject(System.Byte[])
+  commentId: M:Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject(System.Byte[])
+  id: ByteArrayToObject(System.Byte[])
+  parent: Hel.Engine.Toolkit.Serializer.ByteSerializer
+  langs:
+  - csharp
+  - vb
+  name: ByteArrayToObject(Byte[])
+  nameWithType: ByteSerializer.ByteArrayToObject(Byte[])
+  fullName: Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Toolkit/Serializer/ByteSerializer.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ByteArrayToObject
+    path: ../Hel.Engine/Toolkit/Serializer/ByteSerializer.cs
+    startLine: 8
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Toolkit.Serializer
+  syntax:
+    content: public static object ByteArrayToObject(byte[] arrBytes)
+    parameters:
+    - id: arrBytes
+      type: System.Byte[]
+    return:
+      type: System.Object
+    content.vb: Public Shared Function ByteArrayToObject(arrBytes As Byte()) As Object
+  overload: Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject*
+  nameWithType.vb: ByteSerializer.ByteArrayToObject(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject(System.Byte())
+  name.vb: ByteArrayToObject(Byte())
+- uid: Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray(System.Object)
+  commentId: M:Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray(System.Object)
+  id: ObjectToByteArray(System.Object)
+  parent: Hel.Engine.Toolkit.Serializer.ByteSerializer
+  langs:
+  - csharp
+  - vb
+  name: ObjectToByteArray(Object)
+  nameWithType: ByteSerializer.ObjectToByteArray(Object)
+  fullName: Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/Toolkit/Serializer/ByteSerializer.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ObjectToByteArray
+    path: ../Hel.Engine/Toolkit/Serializer/ByteSerializer.cs
+    startLine: 21
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Toolkit.Serializer
+  syntax:
+    content: public static byte[] ObjectToByteArray(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ObjectToByteArray(obj As Object) As Byte()
+  overload: Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hel.Engine.Toolkit.Serializer
+  commentId: N:Hel.Engine.Toolkit.Serializer
+  name: Hel.Engine.Toolkit.Serializer
+  nameWithType: Hel.Engine.Toolkit.Serializer
+  fullName: Hel.Engine.Toolkit.Serializer
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject*
+  commentId: Overload:Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject
+  name: ByteArrayToObject
+  nameWithType: ByteSerializer.ByteArrayToObject
+  fullName: Hel.Engine.Toolkit.Serializer.ByteSerializer.ByteArrayToObject
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray*
+  commentId: Overload:Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray
+  name: ObjectToByteArray
+  nameWithType: ByteSerializer.ObjectToByteArray
+  fullName: Hel.Engine.Toolkit.Serializer.ByteSerializer.ObjectToByteArray

@@ -1,0 +1,309 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.WorldManager
+  commentId: T:Hel.Engine.ECS.WorldManager
+  id: WorldManager
+  parent: Hel.Engine.ECS
+  children:
+  - Hel.Engine.ECS.WorldManager.#ctor
+  - Hel.Engine.ECS.WorldManager.GenerateWorld(SpriteBatch,System.String)
+  - Hel.Engine.ECS.WorldManager.GetGame
+  - Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  - Hel.Engine.ECS.WorldManager.PrimaryWorld
+  - Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  langs:
+  - csharp
+  - vb
+  name: WorldManager
+  nameWithType: WorldManager
+  fullName: Hel.Engine.ECS.WorldManager
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: WorldManager
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 37
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: 'public class WorldManager : object, IWorldManager'
+    content.vb: >-
+      Public Class WorldManager
+          Inherits Object
+          Implements IWorldManager
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.ECS.WorldManager.PrimaryWorld
+  commentId: P:Hel.Engine.ECS.WorldManager.PrimaryWorld
+  id: PrimaryWorld
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: PrimaryWorld
+  nameWithType: WorldManager.PrimaryWorld
+  fullName: Hel.Engine.ECS.WorldManager.PrimaryWorld
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: PrimaryWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 40
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public World PrimaryWorld { get; }
+    parameters: []
+    return:
+      type: Hel.Engine.ECS.World
+    content.vb: Public ReadOnly Property PrimaryWorld As World
+  overload: Hel.Engine.ECS.WorldManager.PrimaryWorld*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Hel.Engine.ECS.WorldManager.#ctor
+  commentId: M:Hel.Engine.ECS.WorldManager.#ctor
+  id: '#ctor'
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: WorldManager()
+  nameWithType: WorldManager.WorldManager()
+  fullName: Hel.Engine.ECS.WorldManager.WorldManager()
+  type: Constructor
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: .ctor
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 43
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public WorldManager()
+    content.vb: Public Sub New
+  overload: Hel.Engine.ECS.WorldManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.GenerateWorld(SpriteBatch,System.String)
+  commentId: M:Hel.Engine.ECS.WorldManager.GenerateWorld(SpriteBatch,System.String)
+  id: GenerateWorld(SpriteBatch,System.String)
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: GenerateWorld(SpriteBatch, String)
+  nameWithType: WorldManager.GenerateWorld(SpriteBatch, String)
+  fullName: Hel.Engine.ECS.WorldManager.GenerateWorld(SpriteBatch, System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: GenerateWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 46
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public World GenerateWorld(SpriteBatch spriteBatch, string worldName)
+    parameters:
+    - id: spriteBatch
+      type: SpriteBatch
+    - id: worldName
+      type: System.String
+    return:
+      type: Hel.Engine.ECS.World
+    content.vb: Public Function GenerateWorld(spriteBatch As SpriteBatch, worldName As String) As World
+  overload: Hel.Engine.ECS.WorldManager.GenerateWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.GetGame
+  commentId: M:Hel.Engine.ECS.WorldManager.GetGame
+  id: GetGame
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: GetGame()
+  nameWithType: WorldManager.GetGame()
+  fullName: Hel.Engine.ECS.WorldManager.GetGame()
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: GetGame
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 54
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public Game GetGame()
+    return:
+      type: Game
+    content.vb: Public Function GetGame As Game
+  overload: Hel.Engine.ECS.WorldManager.GetGame*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  commentId: M:Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  id: SetPrimaryWorld(System.String)
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: SetPrimaryWorld(String)
+  nameWithType: WorldManager.SetPrimaryWorld(String)
+  fullName: Hel.Engine.ECS.WorldManager.SetPrimaryWorld(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: SetPrimaryWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 56
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public void SetPrimaryWorld(string worldName)
+    parameters:
+    - id: worldName
+      type: System.String
+    content.vb: Public Sub SetPrimaryWorld(worldName As String)
+  overload: Hel.Engine.ECS.WorldManager.SetPrimaryWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  commentId: M:Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  id: GetWorld(System.String)
+  parent: Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: GetWorld(String)
+  nameWithType: WorldManager.GetWorld(String)
+  fullName: Hel.Engine.ECS.WorldManager.GetWorld(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/WorldManager.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: GetWorld
+    path: ../Hel.Engine/ECS/WorldManager.cs
+    startLine: 61
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS
+  syntax:
+    content: public World GetWorld(string worldName)
+    parameters:
+    - id: worldName
+      type: System.String
+    return:
+      type: Hel.Engine.ECS.World
+    content.vb: Public Function GetWorld(worldName As String) As World
+  overload: Hel.Engine.ECS.WorldManager.GetWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS
+  commentId: N:Hel.Engine.ECS
+  name: Hel.Engine.ECS
+  nameWithType: Hel.Engine.ECS
+  fullName: Hel.Engine.ECS
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.ECS.WorldManager.PrimaryWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.PrimaryWorld
+  name: PrimaryWorld
+  nameWithType: WorldManager.PrimaryWorld
+  fullName: Hel.Engine.ECS.WorldManager.PrimaryWorld
+- uid: Hel.Engine.ECS.World
+  commentId: T:Hel.Engine.ECS.World
+  parent: Hel.Engine.ECS
+  name: World
+  nameWithType: World
+  fullName: Hel.Engine.ECS.World
+- uid: Hel.Engine.ECS.WorldManager.#ctor*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.#ctor
+  name: WorldManager
+  nameWithType: WorldManager.WorldManager
+  fullName: Hel.Engine.ECS.WorldManager.WorldManager
+- uid: Hel.Engine.ECS.WorldManager.GenerateWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.GenerateWorld
+  name: GenerateWorld
+  nameWithType: WorldManager.GenerateWorld
+  fullName: Hel.Engine.ECS.WorldManager.GenerateWorld
+- uid: SpriteBatch
+  isExternal: true
+  name: SpriteBatch
+  nameWithType: SpriteBatch
+  fullName: SpriteBatch
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Engine.ECS.WorldManager.GetGame*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.GetGame
+  name: GetGame
+  nameWithType: WorldManager.GetGame
+  fullName: Hel.Engine.ECS.WorldManager.GetGame
+- uid: Game
+  isExternal: true
+  name: Game
+  nameWithType: Game
+  fullName: Game
+- uid: Hel.Engine.ECS.WorldManager.SetPrimaryWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.SetPrimaryWorld
+  name: SetPrimaryWorld
+  nameWithType: WorldManager.SetPrimaryWorld
+  fullName: Hel.Engine.ECS.WorldManager.SetPrimaryWorld
+- uid: Hel.Engine.ECS.WorldManager.GetWorld*
+  commentId: Overload:Hel.Engine.ECS.WorldManager.GetWorld
+  name: GetWorld
+  nameWithType: WorldManager.GetWorld
+  fullName: Hel.Engine.ECS.WorldManager.GetWorld

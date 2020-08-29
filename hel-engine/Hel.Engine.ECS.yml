@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS
+  commentId: N:Hel.Engine.ECS
+  id: Hel.Engine.ECS
+  children:
+  - Hel.Engine.ECS.World
+  - Hel.Engine.ECS.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.ECS
+  nameWithType: Hel.Engine.ECS
+  fullName: Hel.Engine.ECS
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.ECS.World
+  commentId: T:Hel.Engine.ECS.World
+  parent: Hel.Engine.ECS
+  name: World
+  nameWithType: World
+  fullName: Hel.Engine.ECS.World
+- uid: Hel.Engine.ECS.WorldManager
+  commentId: T:Hel.Engine.ECS.WorldManager
+  parent: Hel.Engine.ECS
+  name: WorldManager
+  nameWithType: WorldManager
+  fullName: Hel.Engine.ECS.WorldManager
+- uid: Hel.Engine.ECS
+  commentId: N:Hel.Engine.ECS
+  name: Hel.Engine.ECS
+  nameWithType: Hel.Engine.ECS
+  fullName: Hel.Engine.ECS

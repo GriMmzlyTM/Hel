@@ -1,0 +1,327 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.TransformComponent
+  id: TransformComponent
+  parent: Hel.Engine.ECS.Components.Model
+  children:
+  - Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  - Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  - Hel.Engine.ECS.Components.Model.TransformComponent.X
+  - Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent
+  nameWithType: TransformComponent
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  type: Struct
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TransformComponent
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 5
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: 'public struct TransformComponent : IComponent, IEquatable<TransformComponent>'
+    content.vb: >-
+      Public Structure TransformComponent
+          Implements IComponent, IEquatable(Of TransformComponent)
+  implements:
+  - Hel.Engine.ECS.Components.IComponent
+  - IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.X
+  commentId: P:Hel.Engine.ECS.Components.Model.TransformComponent.X
+  id: X
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: TransformComponent.X
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.X
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: X
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 10
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  summary: "\nThe X position where your Texture2D will be placed when drawing\n"
+  example: []
+  syntax:
+    content: public uint X { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property X As UInteger
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.X*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  commentId: P:Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  id: Y
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: TransformComponent.Y
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Y
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 15
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  summary: "\nThe Y position where your Texture2D will be places when drawing\n"
+  example: []
+  syntax:
+    content: public uint Y { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property Y As UInteger
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.Y*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  id: Active
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: TransformComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  type: Property
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Active
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 16
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Active { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Active As Boolean
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.Active*
+  implements:
+  - Hel.Engine.ECS.Components.IComponent.Active
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  commentId: M:Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  id: Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  parent: Hel.Engine.ECS.Components.Model.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Equals(TransformComponent)
+  nameWithType: TransformComponent.Equals(TransformComponent)
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Equals(Hel.Engine.ECS.Components.Model.TransformComponent)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Components/Model/TransformComponent.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Equals
+    path: ../Hel.Engine/ECS/Components/Model/TransformComponent.cs
+    startLine: 18
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Components.Model
+  syntax:
+    content: public bool Equals(TransformComponent other)
+    parameters:
+    - id: other
+      type: Hel.Engine.ECS.Components.Model.TransformComponent
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As TransformComponent) As Boolean
+  overload: Hel.Engine.ECS.Components.Model.TransformComponent.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.ECS.Components.Model
+  commentId: N:Hel.Engine.ECS.Components.Model
+  name: Hel.Engine.ECS.Components.Model
+  nameWithType: Hel.Engine.ECS.Components.Model
+  fullName: Hel.Engine.ECS.Components.Model
+- uid: Hel.Engine.ECS.Components.IComponent
+  commentId: T:Hel.Engine.ECS.Components.IComponent
+  parent: Hel.Engine.ECS.Components
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Hel.Engine.ECS.Components.IComponent
+- uid: IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}
+  commentId: '!:IEquatable{Hel.Engine.ECS.Components.Model.TransformComponent}'
+  definition: IEquatable`1
+  name: IEquatable<TransformComponent>
+  nameWithType: IEquatable<TransformComponent>
+  fullName: IEquatable<Hel.Engine.ECS.Components.Model.TransformComponent>
+  nameWithType.vb: IEquatable(Of TransformComponent)
+  fullName.vb: IEquatable(Of Hel.Engine.ECS.Components.Model.TransformComponent)
+  name.vb: IEquatable(Of TransformComponent)
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Engine.ECS.Components.Model.TransformComponent
+    name: TransformComponent
+    nameWithType: TransformComponent
+    fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Engine.ECS.Components.Model.TransformComponent
+    name: TransformComponent
+    nameWithType: TransformComponent
+    fullName: Hel.Engine.ECS.Components.Model.TransformComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components
+  commentId: N:Hel.Engine.ECS.Components
+  name: Hel.Engine.ECS.Components
+  nameWithType: Hel.Engine.ECS.Components
+  fullName: Hel.Engine.ECS.Components
+- uid: IEquatable`1
+  isExternal: true
+  name: IEquatable<>
+  nameWithType: IEquatable<>
+  fullName: IEquatable<>
+  nameWithType.vb: IEquatable(Of )
+  fullName.vb: IEquatable(Of )
+  name.vb: IEquatable(Of )
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.X*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.X
+  name: X
+  nameWithType: TransformComponent.X
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.X
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Y*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.Y
+  name: Y
+  nameWithType: TransformComponent.Y
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Y
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Active*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.Active
+  name: Active
+  nameWithType: TransformComponent.Active
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Active
+- uid: Hel.Engine.ECS.Components.IComponent.Active
+  commentId: P:Hel.Engine.ECS.Components.IComponent.Active
+  parent: Hel.Engine.ECS.Components.IComponent
+  name: Active
+  nameWithType: IComponent.Active
+  fullName: Hel.Engine.ECS.Components.IComponent.Active
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent.Equals*
+  commentId: Overload:Hel.Engine.ECS.Components.Model.TransformComponent.Equals
+  name: Equals
+  nameWithType: TransformComponent.Equals
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent.Equals
+- uid: Hel.Engine.ECS.Components.Model.TransformComponent
+  commentId: T:Hel.Engine.ECS.Components.Model.TransformComponent
+  parent: Hel.Engine.ECS.Components.Model
+  name: TransformComponent
+  nameWithType: TransformComponent
+  fullName: Hel.Engine.ECS.Components.Model.TransformComponent

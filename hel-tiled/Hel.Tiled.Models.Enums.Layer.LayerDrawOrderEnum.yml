@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  id: LayerDrawOrderEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  children:
+  - Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.Index
+  - Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.None
+  - Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.TopDown
+  langs:
+  - csharp
+  - vb
+  name: LayerDrawOrderEnum
+  nameWithType: LayerDrawOrderEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: LayerDrawOrderEnum
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: 'public enum LayerDrawOrderEnum : int'
+    content.vb: Public Enum LayerDrawOrderEnum As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.None
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.None
+  id: None
+  parent: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LayerDrawOrderEnum.None
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.None
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: None
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: None = null
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+    content.vb: None = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.TopDown
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.TopDown
+  id: TopDown
+  parent: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: TopDown
+  nameWithType: LayerDrawOrderEnum.TopDown
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.TopDown
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TopDown
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: TopDown = null
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+    content.vb: TopDown = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.Index
+  commentId: F:Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.Index
+  id: Index
+  parent: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: LayerDrawOrderEnum.Index
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum.Index
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Index
+    path: ../Hel.Tiled/Models/Enums/Layer/LayerDrawOrderEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Layer
+  syntax:
+    content: Index = null
+    return:
+      type: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+    content.vb: Index = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Layer
+  commentId: N:Hel.Tiled.Models.Enums.Layer
+  name: Hel.Tiled.Models.Enums.Layer
+  nameWithType: Hel.Tiled.Models.Enums.Layer
+  fullName: Hel.Tiled.Models.Enums.Layer
+- uid: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  commentId: T:Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum
+  parent: Hel.Tiled.Models.Enums.Layer
+  name: LayerDrawOrderEnum
+  nameWithType: LayerDrawOrderEnum
+  fullName: Hel.Tiled.Models.Enums.Layer.LayerDrawOrderEnum

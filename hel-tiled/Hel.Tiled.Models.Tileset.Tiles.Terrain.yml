@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Tileset.Tiles.Terrain
+  commentId: T:Hel.Tiled.Models.Tileset.Tiles.Terrain
+  id: Terrain
+  parent: Hel.Tiled.Models.Tileset.Tiles
+  children:
+  - Hel.Tiled.Models.Tileset.Tiles.Terrain.Name
+  - Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties
+  - Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile
+  langs:
+  - csharp
+  - vb
+  name: Terrain
+  nameWithType: Terrain
+  fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Terrain
+    path: ../Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Tiles
+  syntax:
+    content: 'public class Terrain : object'
+    content.vb: >-
+      Public Class Terrain
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Tileset.Tiles.Terrain.Name
+  commentId: P:Hel.Tiled.Models.Tileset.Tiles.Terrain.Name
+  id: Name
+  parent: Hel.Tiled.Models.Tileset.Tiles.Terrain
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Terrain.Name
+  fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain.Name
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Name
+    path: ../Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+    startLine: 9
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Tiles
+  summary: "\nName of terrain\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Hel.Tiled.Models.Tileset.Tiles.Terrain.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties
+  commentId: P:Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties
+  id: Properties
+  parent: Hel.Tiled.Models.Tileset.Tiles.Terrain
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: Terrain.Properties
+  fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Properties
+    path: ../Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+    startLine: 14
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Tiles
+  summary: "\nList of custom properties for terrain\n"
+  example: []
+  syntax:
+    content: public List<Property> Properties { get; set; }
+    parameters: []
+    return:
+      type: List{Hel.Tiled.Models.Property}
+    content.vb: Public Property Properties As List(Of  Property)
+  overload: Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile
+  commentId: P:Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile
+  id: Tile
+  parent: Hel.Tiled.Models.Tileset.Tiles.Terrain
+  langs:
+  - csharp
+  - vb
+  name: Tile
+  nameWithType: Terrain.Tile
+  fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Tile
+    path: ../Hel.Tiled/Models/Tileset/Tiles/Terrain.cs
+    startLine: 19
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Tiles
+  summary: "\nLocal ID of tile representing terrain\n"
+  example: []
+  syntax:
+    content: public int Tile { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Tile As Integer
+  overload: Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Tileset.Tiles
+  commentId: N:Hel.Tiled.Models.Tileset.Tiles
+  name: Hel.Tiled.Models.Tileset.Tiles
+  nameWithType: Hel.Tiled.Models.Tileset.Tiles
+  fullName: Hel.Tiled.Models.Tileset.Tiles
+- uid: System.Object
+  commentId: '!:System.Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Tiled.Models.Tileset.Tiles.Terrain.Name*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tiles.Terrain.Name
+  name: Name
+  nameWithType: Terrain.Name
+  fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain.Name
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties
+  name: Properties
+  nameWithType: Terrain.Properties
+  fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain.Properties
+- uid: List{Hel.Tiled.Models.Property}
+  commentId: '!:List{Hel.Tiled.Models.Property}'
+  definition: List`1
+  name: List<Property>
+  nameWithType: List<Property>
+  fullName: List<Hel.Tiled.Models.Property>
+  nameWithType.vb: List(Of Property)
+  fullName.vb: List(Of Hel.Tiled.Models.Property)
+  name.vb: List(Of Property)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile
+  name: Tile
+  nameWithType: Terrain.Tile
+  fullName: Hel.Tiled.Models.Tileset.Tiles.Terrain.Tile
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

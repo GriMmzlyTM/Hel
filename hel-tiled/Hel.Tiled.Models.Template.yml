@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Template
+  commentId: T:Hel.Tiled.Models.Template
+  id: Template
+  parent: Hel.Tiled.Models
+  children:
+  - Hel.Tiled.Models.Template.Object
+  - Hel.Tiled.Models.Template.Tileset
+  - Hel.Tiled.Models.Template.Type
+  langs:
+  - csharp
+  - vb
+  name: Template
+  nameWithType: Template
+  fullName: Hel.Tiled.Models.Template
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Template.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Template
+    path: ../Hel.Tiled/Models/Template.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models
+  syntax:
+    content: 'public class Template : object'
+    content.vb: >-
+      Public Class Template
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Template.Type
+  commentId: P:Hel.Tiled.Models.Template.Type
+  id: Type
+  parent: Hel.Tiled.Models.Template
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Template.Type
+  fullName: Hel.Tiled.Models.Template.Type
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Template.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Type
+    path: ../Hel.Tiled/Models/Template.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Hel.Tiled.Models.Template.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Template.Tileset
+  commentId: P:Hel.Tiled.Models.Template.Tileset
+  id: Tileset
+  parent: Hel.Tiled.Models.Template
+  langs:
+  - csharp
+  - vb
+  name: Tileset
+  nameWithType: Template.Tileset
+  fullName: Hel.Tiled.Models.Template.Tileset
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Template.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Tileset
+    path: ../Hel.Tiled/Models/Template.cs
+    startLine: 8
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models
+  syntax:
+    content: public Tileset? Tileset { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Hel.Tiled.Models.Tileset.Tileset}
+    content.vb: Public Property Tileset As Tileset?
+  overload: Hel.Tiled.Models.Template.Tileset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Template.Object
+  commentId: P:Hel.Tiled.Models.Template.Object
+  id: Object
+  parent: Hel.Tiled.Models.Template
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: Template.Object
+  fullName: Hel.Tiled.Models.Template.Object
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Template.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Object
+    path: ../Hel.Tiled/Models/Template.cs
+    startLine: 10
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models
+  syntax:
+    content: public Object Object { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Layers.Objects.Object
+    content.vb: Public Property Object As Object
+  overload: Hel.Tiled.Models.Template.Object*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models
+  commentId: N:Hel.Tiled.Models
+  name: Hel.Tiled.Models
+  nameWithType: Hel.Tiled.Models
+  fullName: Hel.Tiled.Models
+- uid: System.Object
+  commentId: '!:System.Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Tiled.Models.Template.Type*
+  commentId: Overload:Hel.Tiled.Models.Template.Type
+  name: Type
+  nameWithType: Template.Type
+  fullName: Hel.Tiled.Models.Template.Type
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Template.Tileset*
+  commentId: Overload:Hel.Tiled.Models.Template.Tileset
+  name: Tileset
+  nameWithType: Template.Tileset
+  fullName: Hel.Tiled.Models.Template.Tileset
+- uid: System.Nullable{Hel.Tiled.Models.Tileset.Tileset}
+  commentId: '!:System.Nullable{Hel.Tiled.Models.Tileset.Tileset}'
+  definition: System.Nullable`1
+  name: Nullable<Tileset>
+  nameWithType: Nullable<Tileset>
+  fullName: System.Nullable<Hel.Tiled.Models.Tileset.Tileset>
+  nameWithType.vb: Nullable(Of Tileset)
+  fullName.vb: System.Nullable(Of Hel.Tiled.Models.Tileset.Tileset)
+  name.vb: Nullable(Of Tileset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Tileset.Tileset
+    name: Tileset
+    nameWithType: Tileset
+    fullName: Hel.Tiled.Models.Tileset.Tileset
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Tileset.Tileset
+    name: Tileset
+    nameWithType: Tileset
+    fullName: Hel.Tiled.Models.Tileset.Tileset
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Template.Object*
+  commentId: Overload:Hel.Tiled.Models.Template.Object
+  name: Object
+  nameWithType: Template.Object
+  fullName: Hel.Tiled.Models.Template.Object
+- uid: Hel.Tiled.Models.Layers.Objects.Object
+  commentId: T:Hel.Tiled.Models.Layers.Objects.Object
+  parent: Hel.Tiled.Models.Layers.Objects
+  name: Object
+  nameWithType: Object
+  fullName: Hel.Tiled.Models.Layers.Objects.Object
+- uid: Hel.Tiled.Models.Layers.Objects
+  commentId: N:Hel.Tiled.Models.Layers.Objects
+  name: Hel.Tiled.Models.Layers.Objects
+  nameWithType: Hel.Tiled.Models.Layers.Objects
+  fullName: Hel.Tiled.Models.Layers.Objects

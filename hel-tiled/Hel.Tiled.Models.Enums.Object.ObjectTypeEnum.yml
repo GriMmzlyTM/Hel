@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  id: ObjectTypeEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  children:
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Default
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Ellipse
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Point
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polygon
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polyline
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Template
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Text
+  - Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Tile
+  langs:
+  - csharp
+  - vb
+  name: ObjectTypeEnum
+  nameWithType: ObjectTypeEnum
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ObjectTypeEnum
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 2
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: 'public enum ObjectTypeEnum : int'
+    content.vb: Public Enum ObjectTypeEnum As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Default
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Default
+  id: Default
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: ObjectTypeEnum.Default
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Default
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Default
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Default = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Default = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Ellipse
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Ellipse
+  id: Ellipse
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Ellipse
+  nameWithType: ObjectTypeEnum.Ellipse
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Ellipse
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Ellipse
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 5
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Ellipse = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Ellipse = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Point
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Point
+  id: Point
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Point
+  nameWithType: ObjectTypeEnum.Point
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Point
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Point
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Point = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Point = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polygon
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polygon
+  id: Polygon
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Polygon
+  nameWithType: ObjectTypeEnum.Polygon
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polygon
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Polygon
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 7
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Polygon = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Polygon = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polyline
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polyline
+  id: Polyline
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Polyline
+  nameWithType: ObjectTypeEnum.Polyline
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Polyline
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Polyline
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 8
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Polyline = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Polyline = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Template
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Template
+  id: Template
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Template
+  nameWithType: ObjectTypeEnum.Template
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Template
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Template
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 9
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Template = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Template = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Text
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Text
+  id: Text
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: ObjectTypeEnum.Text
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Text
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Text
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 10
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Text = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Text = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Tile
+  commentId: F:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Tile
+  id: Tile
+  parent: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Tile
+  nameWithType: ObjectTypeEnum.Tile
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum.Tile
+  type: Field
+  source:
+    remote:
+      path: Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Tile
+    path: ../Hel.Tiled/Models/Enums/Object/ObjectTypeEnum.cs
+    startLine: 11
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Enums.Object
+  syntax:
+    content: Tile = null
+    return:
+      type: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+    content.vb: Tile = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hel.Tiled.Models.Enums.Object
+  commentId: N:Hel.Tiled.Models.Enums.Object
+  name: Hel.Tiled.Models.Enums.Object
+  nameWithType: Hel.Tiled.Models.Enums.Object
+  fullName: Hel.Tiled.Models.Enums.Object
+- uid: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.ObjectTypeEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  name: ObjectTypeEnum
+  nameWithType: ObjectTypeEnum
+  fullName: Hel.Tiled.Models.Enums.Object.ObjectTypeEnum

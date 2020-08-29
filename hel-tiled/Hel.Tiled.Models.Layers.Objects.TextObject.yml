@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject
+  commentId: T:Hel.Tiled.Models.Layers.Objects.TextObject
+  id: TextObject
+  parent: Hel.Tiled.Models.Layers.Objects
+  children:
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Bold
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Color
+  - Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily
+  - Hel.Tiled.Models.Layers.Objects.TextObject.HAlign
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Italic
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Kerning
+  - Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Text
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Underline
+  - Hel.Tiled.Models.Layers.Objects.TextObject.VAlign
+  - Hel.Tiled.Models.Layers.Objects.TextObject.Wrap
+  langs:
+  - csharp
+  - vb
+  name: TextObject
+  nameWithType: TextObject
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: TextObject
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 6
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  syntax:
+    content: 'public class TextObject : object'
+    content.vb: >-
+      Public Class TextObject
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Bold
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Bold
+  id: Bold
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Bold
+  nameWithType: TextObject.Bold
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Bold
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Bold
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 11
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nWhether to use a bold font (default: false)\n"
+  example: []
+  syntax:
+    content: public bool Bold { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Bold As Boolean
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Bold*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Color
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Color
+  id: Color
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: TextObject.Color
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Color
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Color
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 16
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nHex-formatted color (#RRGGBB or #AARRGGBB) (default: #000000)\n"
+  example: []
+  syntax:
+    content: public string Color { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Color As String
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Color*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily
+  id: FontFamily
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: FontFamily
+  nameWithType: TextObject.FontFamily
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: FontFamily
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 21
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nFont family (default: sans-serif)\n"
+  example: []
+  syntax:
+    content: public string FontFamily { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FontFamily As String
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.HAlign
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.HAlign
+  id: HAlign
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: HAlign
+  nameWithType: TextObject.HAlign
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.HAlign
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: HAlign
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 26
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nHorizontal alignment\n"
+  example: []
+  syntax:
+    content: public HAlignEnum HAlign { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.Object.HAlignEnum
+    content.vb: Public Property HAlign As HAlignEnum
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.HAlign*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.VAlign
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.VAlign
+  id: VAlign
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: VAlign
+  nameWithType: TextObject.VAlign
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.VAlign
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: VAlign
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 32
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nVertical alignment\n"
+  example: []
+  syntax:
+    content: public VAlignEnum VAlign { get; set; }
+    parameters: []
+    return:
+      type: Hel.Tiled.Models.Enums.Object.VAlignEnum
+    content.vb: Public Property VAlign As VAlignEnum
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.VAlign*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Italic
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Italic
+  id: Italic
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Italic
+  nameWithType: TextObject.Italic
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Italic
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Italic
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 38
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nWhether to use an italic font (default: false)\n"
+  example: []
+  syntax:
+    content: public bool Italic { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Italic As Boolean
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Italic*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Kerning
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Kerning
+  id: Kerning
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Kerning
+  nameWithType: TextObject.Kerning
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Kerning
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Kerning
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 43
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nWhether to use kerning when placing characters (default: true)\n"
+  example: []
+  syntax:
+    content: public bool Kerning { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Kerning As Boolean
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Kerning*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize
+  id: PixelSize
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: PixelSize
+  nameWithType: TextObject.PixelSize
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: PixelSize
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 48
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nPixel size of font (default: 16)\n"
+  example: []
+  syntax:
+    content: public int PixelSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PixelSize As Integer
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout
+  id: Strikeout
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Strikeout
+  nameWithType: TextObject.Strikeout
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Strikeout
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 53
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nWhether to strike out the text (default: false)\n"
+  example: []
+  syntax:
+    content: public bool Strikeout { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Strikeout As Boolean
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Text
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Text
+  id: Text
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: TextObject.Text
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Text
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Text
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 58
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nText data\n"
+  example: []
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Text*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Underline
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Underline
+  id: Underline
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Underline
+  nameWithType: TextObject.Underline
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Underline
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Underline
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 63
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nWhether to underline the text (default: false)\n"
+  example: []
+  syntax:
+    content: public bool Underline { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Underline As Boolean
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Underline*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Wrap
+  commentId: P:Hel.Tiled.Models.Layers.Objects.TextObject.Wrap
+  id: Wrap
+  parent: Hel.Tiled.Models.Layers.Objects.TextObject
+  langs:
+  - csharp
+  - vb
+  name: Wrap
+  nameWithType: TextObject.Wrap
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Wrap
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Wrap
+    path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
+    startLine: 68
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Layers.Objects
+  summary: "\nWhether the text is wrapped within the object bounds (default: false)\n"
+  example: []
+  syntax:
+    content: public bool Wrap { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Wrap As Boolean
+  overload: Hel.Tiled.Models.Layers.Objects.TextObject.Wrap*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Layers.Objects
+  commentId: N:Hel.Tiled.Models.Layers.Objects
+  name: Hel.Tiled.Models.Layers.Objects
+  nameWithType: Hel.Tiled.Models.Layers.Objects
+  fullName: Hel.Tiled.Models.Layers.Objects
+- uid: System.Object
+  commentId: '!:System.Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Bold*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Bold
+  name: Bold
+  nameWithType: TextObject.Bold
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Bold
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Color*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Color
+  name: Color
+  nameWithType: TextObject.Color
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Color
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily
+  name: FontFamily
+  nameWithType: TextObject.FontFamily
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.FontFamily
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.HAlign*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.HAlign
+  name: HAlign
+  nameWithType: TextObject.HAlign
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.HAlign
+- uid: Hel.Tiled.Models.Enums.Object.HAlignEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.HAlignEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  name: HAlignEnum
+  nameWithType: HAlignEnum
+  fullName: Hel.Tiled.Models.Enums.Object.HAlignEnum
+- uid: Hel.Tiled.Models.Enums.Object
+  commentId: N:Hel.Tiled.Models.Enums.Object
+  name: Hel.Tiled.Models.Enums.Object
+  nameWithType: Hel.Tiled.Models.Enums.Object
+  fullName: Hel.Tiled.Models.Enums.Object
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.VAlign*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.VAlign
+  name: VAlign
+  nameWithType: TextObject.VAlign
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.VAlign
+- uid: Hel.Tiled.Models.Enums.Object.VAlignEnum
+  commentId: T:Hel.Tiled.Models.Enums.Object.VAlignEnum
+  parent: Hel.Tiled.Models.Enums.Object
+  name: VAlignEnum
+  nameWithType: VAlignEnum
+  fullName: Hel.Tiled.Models.Enums.Object.VAlignEnum
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Italic*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Italic
+  name: Italic
+  nameWithType: TextObject.Italic
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Italic
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Kerning*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Kerning
+  name: Kerning
+  nameWithType: TextObject.Kerning
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Kerning
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize
+  name: PixelSize
+  nameWithType: TextObject.PixelSize
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.PixelSize
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout
+  name: Strikeout
+  nameWithType: TextObject.Strikeout
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Strikeout
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Text*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Text
+  name: Text
+  nameWithType: TextObject.Text
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Text
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Underline*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Underline
+  name: Underline
+  nameWithType: TextObject.Underline
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Underline
+- uid: Hel.Tiled.Models.Layers.Objects.TextObject.Wrap*
+  commentId: Overload:Hel.Tiled.Models.Layers.Objects.TextObject.Wrap
+  name: Wrap
+  nameWithType: TextObject.Wrap
+  fullName: Hel.Tiled.Models.Layers.Objects.TextObject.Wrap

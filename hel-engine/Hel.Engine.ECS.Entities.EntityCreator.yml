@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Entities.EntityCreator
+  commentId: T:Hel.Engine.ECS.Entities.EntityCreator
+  id: EntityCreator
+  parent: Hel.Engine.ECS.Entities
+  children:
+  - Hel.Engine.ECS.Entities.EntityCreator.CreateEntity(System.String)
+  - Hel.Engine.ECS.Entities.EntityCreator.LoadJSON(List{System.String})
+  langs:
+  - csharp
+  - vb
+  name: EntityCreator
+  nameWithType: EntityCreator
+  fullName: Hel.Engine.ECS.Entities.EntityCreator
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityCreator.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: EntityCreator
+    path: ../Hel.Engine/ECS/Entities/EntityCreator.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: 'public static class EntityCreator : object'
+    content.vb: >-
+      Public Module EntityCreator
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hel.Engine.ECS.Entities.EntityCreator.CreateEntity(System.String)
+  commentId: M:Hel.Engine.ECS.Entities.EntityCreator.CreateEntity(System.String)
+  id: CreateEntity(System.String)
+  parent: Hel.Engine.ECS.Entities.EntityCreator
+  langs:
+  - csharp
+  - vb
+  name: CreateEntity(String)
+  nameWithType: EntityCreator.CreateEntity(String)
+  fullName: Hel.Engine.ECS.Entities.EntityCreator.CreateEntity(System.String)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityCreator.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: CreateEntity
+    path: ../Hel.Engine/ECS/Entities/EntityCreator.cs
+    startLine: 12
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public static IEntity CreateEntity(string entityName)
+    parameters:
+    - id: entityName
+      type: System.String
+    return:
+      type: Hel.Engine.ECS.Entities.IEntity
+    content.vb: Public Shared Function CreateEntity(entityName As String) As IEntity
+  overload: Hel.Engine.ECS.Entities.EntityCreator.CreateEntity*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hel.Engine.ECS.Entities.EntityCreator.LoadJSON(List{System.String})
+  commentId: M:Hel.Engine.ECS.Entities.EntityCreator.LoadJSON(List{System.String})
+  id: LoadJSON(List{System.String})
+  parent: Hel.Engine.ECS.Entities.EntityCreator
+  langs:
+  - csharp
+  - vb
+  name: LoadJSON(List<String>)
+  nameWithType: EntityCreator.LoadJSON(List<String>)
+  fullName: Hel.Engine.ECS.Entities.EntityCreator.LoadJSON(List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Entities/EntityCreator.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: LoadJSON
+    path: ../Hel.Engine/ECS/Entities/EntityCreator.cs
+    startLine: 15
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Entities
+  syntax:
+    content: public static void LoadJSON(List<string> files)
+    parameters:
+    - id: files
+      type: List{System.String}
+    content.vb: Public Shared Sub LoadJSON(files As List(Of String))
+  overload: Hel.Engine.ECS.Entities.EntityCreator.LoadJSON*
+  nameWithType.vb: EntityCreator.LoadJSON(List(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hel.Engine.ECS.Entities.EntityCreator.LoadJSON(List(Of System.String))
+  name.vb: LoadJSON(List(Of String))
+references:
+- uid: Hel.Engine.ECS.Entities
+  commentId: N:Hel.Engine.ECS.Entities
+  name: Hel.Engine.ECS.Entities
+  nameWithType: Hel.Engine.ECS.Entities
+  fullName: Hel.Engine.ECS.Entities
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.ECS.Entities.EntityCreator.CreateEntity*
+  commentId: Overload:Hel.Engine.ECS.Entities.EntityCreator.CreateEntity
+  name: CreateEntity
+  nameWithType: EntityCreator.CreateEntity
+  fullName: Hel.Engine.ECS.Entities.EntityCreator.CreateEntity
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Engine.ECS.Entities.IEntity
+  commentId: T:Hel.Engine.ECS.Entities.IEntity
+  parent: Hel.Engine.ECS.Entities
+  name: IEntity
+  nameWithType: IEntity
+  fullName: Hel.Engine.ECS.Entities.IEntity
+- uid: Hel.Engine.ECS.Entities.EntityCreator.LoadJSON*
+  commentId: Overload:Hel.Engine.ECS.Entities.EntityCreator.LoadJSON
+  name: LoadJSON
+  nameWithType: EntityCreator.LoadJSON
+  fullName: Hel.Engine.ECS.Entities.EntityCreator.LoadJSON
+- uid: List{System.String}
+  commentId: '!:List{System.String}'
+  definition: List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

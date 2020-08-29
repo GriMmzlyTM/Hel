@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.ECS.Jobs.EntityJobMutator
+  commentId: T:Hel.Engine.ECS.Jobs.EntityJobMutator
+  id: EntityJobMutator
+  parent: Hel.Engine.ECS.Jobs
+  children:
+  - Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations(Hel.Engine.ECS.Entities.IEntityManager)
+  - Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity(System.UInt32)
+  - Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation(System.UInt32,Hel.Engine.ECS.Components.IComponent[])
+  langs:
+  - csharp
+  - vb
+  name: EntityJobMutator
+  nameWithType: EntityJobMutator
+  fullName: Hel.Engine.ECS.Jobs.EntityJobMutator
+  type: Class
+  source:
+    remote:
+      path: Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: EntityJobMutator
+    path: ../Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Jobs
+  syntax:
+    content: 'public class EntityJobMutator : object'
+    content.vb: >-
+      Public Class EntityJobMutator
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation(System.UInt32,Hel.Engine.ECS.Components.IComponent[])
+  commentId: M:Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation(System.UInt32,Hel.Engine.ECS.Components.IComponent[])
+  id: StageEntityMutation(System.UInt32,Hel.Engine.ECS.Components.IComponent[])
+  parent: Hel.Engine.ECS.Jobs.EntityJobMutator
+  langs:
+  - csharp
+  - vb
+  name: StageEntityMutation(UInt32, IComponent[])
+  nameWithType: EntityJobMutator.StageEntityMutation(UInt32, IComponent[])
+  fullName: Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation(System.UInt32, Hel.Engine.ECS.Components.IComponent[])
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: StageEntityMutation
+    path: ../Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+    startLine: 11
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Jobs
+  syntax:
+    content: public static void StageEntityMutation(uint id, params IComponent[] components)
+    parameters:
+    - id: id
+      type: System.UInt32
+    - id: components
+      type: Hel.Engine.ECS.Components.IComponent[]
+    content.vb: Public Shared Sub StageEntityMutation(id As UInteger, ParamArray components As IComponent())
+  overload: Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation*
+  nameWithType.vb: EntityJobMutator.StageEntityMutation(UInt32, IComponent())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation(System.UInt32, Hel.Engine.ECS.Components.IComponent())
+  name.vb: StageEntityMutation(UInt32, IComponent())
+- uid: Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity(System.UInt32)
+  commentId: M:Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity(System.UInt32)
+  id: RemoveEntity(System.UInt32)
+  parent: Hel.Engine.ECS.Jobs.EntityJobMutator
+  langs:
+  - csharp
+  - vb
+  name: RemoveEntity(UInt32)
+  nameWithType: EntityJobMutator.RemoveEntity(UInt32)
+  fullName: Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: RemoveEntity
+    path: ../Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+    startLine: 26
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Jobs
+  syntax:
+    content: public static void RemoveEntity(uint id)
+    parameters:
+    - id: id
+      type: System.UInt32
+    content.vb: Public Shared Sub RemoveEntity(id As UInteger)
+  overload: Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations(Hel.Engine.ECS.Entities.IEntityManager)
+  commentId: M:Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations(Hel.Engine.ECS.Entities.IEntityManager)
+  id: ApplyMutations(Hel.Engine.ECS.Entities.IEntityManager)
+  parent: Hel.Engine.ECS.Jobs.EntityJobMutator
+  langs:
+  - csharp
+  - vb
+  name: ApplyMutations(IEntityManager)
+  nameWithType: EntityJobMutator.ApplyMutations(IEntityManager)
+  fullName: Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations(Hel.Engine.ECS.Entities.IEntityManager)
+  type: Method
+  source:
+    remote:
+      path: Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: ApplyMutations
+    path: ../Hel.Engine/ECS/Jobs/EntityJobMutator.cs
+    startLine: 34
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.ECS.Jobs
+  syntax:
+    content: public static void ApplyMutations(IEntityManager manager)
+    parameters:
+    - id: manager
+      type: Hel.Engine.ECS.Entities.IEntityManager
+    content.vb: Public Shared Sub ApplyMutations(manager As IEntityManager)
+  overload: Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hel.Engine.ECS.Jobs
+  commentId: N:Hel.Engine.ECS.Jobs
+  name: Hel.Engine.ECS.Jobs
+  nameWithType: Hel.Engine.ECS.Jobs
+  fullName: Hel.Engine.ECS.Jobs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation*
+  commentId: Overload:Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation
+  name: StageEntityMutation
+  nameWithType: EntityJobMutator.StageEntityMutation
+  fullName: Hel.Engine.ECS.Jobs.EntityJobMutator.StageEntityMutation
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Hel.Engine.ECS.Components.IComponent[]
+  isExternal: true
+  name: IComponent[]
+  nameWithType: IComponent[]
+  fullName: Hel.Engine.ECS.Components.IComponent[]
+  nameWithType.vb: IComponent()
+  fullName.vb: Hel.Engine.ECS.Components.IComponent()
+  name.vb: IComponent()
+  spec.csharp:
+  - uid: Hel.Engine.ECS.Components.IComponent
+    name: IComponent
+    nameWithType: IComponent
+    fullName: Hel.Engine.ECS.Components.IComponent
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Hel.Engine.ECS.Components.IComponent
+    name: IComponent
+    nameWithType: IComponent
+    fullName: Hel.Engine.ECS.Components.IComponent
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity*
+  commentId: Overload:Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity
+  name: RemoveEntity
+  nameWithType: EntityJobMutator.RemoveEntity
+  fullName: Hel.Engine.ECS.Jobs.EntityJobMutator.RemoveEntity
+- uid: Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations*
+  commentId: Overload:Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations
+  name: ApplyMutations
+  nameWithType: EntityJobMutator.ApplyMutations
+  fullName: Hel.Engine.ECS.Jobs.EntityJobMutator.ApplyMutations
+- uid: Hel.Engine.ECS.Entities.IEntityManager
+  commentId: T:Hel.Engine.ECS.Entities.IEntityManager
+  parent: Hel.Engine.ECS.Entities
+  name: IEntityManager
+  nameWithType: IEntityManager
+  fullName: Hel.Engine.ECS.Entities.IEntityManager
+- uid: Hel.Engine.ECS.Entities
+  commentId: N:Hel.Engine.ECS.Entities
+  name: Hel.Engine.ECS.Entities
+  nameWithType: Hel.Engine.ECS.Entities
+  fullName: Hel.Engine.ECS.Entities

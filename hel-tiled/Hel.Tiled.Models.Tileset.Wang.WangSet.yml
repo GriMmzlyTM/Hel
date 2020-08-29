@@ -1,0 +1,479 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet
+  commentId: T:Hel.Tiled.Models.Tileset.Wang.WangSet
+  id: WangSet
+  parent: Hel.Tiled.Models.Tileset.Wang
+  children:
+  - Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors
+  - Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors
+  - Hel.Tiled.Models.Tileset.Wang.WangSet.Name
+  - Hel.Tiled.Models.Tileset.Wang.WangSet.Properties
+  - Hel.Tiled.Models.Tileset.Wang.WangSet.Tile
+  - Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles
+  langs:
+  - csharp
+  - vb
+  name: WangSet
+  nameWithType: WangSet
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet
+  type: Class
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: WangSet
+    path: ../Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+    startLine: 4
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Wang
+  syntax:
+    content: 'public class WangSet : object'
+    content.vb: >-
+      Public Class WangSet
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors
+  commentId: P:Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors
+  id: CornerColors
+  parent: Hel.Tiled.Models.Tileset.Wang.WangSet
+  langs:
+  - csharp
+  - vb
+  name: CornerColors
+  nameWithType: WangSet.CornerColors
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: CornerColors
+    path: ../Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+    startLine: 9
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Wang
+  summary: "\nList of colors that can be used to define the corner of a Wang tile.\n"
+  example: []
+  syntax:
+    content: public List<WangColor> CornerColors { get; set; }
+    parameters: []
+    return:
+      type: List{Hel.Tiled.Models.Tileset.Wang.WangColor}
+    content.vb: Public Property CornerColors As List(Of WangColor)
+  overload: Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors
+  commentId: P:Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors
+  id: EdgeColors
+  parent: Hel.Tiled.Models.Tileset.Wang.WangSet
+  langs:
+  - csharp
+  - vb
+  name: EdgeColors
+  nameWithType: WangSet.EdgeColors
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: EdgeColors
+    path: ../Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+    startLine: 14
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Wang
+  summary: "\nList of colors that can be used to define the edge of a Wang tile.\n"
+  example: []
+  syntax:
+    content: public List<WangColor> EdgeColors { get; set; }
+    parameters: []
+    return:
+      type: List{Hel.Tiled.Models.Tileset.Wang.WangColor}
+    content.vb: Public Property EdgeColors As List(Of WangColor)
+  overload: Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.Name
+  commentId: P:Hel.Tiled.Models.Tileset.Wang.WangSet.Name
+  id: Name
+  parent: Hel.Tiled.Models.Tileset.Wang.WangSet
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: WangSet.Name
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.Name
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Name
+    path: ../Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+    startLine: 19
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Wang
+  summary: "\nName of the Wang set\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Hel.Tiled.Models.Tileset.Wang.WangSet.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.Properties
+  commentId: P:Hel.Tiled.Models.Tileset.Wang.WangSet.Properties
+  id: Properties
+  parent: Hel.Tiled.Models.Tileset.Wang.WangSet
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: WangSet.Properties
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.Properties
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Properties
+    path: ../Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+    startLine: 24
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Wang
+  summary: "\nArray of custom properties\n"
+  example: []
+  syntax:
+    content: public List<Property> Properties { get; set; }
+    parameters: []
+    return:
+      type: List{Hel.Tiled.Models.Property}
+    content.vb: Public Property Properties As List(Of  Property)
+  overload: Hel.Tiled.Models.Tileset.Wang.WangSet.Properties*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.Tile
+  commentId: P:Hel.Tiled.Models.Tileset.Wang.WangSet.Tile
+  id: Tile
+  parent: Hel.Tiled.Models.Tileset.Wang.WangSet
+  langs:
+  - csharp
+  - vb
+  name: Tile
+  nameWithType: WangSet.Tile
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.Tile
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Tile
+    path: ../Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+    startLine: 29
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Wang
+  summary: "\nLocal ID of tile representing the Wang set\n"
+  example: []
+  syntax:
+    content: public int Tile { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Tile As Integer
+  overload: Hel.Tiled.Models.Tileset.Wang.WangSet.Tile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles
+  commentId: P:Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles
+  id: WangTiles
+  parent: Hel.Tiled.Models.Tileset.Wang.WangSet
+  langs:
+  - csharp
+  - vb
+  name: WangTiles
+  nameWithType: WangSet.WangTiles
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles
+  type: Property
+  source:
+    remote:
+      path: Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: WangTiles
+    path: ../Hel.Tiled/Models/Tileset/Wang/WangSet.cs
+    startLine: 34
+  assemblies:
+  - Hel.Tiled
+  namespace: Hel.Tiled.Models.Tileset.Wang
+  summary: "\nDefines a Wang tile, by referring to a tile in the tileset and associating it with a certain Wang ID.\n"
+  example: []
+  syntax:
+    content: public List<WangTile> WangTiles { get; set; }
+    parameters: []
+    return:
+      type: List{Hel.Tiled.Models.Tileset.Wang.WangTile}
+    content.vb: Public Property WangTiles As List(Of WangTile)
+  overload: Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Tiled.Models.Tileset.Wang
+  commentId: N:Hel.Tiled.Models.Tileset.Wang
+  name: Hel.Tiled.Models.Tileset.Wang
+  nameWithType: Hel.Tiled.Models.Tileset.Wang
+  fullName: Hel.Tiled.Models.Tileset.Wang
+- uid: System.Object
+  commentId: '!:System.Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors
+  name: CornerColors
+  nameWithType: WangSet.CornerColors
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.CornerColors
+- uid: List{Hel.Tiled.Models.Tileset.Wang.WangColor}
+  commentId: '!:List{Hel.Tiled.Models.Tileset.Wang.WangColor}'
+  definition: List`1
+  name: List<WangColor>
+  nameWithType: List<WangColor>
+  fullName: List<Hel.Tiled.Models.Tileset.Wang.WangColor>
+  nameWithType.vb: List(Of WangColor)
+  fullName.vb: List(Of Hel.Tiled.Models.Tileset.Wang.WangColor)
+  name.vb: List(Of WangColor)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Tileset.Wang.WangColor
+    name: WangColor
+    nameWithType: WangColor
+    fullName: Hel.Tiled.Models.Tileset.Wang.WangColor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Tileset.Wang.WangColor
+    name: WangColor
+    nameWithType: WangColor
+    fullName: Hel.Tiled.Models.Tileset.Wang.WangColor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors
+  name: EdgeColors
+  nameWithType: WangSet.EdgeColors
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.EdgeColors
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.Name*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Wang.WangSet.Name
+  name: Name
+  nameWithType: WangSet.Name
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.Name
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.Properties*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Wang.WangSet.Properties
+  name: Properties
+  nameWithType: WangSet.Properties
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.Properties
+- uid: List{Hel.Tiled.Models.Property}
+  commentId: '!:List{Hel.Tiled.Models.Property}'
+  definition: List`1
+  name: List<Property>
+  nameWithType: List<Property>
+  fullName: List<Hel.Tiled.Models.Property>
+  nameWithType.vb: List(Of Property)
+  fullName.vb: List(Of Hel.Tiled.Models.Property)
+  name.vb: List(Of Property)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Property
+    name: Property
+    nameWithType: Property
+    fullName: Hel.Tiled.Models.Property
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.Tile*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Wang.WangSet.Tile
+  name: Tile
+  nameWithType: WangSet.Tile
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.Tile
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles*
+  commentId: Overload:Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles
+  name: WangTiles
+  nameWithType: WangSet.WangTiles
+  fullName: Hel.Tiled.Models.Tileset.Wang.WangSet.WangTiles
+- uid: List{Hel.Tiled.Models.Tileset.Wang.WangTile}
+  commentId: '!:List{Hel.Tiled.Models.Tileset.Wang.WangTile}'
+  definition: List`1
+  name: List<WangTile>
+  nameWithType: List<WangTile>
+  fullName: List<Hel.Tiled.Models.Tileset.Wang.WangTile>
+  nameWithType.vb: List(Of WangTile)
+  fullName.vb: List(Of Hel.Tiled.Models.Tileset.Wang.WangTile)
+  name.vb: List(Of WangTile)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hel.Tiled.Models.Tileset.Wang.WangTile
+    name: WangTile
+    nameWithType: WangTile
+    fullName: Hel.Tiled.Models.Tileset.Wang.WangTile
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hel.Tiled.Models.Tileset.Wang.WangTile
+    name: WangTile
+    nameWithType: WangTile
+    fullName: Hel.Tiled.Models.Tileset.Wang.WangTile
+  - name: )
+    nameWithType: )
+    fullName: )

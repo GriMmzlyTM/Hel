@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Input.GameComponent
+  commentId: N:Hel.Engine.Input.GameComponent
+  id: Hel.Engine.Input.GameComponent
+  children:
+  - Hel.Engine.Input.GameComponent.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.Input.GameComponent
+  nameWithType: Hel.Engine.Input.GameComponent
+  fullName: Hel.Engine.Input.GameComponent
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.Input.GameComponent.InputHandler
+  commentId: T:Hel.Engine.Input.GameComponent.InputHandler
+  parent: Hel.Engine.Input.GameComponent
+  name: InputHandler
+  nameWithType: InputHandler
+  fullName: Hel.Engine.Input.GameComponent.InputHandler
+- uid: Hel.Engine.Input.GameComponent
+  commentId: N:Hel.Engine.Input.GameComponent
+  name: Hel.Engine.Input.GameComponent
+  nameWithType: Hel.Engine.Input.GameComponent
+  fullName: Hel.Engine.Input.GameComponent

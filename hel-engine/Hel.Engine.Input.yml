@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Input
+  commentId: N:Hel.Engine.Input
+  id: Hel.Engine.Input
+  children:
+  - Hel.Engine.Input.KeyBindingManager
+  langs:
+  - csharp
+  - vb
+  name: Hel.Engine.Input
+  nameWithType: Hel.Engine.Input
+  fullName: Hel.Engine.Input
+  type: Namespace
+  assemblies:
+  - Hel.Engine
+references:
+- uid: Hel.Engine.Input.KeyBindingManager
+  commentId: T:Hel.Engine.Input.KeyBindingManager
+  parent: Hel.Engine.Input
+  name: KeyBindingManager
+  nameWithType: KeyBindingManager
+  fullName: Hel.Engine.Input.KeyBindingManager
+- uid: Hel.Engine.Input
+  commentId: N:Hel.Engine.Input
+  name: Hel.Engine.Input
+  nameWithType: Hel.Engine.Input
+  fullName: Hel.Engine.Input

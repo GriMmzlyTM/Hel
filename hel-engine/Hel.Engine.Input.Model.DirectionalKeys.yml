@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hel.Engine.Input.Model.DirectionalKeys
+  commentId: T:Hel.Engine.Input.Model.DirectionalKeys
+  id: DirectionalKeys
+  parent: Hel.Engine.Input.Model
+  children:
+  - Hel.Engine.Input.Model.DirectionalKeys.Down
+  - Hel.Engine.Input.Model.DirectionalKeys.Left
+  - Hel.Engine.Input.Model.DirectionalKeys.Right
+  - Hel.Engine.Input.Model.DirectionalKeys.Up
+  langs:
+  - csharp
+  - vb
+  name: DirectionalKeys
+  nameWithType: DirectionalKeys
+  fullName: Hel.Engine.Input.Model.DirectionalKeys
+  type: Struct
+  source:
+    remote:
+      path: Hel.Engine/Input/Model/DirectionalKeys.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: DirectionalKeys
+    path: ../Hel.Engine/Input/Model/DirectionalKeys.cs
+    startLine: 6
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.Model
+  syntax:
+    content: public struct DirectionalKeys
+    content.vb: Public Structure DirectionalKeys
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Hel.Engine.Input.Model.DirectionalKeys.Up
+  commentId: F:Hel.Engine.Input.Model.DirectionalKeys.Up
+  id: Up
+  parent: Hel.Engine.Input.Model.DirectionalKeys
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: DirectionalKeys.Up
+  fullName: Hel.Engine.Input.Model.DirectionalKeys.Up
+  type: Field
+  source:
+    remote:
+      path: Hel.Engine/Input/Model/DirectionalKeys.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Up
+    path: ../Hel.Engine/Input/Model/DirectionalKeys.cs
+    startLine: 8
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.Model
+  syntax:
+    content: public Keys Up
+    return:
+      type: Keys
+    content.vb: Public Up As Keys
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.Model.DirectionalKeys.Down
+  commentId: F:Hel.Engine.Input.Model.DirectionalKeys.Down
+  id: Down
+  parent: Hel.Engine.Input.Model.DirectionalKeys
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: DirectionalKeys.Down
+  fullName: Hel.Engine.Input.Model.DirectionalKeys.Down
+  type: Field
+  source:
+    remote:
+      path: Hel.Engine/Input/Model/DirectionalKeys.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Down
+    path: ../Hel.Engine/Input/Model/DirectionalKeys.cs
+    startLine: 9
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.Model
+  syntax:
+    content: public Keys Down
+    return:
+      type: Keys
+    content.vb: Public Down As Keys
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.Model.DirectionalKeys.Left
+  commentId: F:Hel.Engine.Input.Model.DirectionalKeys.Left
+  id: Left
+  parent: Hel.Engine.Input.Model.DirectionalKeys
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: DirectionalKeys.Left
+  fullName: Hel.Engine.Input.Model.DirectionalKeys.Left
+  type: Field
+  source:
+    remote:
+      path: Hel.Engine/Input/Model/DirectionalKeys.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Left
+    path: ../Hel.Engine/Input/Model/DirectionalKeys.cs
+    startLine: 10
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.Model
+  syntax:
+    content: public Keys Left
+    return:
+      type: Keys
+    content.vb: Public Left As Keys
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hel.Engine.Input.Model.DirectionalKeys.Right
+  commentId: F:Hel.Engine.Input.Model.DirectionalKeys.Right
+  id: Right
+  parent: Hel.Engine.Input.Model.DirectionalKeys
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: DirectionalKeys.Right
+  fullName: Hel.Engine.Input.Model.DirectionalKeys.Right
+  type: Field
+  source:
+    remote:
+      path: Hel.Engine/Input/Model/DirectionalKeys.cs
+      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      repo: https://github.com/GriMmzlyTM/Hel
+    id: Right
+    path: ../Hel.Engine/Input/Model/DirectionalKeys.cs
+    startLine: 11
+  assemblies:
+  - Hel.Engine
+  namespace: Hel.Engine.Input.Model
+  syntax:
+    content: public Keys Right
+    return:
+      type: Keys
+    content.vb: Public Right As Keys
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Hel.Engine.Input.Model
+  commentId: N:Hel.Engine.Input.Model
+  name: Hel.Engine.Input.Model
+  nameWithType: Hel.Engine.Input.Model
+  fullName: Hel.Engine.Input.Model
+- uid: Keys
+  isExternal: true
+  name: Keys
+  nameWithType: Keys
+  fullName: Keys
