@@ -11,6 +11,10 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Hel.Engine.Input
 {
+    /// <summary>
+    /// The keybinding manager handles assigning, loading and saving keybindings. It is the only place where keybindings can
+    /// be mutated or fetched.
+    /// </summary>
     internal interface IKeyBindingManager
     {
         /// <summary>

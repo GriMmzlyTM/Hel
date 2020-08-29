@@ -47,7 +47,8 @@
       {
         "files": [
           "hel-engine/**.yml",
-          "hel-engine/index.md"
+          "hel-engine/index.md",
+          "hel-engine-config/**"
         ]
       },
       {

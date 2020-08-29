@@ -12,7 +12,7 @@ namespace Hel.Engine.ECS.Entities
     public interface IEntity
     {
         /// <summary>
-        /// List of _components that will be assigned in the EntityManager
+        /// List of Icomponents that will be assigned in the EntityManager
         /// </summary>        
         ComponentDictionary Components { get; }
 
