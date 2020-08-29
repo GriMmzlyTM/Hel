@@ -40,7 +40,8 @@
       {
         "files": [
           "hel-tiled/**.yml",
-          "hel-tiled/index.md"
+          "hel-tiled/index.md",
+          "hel-tiled-config/**"
         ]
       },
       {
@@ -57,6 +58,7 @@
           "*.md"
         ]
       }
+    
     ],
     "resource": [
       {
