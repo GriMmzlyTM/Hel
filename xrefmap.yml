@@ -4475,12 +4475,12 @@ references:
   isSpec: "True"
   fullName: Hel.Tiled.Models.Tileset.Tileset.BackgroundColor
   nameWithType: Tileset.BackgroundColor
-- uid: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles(System.Int32)
-  name: CalculateTileRectangles(Int32)
-  href: hel-tiled/Hel.Tiled.Models.Tileset.Tileset.html#Hel_Tiled_Models_Tileset_Tileset_CalculateTileRectangles_System_Int32_
-  commentId: M:Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles(System.Int32)
-  fullName: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles(System.Int32)
-  nameWithType: Tileset.CalculateTileRectangles(Int32)
+- uid: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles
+  name: CalculateTileRectangles()
+  href: hel-tiled/Hel.Tiled.Models.Tileset.Tileset.html#Hel_Tiled_Models_Tileset_Tileset_CalculateTileRectangles
+  commentId: M:Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles
+  fullName: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles()
+  nameWithType: Tileset.CalculateTileRectangles()
 - uid: Hel.Tiled.Models.Tileset.Tileset.CalculateTileRectangles*
   name: CalculateTileRectangles
   href: hel-tiled/Hel.Tiled.Models.Tileset.Tileset.html#Hel_Tiled_Models_Tileset_Tileset_CalculateTileRectangles_
@@ -4709,19 +4709,6 @@ references:
   isSpec: "True"
   fullName: Hel.Tiled.Models.Tileset.Tileset.TileOffset
   nameWithType: Tileset.TileOffset
-- uid: Hel.Tiled.Models.Tileset.Tileset.TileRectangles
-  name: TileRectangles
-  href: hel-tiled/Hel.Tiled.Models.Tileset.Tileset.html#Hel_Tiled_Models_Tileset_Tileset_TileRectangles
-  commentId: P:Hel.Tiled.Models.Tileset.Tileset.TileRectangles
-  fullName: Hel.Tiled.Models.Tileset.Tileset.TileRectangles
-  nameWithType: Tileset.TileRectangles
-- uid: Hel.Tiled.Models.Tileset.Tileset.TileRectangles*
-  name: TileRectangles
-  href: hel-tiled/Hel.Tiled.Models.Tileset.Tileset.html#Hel_Tiled_Models_Tileset_Tileset_TileRectangles_
-  commentId: Overload:Hel.Tiled.Models.Tileset.Tileset.TileRectangles
-  isSpec: "True"
-  fullName: Hel.Tiled.Models.Tileset.Tileset.TileRectangles
-  nameWithType: Tileset.TileRectangles
 - uid: Hel.Tiled.Models.Tileset.Tileset.Tiles
   name: Tiles
   href: hel-tiled/Hel.Tiled.Models.Tileset.Tileset.html#Hel_Tiled_Models_Tileset_Tileset_Tiles
