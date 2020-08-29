@@ -6,6 +6,9 @@ using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Tilemap
 {
+    /// <summary>
+    /// The tilemap to draw. Contains all data required to properly render the tilemap.
+    /// </summary>
     public sealed class Tilemap
     {
          /// <summary>
@@ -38,6 +41,9 @@ namespace Hel.Tiled.Models.Tilemap
         /// </summary>
         public List<TilesetInfo> Tilesets { get; set; }
 
+        /// <summary>
+        /// Associates the tilemap info with the loaded tilemap to make it easy to render and manage
+        /// </summary>
         public sealed class TilesetInfo
         {
             /// <summary>
@@ -53,6 +59,9 @@ namespace Hel.Tiled.Models.Tilemap
             /// </summary>
             public int FirstGid { get; set; }
             
+            /// <summary>
+            /// The loaded tileset
+            /// </summary>
             public Tileset.Tileset Tileset { get; set; }
 
         } 

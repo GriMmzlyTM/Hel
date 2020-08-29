@@ -4,10 +4,20 @@ using Hel.Tiled.Models.Enums.Object;
 
 namespace Hel.Tiled.Models.Layers.Objects
 {
+    /// <summary>
+    /// ONLY exist in object layer
+    /// 
+    /// Using objects you can add a great deal of information to your map for use in your game.
+    /// They can replace tedious alternatives like hardcoding coordinates (like spawn points) in your source code or
+    /// maintaining additional data files for storing gameplay elements.
+    /// 
+    /// By using tile objects, objects of various types can be made easy to recognize or they can be used for purely
+    /// graphical purposes. In some cases they can replace the use of tile layers entirely.
+    /// </summary>
     public class Object
     {
         /// <summary>
-        /// 	Height in pixels.
+        /// Height in pixels.
         /// </summary>
         public double Height { get; set; }
         /// <summary>

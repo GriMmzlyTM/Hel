@@ -4,6 +4,9 @@ using Newtonsoft.Json.Converters;
 
 namespace Hel.Tiled.Models.Layers.Objects
 {
+    /// <summary>
+    /// Object containing data for drawing text
+    /// </summary>
     public class TextObject
     {
         /// <summary>
