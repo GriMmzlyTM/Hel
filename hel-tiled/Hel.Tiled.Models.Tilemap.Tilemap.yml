@@ -35,7 +35,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Tilemap
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Height
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -109,7 +109,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Width
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -146,7 +146,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TileHeight
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TileWidth
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -220,7 +220,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Infinite
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -257,7 +257,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Tilesets
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -294,7 +294,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Layers
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -331,7 +331,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Type
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -368,7 +368,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: BackgroundColor
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -405,7 +405,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: NextLayerId
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -442,7 +442,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: NextObjectId
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -479,7 +479,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: CompressionLevel
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -516,7 +516,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: HexSideLength
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -553,7 +553,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Orientation
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -590,7 +590,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Properties
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -627,7 +627,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TiledVersion
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -664,7 +664,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Version
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -701,7 +701,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: StaggerAxis
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -738,7 +738,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: StaggerIndex
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -775,7 +775,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RenderOrder
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs

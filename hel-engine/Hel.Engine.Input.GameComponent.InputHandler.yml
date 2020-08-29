@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/GameComponent/InputHandler.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: InputHandler
     path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/GameComponent/InputHandler.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: KeyboardState
     path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/GameComponent/InputHandler.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: LastKeyboardState
     path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/GameComponent/InputHandler.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: KeyBindings
     path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/GameComponent/InputHandler.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: .ctor
     path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/GameComponent/InputHandler.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Initialize
     path: ../Hel.Engine/Input/GameComponent/InputHandler.cs
@@ -232,7 +232,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/GameComponent/InputHandler.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Update
     path: ../Hel.Engine/Input/GameComponent/InputHandler.cs

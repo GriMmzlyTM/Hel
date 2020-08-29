@@ -40,7 +40,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Tileset
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Name
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -112,7 +112,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Image
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -149,7 +149,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Grid
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Columns
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -223,7 +223,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: ImageHeight
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -260,7 +260,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: ImageWidth
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -297,7 +297,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Margin
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -334,7 +334,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: BackgroundColor
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -371,7 +371,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: ObjectAlignment
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -408,7 +408,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Properties
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -445,7 +445,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Spacing
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -482,7 +482,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TileCount
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -519,7 +519,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TileHeight
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -556,7 +556,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TileWidth
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -593,7 +593,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Terrains
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -630,7 +630,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TileOffset
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -667,7 +667,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Tiles
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -704,7 +704,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Type
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -741,7 +741,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TiledVersion
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -778,7 +778,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Version
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -815,7 +815,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: WangSets
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -850,7 +850,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Rows
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -887,7 +887,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TileRectangles
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -922,7 +922,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Texture
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs
@@ -957,7 +957,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tileset/Tileset.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: CalculateTileRectangles
     path: ../Hel.Tiled/Models/Tileset/Tileset.cs

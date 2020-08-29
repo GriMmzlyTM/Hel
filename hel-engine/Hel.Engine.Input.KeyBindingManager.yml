@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: KeyBindingManager
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: .ctor
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: .ctor
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetKeyBinding
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetAllBindings
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetKeyBinding
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RemoveKey
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RemoveKey
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: SetKeyBinding
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -338,7 +338,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: SetKeyBindings
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -374,7 +374,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: UpdateBindings
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -404,7 +404,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: UndoBindings
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -434,7 +434,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: SaveBindingsJSON
     path: ../Hel.Engine/Input/KeyBindingManager.cs
@@ -464,7 +464,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Input/KeyBindingManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: LoadBindingsJSON
     path: ../Hel.Engine/Input/KeyBindingManager.cs

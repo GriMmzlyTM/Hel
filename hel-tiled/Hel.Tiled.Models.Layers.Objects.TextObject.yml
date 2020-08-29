@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TextObject
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Bold
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Color
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: FontFamily
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: HAlign
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: VAlign
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -247,7 +247,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Italic
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Kerning
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -321,7 +321,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: PixelSize
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -358,7 +358,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Strikeout
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -395,7 +395,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Text
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -432,7 +432,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Underline
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs
@@ -469,7 +469,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Objects/TextObject.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Wrap
     path: ../Hel.Tiled/Models/Layers/Objects/TextObject.cs

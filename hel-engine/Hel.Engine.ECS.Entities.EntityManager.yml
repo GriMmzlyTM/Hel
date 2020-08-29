@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: EntityManager
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: World
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -103,7 +103,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: .ctor
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: CreateEntity
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: LoadJSON
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: CreateEntityApply
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -242,7 +242,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: AddEntity
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetEntities
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -318,7 +318,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetEntities
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -355,7 +355,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RemoveEntity
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -390,7 +390,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RemoveEntities
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -428,7 +428,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: ClearEntities
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -460,7 +460,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: ClearEntitiesType
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs
@@ -497,7 +497,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/EntityManager.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: UpdateEntity
     path: ../Hel.Engine/ECS/Entities/EntityManager.cs

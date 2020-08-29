@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TilemapRenderOrderEnum
     path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: None
     path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RightDown
     path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RightUp
     path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
@@ -150,7 +150,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: LeftDown
     path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: LeftUp
     path: ../Hel.Tiled/Models/Enums/Tilemap/TilemapRenderOrderEnum.cs

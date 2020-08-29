@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TilesetInfo
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Source
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: FirstGid
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs
@@ -129,7 +129,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Tilemap/Tilemap.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Tileset
     path: ../Hel.Tiled/Models/Tilemap/Tilemap.cs

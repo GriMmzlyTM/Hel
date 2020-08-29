@@ -39,7 +39,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Layer
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Id
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Name
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Visible
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Type
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Height
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Width
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -296,7 +296,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: X
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -333,7 +333,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Y
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -370,7 +370,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Properties
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -407,7 +407,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: OffsetX
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -444,7 +444,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: OffsetY
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Opacity
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -518,7 +518,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TintColor
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -555,7 +555,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: StartX
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -592,7 +592,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: StartY
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -629,7 +629,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Layers
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -666,7 +666,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: TransparentColor
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -703,7 +703,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Image
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -740,7 +740,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: DrawOrder
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -777,7 +777,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Objects
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -814,7 +814,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Data
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -851,7 +851,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Chunks
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -888,7 +888,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Encoding
     path: ../Hel.Tiled/Models/Layers/Layer.cs
@@ -925,7 +925,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Layer.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Compression
     path: ../Hel.Tiled/Models/Layers/Layer.cs

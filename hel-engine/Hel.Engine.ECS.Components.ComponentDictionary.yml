@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: ComponentDictionary
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: .ctor
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: .ctor
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetComponentOfType
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetComponentOrFail
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetComponentOrNull
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -249,7 +249,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: UpdateComponent
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -282,7 +282,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: UpdateComponents
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: AddByObject
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: AddByType
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs
@@ -385,7 +385,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Components/ComponentDictionary.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: RemoveByType
     path: ../Hel.Engine/ECS/Components/ComponentDictionary.cs

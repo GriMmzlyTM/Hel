@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Chunk.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Chunk
     path: ../Hel.Tiled/Models/Layers/Chunk.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Chunk.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Data
     path: ../Hel.Tiled/Models/Layers/Chunk.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Chunk.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Height
     path: ../Hel.Tiled/Models/Layers/Chunk.cs
@@ -129,7 +129,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Chunk.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Width
     path: ../Hel.Tiled/Models/Layers/Chunk.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Chunk.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: X
     path: ../Hel.Tiled/Models/Layers/Chunk.cs
@@ -203,7 +203,7 @@ items:
   source:
     remote:
       path: Hel.Tiled/Models/Layers/Chunk.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Y
     path: ../Hel.Tiled/Models/Layers/Chunk.cs

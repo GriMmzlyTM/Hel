@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Jobs/Model/IJob.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: IJob
     path: ../Hel.Engine/Jobs/Model/IJob.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Jobs/Model/IJob.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Key
     path: ../Hel.Engine/Jobs/Model/IJob.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Jobs/Model/IJob.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: QueueJobThread
     path: ../Hel.Engine/Jobs/Model/IJob.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Jobs/Model/IJob.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: GetData
     path: ../Hel.Engine/Jobs/Model/IJob.cs
@@ -155,7 +155,7 @@ items:
   source:
     remote:
       path: Hel.Engine/Jobs/Model/IJob.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Run
     path: ../Hel.Engine/Jobs/Model/IJob.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Systems/System.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: ISystem
     path: ../Hel.Engine/ECS/Systems/System.cs
@@ -48,7 +48,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Systems/System.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Update
     path: ../Hel.Engine/ECS/Systems/System.cs
@@ -77,7 +77,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Systems/System.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Draw
     path: ../Hel.Engine/ECS/Systems/System.cs

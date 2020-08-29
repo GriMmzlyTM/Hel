@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/Entity.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: IEntity
     path: ../Hel.Engine/ECS/Entities/Entity.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/Entity.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: Components
     path: ../Hel.Engine/ECS/Entities/Entity.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/Entity.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: AddComponent
     path: ../Hel.Engine/ECS/Entities/Entity.cs
@@ -118,7 +118,7 @@ items:
   source:
     remote:
       path: Hel.Engine/ECS/Entities/Entity.cs
-      branch: f2f109666807b80f42ef1da0cdc0fe395f224fb0
+      branch: b7c5027e19603975b19db1b70027c0ebf07977a0
       repo: https://github.com/GriMmzlyTM/Hel
     id: AddComponents
     path: ../Hel.Engine/ECS/Entities/Entity.cs
