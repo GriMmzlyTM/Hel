@@ -40,6 +40,7 @@ namespace Hel.Tiled
             {
                 var loadedTileset = LoadGeneric<Tileset>(tileset.Source);
                 tileset.Tileset = loadedTileset;
+                tileset.Tileset.TileRectangles = tileset.Tileset.CalculateTileRectangles();
             }
 
             return tilemap;
