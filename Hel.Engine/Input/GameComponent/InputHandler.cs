@@ -3,6 +3,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Hel.Engine.Input.GameComponent
 {
+    /// <summary>
+    /// Basic inputhandler for executing commands linked to keybindings.
+    ///
+    /// Runs as as game component and checks if any keybindings are active. If so, runs all commands linked to the keybinding.
+    /// <see cref="KeyBindingManager"/> for more details on keybindings
+    /// </summary>
     public class InputHandler : Microsoft.Xna.Framework.GameComponent
     {
 

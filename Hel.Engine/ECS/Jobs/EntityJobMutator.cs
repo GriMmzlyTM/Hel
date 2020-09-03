@@ -7,9 +7,9 @@ namespace Hel.Engine.ECS.Jobs
     public class EntityJobMutator
     {
         private static readonly EntityDictionary stagedEntities = new EntityDictionary();
-        private static readonly List<uint> removedEntities = new List<uint>();
+        private static readonly List<string> removedEntities = new List<string>();
 
-        public static void StageEntityMutation(uint id, params IComponent[] components)
+        public static void StageEntityMutation(string id, params IComponent[] components)
         {
             lock (stagedEntities)
             {
@@ -24,7 +24,7 @@ namespace Hel.Engine.ECS.Jobs
             }
         }
 
-        public static void RemoveEntity(uint id)
+        public static void RemoveEntity(string id)
         {
             lock (removedEntities)
             {
@@ -36,7 +36,7 @@ namespace Hel.Engine.ECS.Jobs
         {
             lock (removedEntities)
             {
-                List<uint> removedEntitiesSafe = new List<uint>(removedEntities);
+                List<string> removedEntitiesSafe = new List<string>(removedEntities);
                 removedEntities.Clear();
 
                 manager.RemoveEntities(removedEntitiesSafe);

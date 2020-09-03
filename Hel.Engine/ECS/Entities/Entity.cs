@@ -11,6 +11,7 @@ namespace Hel.Engine.ECS.Entities
     /// </summary>
     public interface IEntity
     {
+        string Name { get; set; }
         /// <summary>
         /// List of Icomponents that will be assigned in the EntityManager
         /// </summary>        
@@ -34,15 +35,19 @@ namespace Hel.Engine.ECS.Entities
     {
         public ComponentDictionary Components { get; }
 
+        public string Name { get; set; }
+
         public Entity(params IComponent[] components)
         {
             Components = new ComponentDictionary();
+            Name = "";
             AddComponents(components);
         }
 
         public Entity(List<IComponent> componentList)
         {
             Components = new ComponentDictionary();
+            Name = "";
             AddComponents(componentList);
         }
 

@@ -7,14 +7,14 @@ namespace Hel.Engine.ECS.Entities
     /// <summary>
     /// 
     /// </summary>
-    public class EntityDictionary : Dictionary<uint, ComponentDictionary>
+    public class EntityDictionary : Dictionary<string, ComponentDictionary>
     {
         
         public EntityDictionary() { }
 
-        public EntityDictionary(Dictionary<uint, ComponentDictionary> newEntities) : base(newEntities) { }
+        public EntityDictionary(Dictionary<string, ComponentDictionary> newEntities) : base(newEntities) { }
 
-        public EntityDictionary(uint id, ComponentDictionary componentDictionary)
+        public EntityDictionary(string id, ComponentDictionary componentDictionary)
         {
             Add(id, componentDictionary);
         }
@@ -27,7 +27,7 @@ namespace Hel.Engine.ECS.Entities
             }
         }
 
-        public void UpdateEntity(uint id, ComponentDictionary components)
+        public void UpdateEntity(string id, ComponentDictionary components)
         {
             if (ContainsKey(id))
             {

@@ -20,7 +20,7 @@ namespace Hel.Engine.ECS.Components
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public T GetComponentOfType<T>() where T : IComponent
+        public T GetComponentOfType<T>() where T :struct, IComponent
         {
             return (TryGetValue(typeof(T), out IComponent tryGetComponent)
                          && tryGetComponent is T genericComponent)
@@ -54,11 +54,16 @@ namespace Hel.Engine.ECS.Components
         /// <returns>if the component exists or not</returns>
         public bool GetComponentOrNull<T>(out T component) where T : struct, IComponent
         {
-            component = (TryGetValue(typeof(T), out IComponent tryGetComponent)
-                         && tryGetComponent is T genericComponent)
-                ? genericComponent : default;
-
-            return !EqualityComparer<T>.Default.Equals(component, default);
+            try
+            {
+                component = (T) this[typeof(T)];
+                return true;
+            }
+            catch (Exception)
+            {
+                component = default;
+                return false;
+            }
         }
 
         /// <summary>

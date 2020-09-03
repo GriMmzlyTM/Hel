@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Hel.Engine.ECS.Jobs;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Hel.Engine.ECS.Systems
 {
@@ -13,7 +14,7 @@ namespace Hel.Engine.ECS.Systems
         public World World { get; private set; }
         //public readonly JobManager jobManager;
         public static float DeltaTime { get; private set; }
-
+        private SpriteFont fpsfont;
         public SystemManager(Game game, World world) : base(game)
         {
             World = world;
@@ -25,6 +26,7 @@ namespace Hel.Engine.ECS.Systems
         private void InitializeSystems()
         {
             new Render(this);
+            fpsfont = Engine.Game.Content.Load<SpriteFont>("TestFont");
         }
 
         public void AddSystem(ISystem system) => systems.Add(system);
@@ -38,6 +40,10 @@ namespace Hel.Engine.ECS.Systems
             foreach (ISystem sys in systems)
                 sys.Draw(gameTime, World.SpriteBatch);
 
+            World.SpriteBatch.Begin(SpriteSortMode.BackToFront);
+            var frameRate = 1 / (float)gameTime.ElapsedGameTime.TotalSeconds;
+            World.SpriteBatch.DrawString(fpsfont, frameRate.ToString(), new Vector2(10, 10), Color.Black);
+            World.SpriteBatch.End();
             base.Draw(gameTime);
         }
 
