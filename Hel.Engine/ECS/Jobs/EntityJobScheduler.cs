@@ -8,14 +8,14 @@ namespace Hel.Engine.ECS.Jobs
 {
     public class EntityJobScheduler
     {
-        private static readonly Queue<IJob<EntityDictionary>> jobQueue = new Queue<IJob<EntityDictionary>>();
+        private static readonly Queue<IJob<EntityLookup>> jobQueue = new Queue<IJob<EntityLookup>>();
 
         /// <summary>
         /// Tries to queue the job if not already queued. 
         /// Throws JobAlreadyQueuedException 
         /// </summary>
         /// <param name="job">The job you wish to queue</param>
-        public static void ScheduleJob(IJob<EntityDictionary> job)
+        public static void ScheduleJob(IJob<EntityLookup> job)
         {
 
             if (jobQueue.FirstOrDefault(x => x.Key.Equals(job.Key)) is null)
@@ -29,7 +29,7 @@ namespace Hel.Engine.ECS.Jobs
         /// Returns the jobQueue.
         /// </summary>
         /// <returns></returns>
-        public static Queue<IJob<EntityDictionary>> GetJobs() => jobQueue;
+        public static Queue<IJob<EntityLookup>> GetJobs() => jobQueue;
 
         /// <summary>
         /// Purge all jobs from the jobQueue

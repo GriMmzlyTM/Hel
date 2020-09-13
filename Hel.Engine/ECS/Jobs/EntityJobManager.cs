@@ -37,11 +37,11 @@ namespace Hel.Engine.ECS.Jobs
         public static void RunJobs()
         {
 
-            Queue<IJob<EntityDictionary>> jobQueue = EntityJobScheduler.GetJobs();
+            Queue<IJob<EntityLookup>> jobQueue = EntityJobScheduler.GetJobs();
 
             while (jobQueue.Count != 0)
             {
-                IJob<EntityDictionary> job = jobQueue.Dequeue();
+                IJob<EntityLookup> job = jobQueue.Dequeue();
                 AddRunningJob(job.Key);
                 job.QueueJobThread();
 

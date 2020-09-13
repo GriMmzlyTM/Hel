@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security;
+using System.Threading;
 using Hel.Engine.ECS.Components;
+using Hel.Engine.ECS.Exceptions;
 
 namespace Hel.Engine.ECS.Entities
 {
@@ -16,136 +18,210 @@ namespace Hel.Engine.ECS.Entities
         /// Add an entity to the world. An entity is any struct with the IEntity interface implemented.
         /// </summary>
         /// <param name="entity">Struct with the IEntity interface</param>
-        string AddEntity(IEntity entity);
-
+        /// <returns>The ID of the generated entity</returns>
+        int AddEntity(IEntity entity);
         /// <summary>
-        /// Returns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example
+        /// Fetches all available entity ID's
         /// </summary>
-        /// <typeparam name="T">Interface to check for.</typeparam>
-        /// <returns>List containing all entities data for specified type.</returns>
-        EntityDictionary GetEntities<T>() where T : struct, IComponent;
-        /// <summary>
-        /// Returns a list containing all entities that implement interface T. Returning all IRender entities or IMovement entities for example
-        /// </summary>
-        /// <param name="ID">ID of the entity</param>
-        /// <returns>Entity component</returns>
-        EntityDictionary GetEntities(string ID);
+        /// <returns>List containing all entities</returns>
+        IEnumerable<int> GetEntityIds();
         /// <summary>
         /// Removes an entity from the world
         /// </summary>
         /// <param name="ID">ID of the entity to remove.</param>
-        void RemoveEntity(string ID);
+        void RemoveEntity(int ID);
         /// <summary>
-        /// Remove all entities with the same ID as the one provided. Useful if you have a list or array of entities you wish to remove. 
+        /// Remove all entities with the same ID as the ones provided. Useful if you have a list or array of entities you wish to remove. 
         /// </summary>
         /// <param name="entitiesList">IEnumerable containing IEntities</param>
-        void RemoveEntities(IEnumerable<string> entitiesList);
+        void RemoveEntities(IEnumerable<int> entitiesList);
         /// <summary>
         /// Removes all entities from the world. Useful for resets, map restarts, or closing the game.
         /// </summary>
         void ClearEntities();
-        /// <summary>
-        /// Clears all entities that correspond to a certain type. For example, clearing all entities that contain IRenderable _components.
-        /// </summary>
-        /// <typeparam name="T">Type of component</typeparam>
-        void ClearEntitiesType<T>() where T : struct, IComponent;
 
         /// <summary>
-        /// 
+        /// Updates an entities compoonents. This does not REMOVE entity components but it will add new components and
+        /// update existing component data. 
         /// </summary>
-        /// <param name="ID"></param>
-        void UpdateEntity(string ID, ComponentDictionary components);
+        /// <param name="ID">ID of the entity to modify</param>
+        /// <param name="components">Components to add or update</param>
+        void UpdateEntity(int ID, IEnumerable<IComponent> components);
 
     }
 
     /// <summary>
-    /// EntityManager stores entity data and provides a safe way to mutate the entities dictionary ( Dictionary<uint, HashSet<IComponent>> )
+    /// EntityManager stores entity data and provides a safe way to modify and retrieve entities.
     /// </summary>
     public class EntityManager : IEntityManager
     {
-        private readonly EntityDictionary _entities = new EntityDictionary();
+        private readonly EntityLookup _entityLookup = new EntityLookup();
+        private readonly ComponentContainer _components = new ComponentContainer();
         public World World { get; private set; }
+
+        /// <summary>
+        /// How many entities exist
+        /// </summary>
+        public int EntityCount => _entityLookup.EntityCount;
 
         public EntityManager(World world) => World = world;
 
-        public IEntity CreateEntity(string entityName) =>
+        /*public IEntity CreateEntity(int entityName) =>
             EntityCreator.CreateEntity(entityName);
 
         public void LoadJSON(List<string> jsonFiles) =>
             EntityCreator.LoadJSON(jsonFiles);
 
-        public string CreateEntityApply(string entityName) =>
+        public void CreateEntityApply(int entityName) =>
             AddEntity(
                 EntityCreator.CreateEntity(entityName));
+                */
 
-        public string AddEntity(IEntity entity)
+        public int AddEntity(IEntity entity)
         {
-            lock (_entities)
+            return AddEntity(entity.Components);
+        }
+        
+        public int AddEntity(string name, HashSet<IComponent> components)
+        {
+            lock(_entityLookup)
+            lock (_components)
             {
-                return AddEntityInternal(entity);
+                var id = _entityLookup.Add(name);
+                _components.AddEntity(id, components);
+
+                return id;
+            }
+        }
+        
+        public int AddEntity(HashSet<IComponent> components)
+        {
+            lock(_entityLookup)
+            lock (_components)
+            {
+                var id = _entityLookup.Add();
+                _components.AddEntity(id, components);
+
+                return id;
             }
         }
 
-        private string AddEntityInternal(IEntity entity)
+        public ComponentByEntityContainer GetComponentsOfType<T>() where T : struct, IComponent
         {
-            var entityId = entity.Name + Guid.NewGuid();
-                try
+            lock(_entityLookup)
+            lock (_components)
+            {
+                return _components.GetComponentsOfType<T>();
+            }
+        }
+        
+        public IEnumerable<int> GetEntityIds(string name)
+        { 
+            lock(_entityLookup)
+            lock (_components)
+            {
+                return _entityLookup.GetByName(name);
+            }
+        }
+        
+        public int GetEntityId(string name)
+        {
+            lock(_entityLookup)
+            lock (_components)
+            {
+                return _entityLookup.GetFirstByName(name);
+            }
+        }
+        public IEnumerable<int> GetEntityIds()
+        {
+            lock(_entityLookup)
+            lock (_components)
+            {
+                var entities = _entityLookup.GetEntities();
+                return entities;
+            }
+        }
+        
+        /// <summary>
+        /// Get all entities that contain the provided types. Will return ALL components by type as well as all entity ID's
+        ///
+        /// You can then iterate over the entity ID's and use those to access the proper ComponentByEntity for the type you need.
+        /// When iterating you need to verify that the <see cref="ComponentByEntityContainer"/> has an entry for your entity.
+        /// </summary>
+        /// <param name="entityIds">Returns the entityID's that match the criteria</param>
+        /// <param name="types">The types that the entities must have</param>
+        /// <returns></returns>
+        public Dictionary<Type, ComponentByEntityContainer> GetEntities(out IEnumerable<int> entityIds, params Type[] types)
+        {
+            entityIds = null;
+            if (types.Length == 0) return default;
+
+            lock(_entityLookup)
+            lock (_components)
+            {
+                var compDict = new Dictionary<Type, ComponentByEntityContainer>();
+                for(int i = 0; i < types.Length; i++)
                 {
-                    _entities.Add(entityId, entity.Components);
+                    if (_components.GetComponentsOrNull(types[i], out var component))
+                    {
+                        compDict.Add(types[i], component);   
+                    }
                 }
-                catch (ArgumentException)
+
+                entityIds = GetEntityIds();
+                return compDict;
+            }
+        }
+
+        public bool GetComponent<T>(int entity, out T component) where T : struct, IComponent
+        {
+            lock (_components)
+            {
+                component = (T) _components.GetComponent<T>(entity);
+                return !EqualityComparer<T>.Default.Equals(component, default);
+            }
+        }
+
+        public void RemoveEntity(int id)
+        {
+            lock(_entityLookup)
+            lock (_components)
+            {
+                _entityLookup.RemoveEntity(id);
+                _components.RemoveEntity(id);
+            }
+        }
+        public void RemoveEntities(IEnumerable<int> entitiesList)
+        {
+            lock(_entityLookup)
+            lock (_components)
+            {
+                foreach (var entity in entitiesList)
                 {
-                    return AddEntityInternal(entity);
-                }
-
-                return entityId;
-        }
-
-        public EntityDictionary GetEntities<T>() where T : struct, IComponent
-        {
-            var entityDict = new EntityDictionary();
-            foreach (KeyValuePair<string, ComponentDictionary> entity in _entities)
-            {
-                if (entity.Value.GetComponentOrNull(out T comp) && comp.Active)
-                {
-                    entityDict[entity.Key] =  entity.Value;
+                    _entityLookup.RemoveEntity(entity);
+                    _components.RemoveEntity(entity);
                 }
             }
-
-            return entityDict;
         }
 
-        public EntityDictionary GetEntities(string ID) =>
-            new EntityDictionary(ID, _entities[ID]);
-
-        public void RemoveEntity(string ID)
+        public void ClearEntities()
         {
-            lock (_entities)
+            lock(_entityLookup)
+            lock (_components)
             {
-                _entities.Remove(ID);
+                _entityLookup.Clear();
+                _components.Clear();
             }
         }
-        public void RemoveEntities(IEnumerable<string> entitiesList)
+
+        public void UpdateEntity(int id, IEnumerable<IComponent> components)
         {
-            foreach (string entity in entitiesList)
-                this.RemoveEntity(entity);
-        }
-
-        public void ClearEntities() => _entities.Clear();
-
-        public void ClearEntitiesType<T>() where T : struct, IComponent
-        {
-            var entityType = GetEntities<T>();
-
-            foreach (var entity in entityType)
+            lock(_entityLookup)
+            lock(_components)
             {
-                this.RemoveEntity(entity.Key);
+                _components.UpdateComponents(id, components);
             }
-
         }
-
-        public void UpdateEntity(string id, ComponentDictionary components) =>
-            _entities.UpdateEntity(id, components);
     }
 }
  

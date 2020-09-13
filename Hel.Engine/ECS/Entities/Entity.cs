@@ -4,68 +4,37 @@ using Hel.Engine.ECS.Components;
 namespace Hel.Engine.ECS.Entities
 {
     /// <summary>
-    /// IEntity is the base component all entities need to use. 
-    /// The entire ECS system uses the IEntity interface to store, remove
-    /// and send entities to their respective systems. 
+    /// IEntity is the base interface that components should use.
     /// These entities are not stored as objects but rather deconstructed into an ID and a list of _components.
+    ///
+    /// You can add entities directly without using an IEntity, if required.
     /// </summary>
     public interface IEntity
     {
+        /// <summary>
+        /// The name to give the entity. This allows an easy way to retrieve the entity later on. 
+        /// </summary>
         string Name { get; set; }
         /// <summary>
         /// List of Icomponents that will be assigned in the EntityManager
         /// </summary>        
-        ComponentDictionary Components { get; }
-
-        /// <summary>
-        /// Add a component to the entities component list. This list of _components is then added to the new entity in the manager.
-        /// </summary>
-        /// <param name="component"></param>
-        void AddComponent(IComponent component);
-
-        /// <summary>
-        /// Add a list of _components to the entities component list. This list of _components is then added to the new entity in the manager.
-        /// </summary>
-        /// <param name="componentList"></param>
-        void AddComponents(List<IComponent> componentList);
+        HashSet<IComponent> Components { get; }
 
     }
 
     public struct Entity : IEntity
     {
-        public ComponentDictionary Components { get; }
+        public HashSet<IComponent> Components { get; }
 
         public string Name { get; set; }
 
-        public Entity(params IComponent[] components)
+        public Entity(string name, IEnumerable<IComponent> componentList)
         {
-            Components = new ComponentDictionary();
-            Name = "";
-            AddComponents(components);
-        }
-
-        public Entity(List<IComponent> componentList)
-        {
-            Components = new ComponentDictionary();
-            Name = "";
-            AddComponents(componentList);
-        }
-
-        public void AddComponent(IComponent component)
-        {
-            Components.AddByObject(component);
-        }
-
-        public void AddComponents(params IComponent[] components)
-        {
-            AddComponents(new List<IComponent>(components));
-        }
-
-        public void AddComponents(List<IComponent> componentList)
-        {
+            Components = new HashSet<IComponent>();
+            Name = name;
             foreach (var component in componentList)
             {
-                AddComponent(component);
+                Components.Add(component);   
             }
         }
     }

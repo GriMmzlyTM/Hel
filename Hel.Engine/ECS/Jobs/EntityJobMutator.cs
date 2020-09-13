@@ -6,21 +6,21 @@ namespace Hel.Engine.ECS.Jobs
 {
     public class EntityJobMutator
     {
-        private static readonly EntityDictionary stagedEntities = new EntityDictionary();
+        private static readonly EntityLookup stagedEntities = new EntityLookup();
         private static readonly List<string> removedEntities = new List<string>();
 
         public static void StageEntityMutation(string id, params IComponent[] components)
         {
             lock (stagedEntities)
             {
-                ComponentDictionary stagedComponents =
-                    stagedEntities.ContainsKey(id) ? stagedEntities[id] : new ComponentDictionary();
+                //ComponentDictionary stagedComponents =
+                //    stagedEntities.ContainsKey(id) ? stagedEntities[id] : new ComponentDictionary();
 
                 foreach (var component in components)
                 {
-                    stagedComponents.UpdateComponent(component);
+                 //   stagedComponents.UpdateComponent(component);
                 }
-                stagedEntities.UpdateEntity(id, stagedComponents);
+                //stagedEntities.UpdateEntity(id, stagedComponents);
             }
         }
 
@@ -39,16 +39,16 @@ namespace Hel.Engine.ECS.Jobs
                 List<string> removedEntitiesSafe = new List<string>(removedEntities);
                 removedEntities.Clear();
 
-                manager.RemoveEntities(removedEntitiesSafe);
+                //manager.RemoveEntities(removedEntitiesSafe);
             }
 
             lock (stagedEntities)
             {
-                EntityDictionary stagedEntitiesSafe = new EntityDictionary(stagedEntities);
-                stagedEntities.Clear();
+                //EntityLookup stagedEntitiesSafe = new EntityLookup(stagedEntities);
+                //stagedEntities.Clear();
 
-                foreach (var entity in stagedEntitiesSafe)
-                    manager.UpdateEntity(entity.Key, entity.Value);
+                //foreach (var entity in stagedEntitiesSafe)
+                    //manager.UpdateEntity(entity.Key, entity.Value);
             }
         }
 

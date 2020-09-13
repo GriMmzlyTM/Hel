@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Hel.Engine.ECS.Components.Model;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,20 +14,36 @@ namespace Hel.Engine.ECS.Systems
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
 
+            var entityManager = Engine.WorldManager.PrimaryWorld.EntityManager;
             //Job job = new Job(world.EntityManager.GetEntities<IRender>(), JobLogic);
-            var rand = new Random();
             spriteBatch.Begin();
-
+            var entityComponents = entityManager.GetEntities(out var entityIds,
+                typeof(RenderComponent),
+                typeof(TransformComponent));
+            
             //Draws all entities to the screen that implement the IRender interface.
-            foreach (var entity in Engine.WorldManager.PrimaryWorld.EntityManager.GetEntities<RenderComponent>())
+            var enumerable = entityIds as int[] ?? entityIds.ToArray();
+            for (int i = 0; i < enumerable.Length; i++)
             {
-                if (!entity.Value.GetComponentOrNull(out RenderComponent renderComponent) ||
-                    !entity.Value.GetComponentOrNull(out TransformComponent transformComponent)) continue;
+                var entityId = enumerable[i];
 
+                if (!entityComponents[typeof(RenderComponent)]
+                    .Get(entityId, out var renderComponentGet)) continue;
+                var renderComponent = (RenderComponent) renderComponentGet;
+
+                if (!entityComponents[typeof(TransformComponent)]
+                    .Get(entityId, out var transformComponentGet)) continue;
+                var transformComponent = (TransformComponent) transformComponentGet;
+              
+               
                 spriteBatch.Draw(
                     renderComponent.Texture,
-                    new Vector2(transformComponent.X + (rand.Next(0, 10) - 5), transformComponent.Y +  (rand.Next(0, 10) - 5)),
+                    new Vector2(transformComponent.X, transformComponent.Y ),
                     Color.White);
+                /*spriteBatch.Draw(
+                    renderComponent.Texture,
+                    new Vector2( (rand.Next(0, 900)), (rand.Next(0, 900))),
+                    Color.White);*/
             }
 
             spriteBatch.End();

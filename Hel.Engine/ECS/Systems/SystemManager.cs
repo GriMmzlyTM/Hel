@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using Hel.Engine.ECS.Jobs;
+using Hel.Engine.Toolkit;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -15,6 +16,7 @@ namespace Hel.Engine.ECS.Systems
         //public readonly JobManager jobManager;
         public static float DeltaTime { get; private set; }
         private SpriteFont fpsfont;
+        private FrameCounter _frameCounter = new FrameCounter();
         public SystemManager(Game game, World world) : base(game)
         {
             World = world;
@@ -41,8 +43,14 @@ namespace Hel.Engine.ECS.Systems
                 sys.Draw(gameTime, World.SpriteBatch);
 
             World.SpriteBatch.Begin(SpriteSortMode.BackToFront);
-            var frameRate = 1 / (float)gameTime.ElapsedGameTime.TotalSeconds;
-            World.SpriteBatch.DrawString(fpsfont, frameRate.ToString(), new Vector2(10, 10), Color.Black);
+            var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            _frameCounter.Update(deltaTime);
+            var fps = string.Format("FPS: {0}", _frameCounter.CurrentFramesPerSecond);
+            World.SpriteBatch.DrawString(fpsfont, fps, new Vector2(10, 10), Color.Black);
+            
+            World.SpriteBatch.DrawString(fpsfont, $"Entity count: {World.EntityManager.EntityCount}", new Vector2(10, 40), Color.Black);
+            /*var frameRate = 1 / (float)gameTime.ElapsedGameTime.TotalSeconds;
+            World.SpriteBatch.DrawString(fpsfont, frameRate.ToString(), new Vector2(10, 10), Color.Black);*/
             World.SpriteBatch.End();
             base.Draw(gameTime);
         }

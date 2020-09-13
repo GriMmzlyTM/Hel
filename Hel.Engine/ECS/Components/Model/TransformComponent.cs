@@ -16,6 +16,13 @@ namespace Hel.Engine.ECS.Components.Model
         public uint Y { get; set; }
         public bool Active { get; set; }
 
+        public TransformComponent(uint x, uint y, bool active = true)
+        {
+            X = x;
+            Y = y;
+            Active = active;
+        }
+
         public bool Equals(TransformComponent other)
         {
             return X.Equals(other.X) 

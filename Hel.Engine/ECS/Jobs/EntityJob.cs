@@ -4,16 +4,16 @@ using Hel.Engine.Jobs.Model;
 
 namespace Hel.Engine.ECS.Jobs
 {
-    public delegate void EntityJobCallback(EntityDictionary entityList);
-    public class EntityJob : IJob<EntityDictionary>
+    public delegate void EntityJobCallback(EntityLookup entityList);
+    public class EntityJob : IJob<EntityLookup>
     {
-        private readonly EntityDictionary _entities;
+        private readonly EntityLookup _entities;
 
         private readonly EntityJobCallback _jobCallback;
         public string Key { get; private set; }
 
         public EntityJob(
-            EntityDictionary entities,
+            EntityLookup entities,
             EntityJobCallback jobCallback,
             string key)
         {
@@ -25,9 +25,9 @@ namespace Hel.Engine.ECS.Jobs
         public void QueueJobThread() =>
             ThreadPool.QueueUserWorkItem(new WaitCallback(jobLogic), this);
 
-        public void Run(EntityDictionary entityList) => _jobCallback(entityList);
+        public void Run(EntityLookup entityList) => _jobCallback(entityList);
 
-        public EntityDictionary GetData() => _entities;
+        public EntityLookup GetData() => _entities;
 
         private void jobLogic(object obj)
         {
