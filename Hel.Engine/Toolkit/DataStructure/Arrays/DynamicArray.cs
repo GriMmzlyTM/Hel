@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Hel.Engine.Toolkit.DataStructure.Arrays
 {
@@ -23,11 +24,16 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
         /// The size of the array
         /// </summary>
         public int Size => _size;
-        
+
         public DynamicArray(int capacity)
         {
             _array = new TDataType[capacity];
             _size = capacity;
+        }
+
+        public void Clear()
+        {
+            Array.Clear(_array, 0, _size);
         }
         
         /// <summary>
@@ -39,6 +45,12 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
             Array.Resize(ref _array, _size);
         }
 
+        public void ReducePastIndex(int index)
+        {
+            _size = index + 1;
+            Array.Resize(ref _array, _size);
+        }
+        
         /// <summary>
         /// Retrieve or assign data to the array.
         /// Will automatically expand the array if required.
@@ -48,10 +60,10 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
         /// <param name="index"></param>
         public TDataType this[int index]
         {
-            get => (uint)index >= (uint)_size ? default : _array[index];
+            get => index >= _size ? default : _array[index];
             set
             {
-                if ((uint) index >= (uint) _size)
+                if (index >= _size)
                 {
                     ExpandArray(index + 1);
                 }

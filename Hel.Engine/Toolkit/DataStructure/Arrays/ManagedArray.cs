@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Hel.Engine.Toolkit.DataStructure.Arrays
 {
@@ -22,6 +23,7 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
         /// Retrieve size of the array
         /// </summary>
         public int Size => _size;
+        
         /// <summary>
         /// Retrieve the number of <see cref="TDataType"/> that are allocated in the array
         /// </summary>
@@ -32,10 +34,13 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
         /// </summary>
         private readonly Queue<int> _freeIds;
 
+        private readonly HashSet<int> _allocatedIds;
+
         public ManagedArray(int capacity)
         {
             _array = new TDataType[capacity];
             _size = capacity;
+            _allocatedIds = new HashSet<int>(capacity);
             _freeIds = new Queue<int>(capacity);
             for (var i = 0; i < 256; i++)
             {
@@ -43,10 +48,18 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
             }
         }
 
+        public int[] GetNonNullIndexes()
+        {
+            var indexes = new int[_allocatedIds.Count];
+            _allocatedIds.CopyTo(indexes);
+            return indexes;
+        }
+
         public void Clear()
         {
             Array.Clear(_array, 0 , _size);
             _freeIds.Clear();
+            _allocatedIds.Clear();
             for (var i = 0; i < _size; i++)
             {
                 _freeIds.Enqueue(i);
@@ -92,7 +105,8 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
         public int Add(TDataType data)
         {
             var entityId = GenerateId();
-
+            _allocatedIds.Add(entityId);
+            
             _array[entityId] = data;
 
             return entityId;
@@ -105,12 +119,13 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
         /// <exception cref="ArgumentOutOfRangeException"></exception>
         public void Remove(int id)
         {
-            if ((uint)id >= (uint)_size ||
+            if (id >= _size ||
                 EqualityComparer<TDataType>.Default.Equals(_array[id], default))
             {
                 throw new ArgumentOutOfRangeException($"Cannot remove null or invalid index {id} in array with data type {typeof(TDataType)}, max index is {_size - 1}");
             }
             _freeIds.Enqueue(id);
+            _allocatedIds.Remove(id);
             _array[id] = default;
         }
 
@@ -124,7 +139,7 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
         public TDataType this[int index]
         {
             get {
-                if ((uint)index >= (uint)_size)
+                if (index >= _size)
                 {
                     throw new ArgumentOutOfRangeException($"Cannot access index {index} in array with data type {typeof(TDataType)}, max index is {_size - 1}");
                 }
@@ -132,7 +147,7 @@ namespace Hel.Engine.Toolkit.DataStructure.Arrays
             }
             set
             {
-                if ((uint)index >= (uint)_size ||
+                if (index >= _size ||
                     EqualityComparer<TDataType>.Default.Equals(_array[index], default))
                 {
                     throw new ArgumentOutOfRangeException($"Cannot assign index {index} in array with data type {typeof(TDataType)}, max index is {_size - 1}. Please use Add method to allocate dynamically");
