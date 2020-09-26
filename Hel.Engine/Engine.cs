@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using Hel.Engine.ECS;
+using Hel.Engine.ECS.World;
 using Hel.Engine.Input.GameComponent;
 using Microsoft.Xna.Framework;
 
@@ -49,7 +50,7 @@ namespace Hel.Engine
             FileRoot = Directory.GetCurrentDirectory();
         }
 
-        public static void AddComponent(IGameComponent gameComponent)
+        public static void AddGameComponent(IGameComponent gameComponent)
         {
             Game.Components.Add(gameComponent);
         }
