@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using Hel.Engine.ECS;
-using Hel.Engine.ECS.World;
+﻿using System.IO;
 using Hel.Engine.Input.GameComponent;
 using Microsoft.Xna.Framework;
 
@@ -24,11 +21,6 @@ namespace Hel.Engine
         public static Game Game { get; private set; }
         
         /// <summary>
-        /// World manager containing world and entities.
-        /// </summary>
-        public static WorldManager WorldManager { get; private set; }
-        
-        /// <summary>
         /// Input manager for handling user inputs and keybindings
         /// </summary>
         public static InputHandler InputHandler { get; private set; }
@@ -46,7 +38,6 @@ namespace Hel.Engine
             InputHandler = new InputHandler(game);
             game.Components.Add(InputHandler);
             
-            WorldManager = new WorldManager();
             FileRoot = Directory.GetCurrentDirectory();
         }
 

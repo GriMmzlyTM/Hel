@@ -8,7 +8,6 @@ namespace Hel.Engine.Commander
     {
         public void Execute()
         {
-            Engine.WorldManager.GetGame().Exit();
         }
 
         public void Undo()

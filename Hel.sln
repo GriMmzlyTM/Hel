@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hel.Engine", "Hel.Engine\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hel.Tiled", "Hel.Tiled\Hel.Tiled.csproj", "{401CB63F-E7B3-4586-9E71-54F95F91AD2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hel.ECS", "Hel.ECS\Hel.ECS.csproj", "{ADC19980-E131-4796-8104-0503A8F0FC3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hel.Toolkit", "Hel.Toolkit\Hel.Toolkit.csproj", "{E9B5BA10-5100-40AC-BF09-36E2F08CD1FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{401CB63F-E7B3-4586-9E71-54F95F91AD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{401CB63F-E7B3-4586-9E71-54F95F91AD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{401CB63F-E7B3-4586-9E71-54F95F91AD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC19980-E131-4796-8104-0503A8F0FC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC19980-E131-4796-8104-0503A8F0FC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC19980-E131-4796-8104-0503A8F0FC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC19980-E131-4796-8104-0503A8F0FC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B5BA10-5100-40AC-BF09-36E2F08CD1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B5BA10-5100-40AC-BF09-36E2F08CD1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B5BA10-5100-40AC-BF09-36E2F08CD1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B5BA10-5100-40AC-BF09-36E2F08CD1FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

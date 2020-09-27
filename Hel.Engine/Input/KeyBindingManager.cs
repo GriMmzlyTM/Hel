@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
 using Hel.Engine.Commander;
 using Hel.Engine.Commander.Model;
 using Hel.Engine.Input.Model;
-using Hel.Engine.Toolkit.Serializer;
+using Hel.Toolkit.Serializer;
 using Microsoft.Xna.Framework.Input;
 
 namespace Hel.Engine.Input

@@ -12,11 +12,8 @@ namespace Hel.Engine.Rendering
     {
         public RendererApi RendererApi { get; } = RendererApi.OpenGL;
         
-        public void Draw(TilemapRendererPayload payload)
+        public void Draw(TilemapRendererPayload payload, SpriteBatch spriteBatch)
         {
-            var spriteBatch = Engine.WorldManager.PrimaryWorld.SpriteBatch;
-            spriteBatch.Begin();
-            
             foreach (var layer in payload.Tilemap.Layers.Where(layer => layer.Type == LayerTypeEnum.TileLayer))
             {
                 for (var i = 0; i < layer.Data.Length; i++)
@@ -46,7 +43,6 @@ namespace Hel.Engine.Rendering
                     }
                 }
             }
-            spriteBatch.End();
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Hel.Engine.Tiled
         public static Tilemap TilemapLoader(string path)
         {
             path = !path.StartsWith("Content") ? $@"Content/{path}" : path;
-            var tilemap = TiledFactory.LoadTilemap(path);
+            var tilemap = Loader.LoadTilemap(path);
 
             foreach (var tileset in tilemap.Tilesets.Select(set => set.Tileset))
             {

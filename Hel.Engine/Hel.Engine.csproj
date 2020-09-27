@@ -19,6 +19,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Hel.Tiled\Hel.Tiled.csproj" />
+      <ProjectReference Include="..\Hel.Toolkit\Hel.Toolkit.csproj" />
     </ItemGroup>
 
 </Project>
