@@ -10,13 +10,8 @@ namespace Hel.Tiled
     /// <summary>
     /// Prefered entrypoint for creating Tiled data objects.
     /// </summary>
-    public static class TiledFactory
+    public static class Loader
     {
-        public static T LoadGeneric<T>(string path)
-        {
-            var data = File.ReadAllText(path);
-            return JsonConvert.DeserializeObject<T>(data);
-        }
 
         /// <summary>
         /// Load and structure a tileset that is not associated with a tilemap.
@@ -24,7 +19,19 @@ namespace Hel.Tiled
         /// <param name="path">The path where the tileset can be found</param>
         /// <returns>Fully structured <see cref="Tileset"/></returns>
         public static Tileset LoadTileset(string path) => LoadGeneric<Tileset>(path);
+        
+        /// <summary>
+        /// Load and structure a <see cref="Template"/>
+        /// </summary>
+        /// <param name="path">The path where the tilemap can be found</param>
+        /// <returns>Structured <see cref="Template"/></returns>
         public static Template LoadTemplate(string path) => LoadGeneric<Template>(path);
+        
+        public static T LoadGeneric<T>(string path)
+        {
+            var data = File.ReadAllText(path);
+            return JsonConvert.DeserializeObject<T>(data);
+        }
         
         /// <summary>
         /// Loads a tilemap and its required tilesets. This will load and prepare all data required to use the tilemap.
