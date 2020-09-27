@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace Hel.Engine.Toolkit.DataStructure.Arrays
+namespace Hel.Toolkit.DataStructure.Arrays
 {
     /// <summary>
     /// Automatically managed and assigned array.

@@ -1,4 +1,4 @@
-﻿namespace Hel.Engine.Toolkit.Math
+﻿namespace Hel.Toolkit.Math
 {
     public class ConversionUtil
     {

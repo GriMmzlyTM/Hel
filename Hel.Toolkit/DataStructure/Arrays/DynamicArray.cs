@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace Hel.Engine.Toolkit.DataStructure.Arrays
+namespace Hel.Toolkit.DataStructure.Arrays
 {
     /// <summary>
     /// Dynamically sized array.
