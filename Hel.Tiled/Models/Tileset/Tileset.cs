@@ -136,6 +136,9 @@ namespace Hel.Tiled.Models.Tileset
         [JsonIgnore]
         public object Texture { get; set; }
 
+
+        public Dictionary<int, Rectangle> TileRectangles { get; set; }
+
         /// <summary>
         /// Calculate how to split up the tileset so it can be properly rendered. The data here is GID Independent.
         /// To use with a tilemap (Which gives each tileset a FirstGid) substract the firstGid from the tile GID the tilemap is requesting.

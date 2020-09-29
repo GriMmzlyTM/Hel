@@ -5,6 +5,8 @@ with any framework you want.
 
 Hel.Tiled is not currently stable.
 
+Highest tested TILED version: [1.4.2](https://github.com/bjorn/tiled/releases/tag/v1.4.2)
+
 **Hel.Tiled currently only supports JSON files**
 ## Installation
 

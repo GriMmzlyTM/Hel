@@ -1,6 +1,7 @@
 ﻿namespace Hel.Engine
 {
     public delegate void OnChangeEvent<in T>(T obj);
+    
     internal interface IEventChange<T>
     {
         /// <summary>
