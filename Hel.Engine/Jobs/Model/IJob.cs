@@ -1,5 +1,11 @@
-﻿namespace Hel.Engine.Jobs.Model
+﻿using System;
+
+namespace Hel.Engine.Jobs.Model
 {
+    /// <summary>
+    /// Currently unused
+    /// </summary>
+    [Obsolete]
     public interface IJob<T>
     {
         /// <summary>

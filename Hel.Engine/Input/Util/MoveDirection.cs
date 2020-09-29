@@ -1,7 +1,6 @@
-﻿using Hel.Engine.ECS;
-using Hel.Engine.Input.GameComponent;
+﻿using Hel.Engine.Input.GameComponent;
 using Hel.Engine.Input.Model;
-using Hel.Engine.Toolkit.Math;
+using Hel.Toolkit.Math;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 

@@ -33,6 +33,23 @@
       "dest": "hel-tiled",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "Hel.ECS/**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        }
+      ],
+      "dest": "hel-ecs",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
     }
   ],
   "build": {
@@ -42,6 +59,13 @@
           "hel-tiled/**.yml",
           "hel-tiled/index.md",
           "hel-tiled-config/**"
+        ]
+      },
+      {
+        "files": [
+          "hel-ecs/**.yml",
+          "hel-ecs/index.md",
+          "hel-ecs-config/**"
         ]
       },
       {
