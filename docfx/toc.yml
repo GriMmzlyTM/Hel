@@ -2,5 +2,7 @@
   href: articles/
 - name: Hel.Engine
   href: hel-engine/
+- name: Hel.ECS
+  href: hel-ecs/
 - name: Hel.Tiled
   href: hel-tiled/
