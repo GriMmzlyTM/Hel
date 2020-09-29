@@ -14,9 +14,7 @@ namespace Hel.ECS.Components.Model
     public interface IComponent
     {
         /// <summary>
-        /// A component that is not active will not be returned when fetching components from an entity.
-        /// Setting this to false is the same as if the component was not attached to the entity.
-        /// <see cref="EntityManager.GetEntities"/>
+        /// Allows if the component should be used or not.
         /// </summary>
         bool Active { get; set; }
     }

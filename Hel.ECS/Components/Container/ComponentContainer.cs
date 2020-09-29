@@ -10,8 +10,7 @@ namespace Hel.ECS.Components.Container
     ///
     /// For example:
     /// EntityLookup: Index 53 => "Character"
-    /// ComponentByEntityContainer (Render) : Index 53 => "Character" IComponent
-    ///  
+    /// ComponentContainer (Render) : Index 53 => "Character" IComponent
     /// </summary>
     public class ComponentContainer
     {
@@ -29,6 +28,9 @@ namespace Hel.ECS.Components.Container
 
         public delegate void EntitiesModified(int[] entities, EntityChangeDirection changeDirection);
 
+        /// <summary>
+        /// Notify observers on component container change
+        /// </summary>
         public event EntitiesModified OnEntitiesModified;
 
         public enum EntityChangeDirection {
@@ -48,6 +50,11 @@ namespace Hel.ECS.Components.Container
             _updatedEntities = new Queue<int>();
         }
 
+        /// <summary>
+        /// Update the entity's component. Adds the component if it does not currently exist.
+        /// </summary>
+        /// <param name="entityId">The ID of the entity</param>
+        /// <param name="component">The new data to apply to the entity</param>
         public void UpdateComponent(int entityId, IComponent component)
         {
             if (_components[entityId] == null)
@@ -62,6 +69,9 @@ namespace Hel.ECS.Components.Container
             _componentsBuffer[entityId] = component;
         }
 
+        /// <summary>
+        /// Remove the component from the entity.
+        /// </summary>
         public void Remove(int entityId)
         {
             if (_components[entityId] == null)
@@ -73,6 +83,9 @@ namespace Hel.ECS.Components.Container
             _componentsBuffer[entityId] = null;
         }
 
+        /// <summary>
+        /// Apply all buffered entity component mutations and notify observers of the change.
+        /// </summary>
         public void ApplyUpdates()
         {
             // Remove entities
@@ -115,9 +128,6 @@ namespace Hel.ECS.Components.Container
         /// <summary>
         /// Get component. May return null
         /// </summary>
-        /// <param name="entityId"></param>
-        /// <param name="component"></param>
-        /// <returns>True if componnent exists</returns>
         public IComponent Get(int entityId) 
         {
             return _components[entityId];

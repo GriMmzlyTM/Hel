@@ -2,15 +2,7 @@
 
 namespace Hel.ECS.Components.Examples
 {
-    /// <summary>
-    /// The IRender component handles rendering the 
-    /// entity texture to the screen. 
-    /// IRender should be used for any entity that contains
-    /// visuals as opposed to simply logic. 
-    /// 
-    /// IRender has its own Render system which is added to the
-    /// SystemManager when the World is created. 
-    /// </summary>
+  
     public struct RenderExample : IRenderComponentExample, IEquatable<RenderExample>
     {
         /// <summary>
